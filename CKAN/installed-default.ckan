@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.07.12.09.09.38",
+	"version": "2016.07.12.11.39.46",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -78,6 +78,14 @@
 		{
 			"name": "CommunityResourcePack",
 			"version": "0.5.4.0"
+		},
+		{
+			"name": "ContractConfigurator-ContractPack-SCANsat",
+			"version": "v0.6.0.1"
+		},
+		{
+			"name": "ContractConfigurator-RemoteTech",
+			"version": "2.0.2"
 		}
 	]
 }
