@@ -1,0 +1,443 @@
+Debug information for CONTRACT_TYPE 'ScanEelooLoResBiome':
+
+Configuration:
+CONTRACT_TYPE
+{
+	name = ScanEelooLoResBiome
+	group = CCCP-SCANsat
+	title = Altimetry and Biome Scan of Eeloo
+	description = Somewhere out there is Eeloo and we want you to find it before someone changes its designation to "Rock" from the already embarrasing "Dwarf Planet". The journey will be long and arduous, but the data we can retrieve would be invaluable to us all.
+	synopsis = Send a single unkerbaled vessel into Eeloo orbit and scan Eeloo's surface with both the SCAN Radar Altimetry Sensor and the SCAN Multispectral Sensor. The big guy in the Cantina says he heard from a local blockade runner called San Holo that an orbit of 335km with an 83 degree inclination should give you some good results.
+	notes = Tip: Eeloo is a long way from the sun, so you'll need more solar power to survive.
+	completedMessage = Such a tiny planet. So far away. So cold. Excellent work, It's been so long since we embarked on this mission some of the engineers that launched it have had grand children!
+	targetBody = Eeloo
+	agent = Research & Development Department
+	advanceFunds = 8000
+	rewardScience = 4.5
+	rewardReputation = 5
+	rewardFunds = 16000
+	maxCompletions = 1
+	maxSimultaneous = 1
+	prestige = Significant
+	PARAMETER
+	{
+		name = NewHorizons
+		type = VesselParameterGroup
+		define = New Horizons
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = ReachState
+			type = ReachState
+			targetBody = Eeloo
+			situation = ORBITING
+		}
+		PARAMETER
+		{
+			name = HasCrew1
+			type = HasCrew
+			maxCrew = 0
+			minCrew = 0
+			targetBody = @/targetBody
+		}
+		PARAMETER
+		{
+			name = PartValidation
+			type = PartValidation
+			part = SCANsat_Scanner
+			targetBody = @/targetBody
+		}
+		PARAMETER
+		{
+			name = PartValidation2
+			type = PartValidation
+			part = SCANsat_Scanner24
+			targetBody = @/targetBody
+		}
+	}
+	PARAMETER
+	{
+		name = OrbitSet
+		type = VesselParameterGroup
+		vessel = New Horizons
+		title = Achieve an orbit with the following parameters
+		optional = True
+		completedMessage = I'll send word to San Holo that his advice was well worth the two diced Twi'leks he asked for as payment.
+		rewardScience = 1.2
+		rewardReputation = 1.3
+		rewardFunds = 1300.0
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = Eeloo
+			minApA = 333563
+			maxApA = 336584
+			minPeA = 333521
+			maxPeA = 336577
+			maxEccentricity = 0.0022
+			minInclination = 82.7
+			maxInclination = 83.3
+			disableOnStateChange = false
+		}
+	}
+	PARAMETER
+	{
+		name = SCANsatCoverage1
+		type = SCANsatCoverage
+		coverage = 50.0
+		scanType = AltimetryLoRes
+		disableOnStateChange = false
+		targetBody = @/targetBody
+	}
+	PARAMETER
+	{
+		name = SCANsatCoverage2
+		type = SCANsatCoverage
+		coverage = 50.0
+		scanType = Biome
+		disableOnStateChange = false
+		targetBody = @/targetBody
+	}
+	REQUIREMENT
+	{
+		name = all1
+		type = All
+		targetBody = @/targetBody
+		REQUIREMENT
+		{
+			name = SCANsatCoverage3
+			type = SCANsatCoverage
+			targetBody = Mun
+			maxCoverage = 100.0
+			minCoverage = 95.0
+			scanType = Biome
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage4
+			type = SCANsatCoverage
+			targetBody = Minmus
+			maxCoverage = 100.0
+			minCoverage = 95.0
+			scanType = Biome
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage5
+			type = SCANsatCoverage
+			targetBody = Eeloo
+			maxCoverage = 49.9
+			minCoverage = 0.0
+			scanType = AltimetryLoRes
+		}
+	}
+}
+
+Data Nodes:
+ScanEelooLoResBiome
+    CCCP-SCANsat:name = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:displayName = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:minVersion = 1.9.0, deterministic = True
+    CCCP-SCANsat:maxCompletions = 0, deterministic = True
+    CCCP-SCANsat:maxSimultaneous = 7, deterministic = True
+    CCCP-SCANsat:disabledContractType = [], deterministic = True
+    name = ScanEelooLoResBiome, deterministic = True
+    trace = False, deterministic = True
+    title = Altimetry and Biome Scan of Eeloo, deterministic = True
+    tag = , deterministic = True
+    description = Somewhere out there is Eeloo and we want you to find it before someone changes its designation to "Rock" from the already embarrasing "Dwarf Planet". The journey will be long and arduous, but the data we can retrieve would be invaluable to us all., deterministic = True
+    topic = , deterministic = True
+    subject = , deterministic = True
+    motivation = , deterministic = True
+    notes = Tip: Eeloo is a long way from the sun, so you'll need more solar power to survive., deterministic = True
+    synopsis = Send a single unkerbaled vessel into Eeloo orbit and scan Eeloo's surface with both the SCAN Radar Altimetry Sensor and the SCAN Multispectral Sensor. The big guy in the Cantina says he heard from a local blockade runner called San Holo that an orbit of 335km with an 83 degree inclination should give you some good results., deterministic = True
+    completedMessage = Such a tiny planet. So far away. So cold. Excellent work, It's been so long since we embarked on this mission some of the engineers that launched it have had grand children!, deterministic = True
+    agent = Contracts.Agents.Agent, deterministic = True
+    minExpiry = 1, deterministic = True
+    maxExpiry = 7, deterministic = True
+    deadline = 0, deterministic = True
+    cancellable = True, deterministic = True
+    declinable = True, deterministic = True
+    autoAccept = False, deterministic = True
+    prestige = [ Significant ], deterministic = True
+    targetBody = Eeloo (CelestialBody), deterministic = True
+    maxCompletions = 1, deterministic = True
+    maxSimultaneous = 1, deterministic = True
+    rewardFunds = 16000, deterministic = True
+    rewardReputation = 5, deterministic = True
+    rewardScience = 4.5, deterministic = True
+    failureFunds = 0, deterministic = True
+    failureReputation = 0, deterministic = True
+    advanceFunds = 8000, deterministic = True
+    weight = 1, deterministic = True
+
+	NewHorizons
+	    type = VesselParameterGroup, deterministic = True
+	    name = NewHorizons, deterministic = True
+	    targetBody = Eeloo (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = New Horizons, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		ReachState
+		    type = ReachState, deterministic = True
+		    name = ReachState, deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    failWhenUnmet = False, deterministic = True
+		    biome = null, deterministic = True
+		    situation = [ ORBITING ], deterministic = True
+		    minAltitude = -3.402823E+38, deterministic = True
+		    maxAltitude = 3.402823E+38, deterministic = True
+		    minTerrainAltitude = 0, deterministic = True
+		    maxTerrainAltitude = 3.402823E+38, deterministic = True
+		    minSpeed = 0, deterministic = True
+		    maxSpeed = 1.79769313486232E+308, deterministic = True
+		    minRateOfClimb = -1.79769313486232E+308, deterministic = True
+		    maxRateOfClimb = 1.79769313486232E+308, deterministic = True
+		    minAcceleration = 0, deterministic = True
+		    maxAcceleration = 3.402823E+38, deterministic = True
+		    targetBody = [ Eeloo (CelestialBody) ], deterministic = True
+		
+		HasCrew1
+		    type = HasCrew, deterministic = True
+		    name = HasCrew1, deterministic = True
+		    targetBody = Eeloo (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    trait = null, deterministic = True
+		    minExperience = 0, deterministic = True
+		    maxExperience = 5, deterministic = True
+		    minCrew = 0, deterministic = True
+		    maxCrew = 0, deterministic = True
+		    kerbal = [], deterministic = True
+		    excludeKerbal = [], deterministic = True
+		
+		PartValidation
+		    type = PartValidation, deterministic = True
+		    name = PartValidation, deterministic = True
+		    targetBody = Eeloo (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    minCount = 1, deterministic = True
+		    maxCount = 2147483647, deterministic = True
+		    part = [ SCANsat.Scanner ], deterministic = False
+		    partModule = [], deterministic = True
+		    partModuleType = [], deterministic = True
+		    category = null, deterministic = True
+		    manufacturer = null, deterministic = True
+		
+		PartValidation2
+		    type = PartValidation, deterministic = True
+		    name = PartValidation2, deterministic = True
+		    targetBody = Eeloo (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    minCount = 1, deterministic = True
+		    maxCount = 2147483647, deterministic = True
+		    part = [ SCANsat.Scanner24 ], deterministic = False
+		    partModule = [], deterministic = True
+		    partModuleType = [], deterministic = True
+		    category = null, deterministic = True
+		    manufacturer = null, deterministic = True
+		
+	OrbitSet
+	    type = VesselParameterGroup, deterministic = True
+	    name = OrbitSet, deterministic = True
+	    targetBody = Eeloo (CelestialBody), deterministic = True
+	    rewardFunds = 1300, deterministic = True
+	    rewardReputation = 1.3, deterministic = True
+	    rewardScience = 1.2, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = Achieve an orbit with the following parameters, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = I'll send word to San Holo that his advice was well worth the two diced Twi'leks he asked for as payment., deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = null, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [ New Horizons ], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		Orbit
+		    type = Orbit, deterministic = True
+		    name = Orbit, deterministic = True
+		    targetBody = Eeloo (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = False, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    situation = ORBITING, deterministic = True
+		    minAltitude = 0, deterministic = True
+		    maxAltitude = 1.79769313486232E+308, deterministic = True
+		    minApA = 333563, deterministic = True
+		    maxApA = 336584, deterministic = True
+		    minPeA = 333521, deterministic = True
+		    maxPeA = 336577, deterministic = True
+		    minEccentricity = 0, deterministic = True
+		    maxEccentricity = 0.0022, deterministic = True
+		    minInclination = 82.7, deterministic = True
+		    maxInclination = 83.3, deterministic = True
+		    minPeriod = 00:00:00, deterministic = True
+		    maxPeriod = -2147483648 years, -2147483648 days, -2147483648:-2147483648:-2147483648, deterministic = True
+		
+	SCANsatCoverage1
+	    type = SCANsatCoverage, deterministic = True
+	    name = SCANsatCoverage1, deterministic = True
+	    targetBody = Eeloo (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = False, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    coverage = 50, deterministic = True
+	    scanType = AltimetryLoRes, deterministic = True
+	
+	SCANsatCoverage2
+	    type = SCANsatCoverage, deterministic = True
+	    name = SCANsatCoverage2, deterministic = True
+	    targetBody = Eeloo (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = False, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    coverage = 50, deterministic = True
+	    scanType = Biome, deterministic = True
+	
+	all1
+	    type = All, deterministic = True
+	    name = all1, deterministic = True
+	    targetBody = Eeloo (CelestialBody), deterministic = True
+	    checkOnActiveContract = False, deterministic = True
+	    invertRequirement = False, deterministic = True
+	
+		SCANsatCoverage3
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage3, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 95, deterministic = True
+		    maxCoverage = 100, deterministic = True
+		    scanType = Biome, deterministic = True
+		
+		SCANsatCoverage4
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage4, deterministic = True
+		    targetBody = Minmus (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 95, deterministic = True
+		    maxCoverage = 100, deterministic = True
+		    scanType = Biome, deterministic = True
+		
+		SCANsatCoverage5
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage5, deterministic = True
+		    targetBody = Eeloo (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 0, deterministic = True
+		    maxCoverage = 49.9, deterministic = True
+		    scanType = AltimetryLoRes, deterministic = True
+		
+
+Output log:
+[INFO] ContractConfigurator.ContractType: Loading CONTRACT_TYPE: 'ScanEelooLoResBiome'
+[INFO] ContractConfigurator.ContractType: Successfully loaded CONTRACT_TYPE 'ScanEelooLoResBiome'

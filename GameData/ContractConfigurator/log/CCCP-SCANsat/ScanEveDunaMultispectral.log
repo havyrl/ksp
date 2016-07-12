@@ -1,0 +1,784 @@
+Debug information for CONTRACT_TYPE 'ScanEveDunaMultispectral':
+
+Configuration:
+CONTRACT_TYPE
+{
+	name = ScanEveDunaMultispectral
+	group = CCCP-SCANsat
+	title = Multispectral Scan of Eve & Duna
+	description = After all the work you've done to start Biome scans on Mun and Minmus we're now asking you to push on once more to Eve and Duna. Send a ship to each planet and begin your scans
+	synopsis = Send a pair of unkerbaled vessels into orbits around Eve and Duna and scan both surfaces with the SCAN Multispectral Sensor. For Eve a suggested orbit is 455km with a 88.2 degree inclination. For Duna we think a 378km orbit with a 84.1 degree inclination should do the trick, but in space, no one can hear you disobey advice. \n\nYou may also still have Maxwell IV and Maxwell V in their respective orbits around the planets, Commander Zod has demanded their destruction!!
+	notes = Tip: Always complete your optional part before your main part, if you choose to take the challenge on!\nTip: There's probably some other science equipment you can take along for some extra science!\nTip: Don't forget to Analyse the Data from your scan once complete for extra science!
+	completedMessage = Completly unexpectedly, there are biomes on Eve and Duna too!! I bet that wasn't always the case!
+	targetBody = Eve
+	agent = Research & Development Department
+	advanceFunds = 13500
+	rewardScience = 11
+	rewardReputation = 12
+	rewardFunds = 27000
+	maxCompletions = 1
+	maxSimultaneous = 1
+	prestige = Significant
+	PARAMETER
+	{
+		name = GeoEye4
+		type = VesselParameterGroup
+		define = GeoEye IV
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = ReachState
+			type = ReachState
+			targetBody = Eve
+			situation = ORBITING
+		}
+		PARAMETER
+		{
+			name = HasCrew1
+			type = HasCrew
+			maxCrew = 0
+			minCrew = 0
+			targetBody = @/targetBody
+		}
+		PARAMETER
+		{
+			name = PartValidation
+			type = PartValidation
+			part = SCANsat_Scanner24
+			targetBody = @/targetBody
+		}
+	}
+	PARAMETER
+	{
+		name = OrbitSet
+		type = VesselParameterGroup
+		vessel = GeoEye IV
+		title = Achieve an orbit with the following parameters
+		optional = True
+		completedMessage = Ohh Myyyy, course laid in Captain!!!
+		rewardScience = 2.5
+		rewardReputation = 2
+		rewardFunds = 4500
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = Eve
+			minApA = 452223
+			maxApA = 458341
+			minPeA = 452165
+			maxPeA = 458247
+			maxEccentricity = 0.00201
+			minInclination = 87.6
+			maxInclination = 88.3
+			disableOnStateChange = false
+		}
+	}
+	PARAMETER
+	{
+		name = SCANsatCoverage1
+		type = SCANsatCoverage
+		targetBody = Eve
+		coverage = 50.0
+		scanType = Biome
+		disableOnStateChange = false
+	}
+	PARAMETER
+	{
+		name = OrbitEndGrp
+		type = All
+		title = De-Orbit Maxwell IV, our previous SCANSat around Eve
+		optional = True
+		rewardScience = 2
+		rewardFunds = 4000
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = OrbitEnd
+			type = VesselParameterGroup
+			vessel = Maxwell IV
+			targetBody = @/targetBody
+			PARAMETER
+			{
+				name = VesselDestroyed
+				type = VesselDestroyed
+				targetBody = @/targetBody
+			}
+		}
+	}
+	PARAMETER
+	{
+		name = GeoEye5
+		type = VesselParameterGroup
+		define = GeoEye V
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = ReachState
+			type = ReachState
+			targetBody = Duna
+			situation = ORBITING
+		}
+		PARAMETER
+		{
+			name = HasCrew1
+			type = HasCrew
+			maxCrew = 0
+			minCrew = 0
+			targetBody = @/targetBody
+		}
+		PARAMETER
+		{
+			name = PartValidation2
+			type = PartValidation
+			part = SCANsat_Scanner24
+			targetBody = @/targetBody
+		}
+	}
+	PARAMETER
+	{
+		name = OrbitSet
+		type = VesselParameterGroup
+		vessel = GeoEye V
+		title = Achieve an orbit with the following parameters
+		optional = True
+		completedMessage = Perfect orbit, start scanning already!
+		rewardScience = 2.5
+		rewardReputation = 2
+		rewardFunds = 4500.0
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = Duna
+			minApA = 376943
+			maxApA = 380114
+			minPeA = 376901
+			maxPeA = 380109
+			maxEccentricity = 0.00214
+			minInclination = 83.6
+			maxInclination = 84.4
+			disableOnStateChange = false
+		}
+	}
+	PARAMETER
+	{
+		name = SCANsatCoverage2
+		type = SCANsatCoverage
+		targetBody = Duna
+		coverage = 50.0
+		scanType = Biome
+		disableOnStateChange = false
+	}
+	PARAMETER
+	{
+		name = OrbitEndGrp1
+		type = All
+		title = De-Orbit Maxwell V, our previous SCANSat around Eve
+		optional = True
+		rewardScience = 2
+		rewardFunds = 4000
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = OrbitEnd
+			type = VesselParameterGroup
+			vessel = Maxwell V
+			targetBody = @/targetBody
+			PARAMETER
+			{
+				name = VesselDestroyed
+				type = VesselDestroyed
+				targetBody = @/targetBody
+			}
+		}
+	}
+	REQUIREMENT
+	{
+		name = All1
+		type = All
+		targetBody = @/targetBody
+		REQUIREMENT
+		{
+			name = SCANsatCoverage4
+			type = SCANsatCoverage
+			targetBody = Minmus
+			maxCoverage = 100
+			minCoverage = 35
+			scanType = Biome
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage5
+			type = SCANsatCoverage
+			targetBody = Mun
+			maxCoverage = 100
+			minCoverage = 35
+			scanType = Biome
+		}
+	}
+}
+
+Data Nodes:
+ScanEveDunaMultispectral
+    CCCP-SCANsat:name = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:displayName = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:minVersion = 1.9.0, deterministic = True
+    CCCP-SCANsat:maxCompletions = 0, deterministic = True
+    CCCP-SCANsat:maxSimultaneous = 7, deterministic = True
+    CCCP-SCANsat:disabledContractType = [], deterministic = True
+    name = ScanEveDunaMultispectral, deterministic = True
+    trace = False, deterministic = True
+    title = Multispectral Scan of Eve & Duna, deterministic = True
+    tag = , deterministic = True
+    description = After all the work you've done to start Biome scans on Mun and Minmus we're now asking you to push on once more to Eve and Duna. Send a ship to each planet and begin your scans, deterministic = True
+    topic = , deterministic = True
+    subject = , deterministic = True
+    motivation = , deterministic = True
+    notes = Tip: Always complete your optional part before your main part, if you choose to take the challenge on!
+Tip: There's probably some other science equipment you can take along for some extra science!
+Tip: Don't forget to Analyse the Data from your scan once complete for extra science!, deterministic = True
+    synopsis = Send a pair of unkerbaled vessels into orbits around Eve and Duna and scan both surfaces with the SCAN Multispectral Sensor. For Eve a suggested orbit is 455km with a 88.2 degree inclination. For Duna we think a 378km orbit with a 84.1 degree inclination should do the trick, but in space, no one can hear you disobey advice. 
+
+You may also still have Maxwell IV and Maxwell V in their respective orbits around the planets, Commander Zod has demanded their destruction!!, deterministic = True
+    completedMessage = Completly unexpectedly, there are biomes on Eve and Duna too!! I bet that wasn't always the case!, deterministic = True
+    agent = Contracts.Agents.Agent, deterministic = True
+    minExpiry = 1, deterministic = True
+    maxExpiry = 7, deterministic = True
+    deadline = 0, deterministic = True
+    cancellable = True, deterministic = True
+    declinable = True, deterministic = True
+    autoAccept = False, deterministic = True
+    prestige = [ Significant ], deterministic = True
+    targetBody = Eve (CelestialBody), deterministic = True
+    maxCompletions = 1, deterministic = True
+    maxSimultaneous = 1, deterministic = True
+    rewardFunds = 27000, deterministic = True
+    rewardReputation = 12, deterministic = True
+    rewardScience = 11, deterministic = True
+    failureFunds = 0, deterministic = True
+    failureReputation = 0, deterministic = True
+    advanceFunds = 13500, deterministic = True
+    weight = 1, deterministic = True
+
+	GeoEye4
+	    type = VesselParameterGroup, deterministic = True
+	    name = GeoEye4, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = GeoEye IV, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		ReachState
+		    type = ReachState, deterministic = True
+		    name = ReachState, deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    failWhenUnmet = False, deterministic = True
+		    biome = null, deterministic = True
+		    situation = [ ORBITING ], deterministic = True
+		    minAltitude = -3.402823E+38, deterministic = True
+		    maxAltitude = 3.402823E+38, deterministic = True
+		    minTerrainAltitude = 0, deterministic = True
+		    maxTerrainAltitude = 3.402823E+38, deterministic = True
+		    minSpeed = 0, deterministic = True
+		    maxSpeed = 1.79769313486232E+308, deterministic = True
+		    minRateOfClimb = -1.79769313486232E+308, deterministic = True
+		    maxRateOfClimb = 1.79769313486232E+308, deterministic = True
+		    minAcceleration = 0, deterministic = True
+		    maxAcceleration = 3.402823E+38, deterministic = True
+		    targetBody = [ Eve (CelestialBody) ], deterministic = True
+		
+		HasCrew1
+		    type = HasCrew, deterministic = True
+		    name = HasCrew1, deterministic = True
+		    targetBody = Eve (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    trait = null, deterministic = True
+		    minExperience = 0, deterministic = True
+		    maxExperience = 5, deterministic = True
+		    minCrew = 0, deterministic = True
+		    maxCrew = 0, deterministic = True
+		    kerbal = [], deterministic = True
+		    excludeKerbal = [], deterministic = True
+		
+		PartValidation
+		    type = PartValidation, deterministic = True
+		    name = PartValidation, deterministic = True
+		    targetBody = Eve (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    minCount = 1, deterministic = True
+		    maxCount = 2147483647, deterministic = True
+		    part = [ SCANsat.Scanner24 ], deterministic = False
+		    partModule = [], deterministic = True
+		    partModuleType = [], deterministic = True
+		    category = null, deterministic = True
+		    manufacturer = null, deterministic = True
+		
+	OrbitSet
+	    type = VesselParameterGroup, deterministic = True
+	    name = OrbitSet, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    rewardFunds = 4500, deterministic = True
+	    rewardReputation = 2, deterministic = True
+	    rewardScience = 2.5, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = Achieve an orbit with the following parameters, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = Ohh Myyyy, course laid in Captain!!!, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = null, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [ GeoEye IV ], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		Orbit
+		    type = Orbit, deterministic = True
+		    name = Orbit, deterministic = True
+		    targetBody = Eve (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = False, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    situation = ORBITING, deterministic = True
+		    minAltitude = 0, deterministic = True
+		    maxAltitude = 1.79769313486232E+308, deterministic = True
+		    minApA = 452223, deterministic = True
+		    maxApA = 458341, deterministic = True
+		    minPeA = 452165, deterministic = True
+		    maxPeA = 458247, deterministic = True
+		    minEccentricity = 0, deterministic = True
+		    maxEccentricity = 0.00201, deterministic = True
+		    minInclination = 87.6, deterministic = True
+		    maxInclination = 88.3, deterministic = True
+		    minPeriod = 00:00:00, deterministic = True
+		    maxPeriod = -2147483648 years, -2147483648 days, -2147483648:-2147483648:-2147483648, deterministic = True
+		
+	SCANsatCoverage1
+	    type = SCANsatCoverage, deterministic = True
+	    name = SCANsatCoverage1, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = False, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    coverage = 50, deterministic = True
+	    scanType = Biome, deterministic = True
+	
+	OrbitEndGrp
+	    type = All, deterministic = True
+	    name = OrbitEndGrp, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    rewardFunds = 4000, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 2, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = De-Orbit Maxwell IV, our previous SCANSat around Eve, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	
+		OrbitEnd
+		    type = VesselParameterGroup, deterministic = True
+		    name = OrbitEnd, deterministic = True
+		    targetBody = Eve (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    duration = 00:00:00, deterministic = True
+		    define = null, deterministic = True
+		    defineList = null, deterministic = True
+		    vessel = [ Maxwell IV ], deterministic = True
+		    dissassociateVesselsOnContractFailure = True, deterministic = True
+		    dissassociateVesselsOnContractCompletion = False, deterministic = True
+		    hideVesselName = False, deterministic = True
+		
+			VesselDestroyed
+			    type = VesselDestroyed, deterministic = True
+			    name = VesselDestroyed, deterministic = True
+			    targetBody = Eve (CelestialBody), deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = null, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    mustImpactTerrain = False, deterministic = True
+			
+	GeoEye5
+	    type = VesselParameterGroup, deterministic = True
+	    name = GeoEye5, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = GeoEye V, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		ReachState
+		    type = ReachState, deterministic = True
+		    name = ReachState, deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    failWhenUnmet = False, deterministic = True
+		    biome = null, deterministic = True
+		    situation = [ ORBITING ], deterministic = True
+		    minAltitude = -3.402823E+38, deterministic = True
+		    maxAltitude = 3.402823E+38, deterministic = True
+		    minTerrainAltitude = 0, deterministic = True
+		    maxTerrainAltitude = 3.402823E+38, deterministic = True
+		    minSpeed = 0, deterministic = True
+		    maxSpeed = 1.79769313486232E+308, deterministic = True
+		    minRateOfClimb = -1.79769313486232E+308, deterministic = True
+		    maxRateOfClimb = 1.79769313486232E+308, deterministic = True
+		    minAcceleration = 0, deterministic = True
+		    maxAcceleration = 3.402823E+38, deterministic = True
+		    targetBody = [ Duna (CelestialBody) ], deterministic = True
+		
+		HasCrew1
+		    type = HasCrew, deterministic = True
+		    name = HasCrew1, deterministic = True
+		    targetBody = Eve (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    trait = null, deterministic = True
+		    minExperience = 0, deterministic = True
+		    maxExperience = 5, deterministic = True
+		    minCrew = 0, deterministic = True
+		    maxCrew = 0, deterministic = True
+		    kerbal = [], deterministic = True
+		    excludeKerbal = [], deterministic = True
+		
+		PartValidation2
+		    type = PartValidation, deterministic = True
+		    name = PartValidation2, deterministic = True
+		    targetBody = Eve (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    minCount = 1, deterministic = True
+		    maxCount = 2147483647, deterministic = True
+		    part = [ SCANsat.Scanner24 ], deterministic = False
+		    partModule = [], deterministic = True
+		    partModuleType = [], deterministic = True
+		    category = null, deterministic = True
+		    manufacturer = null, deterministic = True
+		
+	OrbitSet_1
+	    type = VesselParameterGroup, deterministic = True
+	    name = OrbitSet, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    rewardFunds = 4500, deterministic = True
+	    rewardReputation = 2, deterministic = True
+	    rewardScience = 2.5, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = Achieve an orbit with the following parameters, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = Perfect orbit, start scanning already!, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = null, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [ GeoEye V ], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		Orbit
+		    type = Orbit, deterministic = True
+		    name = Orbit, deterministic = True
+		    targetBody = Duna (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = False, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    situation = ORBITING, deterministic = True
+		    minAltitude = 0, deterministic = True
+		    maxAltitude = 1.79769313486232E+308, deterministic = True
+		    minApA = 376943, deterministic = True
+		    maxApA = 380114, deterministic = True
+		    minPeA = 376901, deterministic = True
+		    maxPeA = 380109, deterministic = True
+		    minEccentricity = 0, deterministic = True
+		    maxEccentricity = 0.00214, deterministic = True
+		    minInclination = 83.6, deterministic = True
+		    maxInclination = 84.4, deterministic = True
+		    minPeriod = 00:00:00, deterministic = True
+		    maxPeriod = -2147483648 years, -2147483648 days, -2147483648:-2147483648:-2147483648, deterministic = True
+		
+	SCANsatCoverage2
+	    type = SCANsatCoverage, deterministic = True
+	    name = SCANsatCoverage2, deterministic = True
+	    targetBody = Duna (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = False, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    coverage = 50, deterministic = True
+	    scanType = Biome, deterministic = True
+	
+	OrbitEndGrp1
+	    type = All, deterministic = True
+	    name = OrbitEndGrp1, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    rewardFunds = 4000, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 2, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = De-Orbit Maxwell V, our previous SCANSat around Eve, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	
+		OrbitEnd
+		    type = VesselParameterGroup, deterministic = True
+		    name = OrbitEnd, deterministic = True
+		    targetBody = Eve (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    duration = 00:00:00, deterministic = True
+		    define = null, deterministic = True
+		    defineList = null, deterministic = True
+		    vessel = [ Maxwell V ], deterministic = True
+		    dissassociateVesselsOnContractFailure = True, deterministic = True
+		    dissassociateVesselsOnContractCompletion = False, deterministic = True
+		    hideVesselName = False, deterministic = True
+		
+			VesselDestroyed
+			    type = VesselDestroyed, deterministic = True
+			    name = VesselDestroyed, deterministic = True
+			    targetBody = Eve (CelestialBody), deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = null, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    mustImpactTerrain = False, deterministic = True
+			
+	All1
+	    type = All, deterministic = True
+	    name = All1, deterministic = True
+	    targetBody = Eve (CelestialBody), deterministic = True
+	    checkOnActiveContract = False, deterministic = True
+	    invertRequirement = False, deterministic = True
+	
+		SCANsatCoverage4
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage4, deterministic = True
+		    targetBody = Minmus (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 35, deterministic = True
+		    maxCoverage = 100, deterministic = True
+		    scanType = Biome, deterministic = True
+		
+		SCANsatCoverage5
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage5, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 35, deterministic = True
+		    maxCoverage = 100, deterministic = True
+		    scanType = Biome, deterministic = True
+		
+
+Output log:
+[INFO] ContractConfigurator.ContractType: Loading CONTRACT_TYPE: 'ScanEveDunaMultispectral'
+[INFO] ContractConfigurator.ContractType: Successfully loaded CONTRACT_TYPE 'ScanEveDunaMultispectral'

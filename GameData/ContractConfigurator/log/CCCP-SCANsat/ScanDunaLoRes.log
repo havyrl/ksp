@@ -1,0 +1,641 @@
+Debug information for CONTRACT_TYPE 'ScanDunaLoRes':
+
+Configuration:
+CONTRACT_TYPE
+{
+	name = ScanDunaLoRes
+	group = CCCP-SCANsat
+	title = Altimetry Scan of Duna
+	description = Now that we have most of the data from Mun and Minmus the guys feel ready to get another launch on the way, hopefully you've started work on your Eve mission by now? This time to Duna! We've got all these spare rocket parts laying around so it seems like a good idea, and Bob just keeps chanting "Duna! Duna! Duna!".
+	synopsis = Send an unkerbaled vessel into Duna orbit and scan the surface with the SCAN Radar Altimetry Sensor. \n\nVon Kerman believes that it would be best to reach a 378km orbit with an 84.1 degree inclination, but he is hardly an expert in rocket science!
+	notes = Tip: Always complete your optional part before your main part, if you choose to take the challenge on\nTip: There's probably some other science equipment you can take along for some extra science!\nTip: Don't forget to Analyse the Data from your scan once complete for extra science!
+	completedMessage = Boy was that worth it! 17 different craters, 50 shades of orange and 4 dried up riverbeds. Astonishing!
+	targetBody = Duna
+	agent = Research & Development Department
+	advanceFunds = 5625
+	rewardScience = 4.25
+	rewardReputation = 3.75
+	rewardFunds = 11250
+	maxCompletions = 1
+	maxSimultaneous = 1
+	prestige = Significant
+	PARAMETER
+	{
+		name = Maxwell5
+		type = VesselParameterGroup
+		define = Maxwell V
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = ReachState
+			type = ReachState
+			targetBody = Duna
+			situation = ORBITING
+		}
+		PARAMETER
+		{
+			name = HasCrew1
+			type = HasCrew
+			maxCrew = 0
+			minCrew = 0
+			targetBody = @/targetBody
+		}
+		PARAMETER
+		{
+			name = PartValidation
+			type = PartValidation
+			part = SCANsat_Scanner
+			targetBody = @/targetBody
+		}
+	}
+	PARAMETER
+	{
+		name = OrbitSet
+		type = VesselParameterGroup
+		vessel = Maxwell V
+		title = Achieve an orbit with the following parameters
+		optional = True
+		completedMessage = Excellent work, its soooooo pretty!!
+		rewardScience = 1.5
+		rewardReputation = 2
+		rewardFunds = 3000
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = Duna
+			minApA = 375251
+			maxApA = 381314
+			minPeA = 375124
+			maxPeA = 381268
+			maxEccentricity = 0.0022
+			minInclination = 83.94
+			maxInclination = 84.34
+			disableOnStateChange = false
+		}
+	}
+	PARAMETER
+	{
+		name = SCANsatCoverage1
+		type = SCANsatCoverage
+		targetBody = Duna
+		coverage = 50.0
+		scanType = AltimetryLoRes
+	}
+	PARAMETER
+	{
+		name = Option
+		type = All
+		title = Take an additional vessel and grab some Altimetry data from Ike
+		optional = True
+		rewardScience = 4
+		rewardReputation = 5
+		rewardFunds = 6400
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = Hertz2
+			type = VesselParameterGroup
+			define = Hertz II
+			targetBody = @/targetBody
+			PARAMETER
+			{
+				name = ReachState
+				type = ReachState
+				targetBody = Ike
+				situation = ORBITING
+			}
+			PARAMETER
+			{
+				name = HasCrew1
+				type = HasCrew
+				maxCrew = 0
+				minCrew = 0
+				targetBody = @/targetBody
+			}
+			PARAMETER
+			{
+				name = PartValidation
+				type = PartValidation
+				part = SCANsat_Scanner
+				targetBody = @/targetBody
+			}
+		}
+		PARAMETER
+		{
+			name = OrbitSet
+			type = VesselParameterGroup
+			vessel = Hertz II
+			title = Achieve an orbit with the following parameters
+			optional = True
+			completedMessage = A perfect orbit for our scans. Begin!!
+			rewardScience = 1.5
+			rewardReputation = 2
+			rewardFunds = 3000
+			targetBody = @/targetBody
+			PARAMETER
+			{
+				name = Orbit
+				type = Orbit
+				targetBody = Ike
+				minApA = 398325
+				maxApA = 403512
+				minPeA = 398214
+				maxPeA = 403135
+				maxEccentricity = 0.0022
+				minInclination = 73.97
+				maxInclination = 74.37
+				disableOnStateChange = false
+			}
+		}
+		PARAMETER
+		{
+			name = SCANsatCoverage2
+			type = SCANsatCoverage
+			targetBody = Ike
+			coverage = 25.0
+			scanType = AltimetryLoRes
+		}
+	}
+	REQUIREMENT
+	{
+		name = All1
+		type = All
+		targetBody = @/targetBody
+		REQUIREMENT
+		{
+			name = SCANsatCoverage4
+			type = SCANsatCoverage
+			targetBody = Minmus
+			maxCoverage = 100.0
+			minCoverage = 60.0
+			scanType = AltimetryLoRes
+		}
+		REQUIREMENT
+		{
+			name = SCANsatCoverage5
+			type = SCANsatCoverage
+			targetBody = Duna
+			maxCoverage = 49.9
+			minCoverage = 0.0
+			scanType = AltimetryLoRes
+		}
+	}
+}
+
+Data Nodes:
+ScanDunaLoRes
+    CCCP-SCANsat:name = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:displayName = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:minVersion = 1.9.0, deterministic = True
+    CCCP-SCANsat:maxCompletions = 0, deterministic = True
+    CCCP-SCANsat:maxSimultaneous = 7, deterministic = True
+    CCCP-SCANsat:disabledContractType = [], deterministic = True
+    name = ScanDunaLoRes, deterministic = True
+    trace = False, deterministic = True
+    title = Altimetry Scan of Duna, deterministic = True
+    tag = , deterministic = True
+    description = Now that we have most of the data from Mun and Minmus the guys feel ready to get another launch on the way, hopefully you've started work on your Eve mission by now? This time to Duna! We've got all these spare rocket parts laying around so it seems like a good idea, and Bob just keeps chanting "Duna! Duna! Duna!"., deterministic = True
+    topic = , deterministic = True
+    subject = , deterministic = True
+    motivation = , deterministic = True
+    notes = Tip: Always complete your optional part before your main part, if you choose to take the challenge on
+Tip: There's probably some other science equipment you can take along for some extra science!
+Tip: Don't forget to Analyse the Data from your scan once complete for extra science!, deterministic = True
+    synopsis = Send an unkerbaled vessel into Duna orbit and scan the surface with the SCAN Radar Altimetry Sensor. 
+
+Von Kerman believes that it would be best to reach a 378km orbit with an 84.1 degree inclination, but he is hardly an expert in rocket science!, deterministic = True
+    completedMessage = Boy was that worth it! 17 different craters, 50 shades of orange and 4 dried up riverbeds. Astonishing!, deterministic = True
+    agent = Contracts.Agents.Agent, deterministic = True
+    minExpiry = 1, deterministic = True
+    maxExpiry = 7, deterministic = True
+    deadline = 0, deterministic = True
+    cancellable = True, deterministic = True
+    declinable = True, deterministic = True
+    autoAccept = False, deterministic = True
+    prestige = [ Significant ], deterministic = True
+    targetBody = Duna (CelestialBody), deterministic = True
+    maxCompletions = 1, deterministic = True
+    maxSimultaneous = 1, deterministic = True
+    rewardFunds = 11250, deterministic = True
+    rewardReputation = 3.75, deterministic = True
+    rewardScience = 4.25, deterministic = True
+    failureFunds = 0, deterministic = True
+    failureReputation = 0, deterministic = True
+    advanceFunds = 5625, deterministic = True
+    weight = 1, deterministic = True
+
+	Maxwell5
+	    type = VesselParameterGroup, deterministic = True
+	    name = Maxwell5, deterministic = True
+	    targetBody = Duna (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = Maxwell V, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		ReachState
+		    type = ReachState, deterministic = True
+		    name = ReachState, deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    failWhenUnmet = False, deterministic = True
+		    biome = null, deterministic = True
+		    situation = [ ORBITING ], deterministic = True
+		    minAltitude = -3.402823E+38, deterministic = True
+		    maxAltitude = 3.402823E+38, deterministic = True
+		    minTerrainAltitude = 0, deterministic = True
+		    maxTerrainAltitude = 3.402823E+38, deterministic = True
+		    minSpeed = 0, deterministic = True
+		    maxSpeed = 1.79769313486232E+308, deterministic = True
+		    minRateOfClimb = -1.79769313486232E+308, deterministic = True
+		    maxRateOfClimb = 1.79769313486232E+308, deterministic = True
+		    minAcceleration = 0, deterministic = True
+		    maxAcceleration = 3.402823E+38, deterministic = True
+		    targetBody = [ Duna (CelestialBody) ], deterministic = True
+		
+		HasCrew1
+		    type = HasCrew, deterministic = True
+		    name = HasCrew1, deterministic = True
+		    targetBody = Duna (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    trait = null, deterministic = True
+		    minExperience = 0, deterministic = True
+		    maxExperience = 5, deterministic = True
+		    minCrew = 0, deterministic = True
+		    maxCrew = 0, deterministic = True
+		    kerbal = [], deterministic = True
+		    excludeKerbal = [], deterministic = True
+		
+		PartValidation
+		    type = PartValidation, deterministic = True
+		    name = PartValidation, deterministic = True
+		    targetBody = Duna (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    minCount = 1, deterministic = True
+		    maxCount = 2147483647, deterministic = True
+		    part = [ SCANsat.Scanner ], deterministic = False
+		    partModule = [], deterministic = True
+		    partModuleType = [], deterministic = True
+		    category = null, deterministic = True
+		    manufacturer = null, deterministic = True
+		
+	OrbitSet
+	    type = VesselParameterGroup, deterministic = True
+	    name = OrbitSet, deterministic = True
+	    targetBody = Duna (CelestialBody), deterministic = True
+	    rewardFunds = 3000, deterministic = True
+	    rewardReputation = 2, deterministic = True
+	    rewardScience = 1.5, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = Achieve an orbit with the following parameters, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = Excellent work, its soooooo pretty!!, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = null, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [ Maxwell V ], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		Orbit
+		    type = Orbit, deterministic = True
+		    name = Orbit, deterministic = True
+		    targetBody = Duna (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = False, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    situation = ORBITING, deterministic = True
+		    minAltitude = 0, deterministic = True
+		    maxAltitude = 1.79769313486232E+308, deterministic = True
+		    minApA = 375251, deterministic = True
+		    maxApA = 381314, deterministic = True
+		    minPeA = 375124, deterministic = True
+		    maxPeA = 381268, deterministic = True
+		    minEccentricity = 0, deterministic = True
+		    maxEccentricity = 0.0022, deterministic = True
+		    minInclination = 83.94, deterministic = True
+		    maxInclination = 84.34, deterministic = True
+		    minPeriod = 00:00:00, deterministic = True
+		    maxPeriod = -2147483648 years, -2147483648 days, -2147483648:-2147483648:-2147483648, deterministic = True
+		
+	SCANsatCoverage1
+	    type = SCANsatCoverage, deterministic = True
+	    name = SCANsatCoverage1, deterministic = True
+	    targetBody = Duna (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    coverage = 50, deterministic = True
+	    scanType = AltimetryLoRes, deterministic = True
+	
+	Option
+	    type = All, deterministic = True
+	    name = Option, deterministic = True
+	    targetBody = Duna (CelestialBody), deterministic = True
+	    rewardFunds = 6400, deterministic = True
+	    rewardReputation = 5, deterministic = True
+	    rewardScience = 4, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = Take an additional vessel and grab some Altimetry data from Ike, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	
+		Hertz2
+		    type = VesselParameterGroup, deterministic = True
+		    name = Hertz2, deterministic = True
+		    targetBody = Duna (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    duration = 00:00:00, deterministic = True
+		    define = Hertz II, deterministic = True
+		    defineList = null, deterministic = True
+		    vessel = [], deterministic = True
+		    dissassociateVesselsOnContractFailure = True, deterministic = True
+		    dissassociateVesselsOnContractCompletion = False, deterministic = True
+		    hideVesselName = False, deterministic = True
+		
+			ReachState
+			    type = ReachState, deterministic = True
+			    name = ReachState, deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = null, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    failWhenUnmet = False, deterministic = True
+			    biome = null, deterministic = True
+			    situation = [ ORBITING ], deterministic = True
+			    minAltitude = -3.402823E+38, deterministic = True
+			    maxAltitude = 3.402823E+38, deterministic = True
+			    minTerrainAltitude = 0, deterministic = True
+			    maxTerrainAltitude = 3.402823E+38, deterministic = True
+			    minSpeed = 0, deterministic = True
+			    maxSpeed = 1.79769313486232E+308, deterministic = True
+			    minRateOfClimb = -1.79769313486232E+308, deterministic = True
+			    maxRateOfClimb = 1.79769313486232E+308, deterministic = True
+			    minAcceleration = 0, deterministic = True
+			    maxAcceleration = 3.402823E+38, deterministic = True
+			    targetBody = [ Ike (CelestialBody) ], deterministic = True
+			
+			HasCrew1
+			    type = HasCrew, deterministic = True
+			    name = HasCrew1, deterministic = True
+			    targetBody = Duna (CelestialBody), deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = null, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    trait = null, deterministic = True
+			    minExperience = 0, deterministic = True
+			    maxExperience = 5, deterministic = True
+			    minCrew = 0, deterministic = True
+			    maxCrew = 0, deterministic = True
+			    kerbal = [], deterministic = True
+			    excludeKerbal = [], deterministic = True
+			
+			PartValidation
+			    type = PartValidation, deterministic = True
+			    name = PartValidation, deterministic = True
+			    targetBody = Duna (CelestialBody), deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = null, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    minCount = 1, deterministic = True
+			    maxCount = 2147483647, deterministic = True
+			    part = [ SCANsat.Scanner ], deterministic = False
+			    partModule = [], deterministic = True
+			    partModuleType = [], deterministic = True
+			    category = null, deterministic = True
+			    manufacturer = null, deterministic = True
+			
+		OrbitSet
+		    type = VesselParameterGroup, deterministic = True
+		    name = OrbitSet, deterministic = True
+		    targetBody = Duna (CelestialBody), deterministic = True
+		    rewardFunds = 3000, deterministic = True
+		    rewardReputation = 2, deterministic = True
+		    rewardScience = 1.5, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = True, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = Achieve an orbit with the following parameters, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = A perfect orbit for our scans. Begin!!, deterministic = True
+		    duration = 00:00:00, deterministic = True
+		    define = null, deterministic = True
+		    defineList = null, deterministic = True
+		    vessel = [ Hertz II ], deterministic = True
+		    dissassociateVesselsOnContractFailure = True, deterministic = True
+		    dissassociateVesselsOnContractCompletion = False, deterministic = True
+		    hideVesselName = False, deterministic = True
+		
+			Orbit
+			    type = Orbit, deterministic = True
+			    name = Orbit, deterministic = True
+			    targetBody = Ike (CelestialBody), deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = False, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    situation = ORBITING, deterministic = True
+			    minAltitude = 0, deterministic = True
+			    maxAltitude = 1.79769313486232E+308, deterministic = True
+			    minApA = 398325, deterministic = True
+			    maxApA = 403512, deterministic = True
+			    minPeA = 398214, deterministic = True
+			    maxPeA = 403135, deterministic = True
+			    minEccentricity = 0, deterministic = True
+			    maxEccentricity = 0.0022, deterministic = True
+			    minInclination = 73.97, deterministic = True
+			    maxInclination = 74.37, deterministic = True
+			    minPeriod = 00:00:00, deterministic = True
+			    maxPeriod = -2147483648 years, -2147483648 days, -2147483648:-2147483648:-2147483648, deterministic = True
+			
+		SCANsatCoverage2
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage2, deterministic = True
+		    targetBody = Ike (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    coverage = 25, deterministic = True
+		    scanType = AltimetryLoRes, deterministic = True
+		
+	All1
+	    type = All, deterministic = True
+	    name = All1, deterministic = True
+	    targetBody = Duna (CelestialBody), deterministic = True
+	    checkOnActiveContract = False, deterministic = True
+	    invertRequirement = False, deterministic = True
+	
+		SCANsatCoverage4
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage4, deterministic = True
+		    targetBody = Minmus (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 60, deterministic = True
+		    maxCoverage = 100, deterministic = True
+		    scanType = AltimetryLoRes, deterministic = True
+		
+		SCANsatCoverage5
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage5, deterministic = True
+		    targetBody = Duna (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 0, deterministic = True
+		    maxCoverage = 49.9, deterministic = True
+		    scanType = AltimetryLoRes, deterministic = True
+		
+
+Output log:
+[INFO] ContractConfigurator.ContractType: Loading CONTRACT_TYPE: 'ScanDunaLoRes'
+[INFO] ContractConfigurator.ContractType: Successfully loaded CONTRACT_TYPE 'ScanDunaLoRes'

@@ -1,0 +1,803 @@
+Debug information for CONTRACT_TYPE 'ScanMunMinmusMultispectral':
+
+Configuration:
+CONTRACT_TYPE
+{
+	name = ScanMunMinmusMultispectral
+	group = CCCP-SCANsat
+	title = Multispectral Scan of Mun & Minmus
+	description = After all the work you've done discovering biomes here at home we're starting to wonder if there aren't also different biomes on our moons. Dispatch some ships to find out, and make it snappy.
+	synopsis = Send a pair of unkerbaled vessels into orbits around our moons and scan both surfaces with the SCAN Multispectral Sensor. For Mun a suggested orbit is 234.1km with a 87.1 degree inclination. For Minmus we think a 273.9km orbit with a 44.4 degree inclination should do the trick. \n\nYou may also still have Maxwell II and Maxwell III in their respective orbits around the moons. If you can, bring them to an end and help keep space clean.
+	notes = Tip: Always complete your optional part before your main part, if you choose to take the challenge on!\nTip: There's probably some other science equipment you can take along for some extra science!\nTip: Don't forget to Analyse the Data from your scan once complete for extra science!
+	completedMessage = As we suspected both Mun and Minmus are littered with different biomes. There must be a wealth of science to collect from each one! We think that with the right ship and the right crew, at least 11 Science can be gathered.
+	targetBody = Mun
+	agent = Research & Development Department
+	advanceFunds = 13500
+	rewardScience = 11
+	rewardReputation = 12
+	rewardFunds = 27000
+	maxCompletions = 1
+	maxSimultaneous = 1
+	prestige = Significant
+	PARAMETER
+	{
+		name = GeoEye2
+		type = VesselParameterGroup
+		define = GeoEye II
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = ReachState
+			type = ReachState
+			targetBody = Mun
+			situation = ORBITING
+		}
+		PARAMETER
+		{
+			name = HasCrew1
+			type = HasCrew
+			maxCrew = 0
+			minCrew = 0
+			targetBody = @/targetBody
+		}
+		PARAMETER
+		{
+			name = PartValidation
+			type = PartValidation
+			part = SCANsat_Scanner24
+			targetBody = @/targetBody
+		}
+	}
+	PARAMETER
+	{
+		name = OrbitSet
+		type = VesselParameterGroup
+		vessel = GeoEye II
+		title = Achieve an orbit with the following parameters
+		optional = True
+		completedMessage = Ohh Myyyy, course laid in Captain!!!
+		rewardScience = 2.5
+		rewardReputation = 2
+		rewardFunds = 4500
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = Mun
+			minApA = 232223
+			maxApA = 236341
+			minPeA = 232165
+			maxPeA = 236247
+			maxEccentricity = 0.00201
+			minInclination = 86.6
+			maxInclination = 87.6
+			disableOnStateChange = false
+		}
+	}
+	PARAMETER
+	{
+		name = SCANsatCoverage1
+		type = SCANsatCoverage
+		targetBody = Mun
+		coverage = 50.0
+		scanType = Biome
+		disableOnStateChange = false
+	}
+	PARAMETER
+	{
+		name = OrbitEndGrp
+		type = All
+		title = De-Orbit Maxwell II, our previous SCANSat around Mun
+		optional = True
+		rewardScience = 2
+		rewardFunds = 4000
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = OrbitEnd
+			type = VesselParameterGroup
+			vessel = Maxwell II
+			targetBody = @/targetBody
+			PARAMETER
+			{
+				name = VesselDestroyed
+				type = VesselDestroyed
+				targetBody = @/targetBody
+			}
+		}
+	}
+	PARAMETER
+	{
+		name = GeoEye3
+		type = VesselParameterGroup
+		define = GeoEye III
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = ReachState
+			type = ReachState
+			targetBody = Minmus
+			situation = ORBITING
+		}
+		PARAMETER
+		{
+			name = HasCrew1
+			type = HasCrew
+			maxCrew = 0
+			minCrew = 0
+			targetBody = @/targetBody
+		}
+		PARAMETER
+		{
+			name = PartValidation2
+			type = PartValidation
+			part = SCANsat_Scanner24
+			targetBody = @/targetBody
+		}
+	}
+	PARAMETER
+	{
+		name = OrbitSet
+		type = VesselParameterGroup
+		vessel = GeoEye III
+		title = Achieve an orbit with the following parameters
+		optional = True
+		completedMessage = Perfect orbit, start scanning already!
+		rewardScience = 2.5
+		rewardReputation = 2
+		rewardFunds = 4500.0
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = Orbit
+			type = Orbit
+			targetBody = Minmus
+			minApA = 248943
+			maxApA = 251114
+			minPeA = 248901
+			maxPeA = 251036
+			maxEccentricity = 0.00214
+			minInclination = 76.8
+			maxInclination = 77.1
+			disableOnStateChange = false
+		}
+	}
+	PARAMETER
+	{
+		name = SCANsatCoverage2
+		type = SCANsatCoverage
+		targetBody = Minmus
+		coverage = 50.0
+		scanType = Biome
+		disableOnStateChange = false
+	}
+	PARAMETER
+	{
+		name = OrbitEndGrp1
+		type = All
+		title = De-Orbit Maxwell III, our previous SCANSat around Minmus
+		optional = True
+		rewardScience = 2
+		rewardFunds = 4000
+		targetBody = @/targetBody
+		PARAMETER
+		{
+			name = OrbitEnd
+			type = VesselParameterGroup
+			vessel = Maxwell III
+			targetBody = @/targetBody
+			PARAMETER
+			{
+				name = VesselDestroyed
+				type = VesselDestroyed
+				targetBody = @/targetBody
+			}
+		}
+	}
+	REQUIREMENT
+	{
+		name = All1
+		type = All
+		targetBody = @/targetBody
+		REQUIREMENT
+		{
+			name = SCANsatCoverage3
+			type = SCANsatCoverage
+			targetBody = Kerbin
+			maxCoverage = 100.0
+			minCoverage = 60.0
+			scanType = Biome
+			REQUIREMENT
+			{
+				name = SCANsatCoverage5
+				type = SCANsatCoverage
+				targetBody = Minmus
+				maxCoverage = 100
+				minCoverage = 95.0
+				scanType = AltimetryLoRes
+			}
+			REQUIREMENT
+			{
+				name = SCANsatCoverage6
+				type = SCANsatCoverage
+				targetBody = Mun
+				maxCoverage = 100
+				minCoverage = 95.0
+				scanType = AltimetryLoRes
+			}
+		}
+	}
+}
+
+Data Nodes:
+ScanMunMinmusMultispectral
+    CCCP-SCANsat:name = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:displayName = CCCP-SCANsat, deterministic = True
+    CCCP-SCANsat:minVersion = 1.9.0, deterministic = True
+    CCCP-SCANsat:maxCompletions = 0, deterministic = True
+    CCCP-SCANsat:maxSimultaneous = 7, deterministic = True
+    CCCP-SCANsat:disabledContractType = [], deterministic = True
+    name = ScanMunMinmusMultispectral, deterministic = True
+    trace = False, deterministic = True
+    title = Multispectral Scan of Mun & Minmus, deterministic = True
+    tag = , deterministic = True
+    description = After all the work you've done discovering biomes here at home we're starting to wonder if there aren't also different biomes on our moons. Dispatch some ships to find out, and make it snappy., deterministic = True
+    topic = , deterministic = True
+    subject = , deterministic = True
+    motivation = , deterministic = True
+    notes = Tip: Always complete your optional part before your main part, if you choose to take the challenge on!
+Tip: There's probably some other science equipment you can take along for some extra science!
+Tip: Don't forget to Analyse the Data from your scan once complete for extra science!, deterministic = True
+    synopsis = Send a pair of unkerbaled vessels into orbits around our moons and scan both surfaces with the SCAN Multispectral Sensor. For Mun a suggested orbit is 234.1km with a 87.1 degree inclination. For Minmus we think a 273.9km orbit with a 44.4 degree inclination should do the trick. 
+
+You may also still have Maxwell II and Maxwell III in their respective orbits around the moons. If you can, bring them to an end and help keep space clean., deterministic = True
+    completedMessage = As we suspected both Mun and Minmus are littered with different biomes. There must be a wealth of science to collect from each one! We think that with the right ship and the right crew, at least 11 Science can be gathered., deterministic = True
+    agent = Contracts.Agents.Agent, deterministic = True
+    minExpiry = 1, deterministic = True
+    maxExpiry = 7, deterministic = True
+    deadline = 0, deterministic = True
+    cancellable = True, deterministic = True
+    declinable = True, deterministic = True
+    autoAccept = False, deterministic = True
+    prestige = [ Significant ], deterministic = True
+    targetBody = Mun (CelestialBody), deterministic = True
+    maxCompletions = 1, deterministic = True
+    maxSimultaneous = 1, deterministic = True
+    rewardFunds = 27000, deterministic = True
+    rewardReputation = 12, deterministic = True
+    rewardScience = 11, deterministic = True
+    failureFunds = 0, deterministic = True
+    failureReputation = 0, deterministic = True
+    advanceFunds = 13500, deterministic = True
+    weight = 1, deterministic = True
+
+	GeoEye2
+	    type = VesselParameterGroup, deterministic = True
+	    name = GeoEye2, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = GeoEye II, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		ReachState
+		    type = ReachState, deterministic = True
+		    name = ReachState, deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    failWhenUnmet = False, deterministic = True
+		    biome = null, deterministic = True
+		    situation = [ ORBITING ], deterministic = True
+		    minAltitude = -3.402823E+38, deterministic = True
+		    maxAltitude = 3.402823E+38, deterministic = True
+		    minTerrainAltitude = 0, deterministic = True
+		    maxTerrainAltitude = 3.402823E+38, deterministic = True
+		    minSpeed = 0, deterministic = True
+		    maxSpeed = 1.79769313486232E+308, deterministic = True
+		    minRateOfClimb = -1.79769313486232E+308, deterministic = True
+		    maxRateOfClimb = 1.79769313486232E+308, deterministic = True
+		    minAcceleration = 0, deterministic = True
+		    maxAcceleration = 3.402823E+38, deterministic = True
+		    targetBody = [ Mun (CelestialBody) ], deterministic = True
+		
+		HasCrew1
+		    type = HasCrew, deterministic = True
+		    name = HasCrew1, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    trait = null, deterministic = True
+		    minExperience = 0, deterministic = True
+		    maxExperience = 5, deterministic = True
+		    minCrew = 0, deterministic = True
+		    maxCrew = 0, deterministic = True
+		    kerbal = [], deterministic = True
+		    excludeKerbal = [], deterministic = True
+		
+		PartValidation
+		    type = PartValidation, deterministic = True
+		    name = PartValidation, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    minCount = 1, deterministic = True
+		    maxCount = 2147483647, deterministic = True
+		    part = [ SCANsat.Scanner24 ], deterministic = False
+		    partModule = [], deterministic = True
+		    partModuleType = [], deterministic = True
+		    category = null, deterministic = True
+		    manufacturer = null, deterministic = True
+		
+	OrbitSet
+	    type = VesselParameterGroup, deterministic = True
+	    name = OrbitSet, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    rewardFunds = 4500, deterministic = True
+	    rewardReputation = 2, deterministic = True
+	    rewardScience = 2.5, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = Achieve an orbit with the following parameters, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = Ohh Myyyy, course laid in Captain!!!, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = null, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [ GeoEye II ], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		Orbit
+		    type = Orbit, deterministic = True
+		    name = Orbit, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = False, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    situation = ORBITING, deterministic = True
+		    minAltitude = 0, deterministic = True
+		    maxAltitude = 1.79769313486232E+308, deterministic = True
+		    minApA = 232223, deterministic = True
+		    maxApA = 236341, deterministic = True
+		    minPeA = 232165, deterministic = True
+		    maxPeA = 236247, deterministic = True
+		    minEccentricity = 0, deterministic = True
+		    maxEccentricity = 0.00201, deterministic = True
+		    minInclination = 86.6, deterministic = True
+		    maxInclination = 87.6, deterministic = True
+		    minPeriod = 00:00:00, deterministic = True
+		    maxPeriod = -2147483648 years, -2147483648 days, -2147483648:-2147483648:-2147483648, deterministic = True
+		
+	SCANsatCoverage1
+	    type = SCANsatCoverage, deterministic = True
+	    name = SCANsatCoverage1, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = False, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    coverage = 50, deterministic = True
+	    scanType = Biome, deterministic = True
+	
+	OrbitEndGrp
+	    type = All, deterministic = True
+	    name = OrbitEndGrp, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    rewardFunds = 4000, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 2, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = De-Orbit Maxwell II, our previous SCANSat around Mun, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	
+		OrbitEnd
+		    type = VesselParameterGroup, deterministic = True
+		    name = OrbitEnd, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    duration = 00:00:00, deterministic = True
+		    define = null, deterministic = True
+		    defineList = null, deterministic = True
+		    vessel = [ Maxwell II ], deterministic = True
+		    dissassociateVesselsOnContractFailure = True, deterministic = True
+		    dissassociateVesselsOnContractCompletion = False, deterministic = True
+		    hideVesselName = False, deterministic = True
+		
+			VesselDestroyed
+			    type = VesselDestroyed, deterministic = True
+			    name = VesselDestroyed, deterministic = True
+			    targetBody = Mun (CelestialBody), deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = null, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    mustImpactTerrain = False, deterministic = True
+			
+	GeoEye3
+	    type = VesselParameterGroup, deterministic = True
+	    name = GeoEye3, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = GeoEye III, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		ReachState
+		    type = ReachState, deterministic = True
+		    name = ReachState, deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    failWhenUnmet = False, deterministic = True
+		    biome = null, deterministic = True
+		    situation = [ ORBITING ], deterministic = True
+		    minAltitude = -3.402823E+38, deterministic = True
+		    maxAltitude = 3.402823E+38, deterministic = True
+		    minTerrainAltitude = 0, deterministic = True
+		    maxTerrainAltitude = 3.402823E+38, deterministic = True
+		    minSpeed = 0, deterministic = True
+		    maxSpeed = 1.79769313486232E+308, deterministic = True
+		    minRateOfClimb = -1.79769313486232E+308, deterministic = True
+		    maxRateOfClimb = 1.79769313486232E+308, deterministic = True
+		    minAcceleration = 0, deterministic = True
+		    maxAcceleration = 3.402823E+38, deterministic = True
+		    targetBody = [ Minmus (CelestialBody) ], deterministic = True
+		
+		HasCrew1
+		    type = HasCrew, deterministic = True
+		    name = HasCrew1, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    trait = null, deterministic = True
+		    minExperience = 0, deterministic = True
+		    maxExperience = 5, deterministic = True
+		    minCrew = 0, deterministic = True
+		    maxCrew = 0, deterministic = True
+		    kerbal = [], deterministic = True
+		    excludeKerbal = [], deterministic = True
+		
+		PartValidation2
+		    type = PartValidation, deterministic = True
+		    name = PartValidation2, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    minCount = 1, deterministic = True
+		    maxCount = 2147483647, deterministic = True
+		    part = [ SCANsat.Scanner24 ], deterministic = False
+		    partModule = [], deterministic = True
+		    partModuleType = [], deterministic = True
+		    category = null, deterministic = True
+		    manufacturer = null, deterministic = True
+		
+	OrbitSet_1
+	    type = VesselParameterGroup, deterministic = True
+	    name = OrbitSet, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    rewardFunds = 4500, deterministic = True
+	    rewardReputation = 2, deterministic = True
+	    rewardScience = 2.5, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = Achieve an orbit with the following parameters, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = Perfect orbit, start scanning already!, deterministic = True
+	    duration = 00:00:00, deterministic = True
+	    define = null, deterministic = True
+	    defineList = null, deterministic = True
+	    vessel = [ GeoEye III ], deterministic = True
+	    dissassociateVesselsOnContractFailure = True, deterministic = True
+	    dissassociateVesselsOnContractCompletion = False, deterministic = True
+	    hideVesselName = False, deterministic = True
+	
+		Orbit
+		    type = Orbit, deterministic = True
+		    name = Orbit, deterministic = True
+		    targetBody = Minmus (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = False, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    situation = ORBITING, deterministic = True
+		    minAltitude = 0, deterministic = True
+		    maxAltitude = 1.79769313486232E+308, deterministic = True
+		    minApA = 248943, deterministic = True
+		    maxApA = 251114, deterministic = True
+		    minPeA = 248901, deterministic = True
+		    maxPeA = 251036, deterministic = True
+		    minEccentricity = 0, deterministic = True
+		    maxEccentricity = 0.00214, deterministic = True
+		    minInclination = 76.8, deterministic = True
+		    maxInclination = 77.1, deterministic = True
+		    minPeriod = 00:00:00, deterministic = True
+		    maxPeriod = -2147483648 years, -2147483648 days, -2147483648:-2147483648:-2147483648, deterministic = True
+		
+	SCANsatCoverage2
+	    type = SCANsatCoverage, deterministic = True
+	    name = SCANsatCoverage2, deterministic = True
+	    targetBody = Minmus (CelestialBody), deterministic = True
+	    rewardFunds = 0, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 0, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = False, deterministic = True
+	    disableOnStateChange = False, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = null, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	    coverage = 50, deterministic = True
+	    scanType = Biome, deterministic = True
+	
+	OrbitEndGrp1
+	    type = All, deterministic = True
+	    name = OrbitEndGrp1, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    rewardFunds = 4000, deterministic = True
+	    rewardReputation = 0, deterministic = True
+	    rewardScience = 2, deterministic = True
+	    failureFunds = 0, deterministic = True
+	    failureReputation = 0, deterministic = True
+	    optional = True, deterministic = True
+	    disableOnStateChange = null, deterministic = True
+	    completeInSequence = False, deterministic = True
+	    hidden = False, deterministic = True
+	    hideChildren = False, deterministic = True
+	    title = De-Orbit Maxwell III, our previous SCANSat around Minmus, deterministic = True
+	    notes = null, deterministic = True
+	    completedMessage = null, deterministic = True
+	
+		OrbitEnd
+		    type = VesselParameterGroup, deterministic = True
+		    name = OrbitEnd, deterministic = True
+		    targetBody = Mun (CelestialBody), deterministic = True
+		    rewardFunds = 0, deterministic = True
+		    rewardReputation = 0, deterministic = True
+		    rewardScience = 0, deterministic = True
+		    failureFunds = 0, deterministic = True
+		    failureReputation = 0, deterministic = True
+		    optional = False, deterministic = True
+		    disableOnStateChange = null, deterministic = True
+		    completeInSequence = False, deterministic = True
+		    hidden = False, deterministic = True
+		    hideChildren = False, deterministic = True
+		    title = null, deterministic = True
+		    notes = null, deterministic = True
+		    completedMessage = null, deterministic = True
+		    duration = 00:00:00, deterministic = True
+		    define = null, deterministic = True
+		    defineList = null, deterministic = True
+		    vessel = [ Maxwell III ], deterministic = True
+		    dissassociateVesselsOnContractFailure = True, deterministic = True
+		    dissassociateVesselsOnContractCompletion = False, deterministic = True
+		    hideVesselName = False, deterministic = True
+		
+			VesselDestroyed
+			    type = VesselDestroyed, deterministic = True
+			    name = VesselDestroyed, deterministic = True
+			    targetBody = Mun (CelestialBody), deterministic = True
+			    rewardFunds = 0, deterministic = True
+			    rewardReputation = 0, deterministic = True
+			    rewardScience = 0, deterministic = True
+			    failureFunds = 0, deterministic = True
+			    failureReputation = 0, deterministic = True
+			    optional = False, deterministic = True
+			    disableOnStateChange = null, deterministic = True
+			    completeInSequence = False, deterministic = True
+			    hidden = False, deterministic = True
+			    hideChildren = False, deterministic = True
+			    title = null, deterministic = True
+			    notes = null, deterministic = True
+			    completedMessage = null, deterministic = True
+			    mustImpactTerrain = False, deterministic = True
+			
+	All1
+	    type = All, deterministic = True
+	    name = All1, deterministic = True
+	    targetBody = Mun (CelestialBody), deterministic = True
+	    checkOnActiveContract = False, deterministic = True
+	    invertRequirement = False, deterministic = True
+	
+		SCANsatCoverage3
+		    type = SCANsatCoverage, deterministic = True
+		    name = SCANsatCoverage3, deterministic = True
+		    targetBody = Kerbin (CelestialBody), deterministic = True
+		    checkOnActiveContract = False, deterministic = True
+		    invertRequirement = False, deterministic = True
+		    minCoverage = 60, deterministic = True
+		    maxCoverage = 100, deterministic = True
+		    scanType = Biome, deterministic = True
+		
+			SCANsatCoverage5
+			    type = SCANsatCoverage, deterministic = True
+			    name = SCANsatCoverage5, deterministic = True
+			    targetBody = Minmus (CelestialBody), deterministic = True
+			    checkOnActiveContract = False, deterministic = True
+			    invertRequirement = False, deterministic = True
+			    minCoverage = 95, deterministic = True
+			    maxCoverage = 100, deterministic = True
+			    scanType = AltimetryLoRes, deterministic = True
+			
+			SCANsatCoverage6
+			    type = SCANsatCoverage, deterministic = True
+			    name = SCANsatCoverage6, deterministic = True
+			    targetBody = Mun (CelestialBody), deterministic = True
+			    checkOnActiveContract = False, deterministic = True
+			    invertRequirement = False, deterministic = True
+			    minCoverage = 95, deterministic = True
+			    maxCoverage = 100, deterministic = True
+			    scanType = AltimetryLoRes, deterministic = True
+			
+
+Output log:
+[INFO] ContractConfigurator.ContractType: Loading CONTRACT_TYPE: 'ScanMunMinmusMultispectral'
+[INFO] ContractConfigurator.ContractType: Successfully loaded CONTRACT_TYPE 'ScanMunMinmusMultispectral'
