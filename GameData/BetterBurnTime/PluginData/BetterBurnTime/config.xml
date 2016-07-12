@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <bool name="UseSimpleAcceleration">0</bool>
+    <bool name="ShowImpactTracker">1</bool>
+    <double name="MaxTimeToImpact">120</double>
+    <bool name="ShowClosestApproachTracker">1</bool>
+    <double name="MaxTimeUntilEncounter">900</double>
+    <double name="MaxClosestApproachDistanceKm">10</double>
+    <double name="MinTargetDistanceMeters">200</double>
+    <string name="CountdownText">● ● ● • • • • · · · · ·</string>
+    <string name="FormatSeconds">{0}s</string>
+    <string name="FormatMinutesSeconds">{0}m{1}s</string>
+    <string name="FormatHoursMinutesSeconds">{0}h{1}m{2}s</string>
+    <string name="FormatHoursMinutes">{0}h{1}m</string>
+    <string name="FormatHours">{0}h</string>
+    <string name="FormatWarning">(~{0})</string>
+    <string name="CountdownTimes">1, 2, 3, 5, 10, 15</string>
+</config>

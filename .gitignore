@@ -1,2 +1,10 @@
-!save
-*
+# ignore all
+/*
+
+# exept
+ckan.exe
+!saves
+saves/training
+saves/scenarios
+!GameData
+GameData/Squad
