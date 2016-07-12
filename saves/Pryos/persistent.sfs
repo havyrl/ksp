@@ -16655,6 +16655,27 @@ GAME
 				flight = 2
 			}
 		}
+		KERBAL 
+		{
+			name = Luca Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 1
+			dumb = 0
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
 		KERBAL
 		{
 			name = Bob Kerman
