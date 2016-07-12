@@ -169,31 +169,9 @@
       </SectionModule>
       <SectionModule>
         <Abbreviation>HUD 1</Abbreviation>
-        <EditorPositionX>774</EditorPositionX>
-        <EditorPositionY>518</EditorPositionY>
-        <FloatingPositionX>397</FloatingPositionX>
-        <FloatingPositionY>0</FloatingPositionY>
-        <IsCustom>true</IsCustom>
-        <IsEditorVisible>false</IsEditorVisible>
-        <IsFloating>true</IsFloating>
-        <IsHud>true</IsHud>
-        <IsDeleted>false</IsDeleted>
-        <IsHudBackground>false</IsHudBackground>
-        <IsVisible>true</IsVisible>
-        <LineCount>4</LineCount>
-        <Name>HUD 1</Name>
-        <ReadoutModuleNames>
-          <string>Orbital.ApoapsisHeight</string>
-          <string>Orbital.TimeToApoapsis</string>
-          <string>Orbital.PeriapsisHeight</string>
-          <string>Orbital.TimeToPeriapsis</string>
-        </ReadoutModuleNames>
-      </SectionModule>
-      <SectionModule>
-        <Abbreviation>HUD 2</Abbreviation>
-        <EditorPositionX>774</EditorPositionX>
-        <EditorPositionY>518</EditorPositionY>
-        <FloatingPositionX>1421</FloatingPositionX>
+        <EditorPositionX>1032</EditorPositionX>
+        <EditorPositionY>257</EditorPositionY>
+        <FloatingPositionX>504</FloatingPositionX>
         <FloatingPositionY>0</FloatingPositionY>
         <IsCustom>true</IsCustom>
         <IsEditorVisible>false</IsEditorVisible>
@@ -203,6 +181,29 @@
         <IsHudBackground>false</IsHudBackground>
         <IsVisible>true</IsVisible>
         <LineCount>5</LineCount>
+        <Name>HUD 1</Name>
+        <ReadoutModuleNames>
+          <string>Orbital.ApoapsisHeight</string>
+          <string>Orbital.TimeToApoapsis</string>
+          <string>Orbital.PeriapsisHeight</string>
+          <string>Orbital.TimeToPeriapsis</string>
+          <string>Vessel.DeltaVCurrent</string>
+        </ReadoutModuleNames>
+      </SectionModule>
+      <SectionModule>
+        <Abbreviation>HUD 2</Abbreviation>
+        <EditorPositionX>796</EditorPositionX>
+        <EditorPositionY>267</EditorPositionY>
+        <FloatingPositionX>784</FloatingPositionX>
+        <FloatingPositionY>0</FloatingPositionY>
+        <IsCustom>true</IsCustom>
+        <IsEditorVisible>false</IsEditorVisible>
+        <IsFloating>true</IsFloating>
+        <IsHud>true</IsHud>
+        <IsDeleted>false</IsDeleted>
+        <IsHudBackground>false</IsHudBackground>
+        <IsVisible>true</IsVisible>
+        <LineCount>6</LineCount>
         <Name>HUD 2</Name>
         <ReadoutModuleNames>
           <string>Surface.AltitudeTerrain</string>
@@ -210,6 +211,7 @@
           <string>Surface.HorizontalSpeed</string>
           <string>Surface.Biome</string>
           <string>Surface.MachNumber</string>
+          <string>Surface.ImpactBiome</string>
         </ReadoutModuleNames>
       </SectionModule>
     </Value>

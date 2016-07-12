@@ -5,7 +5,7 @@ toolbars
 		toolbar_1582822113
 		{
 			x = 324
-			y = 957
+			y = 733
 			width = 250
 			height = 38
 			autoHide = False
@@ -49,8 +49,8 @@ toolbars
 	{
 		toolbar_487361768
 		{
-			x = 1036
-			y = 3
+			x = 447
+			y = 690
 			width = 250
 			height = 81
 			autoHide = False
@@ -64,15 +64,15 @@ toolbars
 	{
 		toolbar_1382886580
 		{
-			x = 300
-			y = 300
+			x = 436
+			y = 690
 			width = 250
-			height = 38
+			height = 81
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = 
+			visibleButtons = UKS.stationManager,UKS.planLog,UKS.orbLog,UKS.kolony,Tac.LS,SCANsat.ZoomMap,SCANsat.UIMenu,SCANsat.SmallMap,SCANsat.Overlay,SCANsat.BigMap
 		}
 	}
 	MAINMENU
@@ -88,6 +88,18 @@ toolbars
 			useKSPSkin = True
 			buttonOrder = 
 			visibleButtons = UKS.planLog,UKS.kolony,Tac.LS,SCANsat.KSCMap
+		}
+		toolbar_1871142680
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 0
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
 		}
 	}
 }
