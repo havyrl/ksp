@@ -1,52 +1,50 @@
 Executing: KerbalEngineer - 1.1.1.0
-Assembly: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\KerbalEngineer\KerbalEngineer.dll
+Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KerbalEngineer\KerbalEngineer.dll
 
-[Log 15:33:19.6863065]: BuildAdvanced->OnDestroy
-[Log 15:47:37.2503065]: ActionMenu->Awake
-[Log 15:47:37.2523065]: FlightEngineerCore->Awake
-[Log 15:47:40.4823065]: ActionMenu->Start
-[Log 15:47:40.5153065]: FlightEngineerCore->Start
-[Log 15:55:11.5063065]: FlightEngineerCore->OnDestroy
-[Log 15:55:11.5163065]: ActionMenu->OnDestroy
-[Log 15:55:11.6973065]: ActionMenu->Awake
-[Log 15:55:11.6973065]: FlightEngineerCore->Awake
-[Log 15:55:14.8033065]: ActionMenu->Start
-[Log 15:55:14.8073065]: FlightEngineerCore->Start
-[Log 16:13:06.0713065]: ActionMenu->OnDestroy
-[Log 16:13:06.0753065]: FlightEngineerCore->OnDestroy
-[Log 16:13:06.2753065]: ActionMenu->Awake
-[Log 16:13:06.2753065]: FlightEngineerCore->Awake
-[Log 16:13:08.3253065]: ActionMenu->Start
-[Log 16:13:08.3303065]: FlightEngineerCore->Start
-[Log 16:22:15.5193065]: FlightEngineerCore->OnDestroy
-[Log 16:22:15.5353065]: ActionMenu->OnDestroy
-[Log 16:22:15.7403065]: ActionMenu->Awake
-[Log 16:22:15.7403065]: FlightEngineerCore->Awake
-[Log 16:22:17.8323065]: ActionMenu->Start
-[Log 16:22:17.8373065]: FlightEngineerCore->Start
-[Log 16:22:33.3683065]: ActionMenu->OnDestroy
-[Log 16:22:33.3873065]: FlightEngineerCore->OnDestroy
-[Log 16:22:33.5913065]: ActionMenu->Awake
-[Log 16:22:33.5923065]: FlightEngineerCore->Awake
-[Log 16:22:35.3833065]: ActionMenu->Start
-[Log 16:22:35.3883065]: FlightEngineerCore->Start
-[Log 16:22:54.0163065]: ActionMenu->OnDestroy
-[Log 16:22:54.0243065]: FlightEngineerCore->OnDestroy
-[Log 16:22:54.2473065]: ActionMenu->Awake
-[Log 16:22:54.2473065]: FlightEngineerCore->Awake
-[Log 16:22:56.0493065]: ActionMenu->Start
-[Log 16:22:56.0543065]: FlightEngineerCore->Start
-[Log 16:23:32.8073065]: ActionMenu->OnDestroy
-[Log 16:23:32.8123065]: FlightEngineerCore->OnDestroy
-[Log 16:23:33.0233065]: ActionMenu->Awake
-[Log 16:23:33.0233065]: FlightEngineerCore->Awake
-[Log 16:23:34.8263065]: ActionMenu->Start
-[Log 16:23:34.8313065]: FlightEngineerCore->Start
-[Log 16:25:31.9623065]: FlightEngineerCore->OnDestroy
-[Log 16:25:31.9723065]: ActionMenu->OnDestroy
-[Log 16:25:32.2103065]: ActionMenu->Awake
-[Log 16:25:32.2113065]: FlightEngineerCore->Awake
-[Log 16:25:34.0493065]: ActionMenu->Start
-[Log 16:25:34.0543065]: FlightEngineerCore->Start
-[Log 16:29:04.1923065]: FlightEngineerCore->OnDestroy
-[Log 16:29:04.2003065]: ActionMenu->OnDestroy
+[Log 19:01:24.1204443]: BuildAdvanced->OnDestroy
+[Log 19:01:26.8858432]: ActionMenu->Awake
+[Log 19:01:26.8893440]: FlightEngineerCore->Awake
+[Log 19:01:33.0659874]: ActionMenu->Start
+[Log 19:01:33.1230028]: FlightEngineerCore->Start
+[Exception 19:01:33.5549944]: Array index is out of range.
+[]:   at MapSO.GetPixelColor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at MapSO.GetPixelColor (Single x, Single y) [0x00000] in <filename unknown>:0 
+  at CBAttributeMapSO.GetAtt (Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at ScienceUtil.GetExperimentBiome (.CelestialBody body, Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Readouts.Surface.ImpactProcessor.Update () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.FlightEngineerCore.UpdateModules () [0x00000] in <filename unknown>:0 
+
+[Exception 19:01:34.2186496]: Array index is out of range.
+[]:   at MapSO.GetPixelColor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at MapSO.GetPixelColor (Single x, Single y) [0x00000] in <filename unknown>:0 
+  at CBAttributeMapSO.GetAtt (Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at ScienceUtil.GetExperimentBiome (.CelestialBody body, Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Readouts.Surface.ImpactProcessor.Update () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.FlightEngineerCore.UpdateModules () [0x00000] in <filename unknown>:0 
+
+[Log 19:09:58.6626281]: ActionMenu->OnDestroy
+[Log 19:09:58.6776347]: FlightEngineerCore->OnDestroy
+[Log 19:09:59.0069717]: ActionMenu->Awake
+[Log 19:09:59.0079709]: FlightEngineerCore->Awake
+[Log 19:10:02.5218833]: ActionMenu->Start
+[Log 19:10:02.5308931]: FlightEngineerCore->Start
+[Log 19:10:44.7200625]: FlightEngineerCore->OnDestroy
+[Log 19:10:44.7415657]: ActionMenu->OnDestroy
+[Log 19:10:45.0706405]: ActionMenu->Awake
+[Log 19:10:45.0721519]: FlightEngineerCore->Awake
+[Log 19:10:48.5732249]: ActionMenu->Start
+[Log 19:10:48.5807134]: FlightEngineerCore->Start
+[Log 19:17:00.0216439]: ActionMenu->OnDestroy
+[Log 19:17:00.0445740]: FlightEngineerCore->OnDestroy
+[Log 19:17:00.3732679]: ActionMenu->Awake
+[Log 19:17:00.3742221]: FlightEngineerCore->Awake
+[Log 19:17:03.2130411]: ActionMenu->Start
+[Log 19:17:03.2205477]: FlightEngineerCore->Start
+[Log 19:19:24.2193093]: ActionMenu->OnDestroy
+[Log 19:19:24.2455705]: FlightEngineerCore->OnDestroy
+[Log 19:19:24.5856473]: ActionMenu->Awake
+[Log 19:19:24.5866476]: FlightEngineerCore->Awake
+[Log 19:19:27.4212255]: ActionMenu->Start
+[Log 19:19:27.4286211]: FlightEngineerCore->Start
+[Log 19:25:40.5132874]: ActionMenu->OnDestroy
+[Log 19:25:40.5238055]: FlightEngineerCore->OnDestroy
