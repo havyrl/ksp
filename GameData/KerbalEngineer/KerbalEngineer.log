@@ -1,12 +1,11 @@
 Executing: KerbalEngineer - 1.1.1.0
 Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KerbalEngineer\KerbalEngineer.dll
 
-[Log 19:01:24.1204443]: BuildAdvanced->OnDestroy
-[Log 19:01:26.8858432]: ActionMenu->Awake
-[Log 19:01:26.8893440]: FlightEngineerCore->Awake
-[Log 19:01:33.0659874]: ActionMenu->Start
-[Log 19:01:33.1230028]: FlightEngineerCore->Start
-[Exception 19:01:33.5549944]: Array index is out of range.
+[Log 19:35:27.0151157]: ActionMenu->Awake
+[Log 19:35:27.0506245]: FlightEngineerCore->Awake
+[Log 19:35:30.9521408]: ActionMenu->Start
+[Log 19:35:31.0010860]: FlightEngineerCore->Start
+[Exception 19:35:31.5490807]: Array index is out of range.
 []:   at MapSO.GetPixelColor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
   at MapSO.GetPixelColor (Single x, Single y) [0x00000] in <filename unknown>:0 
   at CBAttributeMapSO.GetAtt (Double lat, Double lon) [0x00000] in <filename unknown>:0 
@@ -14,7 +13,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KerbalEn
   at KerbalEngineer.Flight.Readouts.Surface.ImpactProcessor.Update () [0x00000] in <filename unknown>:0 
   at KerbalEngineer.Flight.FlightEngineerCore.UpdateModules () [0x00000] in <filename unknown>:0 
 
-[Exception 19:01:34.2186496]: Array index is out of range.
+[Exception 19:35:32.2111461]: Array index is out of range.
 []:   at MapSO.GetPixelColor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
   at MapSO.GetPixelColor (Single x, Single y) [0x00000] in <filename unknown>:0 
   at CBAttributeMapSO.GetAtt (Double lat, Double lon) [0x00000] in <filename unknown>:0 
@@ -22,29 +21,70 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KerbalEn
   at KerbalEngineer.Flight.Readouts.Surface.ImpactProcessor.Update () [0x00000] in <filename unknown>:0 
   at KerbalEngineer.Flight.FlightEngineerCore.UpdateModules () [0x00000] in <filename unknown>:0 
 
-[Log 19:09:58.6626281]: ActionMenu->OnDestroy
-[Log 19:09:58.6776347]: FlightEngineerCore->OnDestroy
-[Log 19:09:59.0069717]: ActionMenu->Awake
-[Log 19:09:59.0079709]: FlightEngineerCore->Awake
-[Log 19:10:02.5218833]: ActionMenu->Start
-[Log 19:10:02.5308931]: FlightEngineerCore->Start
-[Log 19:10:44.7200625]: FlightEngineerCore->OnDestroy
-[Log 19:10:44.7415657]: ActionMenu->OnDestroy
-[Log 19:10:45.0706405]: ActionMenu->Awake
-[Log 19:10:45.0721519]: FlightEngineerCore->Awake
-[Log 19:10:48.5732249]: ActionMenu->Start
-[Log 19:10:48.5807134]: FlightEngineerCore->Start
-[Log 19:17:00.0216439]: ActionMenu->OnDestroy
-[Log 19:17:00.0445740]: FlightEngineerCore->OnDestroy
-[Log 19:17:00.3732679]: ActionMenu->Awake
-[Log 19:17:00.3742221]: FlightEngineerCore->Awake
-[Log 19:17:03.2130411]: ActionMenu->Start
-[Log 19:17:03.2205477]: FlightEngineerCore->Start
-[Log 19:19:24.2193093]: ActionMenu->OnDestroy
-[Log 19:19:24.2455705]: FlightEngineerCore->OnDestroy
-[Log 19:19:24.5856473]: ActionMenu->Awake
-[Log 19:19:24.5866476]: FlightEngineerCore->Awake
-[Log 19:19:27.4212255]: ActionMenu->Start
-[Log 19:19:27.4286211]: FlightEngineerCore->Start
-[Log 19:25:40.5132874]: ActionMenu->OnDestroy
-[Log 19:25:40.5238055]: FlightEngineerCore->OnDestroy
+[Log 19:37:18.4952323]: FlightEngineerCore->OnDestroy
+[Log 19:37:18.5242517]: ActionMenu->OnDestroy
+[Log 19:37:18.8631915]: ActionMenu->Awake
+[Log 19:37:18.8636922]: FlightEngineerCore->Awake
+[Log 19:37:23.0662285]: ActionMenu->Start
+[Log 19:37:23.0742262]: FlightEngineerCore->Start
+[Exception 19:37:23.4741630]: Array index is out of range.
+[]:   at MapSO.GetPixelColor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at MapSO.GetPixelColor (Single x, Single y) [0x00000] in <filename unknown>:0 
+  at CBAttributeMapSO.GetAtt (Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at ScienceUtil.GetExperimentBiome (.CelestialBody body, Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Readouts.Surface.ImpactProcessor.Update () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.FlightEngineerCore.UpdateModules () [0x00000] in <filename unknown>:0 
+
+[Log 19:38:54.6335957]: ActionMenu->OnDestroy
+[Log 19:38:54.6491371]: FlightEngineerCore->OnDestroy
+[Log 19:38:55.0075873]: ActionMenu->Awake
+[Log 19:38:55.0086194]: FlightEngineerCore->Awake
+[Log 19:38:59.2057565]: ActionMenu->Start
+[Log 19:38:59.2137630]: FlightEngineerCore->Start
+[Log 19:40:49.7132617]: FlightEngineerCore->OnDestroy
+[Log 19:40:49.7305949]: ActionMenu->OnDestroy
+[Log 19:40:50.1056159]: ActionMenu->Awake
+[Log 19:40:50.1066181]: FlightEngineerCore->Awake
+[Log 19:40:54.3021359]: ActionMenu->Start
+[Log 19:40:54.3096586]: FlightEngineerCore->Start
+[Log 19:52:21.9191552]: ActionMenu->OnDestroy
+[Log 19:52:21.9376376]: FlightEngineerCore->OnDestroy
+[Log 19:56:11.2711383]: BuildAdvanced->OnDestroy
+[Log 19:56:13.7156513]: ActionMenu->Awake
+[Log 19:56:13.7166512]: FlightEngineerCore->Awake
+[Log 19:56:17.9007888]: ActionMenu->Start
+[Log 19:56:17.9077673]: FlightEngineerCore->Start
+[Exception 19:56:18.1337656]: Array index is out of range.
+[]:   at MapSO.GetPixelColor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at MapSO.GetPixelColor (Single x, Single y) [0x00000] in <filename unknown>:0 
+  at CBAttributeMapSO.GetAtt (Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at ScienceUtil.GetExperimentBiome (.CelestialBody body, Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Readouts.Surface.ImpactProcessor.Update () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.FlightEngineerCore.UpdateModules () [0x00000] in <filename unknown>:0 
+
+[Exception 19:56:18.6637517]: Array index is out of range.
+[]:   at MapSO.GetPixelColor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at MapSO.GetPixelColor (Single x, Single y) [0x00000] in <filename unknown>:0 
+  at CBAttributeMapSO.GetAtt (Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at ScienceUtil.GetExperimentBiome (.CelestialBody body, Double lat, Double lon) [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Readouts.Surface.ImpactProcessor.Update () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.FlightEngineerCore.UpdateModules () [0x00000] in <filename unknown>:0 
+
+[Log 19:56:34.7481803]: FlightEngineerCore->OnDestroy
+[Log 19:56:34.7551293]: ActionMenu->OnDestroy
+[Log 19:57:50.8661666]: BuildAdvanced->OnDestroy
+[Log 20:07:10.2622520]: BuildAdvanced->OnDestroy
+[Log 20:07:12.9283286]: ActionMenu->Awake
+[Log 20:07:12.9292917]: FlightEngineerCore->Awake
+[Log 20:07:17.3403157]: ActionMenu->Start
+[Log 20:07:17.3473542]: FlightEngineerCore->Start
+[Log 20:07:31.1003426]: FlightEngineerCore->OnDestroy
+[Log 20:07:31.1437849]: ActionMenu->OnDestroy
+[Log 20:08:53.9933537]: BuildAdvanced->OnDestroy
+[Log 20:08:57.6572158]: ActionMenu->Awake
+[Log 20:08:57.6582153]: FlightEngineerCore->Awake
+[Log 20:09:03.3201879]: ActionMenu->Start
+[Log 20:09:03.3527211]: FlightEngineerCore->Start
+[Log 20:11:33.5937260]: FlightEngineerCore->OnDestroy
+[Log 20:11:33.6092283]: ActionMenu->OnDestroy
+[Log 20:12:23.9623376]: BuildAdvanced->OnDestroy

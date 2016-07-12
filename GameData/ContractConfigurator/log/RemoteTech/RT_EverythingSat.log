@@ -1640,7 +1640,7 @@ RT_EverythingSat
 		    underwater = False, deterministic = True
 		    clustered = False, deterministic = True
 		    latitude = 0, deterministic = True
-		    longitude = 139.999198190903, deterministic = False
+		    longitude = 139.999042293084, deterministic = False
 		
 	KEO_1
 	    type = OrbitGenerator, deterministic = True

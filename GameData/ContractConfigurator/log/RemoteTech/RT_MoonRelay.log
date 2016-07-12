@@ -85,14 +85,14 @@ RT_MoonRelay
     RemoteTech:disabledContractType = [], deterministic = True
     name = RT_MoonRelay, deterministic = True
     trace = False, deterministic = True
-    title = RemoteTech: Create a network for the Mun., deterministic = False
+    title = RemoteTech: Create a network for Minmus., deterministic = False
     tag = , deterministic = True
-    description = Mission control has decided they'd like to find out what's on the far side of the Mun.  In order to do that, we need to set up a relay network., deterministic = False
+    description = They say that Minmus is too small to bother with setting up a dedicated communications network.  Let's prove them wrong!, deterministic = False
     topic = , deterministic = True
     subject = , deterministic = True
     motivation = , deterministic = True
     notes = null, deterministic = True
-    synopsis = Build a communication network that provides coverage of the Mun with a link back to mission control., deterministic = False
+    synopsis = Build a communication network that provides coverage of Minmus with a link back to mission control., deterministic = False
     completedMessage = The network is up and transmitting, and our shake-out testing is complete!, deterministic = True
     agent = Contracts.Agents.Agent, deterministic = True
     minExpiry = 1, deterministic = True
@@ -102,7 +102,7 @@ RT_MoonRelay
     declinable = True, deterministic = True
     autoAccept = False, deterministic = True
     prestige = [ Significant ], deterministic = True
-    targetBody = Mun (CelestialBody), deterministic = False
+    targetBody = Minmus (CelestialBody), deterministic = False
     maxCompletions = 0, deterministic = True
     maxSimultaneous = 0, deterministic = True
     rewardFunds = 120000, deterministic = True
@@ -112,15 +112,15 @@ RT_MoonRelay
     failureReputation = 0, deterministic = True
     advanceFunds = 40000, deterministic = True
     weight = 2, deterministic = True
-    isMinmus = False, deterministic = False
-    targetMoon = Mun (CelestialBody), deterministic = False
-    descDefault = Mission control has decided they'd like to find out what's on the far side of the Mun.  In order to do that, we need to set up a relay network., deterministic = False
+    isMinmus = True, deterministic = False
+    targetMoon = Minmus (CelestialBody), deterministic = False
+    descDefault = Mission control has decided they'd like to find out what's on the far side of Minmus.  In order to do that, we need to set up a relay network., deterministic = False
     descMinmus = They say that Minmus is too small to bother with setting up a dedicated communications network.  Let's prove them wrong!, deterministic = True
 
 	MoonCoverage
 	    type = CelestialBodyCoverage, deterministic = True
 	    name = MoonCoverage, deterministic = True
-	    targetBody = Mun (CelestialBody), deterministic = False
+	    targetBody = Minmus (CelestialBody), deterministic = False
 	    rewardFunds = 0, deterministic = True
 	    rewardReputation = 0, deterministic = True
 	    rewardScience = 0, deterministic = True
@@ -139,7 +139,7 @@ RT_MoonRelay
 	Duration
 	    type = Duration, deterministic = True
 	    name = Duration, deterministic = True
-	    targetBody = Mun (CelestialBody), deterministic = False
+	    targetBody = Minmus (CelestialBody), deterministic = False
 	    rewardFunds = 0, deterministic = True
 	    rewardReputation = 0, deterministic = True
 	    rewardScience = 0, deterministic = True
@@ -175,12 +175,12 @@ RT_MoonRelay
 	    targetBody = Kerbin (CelestialBody), deterministic = True
 	    checkOnActiveContract = False, deterministic = True
 	    invertRequirement = False, deterministic = True
-	    range = 12000000, deterministic = False
+	    range = 47000000, deterministic = False
 	
 	PartModuleTypeUnlocked
 	    type = PartModuleTypeUnlocked, deterministic = True
 	    name = PartModuleTypeUnlocked, deterministic = True
-	    targetBody = Mun (CelestialBody), deterministic = False
+	    targetBody = Minmus (CelestialBody), deterministic = False
 	    checkOnActiveContract = False, deterministic = True
 	    invertRequirement = False, deterministic = True
 	    partModuleType = [ Antenna, Power ], deterministic = True

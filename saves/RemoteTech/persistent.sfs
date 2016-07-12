@@ -10,9 +10,9 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 31
+	launchID = 34
 	modded = True
-	envInfo =  - Environment Info - Win32NT FFFFFFFFFFFFFFFF  Args: KSP.exe  - 
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
 	{
 		preset = Custom
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = -1000
+		update = 348803.999759711
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -121,13 +121,13 @@ GAME
 			TourismContract = 90
 			SurveyContract = 10
 			StationContract = 30
-			SatelliteContract = 30
+			SatelliteContract = 22
 			ISRUContract = 30
 			BaseContract = 30
 			ARMContract = 30
 			RecoverAsset = 30
 			PlantFlag = 30
-			PartTest = 50
+			PartTest = 66
 			GrandTour = 30
 			ExploreBody = 30
 			CollectScience = 38
@@ -136,58 +136,19 @@ GAME
 		{
 			CONTRACT
 			{
-				guid = a525ea23-410d-4230-8aae-27c953432224
+				guid = b4515950-e98a-4e91-87fa-bf90b6ebfc2a
 				type = ConfiguredContract
 				prestige = 0
-				seed = 1727208853
+				seed = -1099939124
 				state = Offered
 				agent = SCAN: Scientific Committee on Advanced Navigation
 				deadlineType = Floating
 				expiryType = Floating
 				ignoresWeight = True
-				values = 144960,7308431.32324219,7360,41741,16973,0,1,1,407031.047682109,0,0,0
-				subtype = SCAN_LoRes
-				title = Do a Low Resolution Scan of Kerbin
-				description = Not very long before undergoing rapid unplanned disassembly, a restless team at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether some Kerbals seem to enjoy high speeds, while others apparently just don't finally concluded that none of us knew for sure if brave Kerbals regain their nerve faster than not-so-brave ones. Now, that definitely ended up raising more questions than answers, and as you've probably figured out at this point, this is where you come in.
-				synopsis = Perform a RADAR scan of Kerbin
-				completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
-				notes = Scanning can take place while the vessel is not loaded.
-				hash = -899775195
-				UNIQUE_DATA
-				{
-					targetBody1 = CelestialBody:Kerbin
-				}
-				PARAM
-				{
-					name = SCANsatCoverage
-					id = SCANsatCoverage
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = ScanSatOfficial.SCAN_LoRes
-					title = 
-					notes = 
-					completedMessage = 
-					coverage = 75
-					scanName = AltimetryLoRes
-					scanType = 1
-					targetBody = Kerbin
-				}
-			}
-			CONTRACT
-			{
-				guid = 380c6bdf-9c9e-45b9-9c6f-375349315ae9
-				type = ConfiguredContract
-				prestige = 0
-				seed = 2078057390
-				state = Offered
-				agent = SCAN: Scientific Committee on Advanced Navigation
-				deadlineType = Floating
-				expiryType = Floating
-				ignoresWeight = True
-				values = 107100,21577673.5839844,23731,122604,29605,0,2,2,366037.145134336,0,0,0
+				values = 109020,23698461.6210938,6677,111088,16337,0,2,2,457730.219759624,0,0,0
 				subtype = SCAN_LoRes
 				title = Do a Low Resolution Scan of Minmus
-				description = It seemed proper for boffins trying something clearly genius at SCAN: Scientific Committee on Advanced Navigation, that nobody here seemed to be able to tell if some Kerbals seem to enjoy things that terrify others. Admittedly, the way we would often see an incredible crash-landing was a big part of why. We now need your help.
+				description = A few days prior to an unintended ignition, the notorious minds at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether some Kerbals seem to enjoy high speeds, while others apparently just don't realized that we were making very little progress towards finding out if all Kerbals enjoy feeling weightless. So as you've probably figured out at this point, this is where you come in.
 				synopsis = Perform a RADAR scan of Minmus
 				completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
 				notes = Scanning can take place while the vessel is not loaded.
@@ -210,6 +171,47 @@ GAME
 					scanName = AltimetryLoRes
 					scanType = 1
 					targetBody = Minmus
+				}
+			}
+			CONTRACT
+			{
+				guid = 98943c8d-1026-4798-a9a2-bb992bb3c871
+				type = TourismContract
+				prestige = 0
+				seed = -1613735212
+				state = Offered
+				agent = Kerbodyne
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,46008000,0,0,0,0,20,10,370237.019759557,0,0,0
+				gender = 1
+				preposition = right here on Kerbin
+				homeDestinations = True
+				tourists = Wehrsey Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					values = 19500,0,0,0,0
+					kerbalName = Wehrsey Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Wehrsey Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Wehrsey Kerman
+					}
 				}
 			}
 			CONTRACT
@@ -255,41 +257,25 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 956f9ea4-9db2-4704-8c20-ff28b69deb91
+				guid = 2598c7db-70db-4619-b65b-d10cebe1c206
 				type = TourismContract
 				prestige = 0
-				seed = 1867653449
-				state = Active
-				agent = Reaction Systems Ltd
+				seed = -499342938
+				state = Offered
+				agent = Probodobodyne Inc
 				deadlineType = Floating
 				expiryType = Floating
-				values = 43200,46008000,0,0,0,0,19.04762,10,297208.434436774,259220.468337347,46267220.4683374,0
-				gender = 0
+				values = 108000,46008000,0,0,0,0,21.6,10.8,456688.939759605,0,0,0
+				gender = 1
 				preposition = right here on Kerbin
 				homeDestinations = True
-				tourists = Lamy Kerman|Tamara Kerman
+				tourists = Lemrick Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					state = Incomplete
-					values = 9750,0,0,0,0
-					kerbalName = Lamy Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Lamy Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					values = 9750,0,0,0,0
-					kerbalName = Tamara Kerman
+					values = 19500,0,0,0,0
+					kerbalName = Lemrick Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -297,7 +283,16 @@ GAME
 						values = 3250,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Tamara Kerman
+						kerbalName = Lemrick Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Lemrick Kerman
 					}
 				}
 			}
@@ -346,6 +341,296 @@ GAME
 						values = 0,0,0,0,0
 						sit = SPLASHED
 						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 822084fa-2c1d-4bb3-ae0a-5903c58b1c10
+				type = ConfiguredContract
+				prestige = 1
+				seed = -294448733
+				state = Offered
+				agent = Research & Development Department
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 58440,0,12500,25000,12500,12,10,0,407128.939759605,0,0,0
+				subtype = ScanKerbinLoRes
+				title = Altimetry Scan of Kerbin
+				description = Our scientists have suggested that knowing what the rock we're flying around looks like might be a good idea. Perform an altimetry scan of Kerbin's surface and report back with the answer to the ultimate question, "Where did I put my keys?".
+				synopsis = Send an unkerbaled vessel into orbit, we suggest a 496km orbit with an 83.3 degree inclination, and scan Kerbin's surface with the SCAN Radar Altimetry Sensor. \n\nThe key is getting the data we require, if you want to go with a custom orbit feel free but we didn't spend good money researching this one for no gorram reason!
+				completedMessage = Excellent work, we're well underway with our scans in in a short while, our first map will be complete!
+				notes = Tip: There's probably some other science equipment you can take along for some extra science!\nTip: Don't forget to Analyse the Data from your scan once complete for extra science!
+				hash = 1098207048
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = Maxwell1
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = 
+					notes = 
+					completedMessage = 
+					define = Maxwell I
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						targetBody = Kerbin
+						situation = ORBITING
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Orbit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Situation: Orbit
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasCrew
+						id = HasCrew1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = 
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCrew = 0
+						maxCrew = 0
+						minExperience = 0
+						maxExperience = 5
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Unmanned
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Unmanned
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						minCount = 1
+						maxCount = 2147483647
+						FILTER
+						{
+							type = FILTER
+							part = SCANsat.Scanner
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = With type: SCAN RADAR Altimetry Sensor
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = With type: SCAN RADAR Altimetry Sensor
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = SCANsatCoverage
+					id = SCANsatCoverage1
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = 
+					notes = 
+					completedMessage = 
+					coverage = 50
+					scanName = AltimetryLoRes
+					scanType = 1
+					targetBody = Kerbin
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = OrbitSet
+					optional = True
+					state = Incomplete
+					values = 10000,0,6,5,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = Achieve an orbit with the following parameters
+					notes = 
+					completedMessage = Brilliant work, with our orbit established we can get some good results!!
+					vessel = Maxwell I
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: Maxwell I (TBD)
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Vessel: Maxwell I (TBD)
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = OrbitParameter
+						id = Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Achieve an orbit with the following parameters
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						situation = ORBITING
+						targetBody = Kerbin
+						minAltitude = 0
+						minApoapsis = 493234
+						maxApoapsis = 499314
+						minPeriapsis = 493101
+						maxPeriapsis = 499106
+						minEccentricity = 0
+						maxEccentricity = 0.0021
+						minInclination = 83.1
+						maxInclination = 83.6
+						minPeriod = 0
+						displayNotes = False
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Orbit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Situation: Orbit
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Apoapsis: Between 493,234 m and 499,314 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Apoapsis: Between 493,234 m and 499,314 m
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Periapsis: Between 493,101 m and 499,106 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Periapsis: Between 493,101 m and 499,106 m
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Eccentricity: Below 0.0021
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Eccentricity: Below 0.0021
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Inclination: Between 83.1° and 83.6°
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+							title = Inclination: Between 83.1° and 83.6°
+							notes = 
+							completedMessage = 
+						}
 					}
 				}
 			}
@@ -445,6 +730,481 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 94e178c1-81d8-4bd8-9142-25d24c8345dc
+				type = ConfiguredContract
+				prestige = 1
+				seed = -1613735211
+				state = Active
+				agent = Communication Satellite Group
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 40260,0,75000,225000,75000,0,12,0,388897.019759557,348688.939759605,0,0
+				subtype = RT_KerbinRelay
+				title = RemoteTech: Create a communication network for Kerbin (3 satellites).
+				description = Mission control is tired of losing vessels and probes over the horizon, since they are rarely heard from again.  We need to find a way to stay in constant communication if we have any hope of truly exploring the Mun and beyond.
+				synopsis = Build a communication network with three commsats that has continuous connectivity to mission control.\n\nAlso, make sure to only accept either the three or four satellite version of this contract (it's impossible to complete both).
+				completedMessage = The network is up and transmitting, and our shake-out testing is complete!
+				notes = A three satellite network must have a minimum periapsis of 600,000.00 m.  Note that this is the bare minimum numbers to have visibility, it is recommended to use higher orbits to give a larger margin of error.
+				hash = 1427574305
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = CommSat1
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					define = CommSat I
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = KSCConnectivityParameter
+						id = KSCConnectivity
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Connected to KSC
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						hasConnectivity = True
+					}
+					PARAM
+					{
+						name = IsNotVessel
+						id = IsNotVessel
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						fakeFailures = True
+						allowStateReset = True
+						failWhenUnmet = True
+						vesselKey = CommSat II
+					}
+					PARAM
+					{
+						name = IsNotVessel
+						id = IsNotVessel
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						fakeFailures = True
+						allowStateReset = True
+						failWhenUnmet = True
+						vesselKey = CommSat III
+					}
+					PARAM
+					{
+						name = OrbitParameter
+						id = Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						situation = ORBITING
+						targetBody = Kerbin
+						minAltitude = 0
+						minApoapsis = 0
+						minPeriapsis = 600000
+						minEccentricity = 0
+						maxEccentricity = 0.004
+						minInclination = 0
+						maxInclination = 1
+						minPeriod = 0
+						displayNotes = False
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Orbit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Situation: Orbit
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Periapsis: Above 600,000 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Periapsis: Above 600,000 m
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Eccentricity: Below 0.0040
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Eccentricity: Below 0.0040
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Inclination: Below 1.0°
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Inclination: Below 1.0°
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = CommSat2
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					define = CommSat II
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = VesselConnectivityParameter
+						id = VesselConnectivity
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						hasConnectivity = True
+						vesselKey = CommSat I
+					}
+					PARAM
+					{
+						name = IsNotVessel
+						id = IsNotVessel
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						fakeFailures = True
+						allowStateReset = True
+						failWhenUnmet = True
+						vesselKey = CommSat III
+					}
+					PARAM
+					{
+						name = KSCConnectivityParameter
+						id = KSCConnectivity
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Connected to KSC
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						hasConnectivity = True
+					}
+					PARAM
+					{
+						name = OrbitParameter
+						id = Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						situation = ORBITING
+						targetBody = Kerbin
+						minAltitude = 0
+						minApoapsis = 0
+						minPeriapsis = 600000
+						minEccentricity = 0
+						maxEccentricity = 0.004
+						minInclination = 0
+						maxInclination = 1
+						minPeriod = 0
+						displayNotes = False
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Orbit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Situation: Orbit
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Periapsis: Above 600,000 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Periapsis: Above 600,000 m
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Eccentricity: Below 0.0040
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Eccentricity: Below 0.0040
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Inclination: Below 1.0°
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Inclination: Below 1.0°
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = CommSat3
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					define = CommSat III
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = IsNotVessel
+						id = IsNotVessel
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						fakeFailures = True
+						allowStateReset = True
+						failWhenUnmet = True
+						vesselKey = CommSat I
+					}
+					PARAM
+					{
+						name = VesselConnectivityParameter
+						id = VesselConnectivity
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						hasConnectivity = True
+						vesselKey = CommSat II
+					}
+					PARAM
+					{
+						name = KSCConnectivityParameter
+						id = KSCConnectivity
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Connected to KSC
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						hasConnectivity = True
+					}
+					PARAM
+					{
+						name = OrbitParameter
+						id = Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						situation = ORBITING
+						targetBody = Kerbin
+						minAltitude = 0
+						minApoapsis = 0
+						minPeriapsis = 600000
+						minEccentricity = 0
+						maxEccentricity = 0.004
+						minInclination = 0
+						maxInclination = 1
+						minPeriod = 0
+						displayNotes = False
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Orbit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Situation: Orbit
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Periapsis: Above 600,000 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Periapsis: Above 600,000 m
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Eccentricity: Below 0.0040
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Eccentricity: Below 0.0040
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Inclination: Below 1.0°
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_KerbinRelay
+							title = Inclination: Below 1.0°
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = Duration
+					id = Duration
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					duration = 43200
+					preWaitText = Testing time after network up
+					waitingText = Performing shake-out testing
+					completionText = Shake-out testing completed
+					endTime = 0
+					startCriteria = CONTRACT_ACCEPTANCE
+					triggered = True
+				}
+			}
+			CONTRACT
+			{
 				guid = 59c3d7bc-99b8-42d8-a081-5d6a4fee70c5
 				type = PartTest
 				prestige = 1
@@ -497,11 +1257,11 @@ GAME
 				type = PartTest
 				prestige = 2
 				seed = 1531534730
-				state = Offered
+				state = Active
 				agent = Kerbodyne
 				deadlineType = Floating
 				expiryType = Floating
-				values = 43200,18403200,81000,202500,81000,14,27,21,389118.417913446,0,0,0
+				values = 43200,18403200,81000,202500,81000,14,27,21,389118.417913446,348688.939759605,18751888.9397596,0
 				part = Size2LFB
 				haul = False
 				dest = 2
@@ -541,347 +1301,63 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = d3e3dd31-cb71-4bb5-9f0c-896abf282337
-				type = TourismContract
-				prestige = 1
-				seed = 1532214732
+				guid = e1bdb267-f5b3-4111-a4cb-d99c3c67d829
+				type = SatelliteContract
+				prestige = 0
+				seed = -1244466235
 				state = Offered
-				agent = StrutCo
+				agent = Zaltonic Electronics
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,46008000,0,0,0,0,22.72727,12,410718.417913446,0,0,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				tourists = Thompvey Kerman|Hansby Kerman
+				values = 86400,46008000,33935.9996795654,91309.0449912072,35632.7980453491,4,11.67464,6.666667,435194.299759702,0,0,0
+				targetBody = 1
+				deviation = 7
+				orbitType = 6
+				placementMode = 0
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = VesselSystemsParameter
 					state = Incomplete
-					values = 24375,0,0,0,0
-					kerbalName = Thompvey Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Thompvey Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Thompvey Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					values = 24375,0,0,0,0
-					kerbalName = Hansby Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Hansby Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Hansby Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 4bb29479-73da-4aaa-b398-810d11f100a6
-				type = ConfiguredContract
-				prestige = 0
-				seed = -594603113
-				state = Offered
-				agent = Communication Satellite Group
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 96660,0,5000,15000,5000,0,1,0,444005.581845074,0,0,0
-				subtype = RT_MoonDish
-				title = RemoteTech: Point a dish out from Kerbin
-				description = We'd like you to point a dish at one of Kerbin's moons so we can start sending some probes that way!
-				synopsis = Point a dish at one of our moons!
-				completedMessage = We've got a signal bouncing back, good job!
-				hash = 380904866
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = MunSat
-					state = Incomplete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_MoonDish
-					title = 
-					notes = 
-					completedMessage = 
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					PARAM
-					{
-						name = KSCConnectivityParameter
-						id = KSCConnectivity
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_MoonDish
-						title = Connected to KSC
-						notes = 
-						completedMessage = 
-						allowStateReset = True
-						hasConnectivity = True
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_MoonDish
-						title = 
-						notes = 
-						completedMessage = 
-						allowStateReset = True
-						targetBody = Kerbin
-						situation = ORBITING
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = RemoteTech.RT_MoonDish
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Orbit
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = RemoteTech.RT_MoonDish
-							title = Situation: Orbit
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = Any
-						id = InnerTarget
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_MoonDish
-						title = Point a Dish at one of Kerbin's moons
-						notes = 
-						completedMessage = 
-						PARAM
-						{
-							name = HasAntennaParameter
-							id = HasAntenna
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = RemoteTech.RT_MoonDish
-							title = 
-							notes = 
-							completedMessage = 
-							allowStateReset = True
-							minRange = 0
-							targetBody = Mun
-							activeVessel = False
-							minCount = 1
-							maxCount = 2147483647
-							antennaType = Dish
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Type: Dish
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Type: Dish
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Target: the Mun
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Target: the Mun
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Activated
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Activated
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Powered
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Powered
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Range: In range of the Mun
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Range: In range of the Mun
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = CountParameterDelegate`1
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Count: At least 1 
-								notes = 
-								completedMessage = 
-							}
-						}
-						PARAM
-						{
-							name = HasAntennaParameter
-							id = HasAntenna
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = RemoteTech.RT_MoonDish
-							title = 
-							notes = 
-							completedMessage = 
-							allowStateReset = True
-							minRange = 0
-							targetBody = Minmus
-							activeVessel = False
-							minCount = 1
-							maxCount = 2147483647
-							antennaType = Dish
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Type: Dish
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Type: Dish
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Target: Minmus
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Target: Minmus
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Activated
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Activated
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Powered
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Powered
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Range: In range of Minmus
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Range: In range of Minmus
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = CountParameterDelegate`1
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = RemoteTech.RT_MoonDish
-								title = Count: At least 1 
-								notes = 
-								completedMessage = 
-							}
-						}
-					}
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Power
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 0
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 1
+					deviationWindow = 7
+					orbitType = 6
+					inclination = 3.92686215955136
+					eccentricity = 0.0315260715709552
+					sma = 9758200.27958217
+					lan = 288.480898518339
+					argumentOfPeriapsis = 263.491950195047
+					meanAnomalyAtEpoch = 4.60056538761434
+					epoch = 0
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = materials bay
+					vesselDescription = satellite
+					partNames = science_module
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
 				}
 			}
 			CONTRACT_FINISHED
@@ -2821,6 +3297,230 @@ GAME
 					}
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = d3e3dd31-cb71-4bb5-9f0c-896abf282337
+				type = TourismContract
+				prestige = 1
+				seed = 1532214732
+				state = Completed
+				agent = StrutCo
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,0,0,0,0,22.72727,12,410718.417913446,347397.721845123,46355397.7218451,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				tourists = Thompvey Kerman|Hansby Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Thompvey Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Thompvey Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Thompvey Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Hansby Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Hansby Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Hansby Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 956f9ea4-9db2-4704-8c20-ff28b69deb91
+				type = TourismContract
+				prestige = 0
+				seed = 1867653449
+				state = Completed
+				agent = Reaction Systems Ltd
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,0,0,0,0,19.04762,10,297208.434436774,259220.468337347,46267220.4683374,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				tourists = Lamy Kerman|Tamara Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Lamy Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Lamy Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Tamara Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Tamara Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = b67e5ad5-ac1a-4813-8f85-c08277ba6a98
+				type = PartTest
+				prestige = 0
+				seed = -324394461
+				state = Completed
+				agent = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 19315.8960745368,8228571.72775267,1871.8268485569,4913.54525432272,1946.69985752106,1,1.024133,1,368004.835834142,348688.939759605,8577260.66751228,0
+				part = liquidEngine2-2
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					part = liquidEngine2-2
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.919252023528913
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					tested = 2594793335
+					PARAM
+					{
+						name = ReachDestination
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 0c17e74b-d6fa-4b05-9131-cfe30875bc37
+				type = PartTest
+				prestige = 0
+				seed = -1116916620
+				state = Completed
+				agent = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 38631.7921490736,8228571.72775267,1871.8268485569,4913.54525432272,1946.69985752106,1,1.024133,1,387342.011908698,348710.219759624,8577281.94751229,0
+				part = liquidEngineMini
+				haul = False
+				dest = 1
+				sit = LANDED
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					part = liquidEngineMini
+					body = Kerbin
+					situation = LANDED
+					uniqueID = 0.41808392359785918
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					tested = 2020395930
+					PARAM
+					{
+						name = ReachDestination
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = LANDED
+						title = 
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -2833,7 +3533,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 390346.095141089
+		funds = 350541.293409788
 	}
 	SCENARIO
 	{
@@ -2968,7 +3668,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 128.7701
+		sci = 40.77029
 		Tech
 		{
 			id = start
@@ -3210,6 +3910,15 @@ GAME
 			part = SmallGearBay
 			part = SmallGearBay
 			part = SmallGearBay
+		}
+		Tech
+		{
+			id = propulsionSystems
+			state = Available
+			cost = 90
+			part = liquidEngineMini
+			part = microEngine
+			part = miniFuelTank
 		}
 		Science
 		{
@@ -3536,9 +4245,9 @@ GAME
 			id = recovery@KerbinOrbited
 			title = Recovery of a vessel returned from Kerbin orbit
 			dsc = 1
-			scv = 2.169609E-05
+			scv = 3.655751E-06
 			sbv = 10
-			sci = 11.99974
+			sci = 11.99996
 			cap = 12
 		}
 		Science
@@ -3831,6 +4540,10 @@ GAME
 			sci = 5.6
 			cap = 5.6
 		}
+		ExpParts
+		{
+			Size2LFB = 1
+		}
 	}
 	SCENARIO
 	{
@@ -3841,7 +4554,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 218.4627
+		rep = 245.5855
 	}
 	SCENARIO
 	{
@@ -3944,6 +4657,10 @@ GAME
 		{
 			intact = True
 		}
+		SpaceCenter/MissionControl/Facility/building
+		{
+			intact = True
+		}
 	}
 	SCENARIO
 	{
@@ -3988,7 +4705,7 @@ GAME
 		}
 		SpaceCenter/MissionControl
 		{
-			lvl = 0.5
+			lvl = 1
 		}
 		SpaceCenter/ResearchAndDevelopment
 		{
@@ -4104,58 +4821,298 @@ GAME
 		scene = 7, 8, 5
 		CONTRACT
 		{
-			guid = 56da8051-0f8c-4449-b9d6-dabbc61a853a
+			guid = c8940ef8-0e77-41b9-9b8a-581afa4fa614
 			type = ConfiguredContract
 			prestige = 0
-			seed = 113789395
+			seed = 1914564674
 			state = Withdrawn
-			agent = SCAN: Scientific Committee on Advanced Navigation
-			deadlineType = Floating
+			agent = Communication Satellite Group
+			deadlineType = None
 			expiryType = Floating
 			ignoresWeight = True
-			values = 77220,25343360.15625,8203,131216,25269,0,2,2,451043.415885459,0,0,0
-			subtype = SCAN_LoRes
-			title = Do a Low Resolution Scan of Minmus
-			description = The brilliant minds at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether brave Kerbals regain their nerve faster than not-so-brave ones felt apparently undecided about whether we were getting nowhere near figuring out if some Kerbals seem to enjoy things that terrify others. Admittedly, the awesome frequency at which we'd find ourselves unintentionally performing high-demand stress-testing was a big part of why. Anyway, that actually ended up raising more questions than answers, and as you've surely deduced already from all this, this is why we're here.
-			synopsis = Perform a RADAR scan of Minmus
-			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
-			notes = Scanning can take place while the vessel is not loaded.
-			hash = -899775195
-			UNIQUE_DATA
-			{
-				targetBody1 = CelestialBody:Minmus
-			}
+			values = 144240,0,5000,15000,5000,0,1,0,456710.219759624,0,0,0
+			subtype = RT_MoonDish
+			title = RemoteTech: Point a dish out from Kerbin
+			description = We'd like you to point a dish at one of Kerbin's moons so we can start sending some probes that way!
+			synopsis = Point a dish at one of our moons!
+			completedMessage = We've got a signal bouncing back, good job!
+			hash = 380904866
 			PARAM
 			{
-				name = SCANsatCoverage
-				id = SCANsatCoverage
+				name = VesselParameterGroup
+				id = MunSat
 				state = Incomplete
+				disableOnStateChange = False
 				values = 0,0,0,0,0
-				ContractIdentifier = ScanSatOfficial.SCAN_LoRes
+				ContractIdentifier = RemoteTech.RT_MoonDish
 				title = 
 				notes = 
 				completedMessage = 
-				coverage = 75
-				scanName = AltimetryLoRes
-				scanType = 1
-				targetBody = Minmus
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_MoonDish
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_MoonDish
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = ORBITING
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = Any
+					id = InnerTarget
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_MoonDish
+					title = Point a Dish at one of Kerbin's moons
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = HasAntennaParameter
+						id = HasAntenna
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						minRange = 0
+						targetBody = Mun
+						activeVessel = False
+						minCount = 1
+						maxCount = 2147483647
+						antennaType = Dish
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Type: Dish
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Type: Dish
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Target: the Mun
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Target: the Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Activated
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Activated
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Powered
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Powered
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Range: In range of the Mun
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Range: In range of the Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasAntennaParameter
+						id = HasAntenna
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						minRange = 0
+						targetBody = Minmus
+						activeVessel = False
+						minCount = 1
+						maxCount = 2147483647
+						antennaType = Dish
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Type: Dish
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Type: Dish
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Target: Minmus
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Target: Minmus
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Activated
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Activated
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Powered
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Powered
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Range: In range of Minmus
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Range: In range of Minmus
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
 			}
 		}
 		CONTRACT
 		{
-			guid = 1c95eaf5-c314-417e-bd88-82effc82ab2d
+			guid = acd65e25-6a5e-4d14-ab78-fe0c265e7b03
 			type = ConfiguredContract
 			prestige = 0
-			seed = 1261094413
+			seed = 1545438249
 			state = Withdrawn
 			agent = SCAN: Scientific Committee on Advanced Navigation
 			deadlineType = Floating
 			expiryType = Floating
 			ignoresWeight = True
-			values = 63240,8761598.87695313,5607,49400,9581,0,1,1,451829.895886191,0,0,0
+			values = 32220,7153031.03027344,6209,57582,9719,0,1,1,456710.219759624,0,0,0
 			subtype = SCAN_LoRes
 			title = Do a Low Resolution Scan of Kerbin
-			description = The genius minds trying something definitely exemplary at SCAN: Scientific Committee on Advanced Navigation felt truly assured about whether we weren't making any progress at all towards learning if stupid Kerbals don't mind spinning around as much as others do. It can't be denied, however, that the weird frequency at which we'd find ourselves underestimating how volatile standard-grade solid rocket fuel really is was how we got into that situation in the first place... However the case may be, we now need your help.
+			description = It's no secret that we were really stumped by whether all Kerbals enjoy feeling weightless. That said, for boffins trying something truly awesome at SCAN: Scientific Committee on Advanced Navigation, that was simply poor. It is true, though, that the way we would often see a really not-that-bad accident was a big part of why. Anyhow, this is where you come in.
 			synopsis = Perform a RADAR scan of Kerbin
 			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
 			notes = Scanning can take place while the vessel is not loaded.
@@ -4182,16 +5139,94 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 2a8e409b-21ac-4727-ab0b-c865cbe665ae
+			guid = 0c7dbf62-4b4b-4e3d-923f-1d3956e1c498
+			type = ConfiguredContract
+			prestige = 0
+			seed = 881719117
+			state = Withdrawn
+			agent = SCAN: Scientific Committee on Advanced Navigation
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 133320,18572108.203125,8391,84074,26673,0,2,2,456771.559759681,0,0,0
+			subtype = SCAN_LoRes
+			title = Do a Low Resolution Scan of the Mun
+			description = The way we would often see a somewhat worse-than-average accident was making boffins making a big mess at SCAN: Scientific Committee on Advanced Navigation's labs feel actually idiotic. That (eventually) made it clear that we knew very little about whether brave Kerbals regain their nerve faster than not-so-brave ones. So, as you've probably figured out at this point, this is where you come in.
+			synopsis = Perform a RADAR scan of the Mun
+			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
+			notes = Scanning can take place while the vessel is not loaded.
+			hash = -899775195
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Mun
+			}
+			PARAM
+			{
+				name = SCANsatCoverage
+				id = SCANsatCoverage
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = ScanSatOfficial.SCAN_LoRes
+				title = 
+				notes = 
+				completedMessage = 
+				coverage = 75
+				scanName = AltimetryLoRes
+				scanType = 1
+				targetBody = Mun
+			}
+		}
+		CONTRACT
+		{
+			guid = 3f5e7b3d-63ab-41f5-a04d-a32a9ae1986e
 			type = ConfiguredContract
 			prestige = 1
-			seed = 42363266
+			seed = 1252450300
+			state = Withdrawn
+			agent = SCAN: Scientific Committee on Advanced Navigation
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 33960,7723535.88867188,5539,52677,14648,0,1,1,456688.939759605,0,0,0
+			subtype = SCAN_LoRes
+			title = Do a Low Resolution Scan of Kerbin
+			description = It's no secret that nobody here seemed to be able to tell if brave Kerbals regain their nerve faster than not-so-brave ones. But, for the brilliant minds at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether some Kerbals don't seem as eager to take part in our projects as others do, that was simply pretty. Admittedly, the way we would often see an awesome crash-landing was quite definitely part of the reason. In any case, as you've surely deduced already from all this, we now need your help.
+			synopsis = Perform a RADAR scan of Kerbin
+			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
+			notes = Scanning can take place while the vessel is not loaded.
+			hash = -899775195
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Kerbin
+			}
+			PARAM
+			{
+				name = SCANsatCoverage
+				id = SCANsatCoverage
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = ScanSatOfficial.SCAN_LoRes
+				title = 
+				notes = 
+				completedMessage = 
+				coverage = 85
+				scanName = AltimetryLoRes
+				scanType = 1
+				targetBody = Kerbin
+			}
+		}
+		CONTRACT
+		{
+			guid = b342bc0d-e445-4459-8fe6-7fb9babc2e55
+			type = ConfiguredContract
+			prestige = 1
+			seed = 1185822210
 			state = Withdrawn
 			agent = Research & Development Department
 			deadlineType = None
 			expiryType = Floating
 			ignoresWeight = True
-			values = 45420,0,12500,25000,12500,12,10,0,110179.316726073,0,0,0
+			values = 72660,0,12500,25000,12500,12,10,0,456711.419759625,0,0,0
 			subtype = ScanKerbinLoRes
 			title = Altimetry Scan of Kerbin
 			description = Our scientists have suggested that knowing what the rock we're flying around looks like might be a good idea. Perform an altimetry scan of Kerbin's surface and report back with the answer to the ultimate question, "Where did I put my keys?".
@@ -4319,7 +5354,7 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
-						title = Count: At least 1
+						title = Count: At least 1 
 						notes = 
 						completedMessage = 
 					}
@@ -4469,1203 +5504,6 @@ GAME
 				}
 			}
 		}
-		CONTRACT
-		{
-			guid = fa9dd7b8-68ef-4959-8f76-be3b9aac70ba
-			type = ConfiguredContract
-			prestige = 1
-			seed = 2141649280
-			state = Withdrawn
-			agent = SCAN: Scientific Committee on Advanced Navigation
-			deadlineType = Floating
-			expiryType = Floating
-			ignoresWeight = True
-			values = 101760,8713760.22949219,6288,69176,17142,0,1,1,110569.114147947,0,0,0
-			subtype = SCAN_LoRes
-			title = Do a Low Resolution Scan of Kerbin
-			description = A restless team trying something definitely outstanding at SCAN: Scientific Committee on Advanced Navigation felt clearly sure about whether nobody here seemed to be able to tell if some Kerbals seem to enjoy high speeds, while others apparently just don't. It is true, though, that the way we would frequently see an unintended ignition was a big part of why. In any case, we now need your help.
-			synopsis = Perform a RADAR scan of Kerbin
-			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
-			notes = Scanning can take place while the vessel is not loaded.
-			hash = -899775195
-			UNIQUE_DATA
-			{
-				targetBody1 = CelestialBody:Kerbin
-			}
-			PARAM
-			{
-				name = SCANsatCoverage
-				id = SCANsatCoverage
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = ScanSatOfficial.SCAN_LoRes
-				title = 
-				notes = 
-				completedMessage = 
-				coverage = 85
-				scanName = AltimetryLoRes
-				scanType = 1
-				targetBody = Kerbin
-			}
-		}
-		CONTRACT
-		{
-			guid = 4ab4dc9e-1442-4f2f-999a-a0738c5a056d
-			type = ConfiguredContract
-			prestige = 1
-			seed = 543979123
-			state = Withdrawn
-			agent = Communication Satellite Group
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 40260,0,75000,225000,75000,0,12,0,450923.615885347,0,0,0
-			subtype = RT_KerbinRelay
-			title = RemoteTech: Create a communication network for Kerbin (3 satellites).
-			description = Mission control is tired of losing vessels and probes over the horizon, since they are rarely heard from again.  We need to find a way to stay in constant communication if we have any hope of truly exploring the Mun and beyond.
-			synopsis = Build a communication network with three commsats that has continuous connectivity to mission control.\n\nAlso, make sure to only accept either the three or four satellite version of this contract (it's impossible to complete both).
-			completedMessage = The network is up and transmitting, and our shake-out testing is complete!
-			notes = A three satellite network must have a minimum periapsis of 600,000.00 m.  Note that this is the bare minimum numbers to have visibility, it is recommended to use higher orbits to give a larger margin of error.
-			hash = 1427574305
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = CommSat1
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay
-				title = 
-				notes = 
-				completedMessage = 
-				define = CommSat I
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = KSCConnectivityParameter
-					id = KSCConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = Connected to KSC
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat II
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat III
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Kerbin
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 600000
-					minEccentricity = 0
-					maxEccentricity = 0.004
-					minInclination = 0
-					maxInclination = 1
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Periapsis: Above 600,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Periapsis: Above 600,000 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Eccentricity: Below 0.0040
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Eccentricity: Below 0.0040
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Inclination: Below 1.0°
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Inclination: Below 1.0°
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = CommSat2
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay
-				title = 
-				notes = 
-				completedMessage = 
-				define = CommSat II
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = VesselConnectivityParameter
-					id = VesselConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-					vesselKey = CommSat I
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat III
-				}
-				PARAM
-				{
-					name = KSCConnectivityParameter
-					id = KSCConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = Connected to KSC
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Kerbin
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 600000
-					minEccentricity = 0
-					maxEccentricity = 0.004
-					minInclination = 0
-					maxInclination = 1
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Periapsis: Above 600,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Periapsis: Above 600,000 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Eccentricity: Below 0.0040
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Eccentricity: Below 0.0040
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Inclination: Below 1.0°
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Inclination: Below 1.0°
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = CommSat3
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay
-				title = 
-				notes = 
-				completedMessage = 
-				define = CommSat III
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat I
-				}
-				PARAM
-				{
-					name = VesselConnectivityParameter
-					id = VesselConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-					vesselKey = CommSat II
-				}
-				PARAM
-				{
-					name = KSCConnectivityParameter
-					id = KSCConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = Connected to KSC
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Kerbin
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 600000
-					minEccentricity = 0
-					maxEccentricity = 0.004
-					minInclination = 0
-					maxInclination = 1
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Periapsis: Above 600,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Periapsis: Above 600,000 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Eccentricity: Below 0.0040
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Eccentricity: Below 0.0040
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Inclination: Below 1.0°
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay
-						title = Inclination: Below 1.0°
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = Duration
-				id = Duration
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay
-				title = 
-				notes = 
-				completedMessage = 
-				duration = 43200
-				preWaitText = Testing time after network up
-				waitingText = Performing shake-out testing
-				completionText = Shake-out testing completed
-				endTime = 0
-				startCriteria = CONTRACT_ACCEPTANCE
-				triggered = False
-			}
-		}
-		CONTRACT
-		{
-			guid = db2861fa-f125-4fff-9180-4463cfb607f9
-			type = ConfiguredContract
-			prestige = 1
-			seed = 1136390766
-			state = Withdrawn
-			agent = Communication Satellite Group
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 63180,0,100000,300000,100000,0,16,0,450923.655885347,0,0,0
-			subtype = RT_KerbinRelay_4sat
-			title = RemoteTech: Create a communication network for Kerbin (4 satellites).
-			description = Mission control is tired of losing vessels and probes over the horizon, since they are rarely heard from again.  We need to find a way to stay in constant communication if we have any hope of truly exploring the Mun and beyond.
-			synopsis = Build a communication network with four commsats that has continuous connectivity to mission control.\n\nAlso, make sure to only accept either the three or four satellite version of this contract (it's impossible to complete both).
-			completedMessage = The network is up and transmitting, and our shake-out testing is complete!
-			notes = A four satellite network must have a minimum periapsis of 248,528.14 m.  Note that this is the bare minimum numbers to have visibility, it is recommended to use higher orbits to give a larger margin of error.
-			hash = -1069604761
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = CommSat1
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-				title = 
-				notes = 
-				completedMessage = 
-				define = CommSat I
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = KSCConnectivityParameter
-					id = KSCConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = Connected to KSC
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat II
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat III
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat IV
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Kerbin
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 248528.137423857
-					minEccentricity = 0
-					maxEccentricity = 0.004
-					minInclination = 0
-					maxInclination = 1
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Periapsis: Above 248,528 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Periapsis: Above 248,528 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Eccentricity: Below 0.0040
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Eccentricity: Below 0.0040
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Inclination: Below 1.0°
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Inclination: Below 1.0°
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = CommSat2
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-				title = 
-				notes = 
-				completedMessage = 
-				define = CommSat II
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = VesselConnectivityParameter
-					id = VesselConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-					vesselKey = CommSat I
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat III
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat IV
-				}
-				PARAM
-				{
-					name = KSCConnectivityParameter
-					id = KSCConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = Connected to KSC
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Kerbin
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 248528.137423857
-					minEccentricity = 0
-					maxEccentricity = 0.004
-					minInclination = 0
-					maxInclination = 1
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Periapsis: Above 248,528 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Periapsis: Above 248,528 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Eccentricity: Below 0.0040
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Eccentricity: Below 0.0040
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Inclination: Below 1.0°
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Inclination: Below 1.0°
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = CommSat3
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-				title = 
-				notes = 
-				completedMessage = 
-				define = CommSat III
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat I
-				}
-				PARAM
-				{
-					name = VesselConnectivityParameter
-					id = VesselConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-					vesselKey = CommSat II
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat IV
-				}
-				PARAM
-				{
-					name = KSCConnectivityParameter
-					id = KSCConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = Connected to KSC
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Kerbin
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 248528.137423857
-					minEccentricity = 0
-					maxEccentricity = 0.004
-					minInclination = 0
-					maxInclination = 1
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Periapsis: Above 248,528 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Periapsis: Above 248,528 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Eccentricity: Below 0.0040
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Eccentricity: Below 0.0040
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Inclination: Below 1.0°
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Inclination: Below 1.0°
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = CommSat4
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-				title = 
-				notes = 
-				completedMessage = 
-				define = CommSat IV
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = VesselConnectivityParameter
-					id = VesselConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-					vesselKey = CommSat I
-				}
-				PARAM
-				{
-					name = IsNotVessel
-					id = IsNotVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					vesselKey = CommSat II
-				}
-				PARAM
-				{
-					name = VesselConnectivityParameter
-					id = VesselConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-					vesselKey = CommSat III
-				}
-				PARAM
-				{
-					name = KSCConnectivityParameter
-					id = KSCConnectivity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = Connected to KSC
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					hasConnectivity = True
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Kerbin
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 248528.137423857
-					minEccentricity = 0
-					maxEccentricity = 0.004
-					minInclination = 0
-					maxInclination = 1
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Periapsis: Above 248,528 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Periapsis: Above 248,528 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Eccentricity: Below 0.0040
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Eccentricity: Below 0.0040
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Inclination: Below 1.0°
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-						title = Inclination: Below 1.0°
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = Duration
-				id = Duration
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
-				title = 
-				notes = 
-				completedMessage = 
-				duration = 43200
-				preWaitText = Testing time after network up
-				waitingText = Performing shake-out testing
-				completionText = Shake-out testing completed
-				endTime = 0
-				startCriteria = CONTRACT_ACCEPTANCE
-				triggered = False
-			}
-		}
 	}
 	SCENARIO
 	{
@@ -5689,7 +5527,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 21427
+		nextCheck = 23177
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -6045,11 +5883,9 @@ GAME
 			Bill Kerman = M GENERIC GENERIC
 			Bob Kerman = M GENERIC GENERIC
 			Valentina Kerman = F GENERIC GENERIC
-			Lamy Kerman = F GENERIC GENERIC
-			Tamara Kerman = F GENERIC GENERIC
 			Rayrod Kerman = M GENERIC GENERIC
-			Thompvey Kerman = M GENERIC GENERIC
-			Hansby Kerman = M GENERIC GENERIC
+			Wehrsey Kerman = M GENERIC GENERIC
+			Lemrick Kerman = M GENERIC GENERIC
 		}
 		ClassSuits
 		{
@@ -6065,82 +5901,6 @@ GAME
 			Enabled = True
 			HibernateInsteadOfKill = False
 			RespawnDelay = 9203545
-			CrewMemberInfo
-			{
-				name = Maglee Kerman
-				lastUpdate = 347345.041845074
-				lastFood = 347345.041845074
-				lastWater = 347345.041845074
-				vesselName = Bus
-				vesselId = 8b3a78ef-6432-4edf-85dd-018f64506116
-				hibernating = False
-			}
-			CrewMemberInfo
-			{
-				name = Macdard Kerman
-				lastUpdate = 347345.041845074
-				lastFood = 347345.041845074
-				lastWater = 347345.041845074
-				vesselName = Bus
-				vesselId = 8b3a78ef-6432-4edf-85dd-018f64506116
-				hibernating = False
-			}
-			CrewMemberInfo
-			{
-				name = Ribfrod Kerman
-				lastUpdate = 347345.041845074
-				lastFood = 347345.041845074
-				lastWater = 347345.041845074
-				vesselName = Bus
-				vesselId = 8b3a78ef-6432-4edf-85dd-018f64506116
-				hibernating = False
-			}
-			CrewMemberInfo
-			{
-				name = Jebediah Kerman
-				lastUpdate = 347345.041845074
-				lastFood = 347345.041845074
-				lastWater = 347345.041845074
-				vesselName = Bus
-				vesselId = 8b3a78ef-6432-4edf-85dd-018f64506116
-				hibernating = False
-			}
-			CrewMemberInfo
-			{
-				name = Alddan Kerman
-				lastUpdate = 347345.041845074
-				lastFood = 347345.041845074
-				lastWater = 347345.041845074
-				vesselName = Bus
-				vesselId = 8b3a78ef-6432-4edf-85dd-018f64506116
-				hibernating = False
-			}
-			VesselInfo
-			{
-				vesselName = Bus
-				vesselType = Ship
-				numCrew = 5
-				numOccupiedParts = 3
-				lastUpdate = 347345.041845074
-				lastFood = 347345.041845074
-				lastWater = 347345.041845074
-				lastOxygen = 347345.041845074
-				lastElectricity = 347345.041845074
-				remainingFood = 0.982033287053908
-				remainingWater = 0.649011915843644
-				remainingOxygen = 101.95340187261
-				remainingElectricity = 332.578574352615
-				remainingCO2 = 7.84714412870367
-				remainingWaste = 0.010455092529857
-				remainingWasteWater = 0.0967685631792164
-				maxFood = 1.097
-				maxWater = 0.725
-				maxOxygen = 111.038
-				maxElectricity = 500
-				estimatedElectricityConsumptionRate = 0.134583333333335
-				hibernating = False
-				Guid = 8b3a78ef-6432-4edf-85dd-018f64506116
-			}
 		}
 	}
 	SCENARIO
@@ -6170,7 +5930,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 347359.741845088
+		UT = 348810.519759717
 		activeVessel = 0
 		mapViewFiltering = 1023
 		VESSEL
@@ -6202,13 +5962,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300021.364388671
 				ECC = 1
-				INC = 90.0969098957756
+				INC = 90.0969099064018
 				LPE = 90
-				LAN = 328.070503623053
-				MNA = 0
-				EPH = 347345.061845074
+				LAN = 352.440530596436
+				MNA = 3.14159262071702
+				EPH = 348803.839759711
 				REF = 1
 			}
 			PART
@@ -6546,13 +6306,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300021.364388671
 				ECC = 1
-				INC = 90.0969098957756
+				INC = 90.0969099064018
 				LPE = 90
-				LAN = 328.070503623053
-				MNA = 0
-				EPH = 347345.061845074
+				LAN = 352.440530596436
+				MNA = 3.14159262071702
+				EPH = 348803.839759711
 				REF = 1
 			}
 			PART
@@ -6890,13 +6650,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300021.364388671
 				ECC = 1
-				INC = 90.0969098957756
+				INC = 90.0969099064018
 				LPE = 90
-				LAN = 328.070503623053
-				MNA = 0
-				EPH = 347345.061845074
+				LAN = 352.440530596436
+				MNA = 3.14159262071702
+				EPH = 348803.839759711
 				REF = 1
 			}
 			PART
@@ -7234,13 +6994,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300021.364388671
 				ECC = 1
-				INC = 90.0969098957756
+				INC = 90.0969099064018
 				LPE = 90
-				LAN = 328.070503623053
-				MNA = 0
-				EPH = 347345.061845074
+				LAN = 352.440530596436
+				MNA = 3.14159262071702
+				EPH = 348803.839759711
 				REF = 1
 			}
 			PART
@@ -7650,7 +7410,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 24
+				flight = 26
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = Recover
@@ -7734,10 +7494,16 @@ GAME
 				23 = BoardVessel,Kerbin
 				23 = Land,Kerbin
 				23 = Recover
+				24 = Flight,Kerbin
+				24 = Suborbit,Kerbin
+				24 = Orbit,Kerbin
+				24 = Land,Kerbin
+				24 = Recover
+				25 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 24
+				flight = 26
 			}
 		}
 		KERBAL
@@ -7824,100 +7590,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Lamy Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.0215864
-			dumb = 0.3612809
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Tamara Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.2087443
-			dumb = 0.1661747
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
 			name = Rayrod Kerman
 			gender = Male
 			type = Unowned
 			trait = Scientist
 			brave = 0.6464836
 			dumb = 0.3608995
-			badS = False
-			tour = False
-			state = Assigned
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Thompvey Kerman
-			gender = Male
-			type = Unowned
-			trait = Engineer
-			brave = 0.4941298
-			dumb = 0.1768431
-			badS = False
-			tour = False
-			state = Assigned
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Hansby Kerman
-			gender = Male
-			type = Unowned
-			trait = Scientist
-			brave = 0.4519585
-			dumb = 0.2860426
 			badS = False
 			tour = False
 			state = Assigned
@@ -8196,9 +7874,61 @@ GAME
 				flight = 0
 			}
 		}
+		KERBAL
+		{
+			name = Wehrsey Kerman
+			gender = Male
+			type = Unowned
+			trait = Scientist
+			brave = 0.7104557
+			dumb = 0.6330406
+			badS = False
+			tour = False
+			state = Assigned
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Lemrick Kerman
+			gender = Male
+			type = Unowned
+			trait = Engineer
+			brave = 0.8642544
+			dumb = 0.4095511
+			badS = False
+			tour = False
+			state = Assigned
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
 	}
 	MESSAGESYSTEM
 	{
 		flash = True
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Test 48-7S "Spark" Liquid Fuel Engine landed at Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  4,914   </color>~n<color=#6DCFF6>© 1   </color>~n<color=#E0D503>¡ 1   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
 	}
 }
