@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 362484.136320191
+		update = 362193.956319921
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -760,7 +760,6 @@ GAME
 					completedMessage = 
 					define = CommSat I
 					duration = 0
-					trackedVessel = e17621b3-17be-47dd-a38d-9891c9ac4814
 					dissassociateVesselsOnContractFailure = True
 					dissassociateVesselsOnContractCompletion = False
 					PARAM
@@ -776,24 +775,11 @@ GAME
 						completedMessage = 
 						allowStateReset = True
 						hasConnectivity = True
-						VESSEL_STATS
-						{
-							vessel = e17621b3-17be-47dd-a38d-9891c9ac4814
-							state = Complete
-							strength = STRONG
-							completionTime = 362194.916319922
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
 							strength = STRONG
 							completionTime = 362024.556319763
-						}
-						DOCKED_SUB_VESSEL
-						{
-							hash = 124280491
-							strength = STRONG
-							completionTime = 362194.916319922
 						}
 					}
 					PARAM
@@ -811,24 +797,11 @@ GAME
 						allowStateReset = True
 						failWhenUnmet = True
 						vesselKey = CommSat II
-						VESSEL_STATS
-						{
-							vessel = e17621b3-17be-47dd-a38d-9891c9ac4814
-							state = Complete
-							strength = STRONG
-							completionTime = 362194.316319921
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
 							strength = STRONG
 							completionTime = 362023.936319762
-						}
-						DOCKED_SUB_VESSEL
-						{
-							hash = 124280491
-							strength = STRONG
-							completionTime = 362194.316319921
 						}
 					}
 					PARAM
@@ -846,24 +819,11 @@ GAME
 						allowStateReset = True
 						failWhenUnmet = True
 						vesselKey = CommSat III
-						VESSEL_STATS
-						{
-							vessel = e17621b3-17be-47dd-a38d-9891c9ac4814
-							state = Complete
-							strength = STRONG
-							completionTime = 362194.316319921
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
 							strength = STRONG
 							completionTime = 362023.936319762
-						}
-						DOCKED_SUB_VESSEL
-						{
-							hash = 124280491
-							strength = STRONG
-							completionTime = 362194.316319921
 						}
 					}
 					PARAM
@@ -964,7 +924,6 @@ GAME
 					completedMessage = 
 					define = CommSat II
 					duration = 0
-					trackedVessel = e17621b3-17be-47dd-a38d-9891c9ac4814
 					dissassociateVesselsOnContractFailure = True
 					dissassociateVesselsOnContractCompletion = False
 					PARAM
@@ -997,24 +956,11 @@ GAME
 						allowStateReset = True
 						failWhenUnmet = True
 						vesselKey = CommSat III
-						VESSEL_STATS
-						{
-							vessel = e17621b3-17be-47dd-a38d-9891c9ac4814
-							state = Complete
-							strength = STRONG
-							completionTime = 362194.316319921
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
 							strength = STRONG
 							completionTime = 362023.936319762
-						}
-						DOCKED_SUB_VESSEL
-						{
-							hash = 124280491
-							strength = STRONG
-							completionTime = 362194.316319921
 						}
 					}
 					PARAM
@@ -1030,24 +976,11 @@ GAME
 						completedMessage = 
 						allowStateReset = True
 						hasConnectivity = True
-						VESSEL_STATS
-						{
-							vessel = e17621b3-17be-47dd-a38d-9891c9ac4814
-							state = Complete
-							strength = STRONG
-							completionTime = 362194.916319922
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
 							strength = STRONG
 							completionTime = 362024.556319763
-						}
-						DOCKED_SUB_VESSEL
-						{
-							hash = 124280491
-							strength = STRONG
-							completionTime = 362194.916319922
 						}
 					}
 					PARAM
@@ -1148,7 +1081,6 @@ GAME
 					completedMessage = 
 					define = CommSat III
 					duration = 0
-					trackedVessel = e17621b3-17be-47dd-a38d-9891c9ac4814
 					dissassociateVesselsOnContractFailure = True
 					dissassociateVesselsOnContractCompletion = False
 					PARAM
@@ -1166,24 +1098,11 @@ GAME
 						allowStateReset = True
 						failWhenUnmet = True
 						vesselKey = CommSat I
-						VESSEL_STATS
-						{
-							vessel = e17621b3-17be-47dd-a38d-9891c9ac4814
-							state = Complete
-							strength = STRONG
-							completionTime = 362194.316319921
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
 							strength = STRONG
 							completionTime = 362023.936319762
-						}
-						DOCKED_SUB_VESSEL
-						{
-							hash = 124280491
-							strength = STRONG
-							completionTime = 362194.316319921
 						}
 					}
 					PARAM
@@ -1214,24 +1133,11 @@ GAME
 						completedMessage = 
 						allowStateReset = True
 						hasConnectivity = True
-						VESSEL_STATS
-						{
-							vessel = e17621b3-17be-47dd-a38d-9891c9ac4814
-							state = Complete
-							strength = STRONG
-							completionTime = 362194.916319922
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
 							strength = STRONG
 							completionTime = 362024.556319763
-						}
-						DOCKED_SUB_VESSEL
-						{
-							hash = 124280491
-							strength = STRONG
-							completionTime = 362194.916319922
 						}
 					}
 					PARAM
@@ -5743,7 +5649,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 24337
+		nextCheck = 23588
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -6120,38 +6026,64 @@ GAME
 			CrewMemberInfo
 			{
 				name = Bob Kerman
-				lastUpdate = 362493.9363202
-				lastFood = 362493.9363202
-				lastWater = 362493.9363202
-				vesselName = Untitled Space Craft
-				vesselId = e17621b3-17be-47dd-a38d-9891c9ac4814
+				lastUpdate = 362186.796319914
+				lastFood = 362186.796319914
+				lastWater = 362186.796319914
+				vesselName = EVA
+				vesselId = 78733047-5878-46f5-94d7-94bf72e26e34
 				hibernating = False
 			}
 			VesselInfo
 			{
 				vesselName = Untitled Space Craft
 				vesselType = Ship
-				numCrew = 1
-				numOccupiedParts = 1
-				lastUpdate = 362493.9363202
-				lastFood = 362493.9363202
-				lastWater = 362493.9363202
-				lastOxygen = 362493.9363202
-				lastElectricity = 362493.9363202
-				remainingFood = 1.09197638020454
-				remainingWater = 0.721679601999415
-				remainingOxygen = 111.038
-				remainingElectricity = 1612.9945551632
+				numCrew = 0
+				numOccupiedParts = 0
+				lastUpdate = 362186.796319914
+				lastFood = 362186.796319914
+				lastWater = 362186.796319914
+				lastOxygen = 362186.796319914
+				lastElectricity = 362186.796319914
+				remainingFood = 0.729119296880498
+				remainingWater = 0.481846576624242
+				remainingOxygen = 74.025588652484
+				remainingElectricity = 1970.11197574618
 				remainingCO2 = 0
-				remainingWaste = 0.000456848843062143
-				remainingWasteWater = 0.00422842801314178
+				remainingWaste = 0.000205134027988538
+				remainingWasteWater = 0.00189864652952126
 				maxFood = 1.097
 				maxWater = 0.725
 				maxOxygen = 111.038
-				maxElectricity = 1710
-				estimatedElectricityConsumptionRate = 0.035416666666667
+				maxElectricity = 2100
+				estimatedElectricityConsumptionRate = 0
 				hibernating = False
-				Guid = e17621b3-17be-47dd-a38d-9891c9ac4814
+				Guid = ae824272-99da-48fc-ba13-26661b5d3011
+			}
+			VesselInfo
+			{
+				vesselName = Bob Kerman
+				vesselType = EVA
+				numCrew = 1
+				numOccupiedParts = 1
+				lastUpdate = 362186.796319914
+				lastFood = 362186.796319914
+				lastWater = 362186.796319914
+				lastOxygen = 362186.796319914
+				lastElectricity = 362186.796319914
+				remainingFood = 0.365219088534094
+				remainingWater = 0.241394209878818
+				remainingOxygen = 37.012411347516
+				remainingElectricity = 91.6983399998998
+				remainingCO2 = 0
+				remainingWaste = 3.69136574453391E-05
+				remainingWasteWater = 0.000341659491054493
+				maxFood = 0.3656249999928
+				maxWater = 0.2416625000064
+				maxOxygen = 37.012411347516
+				maxElectricity = 91.8
+				estimatedElectricityConsumptionRate = 0.00425
+				hibernating = False
+				Guid = 78733047-5878-46f5-94d7-94bf72e26e34
 			}
 		}
 	}
@@ -6182,7 +6114,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 362493.9363202
+		UT = 362194.316319921
 		activeVessel = 4
 		mapViewFiltering = 1023
 		VESSEL
@@ -7578,37 +7510,37 @@ GAME
 			pid = e17621b317be47dda38d9891c9ac4814
 			name = Untitled Space Craft
 			type = Ship
-			sit = LANDED
+			sit = PRELAUNCH
 			landed = True
-			landedAt = KSC_Pad_Grounds
+			landedAt = LaunchPad
 			splashed = False
-			met = 296.860000276472
-			lct = 362197.076319924
-			lastUT = 362493.9363202
+			met = 0
+			lct = 362194.316319921
+			lastUT = 362194.316319921
 			root = 0
-			lat = -0.0997882974633983
-			lon = 285.435219027509
-			alt = 71.005288394168
-			hgt = 3.438662
-			nrm = 0.9659253,-1.055538E-06,0.2588215
-			rot = 0.8611752,0.08572468,-0.4933283,0.08749638
-			CoM = -0.003931248,-0.1533589,-0.006687736
-			stg = 0
+			lat = -0.0972315366751685
+			lon = 285.442429927413
+			alt = 75.3147220340325
+			hgt = 5.303751
+			nrm = 0.0007471074,-4.487956E-07,-0.9999999
+			rot = -0.0003708134,-0.1339849,-0.003569113,0.9909769
+			CoM = -0.1750153,-0.0756781,0.2451985
+			stg = 1
 			prst = False
 			ref = 860275879
 			ctrl = True
-			cPch = 0.4100001
-			cHdg = 4.798001
+			cPch = 0.2
+			cHdg = 0.3
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300817.841987833
-				ECC = 0.994798558236323
-				INC = 0.0997788441569953
-				LPE = 89.9828637056645
-				LAN = 41.1973770620233
-				MNA = 3.14159135194701
-				EPH = 362493.9363202
+				SMA = 300819.887092896
+				ECC = 0.994798455728188
+				INC = 0.097236856914823
+				LPE = 90.0000000000003
+				LAN = 36.1820470477948
+				MNA = 3.14159265358979
+				EPH = 362194.316319921
 				REF = 1
 			}
 			PART
@@ -7633,11 +7565,11 @@ GAME
 				attN = bottom, 1
 				attN = top, 31
 				mass = 0.8
-				temp = 306.757600028928
-				tempExt = 307.102817808352
-				tempExtUnexp = 307.103609078111
+				temp = 306.171935199616
+				tempExt = 306.219152297021
+				tempExtUnexp = 306.217727565366
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -8122,8 +8054,6 @@ GAME
 					Log
 					{
 						flight = 0
-						0 = Flight,Kerbin
-						0 = Land,Kerbin
 					}
 				}
 				MODULE
@@ -8204,7 +8134,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 292.337556316954
+					amount = 299.999973333334
 					maxAmount = 300
 					flowState = True
 					isTweakable = True
@@ -8226,7 +8156,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 1.09197604166288
+					amount = 1.097
 					maxAmount = 1.097
 					flowState = True
 					isTweakable = True
@@ -8237,7 +8167,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 0.72167937823784
+					amount = 0.725
 					maxAmount = 0.725
 					flowState = True
 					isTweakable = True
@@ -8270,7 +8200,7 @@ GAME
 				RESOURCE
 				{
 					name = Waste
-					amount = 0.000456879630099211
+					amount = 0
 					maxAmount = 0.1
 					flowState = True
 					isTweakable = True
@@ -8281,7 +8211,7 @@ GAME
 				RESOURCE
 				{
 					name = WasteWater
-					amount = 0.00422871296684575
+					amount = 0
 					maxAmount = 0.924
 					flowState = True
 					isTweakable = True
@@ -8312,11 +8242,11 @@ GAME
 				attN = top, 0
 				attN = bottom, 20
 				mass = 0.2
-				temp = 306.776814375902
-				tempExt = 306.7532053605
-				tempExtUnexp = 306.753376499181
+				temp = 306.171540847206
+				tempExt = 306.119011747836
+				tempExtUnexp = 306.118722721572
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -8561,11 +8491,11 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.729292820188
-				tempExt = 306.716018527098
-				tempExtUnexp = 306.715971394621
+				temp = 306.171901481693
+				tempExt = 306.155744341224
+				tempExtUnexp = 306.156510239166
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -8637,11 +8567,11 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.729344254588
-				tempExt = 306.716395263096
-				tempExtUnexp = 306.716345280586
+				temp = 306.171901481693
+				tempExt = 306.155744341224
+				tempExtUnexp = 306.156510239166
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -8713,11 +8643,11 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.751324255009
-				tempExt = 306.728331903005
-				tempExtUnexp = 306.728286669026
+				temp = 306.171897371928
+				tempExt = 306.160840303344
+				tempExtUnexp = 306.161320215687
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -8962,11 +8892,11 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.76036223215
-				tempExt = 306.738118958915
-				tempExtUnexp = 306.738075593164
+				temp = 306.171903868038
+				tempExt = 306.164437591742
+				tempExtUnexp = 306.164735143967
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9198,11 +9128,11 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.765567009571
-				tempExt = 306.732784687026
-				tempExtUnexp = 306.732741069701
+				temp = 306.171869260812
+				tempExt = 306.160354616519
+				tempExtUnexp = 306.160828606418
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9435,11 +9365,11 @@ GAME
 				sym = 8
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.76913230611
-				tempExt = 306.734595350515
-				tempExtUnexp = 306.734548619155
+				temp = 306.171791362797
+				tempExt = 306.160931367641
+				tempExtUnexp = 306.161413542825
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9493,7 +9423,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -9523,11 +9453,11 @@ GAME
 				sym = 7
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.768990170666
-				tempExt = 306.733265839827
-				tempExtUnexp = 306.733222421765
+				temp = 306.172063068907
+				tempExt = 306.185156735122
+				tempExtUnexp = 306.184881246763
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9581,7 +9511,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -9611,11 +9541,11 @@ GAME
 				sym = 10
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.769108921421
-				tempExt = 306.734329087837
-				tempExtUnexp = 306.734272656909
+				temp = 306.171796322321
+				tempExt = 306.161171433543
+				tempExtUnexp = 306.161656627219
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9669,7 +9599,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -9699,11 +9629,11 @@ GAME
 				sym = 9
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.768990170666
-				tempExt = 306.733265839827
-				tempExtUnexp = 306.733222421765
+				temp = 306.171799756952
+				tempExt = 306.161337920109
+				tempExtUnexp = 306.161825207176
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9757,7 +9687,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -9787,11 +9717,11 @@ GAME
 				sym = 12
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.769062719434
-				tempExt = 306.733934439943
-				tempExtUnexp = 306.73388401257
+				temp = 306.171785086103
+				tempExt = 306.160628344893
+				tempExtUnexp = 306.161106710181
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9845,7 +9775,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -9875,11 +9805,11 @@ GAME
 				sym = 11
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.768990170666
-				tempExt = 306.733265839827
-				tempExtUnexp = 306.733222421765
+				temp = 306.171793126479
+				tempExt = 306.161805986449
+				tempExtUnexp = 306.162191224809
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -9933,7 +9863,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -9963,11 +9893,11 @@ GAME
 				sym = 14
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.769131047319
-				tempExt = 306.734571764786
-				tempExtUnexp = 306.734524164555
+				temp = 306.171785086103
+				tempExt = 306.160628344893
+				tempExtUnexp = 306.161106710181
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10021,7 +9951,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -10051,11 +9981,11 @@ GAME
 				sym = 13
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.768990170666
-				tempExt = 306.733265839827
-				tempExtUnexp = 306.733222421765
+				temp = 306.171794508172
+				tempExt = 306.162008353112
+				tempExtUnexp = 306.162377586993
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10109,7 +10039,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -10139,11 +10069,11 @@ GAME
 				sym = 16
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.76909964763
-				tempExt = 306.734255004353
-				tempExtUnexp = 306.734195907624
+				temp = 306.171785086103
+				tempExt = 306.160628344893
+				tempExtUnexp = 306.161106710181
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10197,7 +10127,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -10227,11 +10157,11 @@ GAME
 				sym = 15
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.768990170666
-				tempExt = 306.733265839827
-				tempExtUnexp = 306.733222421765
+				temp = 306.17249387817
+				tempExt = 306.222750452224
+				tempExtUnexp = 306.221150125822
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10285,7 +10215,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -10315,11 +10245,11 @@ GAME
 				sym = 18
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.769046924882
-				tempExt = 306.733793443602
-				tempExtUnexp = 306.733745812727
+				temp = 306.171785086103
+				tempExt = 306.160628344893
+				tempExtUnexp = 306.161106710181
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10373,7 +10303,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -10403,11 +10333,11 @@ GAME
 				sym = 17
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.768990170666
-				tempExt = 306.733265839827
-				tempExtUnexp = 306.733222421765
+				temp = 306.171923406646
+				tempExt = 306.173336682636
+				tempExtUnexp = 306.173434443329
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10461,7 +10391,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 93.6228969674866
+					amount = 99.9999733333339
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -10490,11 +10420,11 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.005
-				temp = 306.765040667314
-				tempExt = 306.733484321527
-				tempExtUnexp = 306.733424835596
+				temp = 306.17186551521
+				tempExt = 306.162011127707
+				tempExtUnexp = 306.162361562298
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10726,30 +10656,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = ModuleRTDataTransmitter
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -10773,11 +10679,11 @@ GAME
 				attN = bottom, 21
 				attN = top, 1
 				mass = 0.05
-				temp = 306.783011159519
-				tempExt = 306.903799056572
-				tempExtUnexp = 306.90374055049
+				temp = 306.171919712594
+				tempExt = 306.170928603114
+				tempExtUnexp = 306.170596555188
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -10908,11 +10814,11 @@ GAME
 				attN = top, 20
 				attN = bottom, 22
 				mass = 0.15
-				temp = 306.79152352907
-				tempExt = 307.0047482725
-				tempExtUnexp = 307.005422598913
+				temp = 306.172383672696
+				tempExt = 306.210668663762
+				tempExtUnexp = 306.209576961538
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -11112,11 +11018,11 @@ GAME
 				attN = bottom, 21
 				attN = top, -1
 				mass = 0.05
-				temp = 306.785471807488
-				tempExt = 306.904113403682
-				tempExtUnexp = 306.904062117701
+				temp = 306.171926013567
+				tempExt = 306.171679213842
+				tempExtUnexp = 306.171319333165
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -11252,11 +11158,11 @@ GAME
 				sym = 30
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -11387,11 +11293,11 @@ GAME
 				sym = 30
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -11522,11 +11428,11 @@ GAME
 				sym = 30
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -11657,11 +11563,11 @@ GAME
 				sym = 30
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -11792,11 +11698,11 @@ GAME
 				sym = 30
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -11927,11 +11833,11 @@ GAME
 				sym = 30
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -12062,11 +11968,11 @@ GAME
 				sym = 30
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -12197,11 +12103,11 @@ GAME
 				sym = 29
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 306.786362619454
-				tempExt = 306.893100578277
-				tempExtUnexp = 306.893048029951
+				temp = 306.171963326503
+				tempExt = 306.175320451351
+				tempExtUnexp = 306.174798863264
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -12327,11 +12233,11 @@ GAME
 				attN = top, 32
 				attN = bottom, 0
 				mass = 0.01
-				temp = 306.764654153442
-				tempExt = 306.955384155179
-				tempExtUnexp = 306.955333885161
+				temp = 306.17188673751
+				tempExt = 306.171565921301
+				tempExtUnexp = 306.171050586508
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -12385,7 +12291,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 192.980226642909
+					amount = 199.999973333334
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -12416,11 +12322,11 @@ GAME
 				attN = bottom, 31
 				attN = top, 33
 				mass = 0.1
-				temp = 306.764510417001
-				tempExt = 306.763430750469
-				tempExtUnexp = 306.763375691509
+				temp = 306.171916264954
+				tempExt = 306.16529248829
+				tempExtUnexp = 306.16547770779
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -12645,7 +12551,7 @@ GAME
 								Frame = World
 								Orientation = 0,0,0,1
 								Altitude = NaN
-								TimeStamp = 362493.9363202
+								TimeStamp = 362194.316319921
 								ExtraDelay = 0
 								CmdGuid = 825f60df-6916-4631-a420-ded5c60cca11
 							}
@@ -12712,14 +12618,12 @@ GAME
 					Log
 					{
 						flight = 0
-						0 = Flight,Kerbin
-						0 = Land,Kerbin
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4.20130026016436
+					amount = 9.99997333333393
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -12750,11 +12654,11 @@ GAME
 				attN = bottom, 32
 				attN = top, 34
 				mass = 0.05
-				temp = 306.759856286862
-				tempExt = 306.881713866057
-				tempExtUnexp = 306.881662275989
+				temp = 306.171929094488
+				tempExt = 306.173200746547
+				tempExtUnexp = 306.172751916411
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -12885,11 +12789,11 @@ GAME
 				attN = top, 35
 				attN = bottom, 33
 				mass = 0.15
-				temp = 306.768402683305
-				tempExt = 306.982348465805
-				tempExtUnexp = 306.983022708233
+				temp = 306.172376011985
+				tempExt = 306.211302578379
+				tempExtUnexp = 306.210162889572
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -13089,11 +12993,11 @@ GAME
 				attN = bottom, 34
 				attN = top, -1
 				mass = 0.05
-				temp = 306.762359253615
-				tempExt = 306.882278187424
-				tempExtUnexp = 306.882226759085
+				temp = 306.171926818114
+				tempExt = 306.172430707738
+				tempExtUnexp = 306.172012971946
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -13229,11 +13133,11 @@ GAME
 				sym = 43
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -13364,11 +13268,11 @@ GAME
 				sym = 43
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -13499,11 +13403,11 @@ GAME
 				sym = 43
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -13634,11 +13538,11 @@ GAME
 				sym = 43
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -13769,11 +13673,11 @@ GAME
 				sym = 43
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -13904,11 +13808,11 @@ GAME
 				sym = 43
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -14039,11 +13943,11 @@ GAME
 				sym = 43
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -14174,11 +14078,11 @@ GAME
 				sym = 42
 				srfN = srfAttach, 32
 				mass = 0.05
-				temp = 306.766633929694
-				tempExt = 306.865569436765
-				tempExtUnexp = 306.865516757203
+				temp = 306.171979300412
+				tempExt = 306.178372993344
+				tempExtUnexp = 306.177834215516
 				expt = 0
-				state = 1
+				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
@@ -14284,900 +14188,14 @@ GAME
 			}
 			PART
 			{
-				name = strutConnector
-				cid = 4292384906
-				uid = 2301285712
-				mid = 690558900
-				launchID = 35
-				parent = 0
-				position = -0.299921095371246,-0.253575772047043,-0.519478321075439
-				rotation = -0.09101082,0.491647,0.1576354,-0.8515584
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 45
-				sym = 46
-				sym = 47
-				sym = 48
-				sym = 49
-				srfN = srfAttach, 0
-				mass = 0.05
-				temp = 306.763860132202
-				tempExt = 306.854425623992
-				tempExtUnexp = 306.854378907467
-				expt = 0
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-					tgt = 4292616120
-					pos = -0.9687523,1.684298,-0.2809536
-					rot = 0,-2.323907E-07,-0.5665854,0.824003
-					dir = -0.4934485,0.8579211,-0.1431082
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Scrap part
-							guiName = Disassemble Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4292381204
-				uid = 880352959
-				mid = 690558900
-				launchID = 35
-				parent = 0
-				position = -0.599841892719269,-0.253575712442398,3.02285769748778E-08
-				rotation = 0,-4.214686E-07,0.1820216,-0.9832948
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 44
-				sym = 46
-				sym = 47
-				sym = 48
-				sym = 49
-				srfN = srfAttach, 0
-				mass = 0.05
-				temp = 306.763860132202
-				tempExt = 306.854425623992
-				tempExtUnexp = 306.854378907467
-				expt = 0
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-					tgt = 4292616120
-					pos = -0.9687543,1.684298,-0.2809528
-					rot = 0,-3.255097E-07,-0.5665855,0.824003
-					dir = -0.4934485,0.8579211,-0.1431082
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Scrap part
-							guiName = Disassemble Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4292381136
-				uid = 804407840
-				mid = 690558900
-				launchID = 35
-				parent = 0
-				position = -0.299920797348022,-0.253575712442398,0.519477963447571
-				rotation = 0.09101082,-0.4916478,0.1576353,-0.851558
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 44
-				sym = 45
-				sym = 47
-				sym = 48
-				sym = 49
-				srfN = srfAttach, 0
-				mass = 0.05
-				temp = 306.763860132202
-				tempExt = 306.854425623992
-				tempExtUnexp = 306.854378907467
-				expt = 0
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-					tgt = 4292616120
-					pos = -0.9687567,1.684297,-0.2809538
-					rot = 0,-2.377899E-07,-0.5665857,0.8240028
-					dir = -0.4934485,0.8579211,-0.1431082
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Scrap part
-							guiName = Disassemble Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4292381068
-				uid = 3789173875
-				mid = 690558900
-				launchID = 35
-				parent = 0
-				position = 0.299921214580536,-0.253575712442398,0.519477963447571
-				rotation = 0.1576353,-0.8515586,0.09101073,-0.491647
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 44
-				sym = 45
-				sym = 46
-				sym = 48
-				sym = 49
-				srfN = srfAttach, 0
-				mass = 0.05
-				temp = 306.763860132202
-				tempExt = 306.854425623992
-				tempExtUnexp = 306.854378907467
-				expt = 0
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-					tgt = 4292616120
-					pos = -0.9687564,1.684298,-0.2809561
-					rot = 0,-5.695116E-08,-0.5665857,0.8240028
-					dir = -0.4934485,0.8579211,-0.1431082
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Scrap part
-							guiName = Disassemble Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4292381000
-				uid = 2877810482
-				mid = 690558900
-				launchID = 35
-				parent = 0
-				position = 0.599842548370361,-0.253575712442398,3.02285769748778E-08
-				rotation = 0.1820217,-0.9832948,-8.429371E-08,4.214686E-07
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 44
-				sym = 45
-				sym = 46
-				sym = 47
-				sym = 49
-				srfN = srfAttach, 0
-				mass = 0.05
-				temp = 306.763860132202
-				tempExt = 306.854425623992
-				tempExtUnexp = 306.854378907467
-				expt = 0
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-					tgt = 4292616120
-					pos = -0.9687543,1.684298,-0.2809572
-					rot = 0,1.085032E-07,-0.5665855,0.8240029
-					dir = -0.4934485,0.8579211,-0.1431082
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Scrap part
-							guiName = Disassemble Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4292380932
-				uid = 1151225496
-				mid = 690558900
-				launchID = 35
-				parent = 0
-				position = 0.299920916557312,-0.253575772047043,-0.519478321075439
-				rotation = 0.1576354,-0.8515581,-0.09101091,0.4916476
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 44
-				sym = 45
-				sym = 46
-				sym = 47
-				sym = 48
-				srfN = srfAttach, 0
-				mass = 0.05
-				temp = 306.763860132202
-				tempExt = 306.854425623992
-				tempExtUnexp = 306.854378907467
-				expt = 0
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-					tgt = 4292616120
-					pos = -0.9687521,1.684298,-0.2809561
-					rot = 0,-5.155194E-08,-0.5665853,0.8240031
-					dir = -0.4934485,0.8579211,-0.1431082
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Scrap part
-							guiName = Disassemble Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = True, 362197.076319924
-				Gear = False, 0
-				Light = False, 0
-				RCS = False, 362245.116319969
-				SAS = False, 362245.376319969
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0.5
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 279b71b9adc3458596ff9de18875c661
-			name = Untitled Space Craft Debris
-			type = Debris
-			sit = LANDED
-			landed = True
-			landedAt = LaunchPad
-			splashed = False
-			met = 296.860000276472
-			lct = 362197.076319924
-			lastUT = 362493.9363202
-			cln = True
-			clnRsn = it was debris cluttering up KSC
-			root = 0
-			lat = -0.0973492502962775
-			lon = 285.442276730185
-			alt = 74.4272434166633
-			hgt = 4.604666
-			nrm = 0.8660255,0.1789808,0.466868
-			rot = 0.1141675,0.7776178,-0.1460895,0.6007782
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = 300819.57436751
-				ECC = 0.994798471859296
-				INC = 0.0973492491579529
-				LPE = 90.0003356811538
-				LAN = 41.1869646039333
-				MNA = 3.14159148937484
-				EPH = 362493.9363202
-				REF = 1
-			}
-			PART
-			{
 				name = launchClamp1
 				cid = 4292841278
 				uid = 1687163402
 				mid = 690558900
 				launchID = 35
 				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1.000001
+				position = -1.59649956226349,-1.2439911365509,0.921739339828491
+				rotation = 0.09101095,0.8515582,-0.1576354,0.4916476
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 0
@@ -15186,15 +14204,15 @@ GAME
 				sepI = 0
 				sidx = 0
 				attm = 1
-				srfN = srfAttach, -1
+				srfN = srfAttach, 0
 				mass = 0.1
-				temp = 309.309300740236
-				tempExt = 309.322479381763
-				tempExtUnexp = 309.323180247367
+				temp = 306.171740322175
+				tempExt = 306.177974774852
+				tempExtUnexp = 306.177379325191
 				expt = 0.1
-				state = 1
-				connected = False
-				attached = False
+				state = 0
+				connected = True
+				attached = True
 				flag = Squad/Flags/default
 				rTrf = launchClamp1
 				modCost = 0
@@ -15255,7 +14273,7 @@ GAME
 					name = ModuleGenerator
 					isEnabled = True
 					generatorIsActive = True
-					throttle = 0.5
+					throttle = 0
 					stagingEnabled = True
 					EVENTS
 					{
@@ -15415,9 +14433,58 @@ GAME
 					{
 					}
 				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4292384906
+				uid = 2301285712
+				mid = 690558900
+				launchID = 35
+				parent = 0
+				position = -0.299921095371246,-0.253575772047043,-0.519478321075439
+				rotation = -0.09101082,0.491647,0.1576354,-0.8515584
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 46
+				sym = 47
+				sym = 48
+				sym = 49
+				sym = 50
+				srfN = srfAttach, 0
+				mass = 0.05
+				temp = 306.171934174412
+				tempExt = 306.175669374542
+				tempExtUnexp = 306.17533050951
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 4292616120
+					pos = -0.9687523,1.684298,-0.2809536
+					rot = 0,-2.323907E-07,-0.5665854,0.824003
+					dir = -0.4934485,0.8579211,-0.1431082
+				}
 				MODULE
 				{
-					name = KJRLaunchClampReinforcementModule
+					name = CModuleLinkedMesh
 					isEnabled = True
 					stagingEnabled = True
 					EVENTS
@@ -15441,11 +14508,712 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleRTDataTransmitter
+					name = CModuleStrut
 					isEnabled = True
 					stagingEnabled = True
 					EVENTS
 					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4292381204
+				uid = 880352959
+				mid = 690558900
+				launchID = 35
+				parent = 0
+				position = -0.599841892719269,-0.253575712442398,3.02285769748778E-08
+				rotation = 0,-4.214686E-07,0.1820216,-0.9832948
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 45
+				sym = 47
+				sym = 48
+				sym = 49
+				sym = 50
+				srfN = srfAttach, 0
+				mass = 0.05
+				temp = 306.171934174412
+				tempExt = 306.175669374542
+				tempExtUnexp = 306.17533050951
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 4292616120
+					pos = -0.9687543,1.684298,-0.2809528
+					rot = 0,-3.255097E-07,-0.5665855,0.824003
+					dir = -0.4934485,0.8579211,-0.1431082
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleStrut
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4292381136
+				uid = 804407840
+				mid = 690558900
+				launchID = 35
+				parent = 0
+				position = -0.299920797348022,-0.253575712442398,0.519477963447571
+				rotation = 0.09101082,-0.4916478,0.1576353,-0.851558
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 45
+				sym = 46
+				sym = 48
+				sym = 49
+				sym = 50
+				srfN = srfAttach, 0
+				mass = 0.05
+				temp = 306.171934174412
+				tempExt = 306.175669374542
+				tempExtUnexp = 306.17533050951
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 4292616120
+					pos = -0.9687567,1.684297,-0.2809538
+					rot = 0,-2.377899E-07,-0.5665857,0.8240028
+					dir = -0.4934485,0.8579211,-0.1431082
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleStrut
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4292381068
+				uid = 3789173875
+				mid = 690558900
+				launchID = 35
+				parent = 0
+				position = 0.299921214580536,-0.253575712442398,0.519477963447571
+				rotation = 0.1576353,-0.8515586,0.09101073,-0.491647
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 45
+				sym = 46
+				sym = 47
+				sym = 49
+				sym = 50
+				srfN = srfAttach, 0
+				mass = 0.05
+				temp = 306.171934174412
+				tempExt = 306.175669374542
+				tempExtUnexp = 306.17533050951
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 4292616120
+					pos = -0.9687564,1.684298,-0.2809561
+					rot = 0,-5.695116E-08,-0.5665857,0.8240028
+					dir = -0.4934485,0.8579211,-0.1431082
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleStrut
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4292381000
+				uid = 2877810482
+				mid = 690558900
+				launchID = 35
+				parent = 0
+				position = 0.599842548370361,-0.253575712442398,3.02285769748778E-08
+				rotation = 0.1820217,-0.9832948,-8.429371E-08,4.214686E-07
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 45
+				sym = 46
+				sym = 47
+				sym = 48
+				sym = 50
+				srfN = srfAttach, 0
+				mass = 0.05
+				temp = 306.171934174412
+				tempExt = 306.175669374542
+				tempExtUnexp = 306.17533050951
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 4292616120
+					pos = -0.9687543,1.684298,-0.2809572
+					rot = 0,1.085032E-07,-0.5665855,0.8240029
+					dir = -0.4934485,0.8579211,-0.1431082
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleStrut
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4292380932
+				uid = 1151225496
+				mid = 690558900
+				launchID = 35
+				parent = 0
+				position = 0.299920916557312,-0.253575772047043,-0.519478321075439
+				rotation = 0.1576354,-0.8515581,-0.09101091,0.4916476
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 45
+				sym = 46
+				sym = 47
+				sym = 48
+				sym = 49
+				srfN = srfAttach, 0
+				mass = 0.05
+				temp = 306.171934174412
+				tempExt = 306.175669374542
+				tempExtUnexp = 306.17533050951
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 4292616120
+					pos = -0.9687521,1.684298,-0.2809561
+					rot = 0,-5.155194E-08,-0.5665853,0.8240031
+					dir = -0.4934485,0.8579211,-0.1431082
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleStrut
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
 						ToggleStaging
 						{
 							active = True
@@ -15503,7 +15271,7 @@ GAME
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
-				mainThrottle = 0.5
+				mainThrottle = 0
 			}
 			VESSELMODULES
 			{
@@ -15752,8 +15520,6 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 5
-				5 = Flight,Kerbin
-				5 = Land,Kerbin
 			}
 		}
 		KERBAL
