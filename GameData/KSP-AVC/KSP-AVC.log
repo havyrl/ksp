@@ -1,10 +1,10 @@
 Executing: KSP-AVC - 1.1.6.1
-Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\KSP-AVC.dll
+Assembly: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\KSP-AVC\KSP-AVC.dll
 
-[Text 19:29:32.1795736]: Starter was created.
-[Text 19:29:36.9755916]: Checking Root: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData
-[Text 19:29:36.9771356]: CheckerProgressGui was created.
-[Text 19:29:37.1311061]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\PlanetaryBaseInc\PlanetaryBaseInc.version
+[Text 09:59:24.8540543]: Starter was created.
+[Text 09:59:28.2413930]: Checking Root: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData
+[Text 09:59:28.2423931]: CheckerProgressGui was created.
+[Text 09:59:28.3264015]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\PlanetaryBaseInc\PlanetaryBaseInc.version
 	NAME: Kerbal Planetary Base Systems
 	URL: NULL
 	DOWNLOAD: NULL
@@ -18,21 +18,21 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 19:29:37.3331755]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\TextureReplacer\TextureReplacer.version
-	NAME: TextureReplacer
-	URL: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
-	DOWNLOAD: http://kerbal.curseforge.com/projects/texturereplacer
+[Text 09:59:28.5244213]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\Firespitter\Firespitter.version
+	NAME: Firespitter
+	URL: https://raw.githubusercontent.com/snjo/Firespitter/master/For%20release/Firespitter/Firespitter.version
+	DOWNLOAD: NULL
 	GITHUB: NULL
-	VERSION: 2.4.13
-	KSP_VERSION: 1.1
+	VERSION: 7.2.4
+	KSP_VERSION: 1.1.2
 	KSP_VERSION_MIN: NULL
 	KSP_VERSION_MAX: NULL
 	CompatibleKspVersion: False
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
-[Text 19:29:37.3336758]: Identical remote version found: Using remote version information only.
-[Text 19:29:37.3336758]: https://raw.githubusercontent.com/TriggerAu/KerbalAlarmClock/master/KerbalAlarmClock/KerbalAlarmClock.version
+[Text 09:59:28.5244213]: Identical remote version found: Using remote version information only.
+[Text 09:59:28.5244213]: https://raw.githubusercontent.com/TriggerAu/KerbalAlarmClock/master/KerbalAlarmClock/KerbalAlarmClock.version
 	NAME: Kerbal Alarm Clock
 	URL: https://raw.githubusercontent.com/TriggerAu/KerbalAlarmClock/master/KerbalAlarmClock/KerbalAlarmClock.version
 	DOWNLOAD: https://github.com/TriggerAu/KerbalAlarmClock/releases
@@ -46,50 +46,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 19:29:37.3336758]: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
-	NAME: TextureReplacer
-	URL: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
-	DOWNLOAD: http://kerbal.curseforge.com/projects/texturereplacer
-	GITHUB: NULL
-	VERSION: 2.4.12
-	KSP_VERSION: 1.0.5
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: NULL
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-	UpdateAvailable: False
-
-[Text 19:29:37.3356756]: Identical remote version found: Using remote version information only.
-[Text 19:29:37.3356756]: https://www.blizzy.de/toolbar/Toolbar.version
-	NAME: Toolbar
-	URL: https://www.blizzy.de/toolbar/Toolbar.version
-	DOWNLOAD: http://forum.kerbalspaceprogram.com/index.php?/topic/55420-110-toolbar-1711-common-api-for-draggableresizable-buttons-toolbar/
-	GITHUB: NULL
-	VERSION: 1.7.12
-	KSP_VERSION: 1.1.2
-	KSP_VERSION_MIN: 1.1.2
-	KSP_VERSION_MAX: 1.1.2
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: False
-	CompatibleGitHubVersion: True
-
-[Text 19:29:37.3376758]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\Firespitter\Firespitter.version
-	NAME: Firespitter
-	URL: https://raw.githubusercontent.com/snjo/Firespitter/master/For%20release/Firespitter/Firespitter.version
-	DOWNLOAD: NULL
-	GITHUB: NULL
-	VERSION: 7.2.4
-	KSP_VERSION: 1.1.2
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: NULL
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-[Text 19:29:37.3376758]: https://raw.githubusercontent.com/snjo/Firespitter/master/For%20release/Firespitter/Firespitter.version
+[Text 09:59:28.5244213]: https://raw.githubusercontent.com/snjo/Firespitter/master/For%20release/Firespitter/Firespitter.version
 	NAME: Firespitter
 	URL: https://raw.githubusercontent.com/snjo/Firespitter/master/For%20release/Firespitter/Firespitter.version
 	DOWNLOAD: NULL
@@ -104,7 +61,35 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleGitHubVersion: True
 	UpdateAvailable: False
 
-[Text 19:29:37.5166987]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\SrvPack\SrvPack.version
+[Text 09:59:28.5294218]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\TextureReplacer\TextureReplacer.version
+	NAME: TextureReplacer
+	URL: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
+	DOWNLOAD: http://kerbal.curseforge.com/projects/texturereplacer
+	GITHUB: NULL
+	VERSION: 2.4.13
+	KSP_VERSION: 1.1
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: NULL
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+[Text 09:59:28.5294218]: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
+	NAME: TextureReplacer
+	URL: https://raw.githubusercontent.com/ducakar/TextureReplacer/master/GameData/TextureReplacer/TextureReplacer.version
+	DOWNLOAD: http://kerbal.curseforge.com/projects/texturereplacer
+	GITHUB: NULL
+	VERSION: 2.4.12
+	KSP_VERSION: 1.0.5
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: NULL
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+	UpdateAvailable: False
+
+[Text 09:59:28.5344223]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\SrvPack\SrvPack.version
 	NAME: USI Survivability Pack
 	URL: https://raw.githubusercontent.com/BobPalmer/SrvPack/master/FOR_RELASE/GameData/UmbraSpaceIndustries/SrvPack/SrvPack.version
 	DOWNLOAD: https://github.com/BobPalmer/SrvPack/releases
@@ -120,37 +105,54 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
 
-[Text 19:29:37.5342008]: Identical remote version found: Using remote version information only.
-[Text 19:29:37.5342008]: https://themoose.co.uk/ksp/%5Bx%5D%20Science!.version
-	NAME: [x] Science!
-	URL: https://themoose.co.uk/ksp/%5Bx%5D%20Science!.version
-	DOWNLOAD: https://themoose.co.uk/ksp/downloads.html
-	GITHUB: NULL
-	VERSION: 4.20
-	KSP_VERSION: 1.1.3
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: NULL
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 19:29:37.6322137]: Identical remote version found: Using remote version information only.
-[Text 19:29:37.6322137]: http://ksp-avc.cybutek.net/version.php?id=2
-	NAME: KSP-AVC Plugin
-	URL: http://ksp-avc.cybutek.net/version.php?id=2
-	DOWNLOAD: http://kerbal.curseforge.com/projects/ksp-avc-add-on-version-checker
-	GITHUB: NULL
-	VERSION: 1.1.6.1
-	KSP_VERSION: 1.1
-	KSP_VERSION_MIN: NULL
-	KSP_VERSION_MAX: 1.1.3
+[Text 09:59:28.5364225]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\000_USITools\USITools.version
+	NAME: USI Tools
+	URL: https://raw.githubusercontent.com/BobPalmer/UmbraSpaceIndustries/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/USICore.version
+	DOWNLOAD: https://github.com/BobPalmer/UmbraSpaceIndustries/releases
+	GITHUB: BobPalmer/UmbraSpaceIndustries
+		LatestRelease: NULL
+		AllowPreRelease: False
+	VERSION: 0.7.2.1
+	KSP_VERSION: 1.1.2
+	KSP_VERSION_MIN: 1.0
+	KSP_VERSION_MAX: 1.1.2
 	CompatibleKspVersion: False
 	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
+	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
 
-[Text 19:29:37.6362141]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\ThunderAerospace\TacLifeSupport\TacLifeSupport.version
+[Text 09:59:28.6264315]: Identical remote version found: Using remote version information only.
+[Text 09:59:28.6264315]: https://www.blizzy.de/toolbar/Toolbar.version
+	NAME: Toolbar
+	URL: https://www.blizzy.de/toolbar/Toolbar.version
+	DOWNLOAD: http://forum.kerbalspaceprogram.com/index.php?/topic/55420-110-toolbar-1711-common-api-for-draggableresizable-buttons-toolbar/
+	GITHUB: NULL
+	VERSION: 1.7.12
+	KSP_VERSION: 1.1.2
+	KSP_VERSION_MIN: 1.1.2
+	KSP_VERSION_MAX: 1.1.2
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: False
+	CompatibleGitHubVersion: True
+
+[Text 09:59:28.6304319]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\ART\ART.version
+	NAME: Asteroid Recycling Tech
+	URL: https://raw.githubusercontent.com/BobPalmer/ART/master/FOR_RELEASE/GameData/ART/ART.version
+	DOWNLOAD: https://github.com/BobPalmer/ART/releases
+	GITHUB: BobPalmer/ART
+		LatestRelease: NULL
+		AllowPreRelease: False
+	VERSION: 0.8.3
+	KSP_VERSION: 1.1.2
+	KSP_VERSION_MIN: 1.1
+	KSP_VERSION_MAX: 1.1.2
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: False
+	CompatibleGitHubVersion: True
+
+[Text 09:59:28.7284417]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\ThunderAerospace\TacLifeSupport\TacLifeSupport.version
 	NAME: TAC Life Support
 	URL: http://ksp-avc.cybutek.net/version.php?id=9
 	DOWNLOAD: https://github.com/KSP-RO/TacLifeSupport/releases
@@ -163,7 +165,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
-[Text 19:29:37.6362141]: http://ksp-avc.cybutek.net/version.php?id=9
+[Text 09:59:28.7284417]: http://ksp-avc.cybutek.net/version.php?id=9
 	NAME: TAC Life Support
 	URL: http://ksp-avc.cybutek.net/version.php?id=9
 	DOWNLOAD: https://github.com/taraniselsu/TacLifeSupport/wiki/Download
@@ -178,8 +180,23 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleGitHubVersion: True
 	UpdateAvailable: False
 
-[Text 19:29:37.7362268]: Identical remote version found: Using remote version information only.
-[Text 19:29:37.7362268]: http://ksp-avc.cybutek.net/version.php?id=6
+[Text 09:59:28.8324521]: Identical remote version found: Using remote version information only.
+[Text 09:59:28.8324521]: https://themoose.co.uk/ksp/%5Bx%5D%20Science!.version
+	NAME: [x] Science!
+	URL: https://themoose.co.uk/ksp/%5Bx%5D%20Science!.version
+	DOWNLOAD: https://themoose.co.uk/ksp/downloads.html
+	GITHUB: NULL
+	VERSION: 4.20
+	KSP_VERSION: 1.1.3
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: NULL
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 09:59:28.9254614]: Identical remote version found: Using remote version information only.
+[Text 09:59:28.9254614]: http://ksp-avc.cybutek.net/version.php?id=6
 	NAME: Kerbal Engineer Redux
 	URL: http://ksp-avc.cybutek.net/version.php?id=6
 	DOWNLOAD: http://kerbal.curseforge.com/projects/kerbal-engineer-redux
@@ -193,7 +210,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 19:29:37.8447402]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\USICore.version
+[Text 09:59:29.0254714]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\USICore.version
 	NAME: USI Core
 	URL: https://raw.githubusercontent.com/BobPalmer/USI_Core/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/USICore.version
 	DOWNLOAD: https://github.com/BobPalmer/USI_Core/releases
@@ -208,7 +225,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
-[Text 19:29:37.8447402]: https://raw.githubusercontent.com/BobPalmer/USI_Core/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/USICore.version
+[Text 09:59:29.0254714]: https://raw.githubusercontent.com/BobPalmer/USI_Core/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/USICore.version
 	NAME: USI Core
 	URL: https://raw.githubusercontent.com/BobPalmer/USI_Core/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/USICore.version
 	DOWNLOAD: https://github.com/BobPalmer/USI_Core/releases
@@ -225,8 +242,23 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleGitHubVersion: False
 	UpdateAvailable: False
 
-[Text 19:29:37.9410801]: Identical remote version found: Using remote version information only.
-[Text 19:29:37.9410801]: https://raw.githubusercontent.com/DBT85/CC-CP-SCANSat/master/GameData/ContractPacks/CC-CP-SCANSat/CC-CP-SCANSat.version
+[Text 09:59:29.1304819]: Identical remote version found: Using remote version information only.
+[Text 09:59:29.1304819]: http://ksp-avc.cybutek.net/version.php?id=2
+	NAME: KSP-AVC Plugin
+	URL: http://ksp-avc.cybutek.net/version.php?id=2
+	DOWNLOAD: http://kerbal.curseforge.com/projects/ksp-avc-add-on-version-checker
+	GITHUB: NULL
+	VERSION: 1.1.6.1
+	KSP_VERSION: 1.1
+	KSP_VERSION_MIN: NULL
+	KSP_VERSION_MAX: 1.1.3
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 09:59:29.2284917]: Identical remote version found: Using remote version information only.
+[Text 09:59:29.2284917]: https://raw.githubusercontent.com/DBT85/CC-CP-SCANSat/master/GameData/ContractPacks/CC-CP-SCANSat/CC-CP-SCANSat.version
 	NAME: CC-CP-SCANSat
 	URL: https://raw.githubusercontent.com/DBT85/CC-CP-SCANSat/master/GameData/ContractPacks/CC-CP-SCANSat/CC-CP-SCANSat.version
 	DOWNLOAD: https://github.com/DBT85/CC-CP-SCANSat/releases
@@ -242,25 +274,8 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 19:29:38.1090173]: Identical remote version found: Using remote version information only.
-[Text 19:29:38.1090173]: https://raw.githubusercontent.com/BobPalmer/CommunityResourcePack/master/FOR_RELEASE/GameData/CommunityResourcePack/CRP.version
-	NAME: Community Resource Pack
-	URL: https://raw.githubusercontent.com/BobPalmer/CommunityResourcePack/master/FOR_RELEASE/GameData/CommunityResourcePack/CRP.version
-	DOWNLOAD: https://github.com/BobPalmer/CommunityResourcePack/releases
-	GITHUB: BobPalmer/CommunityResourcePack
-		LatestRelease: 0.5.4
-		AllowPreRelease: False
-	VERSION: 0.5.4
-	KSP_VERSION: 1.1.3
-	KSP_VERSION_MIN: 1.0
-	KSP_VERSION_MAX: 1.1.3
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 19:29:38.1330268]: Identical remote version found: Using remote version information only.
-[Text 19:29:38.1330268]: https://raw.githubusercontent.com/ferram4/Kerbal-Joint-Reinforcement/master/GameData/KerbalJointReinforcement/KerbalJointReinforcement.version
+[Text 09:59:29.5275216]: Identical remote version found: Using remote version information only.
+[Text 09:59:29.5275216]: https://raw.githubusercontent.com/ferram4/Kerbal-Joint-Reinforcement/master/GameData/KerbalJointReinforcement/KerbalJointReinforcement.version
 	NAME: Kerbal Joint Reinforcement
 	URL: https://raw.githubusercontent.com/ferram4/Kerbal-Joint-Reinforcement/master/GameData/KerbalJointReinforcement/KerbalJointReinforcement.version
 	DOWNLOAD: https://github.com/ferram4/Kerbal-Joint-Reinforcement/releases
@@ -276,24 +291,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 19:29:38.1390331]: Identical remote version found: Using remote version information only.
-[Text 19:29:38.1390331]: https://raw.githubusercontent.com/KospY/KIS/master/kis.version
-	NAME: Kerbal Inventory System
-	URL: https://raw.githubusercontent.com/KospY/KIS/master/kis.version
-	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/113111
-	GITHUB: KospY/KIS
-		LatestRelease: 1.2.12
-		AllowPreRelease: False
-	VERSION: 1.2.12
-	KSP_VERSION: 1.1.3
-	KSP_VERSION_MIN: 1.1.3
-	KSP_VERSION_MAX: 1.1.99
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 19:29:38.1915613]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\Kolonization\Kolonization.version
+[Text 09:59:29.6375326]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\Kolonization\Kolonization.version
 	NAME: Kolonization Core
 	URL: https://raw.githubusercontent.com/BobPalmer/Kolonization/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/Kolonization/Kolonization.version
 	DOWNLOAD: https://github.com/BobPalmer/Kolonization/releases
@@ -308,7 +306,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
-[Text 19:29:38.1915613]: https://raw.githubusercontent.com/BobPalmer/Kolonization/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/Kolonization/Kolonization.version
+[Text 09:59:29.6375326]: https://raw.githubusercontent.com/BobPalmer/Kolonization/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/Kolonization/Kolonization.version
 	NAME: Kolonization Core
 	URL: https://raw.githubusercontent.com/BobPalmer/Kolonization/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/Kolonization/Kolonization.version
 	DOWNLOAD: https://github.com/BobPalmer/Kolonization/releases
@@ -325,56 +323,24 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleGitHubVersion: True
 	UpdateAvailable: False
 
-[Text 19:29:38.2835879]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\ExpPack\ExpPack.version
-	NAME: USI Exploration Pack
-	URL: https://raw.githubusercontent.com/BobPalmer/ExplorationPack/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/ExpPack/ExpPack.version
-	DOWNLOAD: https://github.com/BobPalmer/ExplorationPack/releases
-	GITHUB: BobPalmer/ExplorationPack
-		LatestRelease: NULL
-		AllowPreRelease: False
-	VERSION: 0.5.3
-	KSP_VERSION: 1.1.2
-	KSP_VERSION_MIN: 1.1
-	KSP_VERSION_MAX: 1.1.2
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: False
-	CompatibleGitHubVersion: True
-[Text 19:29:38.2835879]: https://raw.githubusercontent.com/BobPalmer/ExplorationPack/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/ExpPack/ExpPack.version
-	NAME: USI Exploration Pack
-	URL: https://raw.githubusercontent.com/BobPalmer/ExplorationPack/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/ExpPack/ExpPack.version
-	DOWNLOAD: https://github.com/BobPalmer/ExplorationPack/releases
-	GITHUB: BobPalmer/ExplorationPack
+[Text 09:59:29.8315520]: Identical remote version found: Using remote version information only.
+[Text 09:59:29.8315520]: https://raw.githubusercontent.com/BobPalmer/CommunityResourcePack/master/FOR_RELEASE/GameData/CommunityResourcePack/CRP.version
+	NAME: Community Resource Pack
+	URL: https://raw.githubusercontent.com/BobPalmer/CommunityResourcePack/master/FOR_RELEASE/GameData/CommunityResourcePack/CRP.version
+	DOWNLOAD: https://github.com/BobPalmer/CommunityResourcePack/releases
+	GITHUB: BobPalmer/CommunityResourcePack
 		LatestRelease: 0.5.4
 		AllowPreRelease: False
 	VERSION: 0.5.4
 	KSP_VERSION: 1.1.3
-	KSP_VERSION_MIN: 1.1
+	KSP_VERSION_MIN: 1.0
 	KSP_VERSION_MAX: 1.1.3
 	CompatibleKspVersion: True
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
-	UpdateAvailable: False
 
-[Text 19:29:38.3355946]: Identical remote version found: Using remote version information only.
-[Text 19:29:38.3355946]: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
-	NAME: SCANsat
-	URL: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
-	DOWNLOAD: https://github.com/S-C-A-N/SCANsat/releases
-	GITHUB: S-C-A-N/SCANsat
-		LatestRelease: 16.3
-		AllowPreRelease: False
-	VERSION: 1.1.6.3
-	KSP_VERSION: 1.1.3
-	KSP_VERSION_MIN: 1.1.3
-	KSP_VERSION_MAX: 1.1.3
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: False
-
-[Text 19:29:38.3590976]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\FTT\FTT.version
+[Text 09:59:29.8365525]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\FTT\FTT.version
 	NAME: Freight Transport Tech
 	URL: https://raw.githubusercontent.com/BobPalmer/FTT/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/FTT/FTT.version
 	DOWNLOAD: https://github.com/BobPalmer/FTT/releases
@@ -389,7 +355,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
-[Text 19:29:38.3590976]: https://raw.githubusercontent.com/BobPalmer/FTT/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/FTT/FTT.version
+[Text 09:59:29.8365525]: https://raw.githubusercontent.com/BobPalmer/FTT/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/FTT/FTT.version
 	NAME: Freight Transport Tech
 	URL: https://raw.githubusercontent.com/BobPalmer/FTT/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/FTT/FTT.version
 	DOWNLOAD: https://github.com/BobPalmer/FTT/releases
@@ -406,32 +372,15 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleGitHubVersion: True
 	UpdateAvailable: False
 
-[Text 19:29:38.4391154]: Identical remote version found: Using remote version information only.
-[Text 19:29:38.4391154]: https://raw.githubusercontent.com/jrossignol/ContractPack-RemoteTech/master/GameData/ContractPacks/RemoteTech/ContractPack-RemoteTech.version
-	NAME: Contract Pack: RemoteTech
-	URL: https://raw.githubusercontent.com/jrossignol/ContractPack-RemoteTech/master/GameData/ContractPacks/RemoteTech/ContractPack-RemoteTech.version
-	DOWNLOAD: https://github.com/jrossignol/ContractPack-RemoteTech/releases
-	GITHUB: jrossignol/ContractPack-RemoteTech
-		LatestRelease: 2.0.2
+[Text 09:59:29.9275616]: Identical remote version found: Using remote version information only.
+[Text 09:59:29.9275616]: https://raw.githubusercontent.com/KospY/KIS/master/kis.version
+	NAME: Kerbal Inventory System
+	URL: https://raw.githubusercontent.com/KospY/KIS/master/kis.version
+	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/113111
+	GITHUB: KospY/KIS
+		LatestRelease: 1.2.12
 		AllowPreRelease: False
-	VERSION: 2.0.2
-	KSP_VERSION: 1.1
-	KSP_VERSION_MIN: 1.0.2
-	KSP_VERSION_MAX: 1.99.99
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 19:29:38.4391154]: Identical remote version found: Using remote version information only.
-[Text 19:29:38.4391154]: https://raw.githubusercontent.com/KospY/KAS/master/kas.version
-	NAME: Kerbal Attachment System
-	URL: https://raw.githubusercontent.com/KospY/KAS/master/kas.version
-	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/92514
-	GITHUB: KospY/KAS
-		LatestRelease: 0.5.9
-		AllowPreRelease: False
-	VERSION: 0.5.9
+	VERSION: 1.2.12
 	KSP_VERSION: 1.1.3
 	KSP_VERSION_MIN: 1.1.3
 	KSP_VERSION_MAX: 1.1.99
@@ -440,56 +389,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 19:29:38.5456371]: Identical remote version found: Using remote version information only.
-[Text 19:29:38.5456371]: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
-	NAME: RemoteTech
-	URL: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
-	DOWNLOAD: http://spacedock.info/mod/520/RemoteTech
-	GITHUB: RemoteTechnologiesGroup/RemoteTech
-		LatestRelease: 1.7.1
-		AllowPreRelease: False
-	VERSION: 1.7.1
-	KSP_VERSION: 1.1.3
-	KSP_VERSION_MIN: 1.1.3
-	KSP_VERSION_MAX: 1.1.3
-	CompatibleKspVersion: True
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: True
-	CompatibleGitHubVersion: True
-
-[Text 19:29:40.4811266]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\ART\ART.version
-	NAME: Asteroid Recycling Tech
-	URL: https://raw.githubusercontent.com/BobPalmer/ART/master/FOR_RELEASE/GameData/ART/ART.version
-	DOWNLOAD: https://github.com/BobPalmer/ART/releases
-	GITHUB: BobPalmer/ART
-		LatestRelease: NULL
-		AllowPreRelease: False
-	VERSION: 0.8.3
-	KSP_VERSION: 1.1.2
-	KSP_VERSION_MIN: 1.1
-	KSP_VERSION_MAX: 1.1.2
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: False
-	CompatibleGitHubVersion: True
-
-[Text 19:29:40.4811266]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\000_USITools\USITools.version
-	NAME: USI Tools
-	URL: https://raw.githubusercontent.com/BobPalmer/UmbraSpaceIndustries/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/USICore.version
-	DOWNLOAD: https://github.com/BobPalmer/UmbraSpaceIndustries/releases
-	GITHUB: BobPalmer/UmbraSpaceIndustries
-		LatestRelease: NULL
-		AllowPreRelease: False
-	VERSION: 0.7.2.1
-	KSP_VERSION: 1.1.2
-	KSP_VERSION_MIN: 1.0
-	KSP_VERSION_MAX: 1.1.2
-	CompatibleKspVersion: False
-	CompatibleKspVersionMin: True
-	CompatibleKspVersionMax: False
-	CompatibleGitHubVersion: True
-
-[Text 19:29:41.3915621]: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\UKS\UKS.version
+[Text 09:59:29.9345623]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\UKS\UKS.version
 	NAME: UKS
 	URL: https://raw.githubusercontent.com/BobPalmer/MKS/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/UKS/UKS.version
 	DOWNLOAD: https://github.com/BobPalmer/MKS/releases
@@ -504,7 +404,7 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMin: True
 	CompatibleKspVersionMax: False
 	CompatibleGitHubVersion: True
-[Text 19:29:41.3915621]: https://raw.githubusercontent.com/BobPalmer/MKS/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/UKS/UKS.version
+[Text 09:59:29.9345623]: https://raw.githubusercontent.com/BobPalmer/MKS/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/UKS/UKS.version
 	NAME: UKS
 	URL: https://raw.githubusercontent.com/BobPalmer/MKS/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/UKS/UKS.version
 	DOWNLOAD: https://github.com/BobPalmer/MKS/releases
@@ -521,8 +421,42 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleGitHubVersion: True
 	UpdateAvailable: False
 
-[Text 19:29:41.5065764]: Identical remote version found: Using remote version information only.
-[Text 19:29:41.5065764]: https://raw.githubusercontent.com/jrossignol/ContractConfigurator/master/GameData/ContractConfigurator/ContractConfigurator.version
+[Text 09:59:29.9415630]: Identical remote version found: Using remote version information only.
+[Text 09:59:29.9415630]: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
+	NAME: SCANsat
+	URL: https://raw.githubusercontent.com/S-C-A-N/SCANsat/release/SCANassets/SCANsat.version
+	DOWNLOAD: https://github.com/S-C-A-N/SCANsat/releases
+	GITHUB: S-C-A-N/SCANsat
+		LatestRelease: 16.3
+		AllowPreRelease: False
+	VERSION: 1.1.6.3
+	KSP_VERSION: 1.1.3
+	KSP_VERSION_MIN: 1.1.3
+	KSP_VERSION_MAX: 1.1.3
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: False
+
+[Text 09:59:30.0305719]: Identical remote version found: Using remote version information only.
+[Text 09:59:30.0305719]: https://raw.githubusercontent.com/jrossignol/ContractPack-RemoteTech/master/GameData/ContractPacks/RemoteTech/ContractPack-RemoteTech.version
+	NAME: Contract Pack: RemoteTech
+	URL: https://raw.githubusercontent.com/jrossignol/ContractPack-RemoteTech/master/GameData/ContractPacks/RemoteTech/ContractPack-RemoteTech.version
+	DOWNLOAD: https://github.com/jrossignol/ContractPack-RemoteTech/releases
+	GITHUB: jrossignol/ContractPack-RemoteTech
+		LatestRelease: 2.0.2
+		AllowPreRelease: False
+	VERSION: 2.0.2
+	KSP_VERSION: 1.1
+	KSP_VERSION_MIN: 1.0.2
+	KSP_VERSION_MAX: 1.99.99
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 09:59:30.0385727]: Identical remote version found: Using remote version information only.
+[Text 09:59:30.0385727]: https://raw.githubusercontent.com/jrossignol/ContractConfigurator/master/GameData/ContractConfigurator/ContractConfigurator.version
 	NAME: Contract Configurator
 	URL: https://raw.githubusercontent.com/jrossignol/ContractConfigurator/master/GameData/ContractConfigurator/ContractConfigurator.version
 	DOWNLOAD: https://github.com/jrossignol/ContractConfigurator/releases
@@ -538,15 +472,76 @@ Assembly: C:\Games\Steam\SteamApps\common\Kerbal Space Program\GameData\KSP-AVC\
 	CompatibleKspVersionMax: True
 	CompatibleGitHubVersion: True
 
-[Text 19:29:41.5180784]: IssueGui was created.
-[Text 19:29:41.5290796]: Starter was destroyed.
-[Text 19:29:41.5310801]: CheckerProgressGui was destroyed.
-[Text 19:29:41.5370807]: ToolTipGui was created.
-[Text 19:29:41.5390809]: ToolTipGui was created.
-[Text 19:29:41.5410811]: ToolTipGui was created.
-[Text 19:29:41.5425809]: ToolTipGui was created.
-[Text 19:32:23.7731789]: IssueGui was destroyed.
-[Text 19:32:23.7911130]: ToolTipGui was destroyed.
-[Text 19:32:23.7911130]: ToolTipGui was destroyed.
-[Text 19:32:23.7911130]: ToolTipGui was destroyed.
-[Text 19:32:23.7911130]: ToolTipGui was destroyed.
+[Text 09:59:30.0395728]: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\UmbraSpaceIndustries\ExpPack\ExpPack.version
+	NAME: USI Exploration Pack
+	URL: https://raw.githubusercontent.com/BobPalmer/ExplorationPack/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/ExpPack/ExpPack.version
+	DOWNLOAD: https://github.com/BobPalmer/ExplorationPack/releases
+	GITHUB: BobPalmer/ExplorationPack
+		LatestRelease: NULL
+		AllowPreRelease: False
+	VERSION: 0.5.3
+	KSP_VERSION: 1.1.2
+	KSP_VERSION_MIN: 1.1
+	KSP_VERSION_MAX: 1.1.2
+	CompatibleKspVersion: False
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: False
+	CompatibleGitHubVersion: True
+[Text 09:59:30.0395728]: https://raw.githubusercontent.com/BobPalmer/ExplorationPack/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/ExpPack/ExpPack.version
+	NAME: USI Exploration Pack
+	URL: https://raw.githubusercontent.com/BobPalmer/ExplorationPack/master/FOR_RELEASE/GameData/UmbraSpaceIndustries/ExpPack/ExpPack.version
+	DOWNLOAD: https://github.com/BobPalmer/ExplorationPack/releases
+	GITHUB: BobPalmer/ExplorationPack
+		LatestRelease: 0.5.4
+		AllowPreRelease: False
+	VERSION: 0.5.4
+	KSP_VERSION: 1.1.3
+	KSP_VERSION_MIN: 1.1
+	KSP_VERSION_MAX: 1.1.3
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+	UpdateAvailable: False
+
+[Text 09:59:30.2365925]: Identical remote version found: Using remote version information only.
+[Text 09:59:30.2365925]: https://raw.githubusercontent.com/KospY/KAS/master/kas.version
+	NAME: Kerbal Attachment System
+	URL: https://raw.githubusercontent.com/KospY/KAS/master/kas.version
+	DOWNLOAD: http://forum.kerbalspaceprogram.com/threads/92514
+	GITHUB: KospY/KAS
+		LatestRelease: 0.5.9
+		AllowPreRelease: False
+	VERSION: 0.5.9
+	KSP_VERSION: 1.1.3
+	KSP_VERSION_MIN: 1.1.3
+	KSP_VERSION_MAX: 1.1.99
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 09:59:30.2375926]: Identical remote version found: Using remote version information only.
+[Text 09:59:30.2375926]: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
+	NAME: RemoteTech
+	URL: https://raw.githubusercontent.com/RemoteTechnologiesGroup/RemoteTech/master/GameData/RemoteTech/RemoteTech.version
+	DOWNLOAD: http://spacedock.info/mod/520/RemoteTech
+	GITHUB: RemoteTechnologiesGroup/RemoteTech
+		LatestRelease: 1.7.1
+		AllowPreRelease: False
+	VERSION: 1.7.1
+	KSP_VERSION: 1.1.3
+	KSP_VERSION_MIN: 1.1.3
+	KSP_VERSION_MAX: 1.1.3
+	CompatibleKspVersion: True
+	CompatibleKspVersionMin: True
+	CompatibleKspVersionMax: True
+	CompatibleGitHubVersion: True
+
+[Text 09:59:30.3426031]: IssueGui was created.
+[Text 09:59:30.3486037]: Starter was destroyed.
+[Text 09:59:30.3526041]: CheckerProgressGui was destroyed.
+[Text 09:59:30.3616050]: ToolTipGui was created.
+[Text 09:59:30.3636052]: ToolTipGui was created.
+[Text 09:59:30.3646053]: ToolTipGui was created.
+[Text 09:59:30.3656054]: ToolTipGui was created.
