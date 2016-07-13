@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 348803.999759711
+		update = 362008.236417407
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -3910,6 +3910,7 @@ GAME
 			part = SmallGearBay
 			part = SmallGearBay
 			part = SmallGearBay
+			part = SmallGearBay
 		}
 		Tech
 		{
@@ -5930,7 +5931,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 348810.519759717
+		UT = 362013.856319753
 		activeVessel = 0
 		mapViewFiltering = 1023
 		VESSEL
@@ -5962,13 +5963,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300021.364388671
+				SMA = 300021.351899876
 				ECC = 1
-				INC = 90.0969099064018
+				INC = 90.0969099122527
 				LPE = 90
-				LAN = 352.440530596436
+				LAN = 352.552459752216
 				MNA = 3.14159262071702
-				EPH = 348803.839759711
+				EPH = 348810.539759717
 				REF = 1
 			}
 			PART
@@ -6306,13 +6307,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300021.364388671
+				SMA = 300021.351899876
 				ECC = 1
-				INC = 90.0969099064018
+				INC = 90.0969099122527
 				LPE = 90
-				LAN = 352.440530596436
+				LAN = 352.552459752216
 				MNA = 3.14159262071702
-				EPH = 348803.839759711
+				EPH = 348810.539759717
 				REF = 1
 			}
 			PART
@@ -6650,13 +6651,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300021.364388671
+				SMA = 300021.351899876
 				ECC = 1
-				INC = 90.0969099064018
+				INC = 90.0969099122527
 				LPE = 90
-				LAN = 352.440530596436
+				LAN = 352.552459752216
 				MNA = 3.14159262071702
-				EPH = 348803.839759711
+				EPH = 348810.539759717
 				REF = 1
 			}
 			PART
@@ -6994,13 +6995,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300021.364388671
+				SMA = 300021.351899876
 				ECC = 1
-				INC = 90.0969099064018
+				INC = 90.0969099122527
 				LPE = 90
-				LAN = 352.440530596436
+				LAN = 352.552459752216
 				MNA = 3.14159262071702
-				EPH = 348803.839759711
+				EPH = 348810.539759717
 				REF = 1
 			}
 			PART
@@ -7921,14 +7922,6 @@ GAME
 	}
 	MESSAGESYSTEM
 	{
-		flash = True
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test 48-7S "Spark" Liquid Fuel Engine landed at Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  4,914   </color>~n<color=#6DCFF6>© 1   </color>~n<color=#E0D503>¡ 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
+		flash = False
 	}
 }
