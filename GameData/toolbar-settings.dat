@@ -34,15 +34,15 @@ toolbars
 	{
 		toolbar_14240345
 		{
-			x = 300
-			y = 300
+			x = 723
+			y = 957
 			width = 250
 			height = 38
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = 
+			visibleButtons = UKS.planLog,UKS.kolony,Tac.LS,SCANsat.KSCMap
 		}
 	}
 	FLIGHT
@@ -64,8 +64,8 @@ toolbars
 	{
 		toolbar_1382886580
 		{
-			x = 436
-			y = 690
+			x = 414
+			y = 914
 			width = 250
 			height = 81
 			autoHide = False

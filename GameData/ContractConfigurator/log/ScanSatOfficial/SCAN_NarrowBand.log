@@ -99,7 +99,7 @@ SCAN_NarrowBand
     agent = Contracts.Agents.Agent, deterministic = True
     minExpiry = 1, deterministic = True
     maxExpiry = 7, deterministic = True
-    deadline = 442.8398, deterministic = False
+    deadline = 539.7828, deterministic = False
     cancellable = True, deterministic = True
     declinable = True, deterministic = True
     autoAccept = False, deterministic = True
@@ -107,12 +107,12 @@ SCAN_NarrowBand
     targetBody = null, deterministic = False
     maxCompletions = 0, deterministic = True
     maxSimultaneous = 0, deterministic = True
-    rewardFunds = 64236.44, deterministic = False
+    rewardFunds = 79641.39, deterministic = False
     rewardReputation = 1, deterministic = True
     rewardScience = 0, deterministic = True
-    failureFunds = 1085.749, deterministic = False
+    failureFunds = 3597.167, deterministic = False
     failureReputation = 1, deterministic = True
-    advanceFunds = 11527.96, deterministic = False
+    advanceFunds = 13446.86, deterministic = False
     weight = 1, deterministic = True
     targetBody5 = null, deterministic = False
     diffModifier5 = 10, deterministic = False

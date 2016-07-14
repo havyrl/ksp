@@ -109,14 +109,14 @@ RT_OuterPlanetRelay
     RemoteTech:disabledContractType = [], deterministic = True
     name = RT_OuterPlanetRelay, deterministic = True
     trace = False, deterministic = True
-    title = RemoteTech: Create a network for Dres., deterministic = False
+    title = RemoteTech: Create a network for Eeloo., deterministic = False
     tag = , deterministic = True
-    description = We're not sure if there's actually anything worth seeing on Dres.  Let's check it out anyway.  Set up a communication network for us., deterministic = False
+    description = Is Eeloo reflective enough to bounce a signal off of?  Only one way to find out.  Set up a communication network for us., deterministic = False
     topic = , deterministic = True
     subject = , deterministic = True
     motivation = , deterministic = True
     notes = null, deterministic = True
-    synopsis = Build a communication network that provides coverage of Dres with a link back to mission control., deterministic = False
+    synopsis = Build a communication network that provides coverage of Eeloo with a link back to mission control., deterministic = False
     completedMessage = The network is up and transmitting, and our shake-out testing is complete!, deterministic = True
     agent = Contracts.Agents.Agent, deterministic = True
     minExpiry = 1, deterministic = True
@@ -126,7 +126,7 @@ RT_OuterPlanetRelay
     declinable = True, deterministic = True
     autoAccept = False, deterministic = True
     prestige = [ Significant ], deterministic = True
-    targetBody = Dres (CelestialBody), deterministic = False
+    targetBody = Eeloo (CelestialBody), deterministic = False
     maxCompletions = 0, deterministic = True
     maxSimultaneous = 0, deterministic = True
     rewardFunds = 210000, deterministic = True
@@ -138,21 +138,21 @@ RT_OuterPlanetRelay
     weight = 1, deterministic = True
     sma = 13599840256, deterministic = True
     targetSMA = 21079752396.8, deterministic = True
-    descDefault = We'd like to know more about Dres.  Set up a communication network for us., deterministic = False
+    descDefault = We'd like to know more about Eeloo.  Set up a communication network for us., deterministic = False
     descDres = We're not sure if there's actually anything worth seeing on Dres.  Let's check it out anyway.  Set up a communication network for us., deterministic = True
     descEeloo = Is Eeloo reflective enough to bounce a signal off of?  Only one way to find out.  Set up a communication network for us., deterministic = True
     descNeptune = Neptune should would be an interesting place to visit.  Set up a communication network for us., deterministic = True
     descUranus = There's aren't many places colder than Uranus, we should check it out.  Set up a communication network for us., deterministic = True
-    targetPlanet = Dres (CelestialBody), deterministic = False
-    isDres = True, deterministic = False
-    isEeloo = False, deterministic = False
+    targetPlanet = Eeloo (CelestialBody), deterministic = False
+    isDres = False, deterministic = False
+    isEeloo = True, deterministic = False
     isNeptune = False, deterministic = False
     isUranus = False, deterministic = False
 
 	CoverageParameter
 	    type = CelestialBodyCoverage, deterministic = True
 	    name = CoverageParameter, deterministic = True
-	    targetBody = Dres (CelestialBody), deterministic = False
+	    targetBody = Eeloo (CelestialBody), deterministic = False
 	    rewardFunds = 0, deterministic = True
 	    rewardReputation = 0, deterministic = True
 	    rewardScience = 0, deterministic = True
@@ -171,7 +171,7 @@ RT_OuterPlanetRelay
 	Duration
 	    type = Duration, deterministic = True
 	    name = Duration, deterministic = True
-	    targetBody = Dres (CelestialBody), deterministic = False
+	    targetBody = Eeloo (CelestialBody), deterministic = False
 	    rewardFunds = 0, deterministic = True
 	    rewardReputation = 0, deterministic = True
 	    rewardScience = 0, deterministic = True
@@ -204,14 +204,14 @@ RT_OuterPlanetRelay
 	AnyGigaDish
 	    type = Any, deterministic = True
 	    name = AnyGigaDish, deterministic = True
-	    targetBody = Dres (CelestialBody), deterministic = False
+	    targetBody = Eeloo (CelestialBody), deterministic = False
 	    checkOnActiveContract = False, deterministic = True
 	    invertRequirement = False, deterministic = True
 	
 		PartUnlocked1
 		    type = PartUnlocked, deterministic = True
 		    name = PartUnlocked1, deterministic = True
-		    targetBody = Dres (CelestialBody), deterministic = False
+		    targetBody = Eeloo (CelestialBody), deterministic = False
 		    checkOnActiveContract = False, deterministic = True
 		    invertRequirement = False, deterministic = True
 		    part = [ RTGigaDish1 ], deterministic = False
@@ -219,7 +219,7 @@ RT_OuterPlanetRelay
 		PartUnlocked2
 		    type = PartUnlocked, deterministic = True
 		    name = PartUnlocked2, deterministic = True
-		    targetBody = Dres (CelestialBody), deterministic = False
+		    targetBody = Eeloo (CelestialBody), deterministic = False
 		    checkOnActiveContract = False, deterministic = True
 		    invertRequirement = False, deterministic = True
 		    part = [ RTGigaDish2 ], deterministic = False
@@ -227,7 +227,7 @@ RT_OuterPlanetRelay
 	PartModuleTypeUnlocked
 	    type = PartModuleTypeUnlocked, deterministic = True
 	    name = PartModuleTypeUnlocked, deterministic = True
-	    targetBody = Dres (CelestialBody), deterministic = False
+	    targetBody = Eeloo (CelestialBody), deterministic = False
 	    checkOnActiveContract = False, deterministic = True
 	    invertRequirement = False, deterministic = True
 	    partModuleType = [ Antenna, Power ], deterministic = True
