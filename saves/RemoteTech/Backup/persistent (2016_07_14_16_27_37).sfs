@@ -7,7 +7,7 @@ GAME
 	linkCaption = 
 	Mode = CAREER
 	Status = 1
-	scene = 7
+	scene = 5
 	editor = None
 	flag = Squad/Flags/esa_dark_blue
 	launchID = 50
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 463435.37524034
+		update = 447533.866591208
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -171,6 +171,45 @@ GAME
 					scanName = AltimetryLoRes
 					scanType = 1
 					targetBody = Kerbin
+				}
+			}
+			CONTRACT
+			{
+				guid = 1ee6943f-6609-4364-a803-93e36c639063
+				type = ConfiguredContract
+				prestige = 0
+				seed = -1772911432
+				state = Offered
+				agent = SCAN: Scientific Committee on Advanced Navigation
+				deadlineType = Floating
+				expiryType = Floating
+				ignoresWeight = True
+				values = 34560,15923637.5976563,5977,83197,10282,0,2,2,460635.047537766,0,0,0
+				subtype = SCAN_LoRes
+				title = Do a Low Resolution Scan of the Mun
+				description = Boffins at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether some Kerbals seem to enjoy things that terrify others felt apparently assured about whether we knew very little about whether stupid Kerbals don't mind spinning around as much as others do. Granted, the amount of times there would be a bad new discovery was how we got into that situation in the first place... However the case may be, as you've surely deduced already from all this, this is where you come in.
+				synopsis = Perform a RADAR scan of the Mun
+				completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
+				notes = Scanning can take place while the vessel is not loaded.
+				hash = -899775195
+				UNIQUE_DATA
+				{
+					targetBody1 = CelestialBody:Mun
+				}
+				PARAM
+				{
+					name = SCANsatCoverage
+					id = SCANsatCoverage
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = ScanSatOfficial.SCAN_LoRes
+					title = 
+					notes = 
+					completedMessage = 
+					coverage = 75
+					scanName = AltimetryLoRes
+					scanType = 1
+					targetBody = Mun
 				}
 			}
 			CONTRACT
@@ -505,6 +544,42 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 6c5376db-6396-4a50-97cb-c2cad8cb9bdb
+				type = RecoverAsset
+				prestige = 0
+				seed = -615233940
+				state = Offered
+				agent = STEADLER Engineering Corps
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,23168.3169007301,55577.2253644732,24569.9988842011,0,9.522859,9.900001,449142.787225833,0,0,0
+				targetBody = 1
+				kerbalName = Kerelyn Kerman
+				partName = DERP.POD
+				partID = 0
+				recoveryLocation = 1
+				recoveryType = 1
+				gender = 2
+				PARAM
+				{
+					name = AcquireCrew
+					state = Incomplete
+					values = 5940,0,0,4,0
+					title = Save Kerelyn Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					title = Recover Kerelyn Kerman on Kerbin
+					failOn = All
+					winOn = All
+				}
+			}
+			CONTRACT
+			{
 				guid = 03a67fbe-f26a-46ca-9604-b6dd8570647c
 				type = ConfiguredContract
 				prestige = 1
@@ -795,6 +870,29 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = ad778241-a8e9-4ea0-8bae-191edae89986
+				type = WorldFirstContract
+				prestige = 1
+				seed = 150881634
+				state = Active
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 21600,0,47457.624912262,88135.5891227722,56000,8,18.88,0,81212.004029059,59612.5840290589,0,0
+				targetBody = 2
+				targetType = FLYBY
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 2
+					targetType = FLYBY
+				}
+			}
+			CONTRACT
+			{
 				guid = 94e178c1-81d8-4bd8-9142-25d24c8345dc
 				type = ConfiguredContract
 				prestige = 1
@@ -867,13 +965,6 @@ GAME
 							vessel = 5fbf45d1-ee1a-4c33-89eb-a11f4a6a317f
 							state = Complete
 							strength = STRONG
-							completionTime = 447115.440308044
-						}
-						VESSEL_STATS
-						{
-							vessel = f5bfe1dc-88ee-43b0-93f1-552f80b50a74
-							state = Complete
-							strength = WEAK
 							completionTime = 447115.440308044
 						}
 						DOCKED_SUB_VESSEL
@@ -1231,13 +1322,6 @@ GAME
 							strength = STRONG
 							completionTime = 447115.840308044
 						}
-						VESSEL_STATS
-						{
-							vessel = f5bfe1dc-88ee-43b0-93f1-552f80b50a74
-							state = Complete
-							strength = WEAK
-							completionTime = 447115.840308044
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
@@ -1621,13 +1705,6 @@ GAME
 							vessel = 5fbf45d1-ee1a-4c33-89eb-a11f4a6a317f
 							state = Complete
 							strength = STRONG
-							completionTime = 447115.840308044
-						}
-						VESSEL_STATS
-						{
-							vessel = f5bfe1dc-88ee-43b0-93f1-552f80b50a74
-							state = Complete
-							strength = WEAK
 							completionTime = 447115.840308044
 						}
 						DOCKED_SUB_VESSEL
@@ -2129,7 +2206,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: Kerbin
-							state = Incomplete
+							state = Complete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -2141,7 +2218,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Situation: Orbit
-							state = Incomplete
+							state = Complete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -2153,7 +2230,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Periapsis: Above 600,000 m
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -2386,13 +2463,6 @@ GAME
 							vessel = 5fbf45d1-ee1a-4c33-89eb-a11f4a6a317f
 							state = Complete
 							strength = STRONG
-							completionTime = 447115.840308044
-						}
-						VESSEL_STATS
-						{
-							vessel = f5bfe1dc-88ee-43b0-93f1-552f80b50a74
-							state = Complete
-							strength = WEAK
 							completionTime = 447115.840308044
 						}
 						DOCKED_SUB_VESSEL
@@ -2777,13 +2847,6 @@ GAME
 							vessel = 5fbf45d1-ee1a-4c33-89eb-a11f4a6a317f
 							state = Complete
 							strength = STRONG
-							completionTime = 447115.440308044
-						}
-						VESSEL_STATS
-						{
-							vessel = f5bfe1dc-88ee-43b0-93f1-552f80b50a74
-							state = Complete
-							strength = WEAK
 							completionTime = 447115.440308044
 						}
 						DOCKED_SUB_VESSEL
@@ -3255,7 +3318,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: Kerbin
-							state = Incomplete
+							state = Complete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -3267,7 +3330,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Situation: Orbit
-							state = Incomplete
+							state = Complete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -3279,7 +3342,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Periapsis: Above 600,000 m
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -3369,13 +3432,6 @@ GAME
 							vessel = 5fbf45d1-ee1a-4c33-89eb-a11f4a6a317f
 							state = Complete
 							strength = STRONG
-							completionTime = 447115.840308044
-						}
-						VESSEL_STATS
-						{
-							vessel = f5bfe1dc-88ee-43b0-93f1-552f80b50a74
-							state = Complete
-							strength = WEAK
 							completionTime = 447115.840308044
 						}
 						DOCKED_SUB_VESSEL
@@ -3845,13 +3901,6 @@ GAME
 							strength = STRONG
 							completionTime = 447115.440308044
 						}
-						VESSEL_STATS
-						{
-							vessel = f5bfe1dc-88ee-43b0-93f1-552f80b50a74
-							state = Complete
-							strength = WEAK
-							completionTime = 447115.440308044
-						}
 						DOCKED_SUB_VESSEL
 						{
 							hash = 3090589867
@@ -4321,7 +4370,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: Kerbin
-							state = Incomplete
+							state = Complete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -4333,7 +4382,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Situation: Orbit
-							state = Incomplete
+							state = Complete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -4345,7 +4394,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Periapsis: Above 600,000 m
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = RemoteTech.RT_KerbinRelay
@@ -4430,7 +4479,7 @@ GAME
 					PARAM
 					{
 						name = ReachDestination
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						dest = 1
@@ -4439,7 +4488,7 @@ GAME
 					PARAM
 					{
 						name = ReachSituation
-						state = Complete
+						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						sit = ESCAPING
@@ -4632,7 +4681,7 @@ GAME
 					PARAM
 					{
 						name = ReachDestination
-						state = Complete
+						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						dest = 2
@@ -4647,139 +4696,6 @@ GAME
 						sit = LANDED
 						title = 
 					}
-				}
-			}
-			CONTRACT
-			{
-				guid = a5c0b4a9-3354-4abf-8b35-9b9d5e775c82
-				type = TourismContract
-				prestige = 0
-				seed = 153834551
-				state = Offered
-				agent = STEADLER Engineering Corps
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,0,0,0,0,21.16191,11,579113.739956538,0,0,0
-				gender = 1
-				preposition = right here on Kerbin
-				homeDestinations = True
-				tourists = Tanzor Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					values = 19500,0,0,0,0
-					kerbalName = Tanzor Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Tanzor Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Tanzor Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = b5a7f6f1-f9f1-411b-8e02-8e004e3dac6a
-				type = RecoverAsset
-				prestige = 0
-				seed = 499447879
-				state = Offered
-				agent = Dinkelstein Kerman's Construction Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,24101.9993305206,57816.9857683755,25307.0981477738,0,8.118807,8.780488,528231.255826278,0,0,0
-				targetBody = 1
-				kerbalName = Caldous Kerman
-				partName = KKAOSS.airlock.end.g
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
-				gender = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 5940,0,0,4,0
-					title = Save Caldous Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Caldous Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = f5bd024a-2aa3-4b9a-a6d0-3767e9623da6
-				type = ConfiguredContract
-				prestige = 1
-				seed = 500768011
-				state = Offered
-				agent = Communication Satellite Group
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 112560,0,218750,656250,218750,0,3,0,575995.37524034,0,0,0
-				subtype = RT_PlanetMoonRelay
-				title = RemoteTech: Create a network for Minmus.
-				description = They say there's no point to setting up a relay for Minmus.  We say otherwise!  Set up a communication network for us.
-				synopsis = Build a communication network that provides coverage of Minmus with a link back to mission control.
-				completedMessage = The network is up and transmitting, and our shake-out testing is complete!
-				hash = -1793214220
-				UNIQUE_DATA
-				{
-					targetMoon = CelestialBody:Minmus
-				}
-				PARAM
-				{
-					name = CelestialBodyCoverageParameter
-					id = GillyCoverage
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_PlanetMoonRelay
-					title = 
-					notes = 
-					completedMessage = 
-					coverage = 0.95
-					targetBody = Minmus
-				}
-				PARAM
-				{
-					name = Duration
-					id = Duration
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = RemoteTech.RT_PlanetMoonRelay
-					title = 
-					notes = 
-					completedMessage = 
-					duration = 151200
-					preWaitText = Testing time after network up
-					waitingText = Performing shake-out testing
-					completionText = Shake-out testing completed
-					endTime = 0
-					startCriteria = CONTRACT_ACCEPTANCE
-					triggered = False
 				}
 			}
 			CONTRACT_FINISHED
@@ -7694,30 +7610,6 @@ GAME
 					winOn = All
 				}
 			}
-			CONTRACT_FINISHED
-			{
-				guid = ad778241-a8e9-4ea0-8bae-191edae89986
-				type = WorldFirstContract
-				prestige = 1
-				seed = 150881634
-				state = Completed
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 21600,0,47457.624912262,88135.5891227722,56000,8,18.88,0,81212.004029059,59612.5840290589,0,0
-				targetBody = 2
-				targetType = FLYBY
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					targetBody = 2
-					targetType = FLYBY
-				}
-			}
 		}
 	}
 	SCENARIO
@@ -7730,7 +7622,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 410893.75058663
+		funds = 290358.161463858
 	}
 	SCENARIO
 	{
@@ -7798,10 +7690,6 @@ GAME
 					{
 						crews = Jebediah Kerman
 					}
-				}
-				Escape
-				{
-					completedManned = 463435.37524034
 				}
 				Landing
 				{
@@ -7871,21 +7759,13 @@ GAME
 					}
 				}
 			}
-			Mun
-			{
-				reached = 463435.37524034
-				Flyby
-				{
-					completedManned = 463435.37524034
-				}
-			}
 		}
 	}
 	SCENARIO
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 133.7985
+		sci = 117.7985
 		Tech
 		{
 			id = start
@@ -9591,16 +9471,6 @@ GAME
 			sci = 12
 			cap = 16
 		}
-		Science
-		{
-			id = evaReport@KerbinInSpaceHigh
-			title = EVA Report while in space high over Kerbin
-			dsc = 1
-			scv = 1
-			sbv = 1.5
-			sci = 0
-			cap = 12
-		}
 		ExpParts
 		{
 			Size2LFB = 1
@@ -9615,7 +9485,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 436.9785
+		rep = 414.0567
 	}
 	SCENARIO
 	{
@@ -10030,19 +9900,19 @@ GAME
 		scene = 7, 8, 5
 		CONTRACT
 		{
-			guid = be509c43-c88c-4379-b12b-5fb8325f2749
+			guid = 9652cd61-dca7-4db0-a357-0bd640a9593d
 			type = ConfiguredContract
 			prestige = 0
-			seed = 1036284464
+			seed = 792476795
 			state = Withdrawn
 			agent = SCAN: Scientific Committee on Advanced Navigation
 			deadlineType = Floating
 			expiryType = Floating
 			ignoresWeight = True
-			values = 81840,18733213.0371094,20194,104507,27647,0,2,2,561082.752769211,0,0,0
+			values = 146340,20094628.7109375,15317,123975,21035,0,2,2,534294.891584327,0,0,0
 			subtype = SCAN_LoRes
 			title = Do a Low Resolution Scan of Minmus
-			description = Boffins at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether some Kerbals seem to enjoy things that terrify others would be the first to admit that nobody here seemed to be able to tell if all Kerbals enjoy feeling weightless. It is true, though, that the way we would frequently be proving proper theories about how stupid Kerbals don't mind spinning around as much as others do was a big part of why. Anyhow, as you've surely deduced already from all this, this is where you come in.
+			description = Boffins trying something really outstanding at SCAN: Scientific Committee on Advanced Navigation felt pretty undecided about whether none of us knew for sure if some Kerbals seem to enjoy high speeds, while others apparently just don't. It is true, though, that the way we would frequently see another unintended ignition was a big part of why. In any case, this is where you come in.
 			synopsis = Perform a RADAR scan of Minmus
 			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
 			notes = Scanning can take place while the vessel is not loaded.
@@ -10069,19 +9939,298 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 02749ddf-055c-4ac6-a1f0-e7a0058e2d4d
+			guid = f5b9a2c9-fd28-4fae-8879-2331fef95fe8
 			type = ConfiguredContract
 			prestige = 0
-			seed = 690878493
+			seed = 1959158826
+			state = Withdrawn
+			agent = Communication Satellite Group
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 31800,0,5000,15000,5000,0,1,0,538518.154045146,0,0,0
+			subtype = RT_MoonDish
+			title = RemoteTech: Point a dish out from Kerbin
+			description = We'd like you to point a dish at one of Kerbin's moons so we can start sending some probes that way!
+			synopsis = Point a dish at one of our moons!
+			completedMessage = We've got a signal bouncing back, good job!
+			hash = 380904866
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = MunSat
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_MoonDish
+				title = 
+				notes = 
+				completedMessage = 
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_MoonDish
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_MoonDish
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = ORBITING
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = Any
+					id = InnerTarget
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_MoonDish
+					title = Point a Dish at one of Kerbin's moons
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = HasAntennaParameter
+						id = HasAntenna
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						minRange = 0
+						targetBody = Mun
+						activeVessel = False
+						minCount = 1
+						maxCount = 2147483647
+						antennaType = Dish
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Type: Dish
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Type: Dish
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Target: the Mun
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Target: the Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Activated
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Activated
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Powered
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Powered
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Range: In range of the Mun
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Range: In range of the Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasAntennaParameter
+						id = HasAntenna
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_MoonDish
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						minRange = 0
+						targetBody = Minmus
+						activeVessel = False
+						minCount = 1
+						maxCount = 2147483647
+						antennaType = Dish
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Type: Dish
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Type: Dish
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Target: Minmus
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Target: Minmus
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Activated
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Activated
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Powered
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Powered
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Range: In range of Minmus
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Range: In range of Minmus
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RemoteTech.RT_MoonDish
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 5dfd420f-8dd5-4cc9-ab46-7d507d5a469c
+			type = ConfiguredContract
+			prestige = 0
+			seed = 2141299208
 			state = Withdrawn
 			agent = SCAN: Scientific Committee on Advanced Navigation
 			deadlineType = Floating
 			expiryType = Floating
 			ignoresWeight = True
-			values = 147180,17182603.5644531,4927,105918,18412,0,2,2,571435.65524034,0,0,0
+			values = 84180,19120166.015625,16812,103453,27154,0,2,2,544378.275154102,0,0,0
 			subtype = SCAN_LoRes
 			title = Do a Low Resolution Scan of the Mun
-			description = The respectable geniuses trying something definitely exemplary at SCAN: Scientific Committee on Advanced Navigation felt positively undecided about whether it was actually hard for us to tell if brave Kerbals regain their nerve faster than not-so-brave ones. It is true, though, that the terrible frequency at which we'd find ourselves undergoing rapid unplanned disassembly was how we got into that situation in the first place... However the case may be, this is why we're here.
+			description = It seemed poor for boffins at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether some Kerbals don't seem as eager to take part in our projects as others do, that nobody here seemed to be able to tell if all Kerbals enjoy feeling weightless. Granted, the way we would frequently see another unintended ignition was quite truly part of the reason. This is why we're here.
 			synopsis = Perform a RADAR scan of the Mun
 			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
 			notes = Scanning can take place while the vessel is not loaded.
@@ -10104,6 +10253,1588 @@ GAME
 				scanName = AltimetryLoRes
 				scanType = 1
 				targetBody = Mun
+			}
+		}
+		CONTRACT
+		{
+			guid = 4e6eec4d-0dae-4465-ab2a-70d4ec3ac034
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1737731688
+			state = Withdrawn
+			agent = SCAN: Scientific Committee on Advanced Navigation
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 123480,7691061.40136719,7472,46706,14630,0,1,1,548995.021449085,0,0,0
+			subtype = SCAN_LoRes
+			title = Do a Low Resolution Scan of Kerbin
+			description = Boffins trying something actually awesome at SCAN: Scientific Committee on Advanced Navigation would be the first to admit that nobody here seemed to be able to tell if some Kerbals don't seem as eager to take part in our projects as others do. It is true, though, that the way we would often see another unintended ignition was a big part of why. Be that as it may, this is why we're here.
+			synopsis = Perform a RADAR scan of Kerbin
+			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
+			notes = Scanning can take place while the vessel is not loaded.
+			hash = -899775195
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Kerbin
+			}
+			PARAM
+			{
+				name = SCANsatCoverage
+				id = SCANsatCoverage
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = ScanSatOfficial.SCAN_LoRes
+				title = 
+				notes = 
+				completedMessage = 
+				coverage = 75
+				scanName = AltimetryLoRes
+				scanType = 1
+				targetBody = Kerbin
+			}
+		}
+		CONTRACT
+		{
+			guid = 0bc4ca66-ffcc-4cf4-bd26-f7c54b83fabf
+			type = ConfiguredContract
+			prestige = 1
+			seed = 770511699
+			state = Withdrawn
+			agent = Communication Satellite Group
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 142140,0,100000,300000,100000,0,16,0,499091.116284614,0,0,0
+			subtype = RT_KerbinRelay_4sat
+			title = RemoteTech: Create a communication network for Kerbin (4 satellites).
+			description = Mission control is tired of losing vessels and probes over the horizon, since they are rarely heard from again.  We need to find a way to stay in constant communication if we have any hope of truly exploring the Mun and beyond.
+			synopsis = Build a communication network with four commsats that has continuous connectivity to mission control.\n\nAlso, make sure to only accept either the three or four satellite version of this contract (it's impossible to complete both).
+			completedMessage = The network is up and transmitting, and our shake-out testing is complete!
+			notes = A four satellite network must have a minimum periapsis of 248,528.14 m.  Note that this is the bare minimum numbers to have visibility, it is recommended to use higher orbits to give a larger margin of error.
+			hash = -1069604761
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = CommSat1
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+				title = 
+				notes = 
+				completedMessage = 
+				define = CommSat I
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat II
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat III
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat IV
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 248528.137423857
+					minEccentricity = 0
+					maxEccentricity = 0.004
+					minInclination = 0
+					maxInclination = 1
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Above 248,528 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Periapsis: Above 248,528 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0040
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Eccentricity: Below 0.0040
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Below 1.0°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Inclination: Below 1.0°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = CommSat2
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+				title = 
+				notes = 
+				completedMessage = 
+				define = CommSat II
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = VesselConnectivityParameter
+					id = VesselConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+					vesselKey = CommSat I
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat III
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat IV
+				}
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 248528.137423857
+					minEccentricity = 0
+					maxEccentricity = 0.004
+					minInclination = 0
+					maxInclination = 1
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Above 248,528 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Periapsis: Above 248,528 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0040
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Eccentricity: Below 0.0040
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Below 1.0°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Inclination: Below 1.0°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = CommSat3
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+				title = 
+				notes = 
+				completedMessage = 
+				define = CommSat III
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat I
+				}
+				PARAM
+				{
+					name = VesselConnectivityParameter
+					id = VesselConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+					vesselKey = CommSat II
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat IV
+				}
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 248528.137423857
+					minEccentricity = 0
+					maxEccentricity = 0.004
+					minInclination = 0
+					maxInclination = 1
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Above 248,528 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Periapsis: Above 248,528 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0040
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Eccentricity: Below 0.0040
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Below 1.0°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Inclination: Below 1.0°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = CommSat4
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+				title = 
+				notes = 
+				completedMessage = 
+				define = CommSat IV
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = VesselConnectivityParameter
+					id = VesselConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+					vesselKey = CommSat I
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat II
+				}
+				PARAM
+				{
+					name = VesselConnectivityParameter
+					id = VesselConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+					vesselKey = CommSat III
+				}
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 248528.137423857
+					minEccentricity = 0
+					maxEccentricity = 0.004
+					minInclination = 0
+					maxInclination = 1
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Above 248,528 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Periapsis: Above 248,528 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0040
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Eccentricity: Below 0.0040
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Below 1.0°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+						title = Inclination: Below 1.0°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = Duration
+				id = Duration
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay_4sat
+				title = 
+				notes = 
+				completedMessage = 
+				duration = 43200
+				preWaitText = Testing time after network up
+				waitingText = Performing shake-out testing
+				completionText = Shake-out testing completed
+				endTime = 0
+				startCriteria = CONTRACT_ACCEPTANCE
+				triggered = False
+			}
+		}
+		CONTRACT
+		{
+			guid = 08b54d2a-d822-4abd-a7f2-3beda186579a
+			type = ConfiguredContract
+			prestige = 1
+			seed = 2027536499
+			state = Withdrawn
+			agent = SCAN: Scientific Committee on Advanced Navigation
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 34920,8538341.30859375,6582,68725,13675,0,1,1,499140.496284659,0,0,0
+			subtype = SCAN_LoRes
+			title = Do a Low Resolution Scan of Kerbin
+			description = It's no secret that we were making very little progress towards finding out if brave Kerbals regain their nerve faster than not-so-brave ones. It is true, though, that for the outstanding minds making a big mess at SCAN: Scientific Committee on Advanced Navigation's labs, that was simply poor. Admittedly, the horrible frequency at which we'd find ourselves underestimating how volatile standard-grade solid rocket fuel really is was quite positively part of the reason. Be that as it may, as a result of that apparently remarkable chain of events, this is why we're here.
+			synopsis = Perform a RADAR scan of Kerbin
+			completedMessage = Excellent work, despite the grainy monochrome image we've recovered our experts are very excited to see what they can find.
+			notes = Scanning can take place while the vessel is not loaded.
+			hash = -899775195
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Kerbin
+			}
+			PARAM
+			{
+				name = SCANsatCoverage
+				id = SCANsatCoverage
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = ScanSatOfficial.SCAN_LoRes
+				title = 
+				notes = 
+				completedMessage = 
+				coverage = 85
+				scanName = AltimetryLoRes
+				scanType = 1
+				targetBody = Kerbin
+			}
+		}
+		CONTRACT
+		{
+			guid = 61cb4704-bcb3-4d12-8e49-bc4e19237bfc
+			type = ConfiguredContract
+			prestige = 1
+			seed = 35119814
+			state = Withdrawn
+			agent = Communication Satellite Group
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 50160,0,75000,225000,75000,0,12,0,499158.276284675,0,0,0
+			subtype = RT_KerbinRelay
+			title = RemoteTech: Create a communication network for Kerbin (3 satellites).
+			description = Mission control is tired of losing vessels and probes over the horizon, since they are rarely heard from again.  We need to find a way to stay in constant communication if we have any hope of truly exploring the Mun and beyond.
+			synopsis = Build a communication network with three commsats that has continuous connectivity to mission control.\n\nAlso, make sure to only accept either the three or four satellite version of this contract (it's impossible to complete both).
+			completedMessage = The network is up and transmitting, and our shake-out testing is complete!
+			notes = A three satellite network must have a minimum periapsis of 600,000.00 m.  Note that this is the bare minimum numbers to have visibility, it is recommended to use higher orbits to give a larger margin of error.
+			hash = 1427574305
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = CommSat1
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay
+				title = 
+				notes = 
+				completedMessage = 
+				define = CommSat I
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat II
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat III
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 600000
+					minEccentricity = 0
+					maxEccentricity = 0.004
+					minInclination = 0
+					maxInclination = 1
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Above 600,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Periapsis: Above 600,000 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0040
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Eccentricity: Below 0.0040
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Below 1.0°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Inclination: Below 1.0°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = CommSat2
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay
+				title = 
+				notes = 
+				completedMessage = 
+				define = CommSat II
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = VesselConnectivityParameter
+					id = VesselConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+					vesselKey = CommSat I
+				}
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat III
+				}
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 600000
+					minEccentricity = 0
+					maxEccentricity = 0.004
+					minInclination = 0
+					maxInclination = 1
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Above 600,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Periapsis: Above 600,000 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0040
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Eccentricity: Below 0.0040
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Below 1.0°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Inclination: Below 1.0°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = CommSat3
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay
+				title = 
+				notes = 
+				completedMessage = 
+				define = CommSat III
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = IsNotVessel
+					id = IsNotVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					vesselKey = CommSat I
+				}
+				PARAM
+				{
+					name = VesselConnectivityParameter
+					id = VesselConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+					vesselKey = CommSat II
+				}
+				PARAM
+				{
+					name = KSCConnectivityParameter
+					id = KSCConnectivity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = Connected to KSC
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					hasConnectivity = True
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RemoteTech.RT_KerbinRelay
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 600000
+					minEccentricity = 0
+					maxEccentricity = 0.004
+					minInclination = 0
+					maxInclination = 1
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Above 600,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Periapsis: Above 600,000 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0040
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Eccentricity: Below 0.0040
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Below 1.0°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RemoteTech.RT_KerbinRelay
+						title = Inclination: Below 1.0°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = Duration
+				id = Duration
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_KerbinRelay
+				title = 
+				notes = 
+				completedMessage = 
+				duration = 43200
+				preWaitText = Testing time after network up
+				waitingText = Performing shake-out testing
+				completionText = Shake-out testing completed
+				endTime = 0
+				startCriteria = CONTRACT_ACCEPTANCE
+				triggered = False
+			}
+		}
+		CONTRACT
+		{
+			guid = dc092f8b-32d4-4ea3-ba61-4cf6cab10e37
+			type = ConfiguredContract
+			prestige = 1
+			seed = 296180300
+			state = Withdrawn
+			agent = Research & Development Department
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 110760,0,12500,25000,12500,12,10,0,514759.51086862,0,0,0
+			subtype = ScanKerbinLoRes
+			title = Altimetry Scan of Kerbin
+			description = Our scientists have suggested that knowing what the rock we're flying around looks like might be a good idea. Perform an altimetry scan of Kerbin's surface and report back with the answer to the ultimate question, "Where did I put my keys?".
+			synopsis = Send an unkerbaled vessel into orbit, we suggest a 496km orbit with an 83.3 degree inclination, and scan Kerbin's surface with the SCAN Radar Altimetry Sensor. \n\nThe key is getting the data we require, if you want to go with a custom orbit feel free but we didn't spend good money researching this one for no gorram reason!
+			completedMessage = Excellent work, we're well underway with our scans in in a short while, our first map will be complete!
+			notes = Tip: There's probably some other science equipment you can take along for some extra science!\nTip: Don't forget to Analyse the Data from your scan once complete for extra science!
+			hash = 1098207048
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = Maxwell1
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+				title = 
+				notes = 
+				completedMessage = 
+				define = Maxwell I
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = ORBITING
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew1
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 0
+					maxCrew = 0
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Unmanned
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Unmanned
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = PartValidation
+					id = PartValidation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					minCount = 1
+					maxCount = 2147483647
+					FILTER
+					{
+						type = FILTER
+						part = SCANsat.Scanner
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = With type: SCAN RADAR Altimetry Sensor
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = With type: SCAN RADAR Altimetry Sensor
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Count: At least 1 
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = SCANsatCoverage
+				id = SCANsatCoverage1
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+				title = 
+				notes = 
+				completedMessage = 
+				coverage = 50
+				scanName = AltimetryLoRes
+				scanType = 1
+				targetBody = Kerbin
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = OrbitSet
+				optional = True
+				state = Incomplete
+				values = 10000,0,6,5,0
+				ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+				title = Achieve an orbit with the following parameters
+				notes = 
+				completedMessage = Brilliant work, with our orbit established we can get some good results!!
+				vessel = Maxwell I
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: Maxwell I
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = Vessel: Maxwell I
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = Orbit
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+					title = Achieve an orbit with the following parameters
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = ORBITING
+					targetBody = Kerbin
+					minAltitude = 0
+					minApoapsis = 493234
+					maxApoapsis = 499314
+					minPeriapsis = 493101
+					maxPeriapsis = 499106
+					minEccentricity = 0
+					maxEccentricity = 0.0021
+					minInclination = 83.1
+					maxInclination = 83.6
+					minPeriod = 0
+					displayNotes = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Situation: Orbit
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Apoapsis: Between 493,234 m and 499,314 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Apoapsis: Between 493,234 m and 499,314 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Periapsis: Between 493,101 m and 499,106 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Periapsis: Between 493,101 m and 499,106 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Eccentricity: Below 0.0021
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Eccentricity: Below 0.0021
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Inclination: Between 83.1° and 83.6°
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = CCCP-SCANsat.ScanKerbinLoRes
+						title = Inclination: Between 83.1° and 83.6°
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 64290e7e-3e16-447f-ab74-a4aa35d3ea89
+			type = ConfiguredContract
+			prestige = 1
+			seed = 1228735222
+			state = Withdrawn
+			agent = Communication Satellite Group
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 112560,0,218750,656250,218750,0,3,0,552189.125815055,0,0,0
+			subtype = RT_PlanetMoonRelay
+			title = RemoteTech: Create a network for Minmus.
+			description = They say there's no point to setting up a relay for Minmus.  We say otherwise!  Set up a communication network for us.
+			synopsis = Build a communication network that provides coverage of Minmus with a link back to mission control.
+			completedMessage = The network is up and transmitting, and our shake-out testing is complete!
+			hash = -1793214220
+			UNIQUE_DATA
+			{
+				targetMoon = CelestialBody:Minmus
+			}
+			PARAM
+			{
+				name = CelestialBodyCoverageParameter
+				id = GillyCoverage
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_PlanetMoonRelay
+				title = 
+				notes = 
+				completedMessage = 
+				coverage = 0.95
+				targetBody = Minmus
+			}
+			PARAM
+			{
+				name = Duration
+				id = Duration
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = RemoteTech.RT_PlanetMoonRelay
+				title = 
+				notes = 
+				completedMessage = 
+				duration = 151200
+				preWaitText = Testing time after network up
+				waitingText = Performing shake-out testing
+				completionText = Shake-out testing completed
+				endTime = 0
+				startCriteria = CONTRACT_ACCEPTANCE
+				triggered = False
 			}
 		}
 	}
@@ -10147,7 +11878,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 66174
+		nextCheck = 65069
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -10163,13 +11894,13 @@ GAME
 		CelestialBodyInfo
 		{
 			body = Mun
-			coverage = 811251
+			coverage = 948467
 			activeRange = 0
 		}
 		CelestialBodyInfo
 		{
 			body = Minmus
-			coverage = 495422
+			coverage = 0
 			activeRange = 0
 		}
 		CelestialBodyInfo
@@ -10553,9 +12284,9 @@ GAME
 			CrewMemberInfo
 			{
 				name = Bob Kerman
-				lastUpdate = 463437.655240342
-				lastFood = 463437.655240342
-				lastWater = 463437.655240342
+				lastUpdate = 447537.226591211
+				lastFood = 447537.226591211
+				lastWater = 447537.226591211
 				vesselName = Orbiter I
 				vesselId = 5fbf45d1-ee1a-4c33-89eb-a11f4a6a317f
 				hibernating = False
@@ -10566,18 +12297,18 @@ GAME
 				vesselType = Ship
 				numCrew = 1
 				numOccupiedParts = 1
-				lastUpdate = 463437.655240342
-				lastFood = 463437.655240342
-				lastWater = 463437.655240342
-				lastOxygen = 463437.655240342
-				lastElectricity = 463437.655240342
-				remainingFood = 0.821086596205582
-				remainingWater = 0.542633031254054
-				remainingOxygen = 83.1887737217093
-				remainingElectricity = 309.999200000036
-				remainingCO2 = 24.0557578235737
-				remainingWaste = 0.0250916121088178
-				remainingWasteWater = 0.232238906034416
+				lastUpdate = 447537.226591211
+				lastFood = 447537.226591211
+				lastWater = 447537.226591211
+				lastOxygen = 447537.226591211
+				lastElectricity = 447537.226591211
+				remainingFood = 1.09023413843719
+				remainingWater = 0.720528054645935
+				remainingOxygen = 110.434652657885
+				remainingElectricity = 308.638042213195
+				remainingCO2 = 0.521162685053779
+				remainingWaste = 0.000615288607216936
+				remainingWasteWater = 0.00569488928873008
 				maxFood = 1.097
 				maxWater = 0.725
 				maxOxygen = 111.038
@@ -10615,7 +12346,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 463437.655240342
+		UT = 447537.226591211
 		activeVessel = 4
 		mapViewFiltering = 1023
 		VESSEL
@@ -28668,38 +30399,38 @@ GAME
 			pid = 5fbf45d1ee1a4c3389eba11f4a6a317f
 			name = Orbiter I
 			type = Ship
-			sit = ESCAPING
+			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 16300.2349322777
+			met = 399.826283146103
 			lct = 447137.400308065
-			lastUT = 463437.655240342
+			lastUT = 447537.226591211
 			root = 0
-			lat = 0.647108788951514
-			lon = 39.056397900556
-			alt = 2229069.87379633
+			lat = -0.0633350874893722
+			lon = -54.7539959635069
+			alt = 100194.315040224
 			hgt = -1
-			nrm = -0.5565304,-0.830613,-0.01887548
-			rot = -0.5357656,0.496684,0.4561693,0.5081041
-			CoM = -0.004439414,-3.642864,0.002743799
+			nrm = 0.06313846,0.9979664,0.008765919
+			rot = -0.6807253,-0.1833596,-0.2019136,0.6798701
+			CoM = -0.003563046,-3.832245,0.002217125
 			stg = 2
 			prst = False
 			ref = 391799464
 			ctrl = True
-			cPch = 0.2772541
-			cHdg = -3.878463
+			cPch = -0.4347456
+			cHdg = 0.1015372
 			cMod = 0
 			ORBIT
 			{
-				SMA = -930951.165725422
-				ECC = 2.98452828921162
-				INC = 0.829608471674967
-				LPE = 98.3914236480291
-				LAN = 338.201446449208
-				MNA = -1.39334585652655
-				EPH = 463437.655240342
-				REF = 2
+				SMA = 775369.908103503
+				ECC = 0.13378376113752
+				INC = 0.166088826520227
+				LPE = 251.540005560098
+				LAN = 109.290123148151
+				MNA = 5.61523569828356
+				EPH = 447537.226591211
+				REF = 1
 			}
 			PART
 			{
@@ -28723,8 +30454,8 @@ GAME
 				attN = bottom, 2
 				attN = top, 1
 				mass = 0.1
-				temp = 236.954831547027
-				tempExt = 234.627133108373
+				temp = 320.448749563313
+				tempExt = 320.44877972248
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -28952,15 +30683,9 @@ GAME
 								Frame = World
 								Orientation = 0,0,0,1
 								Altitude = NaN
-								TimeStamp = 463437.655240342
+								TimeStamp = 447537.226591211
 								ExtraDelay = 0
 								CmdGuid = df9d7b85-832f-4b52-baf4-08e2d538f326
-							}
-							TargetCommand
-							{
-								TimeStamp = 463437.655240342
-								ExtraDelay = 0
-								CmdGuid = e514ff05-d084-4b18-8ab1-3f304cf600e3
 							}
 						}
 						Commands
@@ -29028,14 +30753,12 @@ GAME
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
 						0 = Orbit,Kerbin
-						0 = Flyby,Mun
-						0 = Escape,Mun
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.99957715141051
+					amount = 9.48068083432898
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -29065,8 +30788,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom, 0
 				mass = 0.1
-				temp = 236.954436471844
-				tempExt = 235.068818286903
+				temp = 320.102901379014
+				tempExt = 319.599597098985
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -29325,8 +31048,8 @@ GAME
 				attN = bottom, 5
 				attN = top, 0
 				mass = 0.8
-				temp = 237.021816557689
-				tempExt = 233.669735572158
+				temp = 321.01220912647
+				tempExt = 321.520566497676
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -29579,11 +31302,11 @@ GAME
 					{
 						StoreDataExternalEvent
 						{
-							active = True
+							active = False
 							guiActive = False
 							guiActiveUncommand = False
 							guiIcon = 
-							guiName = Store Experiments (1)
+							guiName = Store Experiments (0)
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 1.3
@@ -29591,11 +31314,11 @@ GAME
 						}
 						CollectDataExternalEvent
 						{
-							active = True
+							active = False
 							guiActive = False
 							guiActiveUncommand = False
 							guiIcon = 
-							guiName = Take Data (1)
+							guiName = Take Data (0)
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 1.3
@@ -29603,11 +31326,11 @@ GAME
 						}
 						ReviewDataEvent
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiActiveUncommand = False
 							guiIcon = Review Data
-							guiName = Review Stored Data (1)
+							guiName = Review Stored Data (0)
 							category = Review Data
 							guiActiveUnfocused = False
 							unfocusedRange = 2
@@ -29628,16 +31351,6 @@ GAME
 					}
 					ACTIONS
 					{
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@KerbinInSpaceHigh
-						xmit = 1
-						labBoost = 1.05
-						title = EVA Report while in space high over Kerbin
-						triggered = False
-						container = 391799464
 					}
 				}
 				MODULE
@@ -29827,8 +31540,6 @@ GAME
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
 						0 = Orbit,Kerbin
-						0 = Flyby,Mun
-						0 = Escape,Mun
 					}
 				}
 				MODULE
@@ -29847,7 +31558,7 @@ GAME
 							guiActiveEditor = True
 							guiActiveUncommand = False
 							guiIcon = 
-							guiName = Bob's inventory
+							guiName = 
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 2
@@ -29909,7 +31620,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 299.998914515291
+					amount = 299.156653045532
 					maxAmount = 300
 					flowState = True
 					isTweakable = True
@@ -29931,7 +31642,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 0.821086257663915
+					amount = 1.09023379989553
 					maxAmount = 1.097
 					flowState = True
 					isTweakable = True
@@ -29942,7 +31653,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 0.542632807492479
+					amount = 0.720527830884361
 					maxAmount = 0.725
 					flowState = True
 					isTweakable = True
@@ -29953,7 +31664,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 83.188739450958
+					amount = 110.434618387134
 					maxAmount = 111.038
 					flowState = True
 					isTweakable = True
@@ -29964,7 +31675,7 @@ GAME
 				RESOURCE
 				{
 					name = CarbonDioxide
-					amount = 24.0557874261517
+					amount = 0.521192287631782
 					maxAmount = 95.913
 					flowState = True
 					isTweakable = True
@@ -29975,7 +31686,7 @@ GAME
 				RESOURCE
 				{
 					name = Waste
-					amount = 0.0250916428958549
+					amount = 0.000615319394254004
 					maxAmount = 0.1
 					flowState = True
 					isTweakable = True
@@ -29986,7 +31697,7 @@ GAME
 				RESOURCE
 				{
 					name = WasteWater
-					amount = 0.23223919098812
+					amount = 0.00569517424243405
 					maxAmount = 0.924
 					flowState = True
 					isTweakable = True
@@ -30016,8 +31727,8 @@ GAME
 				sym = 4
 				srfN = srfAttach, 2
 				mass = 0.025
-				temp = 236.702557671589
-				tempExt = 232.658866522174
+				temp = 320.462393136105
+				tempExt = 320.323694370323
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -30039,8 +31750,8 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.1467863, -0.6916976, 0.6917091, 0.1467886)
-					stateString = EXTENDED
+					currentRotation = (-0.7071068, 0, 0, 0.7071068)
+					stateString = RETRACTED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 1
 					efficiencyMult = 1
@@ -30048,9 +31759,22 @@ GAME
 					stagingEnabled = True
 					EVENTS
 					{
-						Retract
+						Extend
 						{
 							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
 							guiActive = True
 							guiActiveEditor = True
 							guiActiveUncommand = False
@@ -30071,19 +31795,6 @@ GAME
 							category = Disable Staging
 							guiActiveUnfocused = False
 							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
 							externalToEVAOnly = True
 						}
 					}
@@ -30161,8 +31872,8 @@ GAME
 				sym = 3
 				srfN = srfAttach, 2
 				mass = 0.025
-				temp = 236.704760879314
-				tempExt = 232.704071867792
+				temp = 320.462504592174
+				tempExt = 320.323800931569
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -30184,8 +31895,8 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.1449401, 0.6920829, -0.6920946, 0.1449783)
-					stateString = EXTENDED
+					currentRotation = (-0.7071068, 0, 0, 0.7071068)
+					stateString = RETRACTED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 1
 					efficiencyMult = 1
@@ -30195,7 +31906,7 @@ GAME
 					{
 						Extend
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiActiveEditor = True
 							guiActiveUncommand = False
@@ -30208,7 +31919,7 @@ GAME
 						}
 						Retract
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiActiveEditor = True
 							guiActiveUncommand = False
@@ -30308,8 +32019,8 @@ GAME
 				attN = bottom, 6
 				attN = top, 2
 				mass = 0.1
-				temp = 237.040870776946
-				tempExt = 233.127945240776
+				temp = 333.945476207809
+				tempExt = 331.835725138348
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -30577,8 +32288,8 @@ GAME
 				attN = bottom, 7
 				attN = top, 5
 				mass = 0.05
-				temp = 236.81756316401
-				tempExt = 235.129692323095
+				temp = 344.306968149159
+				tempExt = 341.143743719482
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -30815,8 +32526,8 @@ GAME
 				attN = top, 6
 				attN = bottom, 11
 				mass = 0.2
-				temp = 236.914763918752
-				tempExt = 235.852279032709
+				temp = 345.422494203885
+				tempExt = 345.049790667246
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -31064,8 +32775,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 7
 				mass = 0.05
-				temp = 236.937776719762
-				tempExt = 235.932835421635
+				temp = 345.221028884272
+				tempExt = 344.607963810285
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -31313,8 +33024,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 7
 				mass = 0.005
-				temp = 236.83624901081
-				tempExt = 235.845420745772
+				temp = 345.314001062929
+				tempExt = 344.665686625378
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -31549,8 +33260,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 7
 				mass = 0.005
-				temp = 236.953945419264
-				tempExt = 235.701005896224
+				temp = 345.299172869888
+				tempExt = 344.782680380418
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -31787,8 +33498,8 @@ GAME
 				attN = top, 7
 				attN = bottom, 12
 				mass = 0.5
-				temp = 237.039314419764
-				tempExt = 236.223112781889
+				temp = 346.752697162272
+				tempExt = 346.946152925478
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -31845,7 +33556,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 236.166738984789
+					amount = 352.658043806286
 					maxAmount = 360
 					flowState = True
 					isTweakable = True
@@ -31856,7 +33567,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 288.648229247179
+					amount = 431.026497553258
 					maxAmount = 440
 					flowState = True
 					isTweakable = True
@@ -31887,8 +33598,8 @@ GAME
 				attN = top, 11
 				attN = bottom, -1
 				mass = 0.5
-				temp = 236.974859909252
-				tempExt = 236.796267047516
+				temp = 358.688683932127
+				tempExt = 352.586185676345
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -32259,8 +33970,8 @@ GAME
 				sym = 14
 				srfN = srfAttach, 7
 				mass = 0.005
-				temp = 236.97945233185
-				tempExt = 235.509045893418
+				temp = 345.102775644167
+				tempExt = 344.63425823391
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -32336,8 +34047,8 @@ GAME
 				sym = 13
 				srfN = srfAttach, 7
 				mass = 0.005
-				temp = 236.97945233185
-				tempExt = 235.509045893418
+				temp = 345.104795386837
+				tempExt = 344.634548121456
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -32413,8 +34124,8 @@ GAME
 				sym = 16
 				srfN = srfAttach, 7
 				mass = 0.005
-				temp = 236.97945233185
-				tempExt = 235.509045893418
+				temp = 345.103317930286
+				tempExt = 344.634336063756
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -32490,8 +34201,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 7
 				mass = 0.005
-				temp = 236.97945233185
-				tempExt = 235.509045893418
+				temp = 345.104641367193
+				tempExt = 344.634526020945
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -32567,8 +34278,8 @@ GAME
 				sym = 18
 				srfN = srfAttach, 6
 				mass = 0.005
-				temp = 236.955551843057
-				tempExt = 234.85572517468
+				temp = 343.712411354608
+				tempExt = 341.100502400572
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -32644,8 +34355,8 @@ GAME
 				sym = 17
 				srfN = srfAttach, 6
 				mass = 0.005
-				temp = 236.955551525965
-				tempExt = 234.85572319929
+				temp = 343.729953194965
+				tempExt = 341.103422212613
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -32722,8 +34433,8 @@ GAME
 				srfN = srfAttach, 2
 				attN = bottom, -1
 				mass = 0.01
-				temp = 236.902887135436
-				tempExt = 234.482117282382
+				temp = 320.684151783811
+				tempExt = 320.903570578645
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -32747,7 +34458,7 @@ GAME
 					isEnabled = True
 					startDeployed = False
 					isAnimating = True
-					animTime = -91.61565
+					animTime = -38.59083
 					reverseAnimation = False
 					animSpeed = -1
 					hasBeenInitialized = True
@@ -32935,8 +34646,8 @@ GAME
 				srfN = srfAttach, 2
 				attN = bottom, -1
 				mass = 0.01
-				temp = 236.902887135436
-				tempExt = 234.482117282382
+				temp = 320.684154996214
+				tempExt = 320.903571637261
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -32960,7 +34671,7 @@ GAME
 					isEnabled = True
 					startDeployed = False
 					isAnimating = True
-					animTime = -90.87847
+					animTime = -37.85366
 					reverseAnimation = False
 					animSpeed = -1
 					hasBeenInitialized = True
@@ -33129,7 +34840,7 @@ GAME
 			ACTIONGROUPS
 			{
 				Stage = True, 447531.646591205
-				Gear = True, 449684.346792492
+				Gear = False, 0
 				Light = True, 0
 				RCS = False, 0
 				SAS = True, 447136.400308064
@@ -33156,17 +34867,2676 @@ GAME
 			}
 			FLIGHTPLAN
 			{
-				MANEUVER
-				{
-					UT = 468043.20509169
-					dV = 0,0,-260.228024147269
-				}
 			}
 			CTRLSTATE
 			{
-				pitch = 1.417297E-05
-				yaw = -4.16039E-06
-				roll = 3.117155E-06
+				pitch = 0.0046257
+				yaw = 0.001779786
+				roll = -2.199012E-06
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 5c89cbed297e4ca6968d806812ad1370
+			name = Orbiter I Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 24.8000000230968
+			lct = 447137.400308065
+			lastUT = 447162.200308088
+			root = 0
+			lat = -0.0970319815916162
+			lon = -74.5574902738286
+			alt = 74.3775941751665
+			hgt = 4.584182
+			nrm = -1.273584E-07,1,-2.086163E-07
+			rot = 0.5646218,0.5603387,-0.4266709,-0.4303197
+			CoM = 0,0,0
+			stg = 6
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300819.549287886
+				ECC = 0.994798473052768
+				INC = 0.0970319815962829
+				LPE = 90
+				LAN = 15.6370946487331
+				MNA = 3.14159265358979
+				EPH = 447162.200308088
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4282506168
+				uid = 1756889782
+				mid = 1156065934
+				launchID = 49
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = 6
+				sepI = 6
+				sidx = 1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.1
+				temp = 301.275830155764
+				tempExt = 301.519076038589
+				tempExtUnexp = 301.518305197809
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 2.017157
+					height = 5.089685
+					stagingEnabled = True
+					towerRot = 6.324556E-08,-0.7068238,-6.319498E-08,-0.7073898
+					EVENTS
+					{
+						Release
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Release Clamp
+							guiName = Release Clamp
+							category = Release Clamp
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTAntennaPassive
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = True
+					IsRTPowered = True
+					IsRTBroken = False
+					RTDishCosAngle = 1
+					RTOmniRange = 5000
+					RTDishRange = -1
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTDataTransmitter
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = True, 0
+				RCS = False, 0
+				SAS = True, 447136.400308064
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 632c99a66cbf4e259844c402279fb77e
+			name = Orbiter I Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 24.8000000230968
+			lct = 447137.400308065
+			lastUT = 447162.200308088
+			root = 0
+			lat = -0.097382030728639
+			lon = -74.5577421773314
+			alt = 74.3756405739114
+			hgt = 4.523911
+			nrm = -1.893612E-06,0.9999988,0.001578659
+			rot = 0.426671,-0.4303195,0.5646218,-0.5603386
+			CoM = 0,0,0
+			stg = 6
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300819.548284716
+				ECC = 0.994798473211396
+				INC = 0.0973820307302607
+				LPE = 90
+				LAN = 15.6368427452175
+				MNA = 3.14159183036539
+				EPH = 447162.200308088
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4282507728
+				uid = 3370298830
+				mid = 1156065934
+				launchID = 49
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = 6
+				sepI = 6
+				sidx = 1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.1
+				temp = 301.275751003295
+				tempExt = 301.518996018519
+				tempExtUnexp = 301.51822518056
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 2.017157
+					height = 5.089685
+					stagingEnabled = True
+					towerRot = -6.319497E-08,0.7073898,-6.324555E-08,-0.7068238
+					EVENTS
+					{
+						Release
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Release Clamp
+							guiName = Release Clamp
+							category = Release Clamp
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTAntennaPassive
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = True
+					IsRTPowered = True
+					IsRTBroken = False
+					RTDishCosAngle = 1
+					RTOmniRange = 5000
+					RTDishRange = -1
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTDataTransmitter
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = True, 0
+				RCS = False, 0
+				SAS = True, 447136.400308064
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = f6ba82f4ef0d4135a3162b18c6679063
+			name = Orbiter I Debris
+			type = Debris
+			sit = SUB_ORBITAL
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 36.6774804926827
+			lct = 447247.860308167
+			lastUT = 447284.53778866
+			root = 0
+			lat = -0.0339331771904248
+			lon = -71.7634983571907
+			alt = 95159.1127270273
+			hgt = -1
+			nrm = -0.3404329,0.1968658,0.9194289
+			rot = 0.8570839,0.440828,0.2466895,-0.1011059
+			CoM = -1.255855,-0.06606978,-0.0004336834
+			stg = 6
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 470494.847931709
+				ECC = 0.771334088360247
+				INC = 0.991707704983252
+				LPE = 21.7371316734475
+				LAN = 108.509795852149
+				MNA = 1.56785350672516
+				EPH = 447273.420308191
+				REF = 1
+			}
+			PART
+			{
+				name = radialDecoupler2
+				cid = 4282527630
+				uid = 3071928078
+				mid = 1156065934
+				launchID = 49
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				dstg = 5
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.05
+				temp = 1514.90843290425
+				tempExt = 924.073283277704
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = radialDecoupler2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnchoredDecoupler
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = True
+					stagingEnabled = True
+					ejectionForcePercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Decoupler: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Disable Crossfeed
+							guiName = Enable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						EnableAction
+						{
+							actionGroup = None
+						}
+						DisableAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = MassiveBooster
+				cid = 4282523216
+				uid = 3862695574
+				mid = 1156065934
+				launchID = 49
+				parent = 0
+				position = -1.25315940380096,-0.151749610900879,6.59254411061738E-08
+				rotation = 6.322029E-08,-0.7071068,6.322028E-08,0.707107
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = 6
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, 0
+				attN = top, 2
+				attN = bottom, -1
+				mass = 4.5
+				temp = 1524.16318262128
+				tempExt = 951.509306229951
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = MassiveBooster
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					stagingEnabled = True
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 1462.1450028419
+					maxAmount = 2600
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = pointyNoseConeA
+				cid = 4282512816
+				uid = 800414053
+				mid = 1156065934
+				launchID = 49
+				parent = 1
+				position = -1.25316035747528,7.90240955352783,6.59251000456607E-08
+				rotation = -1.065814E-14,-1.685874E-07,-1.497357E-22,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sepI = 5
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom01, 1
+				mass = 0.075
+				temp = 1286.58513364872
+				tempExt = 762.563827780532
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = pointyNoseConeA
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4282494060
+				uid = 359967784
+				mid = 1156065934
+				launchID = 49
+				parent = 2
+				position = -1.20481526851654,8.76487064361572,-0.0129538029432297
+				rotation = 0.5138264,-0.8479072,-0.06764548,0.1116274
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sepI = 5
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 2
+				mass = 0.05
+				temp = 1279.60991266917
+				tempExt = 1087.43131915109
+				tempExtUnexp = 4
+				expt = 0
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 0
+					pos = -1.51085,-0.4932027,-0.3003763
+					rot = 1.283652E-08,-0.1521363,0.5033216,0.8506013
+					dir = -0.9340942,-0.3049262,-0.1857098
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleStrut
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4282498434
+				uid = 2559210460
+				mid = 1156065934
+				launchID = 49
+				parent = 1
+				position = -2.29542851448059,-1.14682006835938,1.84919372259174E-07
+				rotation = -7.536446E-15,-7.105427E-15,8.9407E-08,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sepI = 5
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 1
+				mass = 0.1
+				temp = 572.940365740008
+				tempExt = 618.129208396542
+				tempExtUnexp = 4
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					mirrorDeploy = False
+					usesMirrorDeploy = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					partDeployInvert = False
+					authorityLimiter = 100
+					stagingEnabled = True
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					partDeployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					authorityLimiter_UIFlight
+					{
+						controlEnabled = True
+						minValue = -150
+						maxValue = 150
+						stepIncrement = 0.1
+					}
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 447137.400308065
+				Gear = False, 0
+				Light = True, 0
+				RCS = False, 0
+				SAS = True, 447136.400308064
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = d5cfca71bde148bdbfe2a0c8682fd0da
+			name = Orbiter I Debris
+			type = Debris
+			sit = SUB_ORBITAL
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 36.6774804926827
+			lct = 447247.860308167
+			lastUT = 447284.53778866
+			root = 0
+			lat = 0.0472308031948094
+			lon = -71.7609076747749
+			alt = 95076.829202787
+			hgt = -1
+			nrm = 0.3558949,-0.09958699,-0.9292047
+			rot = 0.1980378,0.002363036,-0.4395841,0.8760944
+			CoM = -1.2556,-0.06578827,0.0001828671
+			stg = 6
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 469207.272284137
+				ECC = 0.767326105803653
+				INC = 4.70428394017865
+				LPE = 200.276887395497
+				LAN = 289.902144369807
+				MNA = 1.58639775483512
+				EPH = 447273.420308191
+				REF = 1
+			}
+			PART
+			{
+				name = radialDecoupler2
+				cid = 4282522792
+				uid = 2871961246
+				mid = 1156065934
+				launchID = 49
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				dstg = 5
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.05
+				temp = 1514.11810314494
+				tempExt = 923.831626152407
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = radialDecoupler2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnchoredDecoupler
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = True
+					stagingEnabled = True
+					ejectionForcePercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Decoupler: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Disable Crossfeed
+							guiName = Enable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						EnableAction
+						{
+							actionGroup = None
+						}
+						DisableAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = MassiveBooster
+				cid = 4282522736
+				uid = 802665801
+				mid = 1156065934
+				launchID = 49
+				parent = 0
+				position = -1.25315892696381,-0.151749610900879,4.09217165042719E-07
+				rotation = 6.322028E-08,-0.7071069,6.322028E-08,0.7071069
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = 6
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, 0
+				attN = top, 2
+				attN = bottom, -1
+				mass = 4.5
+				temp = 1523.34685784412
+				tempExt = 951.186611845675
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = MassiveBooster
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					stagingEnabled = True
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 1462.1450028419
+					maxAmount = 2600
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = pointyNoseConeA
+				cid = 4282511524
+				uid = 3559789016
+				mid = 1156065934
+				launchID = 49
+				parent = 1
+				position = -1.25315988063812,7.90240955352783,4.09216994512462E-07
+				rotation = 2.524355E-29,-1.685874E-07,-5.04871E-29,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sepI = 5
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom01, 1
+				mass = 0.075
+				temp = 1286.23104748502
+				tempExt = 762.46135342309
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = pointyNoseConeA
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = strutConnector
+				cid = 4282494298
+				uid = 758153086
+				mid = 1156065934
+				launchID = 49
+				parent = 2
+				position = -1.20481598377228,8.76487064361572,-0.012953476049006
+				rotation = 0.5138263,-0.8479072,-0.06764544,0.1116273
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sepI = 5
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 2
+				mass = 0.05
+				temp = 1279.27241814214
+				tempExt = 1087.12403780485
+				tempExtUnexp = 4
+				expt = 0
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = strutConnector
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+					tgt = 0
+					pos = -1.51085,-0.4932029,-0.3003742
+					rot = -1.422189E-08,-0.1521368,0.5033215,0.8506012
+					dir = -0.9340943,-0.3049264,-0.1857086
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleStrut
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4282498262
+				uid = 938764241
+				mid = 1156065934
+				launchID = 49
+				parent = 1
+				position = -2.29542803764343,-1.14682006835938,7.89089142472221E-07
+				rotation = 5.024292E-15,1.685874E-07,8.9407E-08,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 6
+				sqor = -1
+				sepI = 5
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 1
+				mass = 0.1
+				temp = 593.201239835161
+				tempExt = 630.573246457218
+				tempExtUnexp = 4
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = True
+				flag = Squad/Flags/esa_dark_blue
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					mirrorDeploy = False
+					usesMirrorDeploy = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					partDeployInvert = False
+					authorityLimiter = 100
+					stagingEnabled = True
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					partDeployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					authorityLimiter_UIFlight
+					{
+						controlEnabled = True
+						minValue = -150
+						maxValue = 150
+						stepIncrement = 0.1
+					}
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Scrap part
+							guiName = Disassemble Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 447137.400308065
+				Gear = False, 0
+				Light = True, 0
+				RCS = False, 0
+				SAS = True, 447136.400308064
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -33184,21 +37554,21 @@ GAME
 			pid = 77f49f9e27574e339b35246a43b29ed3
 			name = Orbiter I Debris
 			type = Debris
-			sit = FLYING
+			sit = SUB_ORBITAL
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 328.822148521431
+			met = 8.2400000076741
 			lct = 447528.986591203
-			lastUT = 447857.808739724
+			lastUT = 447537.226591211
 			root = 0
-			lat = -0.157173621188131
-			lon = 6.80174855887805
-			alt = 62369.7403824591
+			lat = -0.0629743810112824
+			lon = -54.7522787668529
+			alt = 99965.7480595099
 			hgt = -1
-			nrm = 0.2294926,-0.02619883,-0.9729578
-			rot = 0.2294639,-0.1709848,-0.477625,0.8306534
-			CoM = -0.0008581877,-6.520318,0.002609253
+			nrm = 0.2395117,0.02223238,-0.9706388
+			rot = 0.2111495,-0.1518582,-0.4859708,0.8343784
+			CoM = -2.896786E-05,-6.520017,1.478195E-05
 			stg = 4
 			prst = False
 			ref = 0
@@ -33208,13 +37578,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 782484.785603902
-				ECC = 0.156170438976681
-				INC = 0.157430210032412
-				LPE = 258.200359820339
-				LAN = 108.034594850548
-				MNA = 5.5693459622565
-				EPH = 447537.386591211
+				SMA = 782484.796382056
+				ECC = 0.156170441264373
+				INC = 0.157430213204086
+				LPE = 258.200353506483
+				LAN = 108.034595353145
+				MNA = 5.56891164560508
+				EPH = 447537.226591211
 				REF = 1
 			}
 			PART
@@ -33239,9 +37609,9 @@ GAME
 				attN = bottom, 1
 				attN = top, -1
 				mass = 0.05
-				temp = 348.631323733816
-				tempExt = 335.435566667255
-				tempExtUnexp = 335.537327676684
+				temp = 384.271874206998
+				tempExt = 384.467924478183
+				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
 				connected = False
@@ -33477,9 +37847,9 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.5
-				temp = 349.030357828505
-				tempExt = 335.544039218271
-				tempExtUnexp = 335.646229680026
+				temp = 381.650133153256
+				tempExt = 383.012900164736
+				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
 				connected = False
@@ -33577,9 +37947,9 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 0.5
-				temp = 351.419352960373
-				tempExt = 336.210442044371
-				tempExtUnexp = 336.313212381165
+				temp = 388.215901197043
+				tempExt = 386.180134945688
+				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
 				connected = False
@@ -33677,9 +38047,9 @@ GAME
 				attN = top, 2
 				attN = bottom, -1
 				mass = 1.5
-				temp = 357.933407751377
-				tempExt = 338.860051519782
-				tempExtUnexp = 338.970398940838
+				temp = 418.533253435942
+				tempExt = 403.614508062609
+				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
 				connected = False
@@ -34084,9 +38454,9 @@ GAME
 				sym = 5
 				srfN = srfAttach, 2
 				mass = 0.1
-				temp = 358.659854275514
-				tempExt = 333.529764079765
-				tempExtUnexp = 333.623489779543
+				temp = 371.860592354403
+				tempExt = 376.483477503325
+				tempExtUnexp = 4
 				expt = 0.1
 				state = 1
 				connected = False
@@ -34237,9 +38607,9 @@ GAME
 				sym = 4
 				srfN = srfAttach, 2
 				mass = 0.1
-				temp = 358.53133778308
-				tempExt = 333.356494226843
-				tempExtUnexp = 333.450500416447
+				temp = 369.697806858784
+				tempExt = 375.489501947004
+				tempExtUnexp = 4
 				expt = 0.1
 				state = 1
 				connected = False
@@ -34408,7 +38778,7 @@ GAME
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
-				mainThrottle = 0
+				mainThrottle = 1
 			}
 			VESSELMODULES
 			{
@@ -34720,10 +39090,6 @@ GAME
 				9 = Flight,Kerbin
 				9 = Suborbit,Kerbin
 				9 = Orbit,Kerbin
-				9 = ExitVessel,Kerbin
-				9 = BoardVessel,Kerbin
-				9 = Flyby,Mun
-				9 = Escape,Mun
 			}
 		}
 		KERBAL
@@ -35106,6 +39472,28 @@ GAME
 		}
 		KERBAL
 		{
+			name = Kerelyn Kerman
+			gender = Female
+			type = Unowned
+			trait = Scientist
+			brave = 0.6236702
+			dumb = 0.7374095
+			badS = False
+			tour = False
+			state = Assigned
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
 			name = Maxedith Kerman
 			gender = Female
 			type = Unowned
@@ -35192,69 +39580,9 @@ GAME
 				flight = 0
 			}
 		}
-		KERBAL
-		{
-			name = Tanzor Kerman
-			gender = Male
-			type = Unowned
-			trait = Scientist
-			brave = 0.04655888
-			dumb = 0.3001169
-			badS = False
-			tour = False
-			state = Assigned
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Caldous Kerman
-			gender = Male
-			type = Unowned
-			trait = Scientist
-			brave = 0.4760179
-			dumb = 0.0421151
-			badS = False
-			tour = False
-			state = Assigned
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
 	}
 	MESSAGESYSTEM
 	{
-		flash = True
-		MESSAGE
-		{
-			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have initiated the first fly by of the Mun.~n<color=#b4d455>£  26,000 </color><color=#6dcff6>© 2 </color><color=#e0d503>¡ 4 </color>~n~nWe have escaped the gravitational influence of Kerbin.~n<color=#b4d455>£  6,000 </color><color=#6dcff6>© 6 </color><color=#e0d503>¡ 3 </color>~n
-			color = 3
-			icon = 6
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Fly by the Mun.</b>~n~nTalk about close encounters! Any closer and there'd be paperwork.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  88,136   </color>~n<color=#6DCFF6>© 8   </color>~n<color=#E0D503>¡ 19   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
+		flash = False
 	}
 }
