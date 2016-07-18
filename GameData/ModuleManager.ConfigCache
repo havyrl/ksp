@@ -1,4 +1,4 @@
-patchedNodeCount = 933
+patchedNodeCount = 945
 catEatenCount = 0
 UrlConfig
 {
@@ -11439,6 +11439,1374 @@ UrlConfig
 		MODULE
 		{
 			name = FlightEngineerModule
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 625BalloonHP
+	type = PART
+	parentUrl = KerBalloons/Parts/0625Balloons/heavyPayload
+	url = KerBalloons/Parts/0625Balloons/heavyPayload/625BalloonHP
+	PART
+	{
+		name = 625BalloonHP
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = engineering101
+		entryCost = 11000
+		cost = 550
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 0.625m, Heavy Payload
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.005
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size0
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 10
+			maxAmount = 10
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 16
+			maxAtmoPressure = 102
+			minScale = 1
+			maxScale = 5
+			minLift = 13
+			maxLift = 16.9
+			targetTWR = 1
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.9
+			speedAdjustMax = 1.1
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 625BalloonHA
+	type = PART
+	parentUrl = KerBalloons/Parts/0625Balloons/highAltitude
+	url = KerBalloons/Parts/0625Balloons/highAltitude/625BalloonHA
+	PART
+	{
+		name = 625BalloonHA
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = engineering101
+		entryCost = 8000
+		cost = 400
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 0.625m, High Altitude
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.005
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size0
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 10
+			maxAmount = 10
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 1
+			maxAtmoPressure = 102
+			minScale = 1
+			maxScale = 5
+			minLift = 7
+			maxLift = 9.1
+			targetTWR = 1
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.9
+			speedAdjustMax = 1.1
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 625BalloonS
+	type = PART
+	parentUrl = KerBalloons/Parts/0625Balloons/standard
+	url = KerBalloons/Parts/0625Balloons/standard/625BalloonS
+	PART
+	{
+		name = 625BalloonS
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = start
+		entryCost = 6000
+		cost = 250
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 0.625m, Standard
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.005
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size0
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 10
+			maxAmount = 10
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 5
+			maxAtmoPressure = 102
+			minScale = 1
+			maxScale = 5
+			minLift = 10
+			maxLift = 13
+			targetTWR = 1
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.9
+			speedAdjustMax = 1.1
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 125BalloonHP
+	type = PART
+	parentUrl = KerBalloons/Parts/125Balloons/heavyPayload
+	url = KerBalloons/Parts/125Balloons/heavyPayload/125BalloonHP
+	PART
+	{
+		name = 125BalloonHP
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = aerodynamicSystems
+		entryCost = 13000
+		cost = 750
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 1.25m, Heavy Payload
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.008
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size1
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 20
+			maxAmount = 20
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 15
+			maxAtmoPressure = 105
+			minScale = 2
+			maxScale = 10
+			minLift = 70
+			maxLift = 91
+			targetTWR = 1.2
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.9
+			speedAdjustMax = 1.1
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 125BalloonHA
+	type = PART
+	parentUrl = KerBalloons/Parts/125Balloons/highAltitude
+	url = KerBalloons/Parts/125Balloons/highAltitude/125BalloonHA
+	PART
+	{
+		name = 125BalloonHA
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = aerodynamicSystems
+		entryCost = 10000
+		cost = 600
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 1.25m, High Altitude
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.008
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size1
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 20
+			maxAmount = 20
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 0.95
+			maxAtmoPressure = 105
+			minScale = 2
+			maxScale = 10
+			minLift = 37.7
+			maxLift = 49
+			targetTWR = 1.2
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.9
+			speedAdjustMax = 1.1
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 125BalloonS
+	type = PART
+	parentUrl = KerBalloons/Parts/125Balloons/standard
+	url = KerBalloons/Parts/125Balloons/standard/125BalloonS
+	PART
+	{
+		name = 125BalloonS
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = engineering101
+		entryCost = 8000
+		cost = 450
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 1.25m, Standard
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.008
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size1
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 20
+			maxAmount = 20
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 4
+			maxAtmoPressure = 105
+			minScale = 2
+			maxScale = 10
+			minLift = 53.8
+			maxLift = 70
+			targetTWR = 1.2
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.9
+			speedAdjustMax = 1.1
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 25BalloonHP
+	type = PART
+	parentUrl = KerBalloons/Parts/25Balloons/heavyPayload
+	url = KerBalloons/Parts/25Balloons/heavyPayload/25BalloonHP
+	PART
+	{
+		name = 25BalloonHP
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = heavyAerodynamics
+		entryCost = 15000
+		cost = 950
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 2.5m, Heavy Payload
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.01
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size2
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 40
+			maxAmount = 40
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 14.7
+			maxAtmoPressure = 108
+			minScale = 4
+			maxScale = 20
+			minLift = 195
+			maxLift = 253.5
+			targetTWR = 1.2
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.7
+			speedAdjustMax = 1.2
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 25BalloonHA
+	type = PART
+	parentUrl = KerBalloons/Parts/25Balloons/highAltitude
+	url = KerBalloons/Parts/25Balloons/highAltitude/25BalloonHA
+	PART
+	{
+		name = 25BalloonHA
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = heavyAerodynamics
+		entryCost = 12000
+		cost = 800
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 2.5m, High Altitude
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.01
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size2
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 40
+			maxAmount = 40
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 0.9
+			maxAtmoPressure = 108
+			minScale = 4
+			maxScale = 20
+			minLift = 105
+			maxLift = 136.5
+			targetTWR = 1.2
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.7
+			speedAdjustMax = 1.2
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 25BalloonS
+	type = PART
+	parentUrl = KerBalloons/Parts/25Balloons/standard
+	url = KerBalloons/Parts/25Balloons/standard/25BalloonS
+	PART
+	{
+		name = 25BalloonS
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = advAerodynamics
+		entryCost = 10000
+		cost = 650
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 2.5m, Standard
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.01
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size2
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 40
+			maxAmount = 40
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 3.8
+			maxAtmoPressure = 108
+			minScale = 4
+			maxScale = 20
+			minLift = 150
+			maxLift = 195
+			targetTWR = 1.2
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.7
+			speedAdjustMax = 1.2
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 375BalloonHP
+	type = PART
+	parentUrl = KerBalloons/Parts/375Balloons/heavyPayload
+	url = KerBalloons/Parts/375Balloons/heavyPayload/375BalloonHP
+	PART
+	{
+		name = 375BalloonHP
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = experimentalAerodynamics
+		entryCost = 17000
+		cost = 1150
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 3.75m, Heavy Payload
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.015
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size3
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 60
+			maxAmount = 60
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 14.2
+			maxAtmoPressure = 110
+			minScale = 6
+			maxScale = 30
+			minLift = 390
+			maxLift = 507
+			targetTWR = 1.5
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.65
+			speedAdjustMax = 1.25
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 375BalloonHA
+	type = PART
+	parentUrl = KerBalloons/Parts/375Balloons/highAltitude
+	url = KerBalloons/Parts/375Balloons/highAltitude/375BalloonHA
+	PART
+	{
+		name = 375BalloonHA
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = experimentalAerodynamics
+		entryCost = 14000
+		cost = 1000
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 3.75m, High Altitude
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.015
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size3
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 60
+			maxAmount = 60
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 0.85
+			maxAtmoPressure = 110
+			minScale = 6
+			maxScale = 30
+			minLift = 210
+			maxLift = 273
+			targetTWR = 1.5
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.65
+			speedAdjustMax = 1.25
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = 375BalloonS
+	type = PART
+	parentUrl = KerBalloons/Parts/375Balloons/standard
+	url = KerBalloons/Parts/375Balloons/standard/375BalloonS
+	PART
+	{
+		name = 375BalloonS
+		module = Part
+		author = JoePatrick1
+		mesh = model.mu
+		scale = 1
+		rescaleFactor = 1
+		node_stack_bottom = 0.0, 0, 0.0, 0.0, -1.0, 0.0, 0
+		TechRequired = heavyAerodynamics
+		entryCost = 12000
+		cost = 850
+		category = Science
+		subcategory = 0
+		title = KerBalloon (Kerbin) - 3.75m, Standard
+		manufacturer = KerBalloons
+		description = When KerBalloons came to us to pitch their product our first thought was - "Why the heck would we want balloons when we could have rockets". Lets just we changed our mind when we heard about the potential science and cost savings. KerBalloons also have a small flight computer onboard.
+		attachRules = 1,0,1,1,0
+		mass = 0.015
+		dragModelType = default
+		maximum_drag = 0.1
+		minimum_drag = 0.1
+		angularDrag = 0.5
+		crashTolerance = 8
+		maxTemp = 2000
+		bulkheadProfiles = size3
+		vesselType = Probe
+		MODULE
+		{
+			name = ModuleCommand
+			minimumCrew = 0
+			RESOURCE
+			{
+				name = ElectricCharge
+				rate = 0.001
+			}
+		}
+		RESOURCE
+		{
+			name = ElectricCharge
+			amount = 60
+			maxAmount = 60
+		}
+		MODULE
+		{
+			name = ModuleKerBalloon
+			recommendedBody = Kerbin
+			minAtmoPressure = 4.5
+			maxAtmoPressure = 110
+			minScale = 6
+			maxScale = 30
+			minLift = 300
+			maxLift = 390
+			targetTWR = 1.5
+			liftLimit = 1
+			speedLimiter = true
+			maxSpeed = 5
+			maxSpeedTolerence = 0.05
+			speedAdjustStep = 0.01
+			speedAdjustMin = 0.65
+			speedAdjustMax = 1.25
+			CFGballoonObject = Balloon
+			CFGropeObject = Rope
+			CFGcapObject = Cap
+			CFGliftPointObject = liftPoint
+			CFGballoonPointObject = balloonPoint
+		}
+		MODULE
+		{
+			name = FlagDecal
+			textureQuadName = flagDecal
+		}
+		EFFECTS
+		{
+			inflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/inflate
+					volume = 1
+				}
+			}
+			deflate
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/deflate
+					volume = 1
+				}
+			}
+			burst
+			{
+				AUDIO
+				{
+					clip = KerBalloons/Sounds/burst
+					volume = 1
+				}
+			}
 		}
 		MODULE
 		{
