@@ -1,4 +1,4 @@
-SHA = 34-74-D8-B3-99-81-9F-2B-D4-F8-52-CE-4E-DE-7D-DA-63-42-E0-D3-D5-4E-58-B0-2D-2A-70-EE-FE-E1-EC-FF
+SHA = 44-1D-28-0D-F9-A7-C2-61-5E-7A-1B-C7-9A-B8-5D-DF-F5-AE-4D-92-EB-B6-F5-97-0C-B2-5F-29-75-1A-EF-57
 version = 2.6.25.0
 KSPVersion = 1.1.3.1289
 FilesSHA
@@ -4792,6 +4792,131 @@ FilesSHA
 	{
 		filename = UmbraSpaceIndustries/UKS/Parts/ScanOMatic
 		SHA = 37-77-09-38-47-B2-90-12-1D-42-C2-57-64-4F-3F-0C-C2-40-80-7D-A0-3B-58-02-5A-B6-70-AA-12-00-22-72
+	}
+	FILE
+	{
+		filename = UniversalStorage/Compatability/CommunityTechTree
+		SHA = 66-59-0C-86-93-EE-9B-58-B7-66-F4-0D-AE-14-1F-83-5F-09-CE-5C-4E-88-9A-FE-FA-CC-3A-0F-E1-80-E1-2C
+	}
+	FILE
+	{
+		filename = UniversalStorage/Compatability/US Aero rescale
+		SHA = 23-6F-26-BD-9C-E1-F9-70-88-C7-E3-3A-94-46-C3-AE-B4-3D-CB-58-42-AB-E7-67-91-15-59-90-81-FA-84-07
+	}
+	FILE
+	{
+		filename = UniversalStorage/Compatability/US Tweakscale
+		SHA = 17-97-97-F1-6D-E7-A5-FB-77-36-84-8A-9D-3C-9D-29-9F-FE-D7-6C-0E-57-1C-86-77-0E-4D-08-1E-D3-B3-18
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1C10_Wedge_Quadcore/US_1C10_Wedge_Quadcore
+		SHA = F2-B0-D4-70-12-58-9B-34-2B-D8-F3-79-9B-38-D3-E9-14-86-EC-F5-9D-2C-AA-3C-7A-46-58-C1-8C-FA-73-3B
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1C15_Wedge_Hexacore/US_1C15_Wedge_Hexacore
+		SHA = FB-A4-7C-D5-BE-1A-59-D6-D4-A5-80-44-13-83-BA-61-21-DD-27-92-79-3B-D0-D9-76-B3-9E-AE-3F-8B-4D-E9
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1C20_Wedge_Octocore/US_1C20_Wedge_Octocore
+		SHA = 8D-54-C4-A3-ED-98-34-98-CE-73-9B-C7-E6-D7-B8-85-D0-C5-9B-B0-59-C7-41-F9-5B-C9-59-7C-15-13-17-7B
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1M110_Wedge_ScienceBay/US_1M110_Wedge_ScienceBay
+		SHA = 49-C8-29-43-6B-5C-17-E0-20-22-DD-30-7D-2D-F2-2C-4C-59-C6-4C-0D-DB-B1-54-AE-A4-33-D9-20-04-6E-CC
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1P110_Wedge_Fuelcell/US_1P110_Wedge_Fuelcell
+		SHA = F4-21-66-0B-AB-87-3A-22-48-D5-3D-4D-6E-31-B8-2E-5C-37-4A-86-A0-C6-79-B1-33-41-BA-D2-B1-39-46-F2
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1P120_Wedge_Elektron/US_1P120_Wedge_Elektron
+		SHA = 43-B7-AB-E8-3C-C9-30-E4-04-31-91-73-37-B9-E9-B2-FF-01-39-63-84-B0-83-E6-10-07-F0-7F-3B-61-33-D6
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier
+		SHA = 6D-01-6C-8A-D7-F0-12-F9-61-B6-BC-8D-E2-A3-16-86-8A-2B-98-EF-EB-A2-DD-73-CD-7F-59-3C-23-75-4F-1C
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1P140_Wedge_WRS/US_1P140_Wedge_WRS
+		SHA = 5A-E0-38-D7-AA-97-BF-74-80-D9-40-8E-A5-33-9E-A7-7F-E3-86-68-B2-72-BF-C2-92-B9-53-ED-15-0D-00-F3
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R110_Wedge_KISContainer/US_1R110_Wedge_KISContainer
+		SHA = D6-9B-F1-B9-88-4F-55-DD-6A-27-6A-58-67-AE-AC-2C-27-1D-09-CD-84-61-55-7B-59-27-F3-22-76-29-FE-85
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R210_Wedge_Liquidfuel/US_1R210_Wedge_Liquidfuel
+		SHA = DB-33-E5-8D-55-CE-4F-AE-B0-1C-1B-BF-95-AF-A1-A8-EF-8C-35-E1-3A-10-E3-7C-BF-67-A0-6E-04-4A-74-64
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R220_Wedge_Monoprop/US_1R220_Wedge_Monoprop
+		SHA = BD-EF-B9-04-D4-79-EE-CB-DC-17-D6-96-59-3A-2C-08-AF-E6-62-F9-AB-6D-21-B9-10-DC-E3-F8-2B-82-41-07
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R310_Wedge_CarbonDioxide/US_1R310_Wedge_CarbonDioxide
+		SHA = 57-A8-24-8D-BE-85-A5-38-5D-ED-71-12-7F-2D-7B-AD-87-94-CD-1A-C9-E1-48-8D-7B-37-A8-61-24-F0-81-C0
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R320_Wedge_Food/US_1R320_Wedge_Food
+		SHA = 4A-58-79-16-E4-CE-68-59-8B-B6-83-78-BD-5E-1E-0A-88-7F-68-FB-E7-1D-A3-AE-10-50-14-5A-85-BD-ED-55
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R330_Wedge_Hydrogen/US_1R330_Wedge_Hydrogen
+		SHA = A6-5C-99-D4-01-5B-12-8C-79-CF-4F-24-A0-BD-A7-F0-8B-62-16-BF-E1-4C-18-50-56-EB-EA-6D-8E-E2-1C-34
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R340_Wedge_Oxygen/US_1R340_Wedge_Oxygen
+		SHA = 71-02-84-68-EF-18-50-58-C2-16-E4-89-AD-F9-71-21-A6-B1-10-27-E4-DA-67-80-5E-41-2E-51-40-53-28-2D
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R350_Wedge_Waste/US_1R350_Wedge_Waste
+		SHA = 01-DD-14-E6-24-5D-47-31-06-B0-A2-6C-B0-8F-AE-A3-9B-B6-96-FF-04-98-6F-FA-A8-B0-51-3B-00-0A-B3-70
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R360_Wedge_Water/US_1R360_Wedge_Water
+		SHA = 3D-9D-40-89-3A-36-25-16-4B-F7-B8-52-D0-82-9A-5C-E0-32-EE-08-29-23-4E-31-1F-95-30-74-8A-06-A8-6B
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1R370_Wedge_WasteWater/US_1R370_Wedge_WasteWater
+		SHA = 3A-58-72-41-08-BD-70-F8-11-B3-2B-31-54-8E-1B-7A-21-1A-D7-92-1C-AD-3C-1B-23-04-7C-98-7D-09-2A-70
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_2R320_Radial_Food/US_2R320_Radial_Food
+		SHA = 1D-C3-50-9F-20-76-14-FB-72-2E-8E-71-C8-66-F5-09-EF-7B-35-20-52-8C-59-2F-62-60-86-9E-68-9D-D1-64
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_2R340_Radial_Oxygen/US_2R340_Radial_Oxygen
+		SHA = 5B-BB-EC-3D-41-24-29-AF-AC-CA-9B-7E-4B-7A-7F-29-B5-5E-0E-7C-7C-9A-56-AA-74-31-61-E4-0E-D0-C7-5A
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_2R360_Radial_Water/US_2R360_Radial_Water
+		SHA = 5A-86-C4-11-F5-E9-40-82-94-67-AB-E1-44-24-02-C5-AF-FE-A8-35-05-86-BE-00-D6-5B-C5-45-F4-84-C0-AF
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_3R310_EVA_EVAX/US_3R310_EVA_EVAX
+		SHA = 8A-21-50-FC-25-0D-BE-94-F2-C0-C0-08-1A-98-2A-8E-C1-CC-30-16-7D-21-F3-32-D9-D3-3C-19-EF-01-2B-13
 	}
 	FILE
 	{

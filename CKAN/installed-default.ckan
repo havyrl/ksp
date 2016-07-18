@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.07.15.09.05.38",
+	"version": "2016.07.17.08.22.51",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -86,6 +86,10 @@
 		{
 			"name": "ContractConfigurator-RemoteTech",
 			"version": "2.0.2"
+		},
+		{
+			"name": "UniversalStorage",
+			"version": "1.1.0.14"
 		}
 	]
 }
