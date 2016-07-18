@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.07.17.08.22.51",
+	"version": "2016.07.18.09.43.08",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -90,6 +90,10 @@
 		{
 			"name": "UniversalStorage",
 			"version": "1.1.0.14"
+		},
+		{
+			"name": "KerBalloons",
+			"version": "v0.3.4"
 		}
 	]
 }
