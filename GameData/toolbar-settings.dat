@@ -1,0 +1,48 @@
+toolbars
+{
+	SPACECENTER
+	{
+		toolbar_615478549
+		{
+			x = 359
+			y = 961
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Tac.LS,SCANsat.KSCMap
+		}
+	}
+	EDITOR
+	{
+		toolbar_1341754446
+		{
+			x = 543
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Tac.LS,RCSBuildAid.mainButton
+		}
+	}
+	FLIGHT
+	{
+		toolbar_144518051
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
+}

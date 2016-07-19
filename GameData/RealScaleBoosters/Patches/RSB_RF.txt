@@ -1,0 +1,38 @@
+// Adjust everything that contains propellants to use the new quantities/density from RealFuels.
+// Ideally these should all be switched to more correct propellants however. Most of this
+// may get overwritten by other patch files. So we execute this early, before most mods.
+
+
+//@PART[RSB*]:HAS[@RESOURCE[SolidFuel]]:NEEDS[RealFuels|RealismOverhaul]:FOR[aRealScaleBoosters]  // execute early
+//{
+//	@RESOURCE[SolidFuel]
+//	{
+//		@amount *= 4.213483
+//		@maxAmount *= 4.213483
+//	}
+//}
+@PART[RSB*]:HAS[@RESOURCE[LiquidFuel]]:NEEDS[RealFuels|RealismOverhaul]:FOR[aRealScaleBoosters]  // execute early
+{
+	@RESOURCE[LiquidFuel]
+	{
+		@amount *= 5
+		@maxAmount *= 5
+	}
+}
+@PART[RSB*]:HAS[@RESOURCE[Oxidizer]]:NEEDS[RealFuels|RealismOverhaul]:FOR[aRealScaleBoosters]  // execute early
+{
+	@RESOURCE[Oxidizer]
+	{
+		@amount *= 5
+		@maxAmount *= 5
+	}
+}
+@PART[RSB*]:HAS[@RESOURCE[MonoPropellant]]:NEEDS[RealFuels|RealismOverhaul]:FOR[aRealScaleBoosters]  // execute early
+{
+	@RESOURCE[MonoPropellant]
+	{
+		@amount *= 5
+		@maxAmount *= 5
+	}
+}
+

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <rect name="flight_mainGuiRect">
+        <xmin>0</xmin>
+        <xmax>0</xmax>
+        <ymin>0</ymin>
+        <ymax>0</ymax>
+    </rect>
+    <rect name="flight_dataGuiRect">
+        <xmin>0</xmin>
+        <xmax>0</xmax>
+        <ymin>0</ymin>
+        <ymax>0</ymax>
+    </rect>
+    <rect name="flight_settingsGuiRect">
+        <xmin>0</xmin>
+        <xmax>0</xmax>
+        <ymin>0</ymin>
+        <ymax>0</ymax>
+    </rect>
+</config>

@@ -1,0 +1,167 @@
+{
+	"kind": "metapackage",
+	"abstract": "A list of modules installed on the default KSP instance",
+	"name": "installed-default",
+	"license": "unknown",
+	"version": "2016.07.19.10.02.51",
+	"identifier": "installed-default",
+	"spec_version": "v1.6",
+	"depends": [
+		{
+			"name": "RSSTextures2048",
+			"version": "v10.4"
+		},
+		{
+			"name": "RealismOverhaul",
+			"version": "v11.2.0"
+		},
+		{
+			"name": "RealSolarSystem",
+			"version": "v11.4.0"
+		},
+		{
+			"name": "B9-PWings-Fork",
+			"version": "1:0.40.7"
+		},
+		{
+			"name": "ConnectedLivingSpace",
+			"version": "1.2.2.0"
+		},
+		{
+			"name": "DeadlyReentry",
+			"version": "v7.4.7.1"
+		},
+		{
+			"name": "KSP-AVC",
+			"version": "1.1.6.1"
+		},
+		{
+			"name": "ProceduralFairings",
+			"version": "v3.17"
+		},
+		{
+			"name": "ProceduralFairings-ForEverything",
+			"version": "v0.2.0"
+		},
+		{
+			"name": "ProceduralParts",
+			"version": "v1.2.5"
+		},
+		{
+			"name": "PersistentRotation",
+			"version": "1.5"
+		},
+		{
+			"name": "RCSBuildAid",
+			"version": "v0.8"
+		},
+		{
+			"name": "KSCSwitcher",
+			"version": "0.6"
+		},
+		{
+			"name": "RemoteTech",
+			"version": "v1.7.1"
+		},
+		{
+			"name": "TACLS",
+			"version": "v0.12.2"
+		},
+		{
+			"name": "TACLS-Config-RealismOverhaul",
+			"version": "v11.2.0"
+		},
+		{
+			"name": "TextureReplacer",
+			"version": "v2.4.13"
+		},
+		{
+			"name": "Toolbar",
+			"version": "1.7.12"
+		},
+		{
+			"name": "VenStockRevamp",
+			"version": "v1.9.2"
+		},
+		{
+			"name": "RSSDateTimeFormatter",
+			"version": "1.0.4.0"
+		},
+		{
+			"name": "DMagicOrbitalScience",
+			"version": "1.3.2"
+		},
+		{
+			"name": "KAS",
+			"version": "0.5.9.0"
+		},
+		{
+			"name": "SCANsat",
+			"version": "v16.3"
+		},
+		{
+			"name": "RealScaleBoosters",
+			"version": "0.14.5"
+		},
+		{
+			"name": "UniversalStorage",
+			"version": "1.1.0.14"
+		},
+		{
+			"name": "AdvancedJetEngine",
+			"version": "v2.7.2"
+		},
+		{
+			"name": "FerramAerospaceResearch",
+			"version": "3:0.15.7.2"
+		},
+		{
+			"name": "ModuleManager",
+			"version": "2.6.25"
+		},
+		{
+			"name": "ModularFlightIntegrator",
+			"version": "1.1.6.0"
+		},
+		{
+			"name": "SolverEngines",
+			"version": "v2.3"
+		},
+		{
+			"name": "KerbalJointReinforcement",
+			"version": "v3.2"
+		},
+		{
+			"name": "RealChute",
+			"version": "v1.4.1.1"
+		},
+		{
+			"name": "RealFuels",
+			"version": "rf-v11.3.1"
+		},
+		{
+			"name": "CommunityResourcePack",
+			"version": "0.5.4.0"
+		},
+		{
+			"name": "RealHeat",
+			"version": "v4.3"
+		},
+		{
+			"name": "RealPlume",
+			"version": "2:v10.5.1"
+		},
+		{
+			"name": "SmokeScreen",
+			"version": "2.6.15.0"
+		},
+		{
+			"name": "Kopernicus",
+			"version": "2:release-1.1.3-1"
+		},
+		{
+			"name": "FirespitterCore",
+			"version": "v7.3.0"
+		}
+	]
+}

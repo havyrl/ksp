@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <rect name="uiRectWindowEditor">
+        <xmin>960</xmin>
+        <xmax>960</xmax>
+        <ymin>540</ymin>
+        <ymax>540</ymax>
+    </rect>
+    <rect name="uiRectWindowDebug">
+        <xmin>960</xmin>
+        <xmax>960</xmax>
+        <ymin>540</ymin>
+        <ymax>540</ymax>
+    </rect>
+    <string name="logCAV">False</string>
+    <string name="logUpdate">False</string>
+    <string name="logUpdateGeometry">False</string>
+    <string name="logUpdateMaterials">False</string>
+    <string name="logMeshReferences">False</string>
+    <string name="logCheckMeshFilter">False</string>
+    <string name="logPropertyWindow">False</string>
+    <string name="logFlightSetup">False</string>
+    <string name="logFieldSetup">False</string>
+    <string name="logFuel">False</string>
+    <string name="logLimits">False</string>
+    <string name="logEvents">False</string>
+</config>

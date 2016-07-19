@@ -1,0 +1,20 @@
+{
+  "NAME": "VenStockRevamp",
+  "URL": "https://raw.githubusercontent.com/VenVen/Stock-Revamp/master/GameData/VenStockRevamp/VenStockRevamp.version",
+  "GITHUB":
+    {
+        "USERNAME":"VenVen",
+        "REPOSITORY":"Stock-Revamp",
+        "ALLOW_PRE_RELEASE":false,
+    },
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 9,
+	"PATCH": 2
+  },
+  "KSP_VERSION": {
+    "MAJOR": 1,
+    "MINOR": 1,
+    "PATCH": 2
+  }
+}

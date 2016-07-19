@@ -1,0 +1,227 @@
+0.14.5 (2016-06-22) - Fix.
+ - Restored the flag decals to the correct shader now that KSP 1.1.3 has addressed the transparency issue.
+
+0.14.4 (2016-05-31) - Hotfix.
+ - Fixed a capitalization error in the tech tree patches.
+ - Corrected the logic surrounding whether to use SpaceY or CTT tech nodes when both mods are present.
+
+0.14.3 (2016-05-25) - Stuff.
+ - Switched attachment positions for verniers on sample Delta II & III rockets.
+ - Added a correction for the RS-25 engine to use the correct stock model even if Ven's Stock Revamp attempts to change it.
+
+0.14.2 (2016-05-23) - Hotfix for RealFuels.
+ - Disabled RF mulitplier patch. SolidFuel amounts were getting muliplied twice when RealFuels is used without RealismOverhaul.
+
+0.14.1 (2016-05-20) - Tweaks.
+ - Slowed hose-retraction animation in umbilical tower.
+ - Widened base of umbilical tower just slightly, to avoid z-fighting when clipping two together.
+ - Added "secondary" umbilical tower that can more easily be clipped inside the main Delta tower.
+ - Added small box-colliders to the hose mounts on Delta umbilical towers, to be able to grab them individually when clipped together.
+ - Added second umbilical to sample Delta II and III rockets.
+
+0.14 (2016-05-19) - Launch Stability.
+ - Updated sample rockets to stage the engines ahead of the launch clamps.
+ - Added multiple launch clamp designs, plus a Delta Umbilical Tower.
+ - Updated several sample rockets to use new launch clamps & tower.
+
+0.13.1 (2016-05-08) - Texture Recompression.
+ - Re-compressed several DDS textures to the correct size.
+
+0.13 (2016-05-05) - Update.
+ - Adjusted all white textures to make the speckling slightly more subtle.
+ - Probe core parts (upper stages with avionics, Saturn IUs) "keep-alive" electrical usage lowered by 20% to match 2.5m stock probe core.
+ - Added more Delta-II components: Delta-K upper stage + engine, interstage decoupler, fairings.
+ - Updated sample Delta II rocket.
+
+0.12.3 (2016-04-25) - Bug fixes and Cleanup.
+ - Added a config patch that cleans up the "RSBclass" log spam.
+ - Fixed many "transparent flags" in the VAB by switching to the KSP/Alpha/Cutoff shader.
+ - Fix for surface-effects on Castor 30/120 and RL10B-2 engines.
+ - Added missing decoupler FX for several parts.
+ - Re-enabled Atlas V 500 boattail style procedural fairing.
+    - Fixed a "NullReferenceException" associated with this fairing.
+ - Fixed a visual glitch with some of the Atlas interstage/fairing parts.
+ - Corrected some radius issues with Atlas V procedural fairings.
+ - Added a note in the description for all parts that decouple at the bottom node.
+
+0.12.2 (2016-04-22) - Hotfix.
+ - Adjusted the custom tech nodes to still be created when the optional stockification patches are used.
+
+0.12.1 (2016-04-22) - Transparency fix.
+ - Corrected the "always transparent" problem in the VAB editor for interstages/decouplers in 1.1.
+
+0.12 (2016-04-22) - Update.
+ - Enabled surface attaching to the Saturn procedural fairing bases (for strutting).
+ - Disabled Atlas 500 procedural fairing boattail from menus, since it's not attaching properly in 1.1.
+ - Added Atlas 500 procedural fairing based on the interstage instead.
+ - Added decoupling node to bottom of Centaur, Agena, and Castors, and updated sample rockets.
+ - Adjusted and added more settings for the Stockification patches.
+ - Added search tags for the DeltaIV SRMs (GEM-60).
+ - Added collider settings for procedural fairing bases.
+ - Corrected radial attachment point for Delta III first stage tank.
+
+0.11.2 (2016-04-18) - Tweaks
+ - Lowered the snap radius threshold for some procedural fairings.
+ - Corrected Delta II tank fairing attachment points.
+ - Added the correct Delta II procedural fairing base (it referenced an existing model as a placeholder prior to this). 
+
+0.11.1 (2016-04-17)  - Update.
+ - Corrected the Carrack procedural fairing's starting radius, instead of breaking it. ;)
+
+0.11 (2016-04-17) - Update.
+ - Added Delta II First stage tank, procedural fairing, and nose cone (other parts delayed).
+ - Converted Delta II/III texture to DDS.
+ - Corrected GEM-40 radial attachment point.
+ - Corrected the Carrack procedural fairing's starting radius.
+ - Added some variables and various adjustments to facilitate optional stockification patches.
+ - Fixed a problem preventing Ariane V SRBs from gimbaling in both axes.
+ - Added a fairing base (8.4m) for the STS/DIRECT rocket family, matching the existing decouplers.
+ - Enabled surface attachment on most procedural fairing bases, for strutting.
+
+0.10 (2016-04-10) - Update + KSP 1.1 readiness.
+ - Renamed the radial decoupler "SRM Decoupling Kit" to be more generic than "GEM-60 Decoupling Kit".
+ - Added URLs to the README.
+ - Deprecated & disabled the "default custom tab" for the VAB/SPH menus. 
+    - Config file renamed to ".txt" ("RealScaleBoosters/Category/CustomCategory.txt").
+    - Can be renamed back to ".cfg" if you want to experiment with it.
+    - Will no longer be maintained, due to improvements in the VAB search options.
+ - Added search tags to many parts.
+ - Added Athena parts (and sample rockets), utilizing the existing Castor 120 stages.
+
+0.9 (2016-03-18) - Update.
+ - Removed the remaining deprecated RCS config from the Delta III first stage tank's part CFG.
+ - Added Saturn S-II-8 and S-IC-8 stages, and associated decoupler, to enable making Saturn C-8 (Nova). 
+ - Added Saturn C-8 sample rocket.
+
+0.8.1 (2016-03-14) - Fixes
+ - Altered the ETS Saturns (IC & Multibody) sample rockets to use F-1A engine.
+ - Altered the blue engine FX to be slightly more stockalike (particularly, less spread and less saturation).
+ - Fixed colliders on the GEM-40 (Delta II) SRM.
+ - Fixed missing Carrack procedural fairing base.
+ - Removed RCS-Verniers from Delta III first stage tank.
+ - Added LR-101 Vernier Engine, and updated Delta III sample rocket to use it.
+
+0.8 (2016-03-12) - The "briefly flew" update.
+ - Added Delta III parts and sample rocket.
+ - Added Saturn I variant parts (S-IV stage + interstage-decoupler, S-I stage fins, RL10-A3 engine, etc).
+ - Split the Agena-D model into two pieces, for easier modding of this mod.
+ - Spherical propellant tanks moved to FuelTank menu category, and fuel oriented tech node.
+ - Added Castor120/Carrack procedural fairing base.
+ - Rebalanced the audio slightly for many engines.
+ - Added more support for FilterExtensions, with icons.
+ - Added Rocketdyne F-1A engine variant (using the F-1 model, config tweaked by VenomousRequiem).
+
+0.7 (2016-03-06) - Fictional update, and Tweaks.
+ - Converted ISRO PSLV textures to DDS.
+ - Added a nose cone for the 2.8m ISRO PSLV, for converting its lower stages for use as strap-ons.
+ - Added ISRO PSLV parts to the custom menu tab, and FilterExtensions tabs.
+ - Added Saturn S-IVC, S-IE, & S-IF stage tanks, and second 6.6m nose cone, to enable the fictional Saturn 1C/Multibody (Eyes Turned Skyward).
+ - Added Castor 120 solid rocket motor, plus ETS Carrack parts (decouplers, fairings, boattail, nose cone, etc).
+ - Added flag decal to Saturn S-IVB tank.
+ - Added a simplistic normal-map to the STS (shuttle) ET texture (also used by new fictional Saturn tanks).
+ - Added surface attachable monopropellant spheres.
+
+0.6 (2016-02-28) - New rocket & Tweaks.
+ - Renamed and reorganized some of the ModuleManager patch files.
+ - Enabled a multiplier for propellants to bring them back up to the intended mass with RealFuels/RealismOverhaul, for parts that don't get the propellant replaced by those mods.
+ - Added a "FOR" statement to the TweakScale MM config.
+ - Adjusted Ariane V core stage texture: Broke up the tile pattern somewhat, to look less repetitious.
+ - Converted Ariane V textures to DDS.
+ - Corrected Ariane V clamshell fairing flag decal to not cast shadows on itself. 
+ - Added clamshell fairing attachment points to aid in making non-standard rocket configurations:
+    - Ariane V core stage, and interstage decoupler.
+    - Delta IV CBC, and 5m interstage decoupler.
+    - Atlas V didn't make sense to add, since fairings are sized only to the Centaur or to the "boattail".
+ - Rotated clamshell fairings 180 degrees, to attach from the left, and use positive ejection charges. Saved crafts will need to be updated.
+ - Added ISRO PSLV rocket parts.
+
+0.5.1 (2016-02-19) - TweakScale Patch.
+ - Completely replaced the TweakScale config. Much simpler now, and fixes a variety of problems with scaling. 
+
+0.5 (2016-02-13) - Alpha Dev.
+ - Split out another model component from the Delta IV DCSSs for the thruster platform.
+ - Split out models for Atlas Centaur, similar to Delta DCSS, to permit scaling the tank separately from the helium/hydrazine spheres.
+ - Moved the DIRECT rocket parts to the experimental (or "massive" in SpaceY) rocketry tech node.
+ - Reduced Centaur dry mass to account for adapter mass.
+ - Increased Centaur monopropellant to 154 kg (to match reality).
+ - Added the STS ET and DIRECT adapters to the TweakScale config.
+ - Added Ariane V parts, core stage, second stage, interstage, SRB, Vulcain 2, HM-7B engine, fairings, decouplers, etc.
+ - Added Ariane V sample rocket (with dummy payloads).
+ - Added VAB transparency to clamshell fairings (when mousing over the bottom end).
+ - Fixed VAB transparency on Interstage decouplers.
+ - Added some missing TweakScale settings.
+ - Added a custom VAB menu tab/category.
+ - Added subcategories for FilterExtensions for Ariane and STS/DIRECT (custom icons still needed, and FE support still work in progress).
+
+0.4.1 (2016-02-02) - Alpha Development. 
+ - Enabled fuel crossfeed in the DIRECT v3 Jupiter engine enclosure. Derp.
+
+0.4 (2016-02-02) - Alpha Development. 
+ - Enough changes since 0.3 to call it 0.4.
+ - Atlas V CFLR adjustments:
+    - Re-added thruster capability to Altas V CFLR, default 0 propellant. 
+    - Corrected direction of standard ejection charge on Atlas V CFLR.
+ - Re-tuned PLF (payload fairing) ejection:
+    - Re-tuned ISP (and thus total impulse) of the ejection thrust.
+    - Defaulted propellant to 50% (so user can tweak up or down).
+    - Added standard ejection charge, proportional to mass.
+ - Radial Decoupler adjustments:
+    - Increased standard ejection force, considerably.
+    - Defaulted thrust propellant to 50% (so user can tweak up or down).
+ - Updated sample Atlas V and Delta IV rockets with the above.
+ - Added struts to sample Atlas V 500 series rockets, connecting CFLR to PLF, to stabilize PLF & Centaur.
+ - Added DIRECT v3 Jupiter engine enclosure. Still incomplete vehicle, but somewhat usable now.
+
+0.3.3 (2016-02-01) - Alpha Development. 
+ - Moved the STS External Tank's top attachment node to accomodate DIRECT-Jupiter adapters.
+ - Added two variants of DIRECT-Jupiter adapter decouplers, 8.4m and 7.5m. Incomplete vehicle at this point.
+ - Replaced solid propellant with plain ejection charge on CFLR pieces for Atlas V. (Known issue: ejects forward)
+ - Enabled surface attachment on CFLR pieces for Atlas V.
+ - Updated sample Atlas V rockets with CFLR changes.
+ - Adjusted masses of the Atlas V interstages and Boattail.
+
+0.3.2 (2016-02-01) - Alpha development.
+ - Added 8 retrorockets to the Atlas V CCB.
+    - updated sample rockets (propellant and staging).
+    - Starts with realistic total 4.2 units (31.5 kg) propellant. Can be increased to 8 units.
+ - Added missing "vessel type" info for the Atlas V and Delta IV upper stages.
+ - Added F-1B engine variant (with "best guess" stats).
+ - Added MM patch to add SMURFF exclusion to all RSB parts, if SMURFF is detected.
+
+0.3.1 (2016-01-31) - Alpha development.
+ - Renamed the Atlas V SRB "AJ-62", and shortened it to 17.7m.
+    - As per http://www.spacelaunchreport.com/atlas5.html
+    - Updated sample rockets.
+ - Added flag for RSB.
+
+0.3 (2016-01-31) - Alpha development.
+ - Adjusted the descriptions of the STS/Ares SRBs.
+ - Corrected the "manufacturer" for the Saturn S-II tank.
+ - Added menu filter for FilterExtensions (currently still missing the custom icons).
+ - All procedural fairing bases renamed to say "Procedural Fairing".
+ - Added STS (Space Shuttle) External Tank.
+ - Added clamshell fairings for all Atlas V and Delta IV configurations.
+ - Added payload adapters (decouplers) for the Delta IV upper stages.
+ - Updated sample rockets.
+ - Added "agency" for Real Scale Boosters.
+
+0.2.1 (2016-01-26) - Alpha development.
+ - Added heavy strut.
+ - Converted textures to DDS.
+
+0.2 (2016-01-26) - Alpha development.
+ - Added Ares I parts: Upper stage, fairing base, associated decouplers/interstages, J-2X engine.
+ - Added Atlas V parts: RL-10A-4-2 and RD-180 engines, Centaur upper stage, Common Core Booster, adapters/interstages, strap-on SRBs, etc.
+ - Added a generic "GEM-60" SRB radial decoupler. Works well for strap-on booster cores too. 
+ - Moved Delta IV fairing bases to the Etc folder.
+ - Fixed radial attachment radius for the Saturn S-IVB tank.
+ - Improved atmospheric ISP of the Saturn S-IVB auxiliary propulsion.
+ - Specified sea level ISP of the Delta IV SRMs, using numbers from the Atlas V SRBs which use the same propellant.
+ - Updated the sample craft files.
+ - Updated TweakScale config to set most parts to "free" scaling.
+ - Various Tech-Tree updates.
+
+0.1 (2016-01-14) - Pre-pre-alpha. Not yet ready for actual release.
+ - This is a test copy available on dev forum thread.
+ - Includes only Saturn V, Saturn IB, Delta IV (medium and heavy), Shuttle SRBs.
+

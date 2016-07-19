@@ -1,0 +1,1425 @@
+GAME
+{
+	version = 1.0.5
+	Title = Sandbox (SANDBOX)
+	Description = No description available.
+	linkURL = 
+	linkCaption = 
+	Mode = SANDBOX
+	Status = 1
+	scene = 5
+	editor = None
+	flag = Squad/Agencies/R&D
+	launchID = 3
+	PARAMETERS
+	{
+		preset = Easy
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = True
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanLeaveToMainMenu = True
+		}
+		DIFFICULTY
+		{
+			AutoHireCrews = False
+			MissingCrewsRespawn = True
+			BypassEntryPurchaseAfterResearch = True
+			AllowStockVessels = True
+			IndestructibleFacilities = True
+			ResourceAbundance = 1.2
+			ReentryHeatScale = 0.5
+		}
+		CAREER
+		{
+			TechTreeUrl = GameData/Squad/Resources/TechTree.cfg
+			StartingFunds = 250000
+			StartingScience = 0
+			StartingReputation = 0
+			FundsGainMultiplier = 2
+			RepGainMultiplier = 2
+			ScienceGainMultiplier = 2
+			FundsLossMultiplier = 0.5
+			RepLossMultiplier = 0.5
+			RepLossDeclined = 0
+		}
+	}
+	SCENARIO
+	{
+		name = ProgressTracking
+		scene = 7, 8, 5
+		Progress
+		{
+			FirstLaunch
+			{
+				completedManned = 47.5800000000019
+			}
+			RecordsAltitude
+			{
+				completed = 1354.82686279276
+				record = 70000
+			}
+			RecordsSpeed
+			{
+				completed = 1814.30610990786
+				record = 2500
+			}
+			RecordsDistance
+			{
+				completed = 191.840000000024
+				record = 100000
+			}
+			ReachedSpace
+			{
+				completedManned = 1354.82686279276
+				vessel
+				{
+					name = ZE Super Sportster
+					flag = Squad/Agencies/R&D
+				}
+				crew
+				{
+					crews = Jebediah Kerman, Bill Kerman
+				}
+			}
+			Sun
+			{
+				reached = 77390.5892446733
+				Orbit
+				{
+					completedManned = 78311.0511196733
+					vessel
+					{
+						name = ZE Super Sportster
+						flag = Squad/Agencies/R&D
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman
+					}
+				}
+				Escape
+				{
+					completedManned = 39133099.9744384
+				}
+				Flyby
+				{
+					completedManned = 77390.5892446733
+				}
+			}
+			Kerbin
+			{
+				reached = 1692.58610990797
+				Orbit
+				{
+					completedManned = 1692.58610990797
+					vessel
+					{
+						name = ZE Super Sportster
+						flag = Squad/Agencies/R&D
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman
+					}
+				}
+				Escape
+				{
+					completedManned = 77390.5892446733
+				}
+			}
+			Jool
+			{
+				reached = 39133099.9744384
+				Orbit
+				{
+					completedManned = 40035067.8051361
+					vessel
+					{
+						name = ZE Super Sportster
+						flag = Squad/Agencies/R&D
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman
+					}
+				}
+				Flight
+				{
+					completedManned = 40037398.1079138
+					vessel
+					{
+						name = ZE Super Sportster
+						flag = Squad/Agencies/R&D
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman
+					}
+				}
+				Suborbit
+				{
+					completedManned = 40036974.8011992
+					vessel
+					{
+						name = ZE Super Sportster
+						flag = Squad/Agencies/R&D
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman
+					}
+				}
+				Flyby
+				{
+					completedManned = 39133099.9744384
+				}
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = VesselRecovery
+		scene = 5, 7, 8, 6
+	}
+	SCENARIO
+	{
+		name = ScenarioDestructibles
+		scene = 5, 7, 6, 8
+		SpaceCenter/AstronautComplex/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/KSCFlagPoleLaunchPad
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_sphereTank
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_launchPad
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/MissionControl/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section5
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section4
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section3
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End27
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End09
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Tower
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Building
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building/Building
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building/Antenna_East
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building/Antenna_North
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building/Antenna_South
+		{
+			intact = True
+		}
+		SpaceCenter/FlagPole/Facility
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/SouthComplex
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB3
+		{
+			intact = True
+		}
+		SpaceCenter/Administration/Facility/Building
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/PodMemorial
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_south
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_north
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_east
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SW
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SmallLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CentralBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CornerLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/WindTunnel
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/Observatory
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SideLab
+		{
+			intact = True
+		}
+		SpaceCenter/AstronautComplex/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/Administration/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/Flag
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/OuterDish
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB2
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/ForeverAlone
+		{
+			intact = True
+		}
+		SpaceCenter/MissionControl/Facility/mainBuilding
+		{
+			intact = True
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		lastSeed = 726551267
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
+	SCENARIO
+	{
+		name = ResourceScenario
+		scene = 5, 7, 6
+		RESOURCE_SETTINGS
+		{
+			GameSeed = 351552955
+			MaxDeltaTime = 21600
+		}
+	}
+	SCENARIO
+	{
+		name = KerbalAlarmClockScenario
+		scene = 5, 6, 7, 8
+		KACAlarmListStorage
+		{
+		}
+	}
+	FLIGHTSTATE
+	{
+		version = 1.0.5
+		UT = 40044495.4397131
+		activeVessel = -1
+		mapViewFiltering = 1023
+		VESSEL
+		{
+			pid = fcc546c8444e4025ad00ddcb55f99226
+			name = Ast. OFK-333
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 38693534.8967821
+			lct = 38693534.8967821
+			lastUT = -1
+			root = 0
+			lat = -0.00768048061448774
+			lon = -311.097101031993
+			alt = 13412672486.71
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.6375263,-0.1897019,-0.09256914,0.7409483
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13679057153.8765
+				ECC = 0.00455866074577409
+				INC = 0.275521933020602
+				LPE = 251.222210580865
+				LAN = 296.579080511192
+				MNA = 1.60909603926598
+				EPH = 39387029.9534894
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1193034775
+				mid = 1193034775
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 38693534.8967821
+				lifetime = 1451597.38769531
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 0799ce311a2c4766905dd39ce5d76329
+			name = Ast. UJB-404
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 39355509.017954
+			lct = 39355509.017954
+			lastUT = -1
+			root = 0
+			lat = -0.160471810748388
+			lon = -105.40658499632
+			alt = 14335702723.0425
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.5567415,0.4774686,-0.06854413,0.6762872
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14082922959.8008
+				ECC = 0.0375859274080451
+				INC = 0.981204355948522
+				LPE = 183.732896944024
+				LAN = 300.262792132553
+				MNA = 6.25120970392017
+				EPH = 44536564.1327001
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1289464318
+				mid = 1289464318
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 39355509.017954
+				lifetime = 1048698.3581543
+				refTime = 1728000
+				size = 1
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 4b979bfd829647e3a6ea00f5fed581b6
+			name = Ast. XWX-282
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 39421509.017954
+			lct = 39421509.017954
+			lastUT = -1
+			root = 0
+			lat = -0.0204791258372512
+			lon = -168.940034054472
+			alt = 13576174556.5356
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.1711466,0.9595918,-0.06565378,0.2134996
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13836254412.4196
+				ECC = 0.0205607439512893
+				INC = 0.0351215285029041
+				LPE = 55.8158066423685
+				LAN = 317.985878132167
+				MNA = 5.70336651062167
+				EPH = 40888223.7030126
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1224010146
+				mid = 1224010146
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 39421509.017954
+				lifetime = 1279089.5690918
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 3fcecfd13cad46b9bf977f29663dc4fc
+			name = Ast. IWA-206
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 39833509.017954
+			lct = 39833509.017954
+			lastUT = -1
+			root = 0
+			lat = -0.0444114559292679
+			lon = -136.162598472585
+			alt = 14683932871.3628
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.5148252,-0.4589185,0.603611,0.4000032
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15971748903.0809
+				ECC = 0.147257862178648
+				INC = 0.198449943081368
+				LPE = 59.0743945573601
+				LAN = 311.360038239141
+				MNA = 6.22141858202223
+				EPH = 41557975.1556493
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 981044518
+				mid = 981044518
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 39833509.017954
+				lifetime = 281494.569396973
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = b2733fd8c7984cf88666809096b1fd54
+			name = Ast. HUM-726
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 39899509.017954
+			lct = 39899509.017954
+			lastUT = -1
+			root = 0
+			lat = -1.04154508818118
+			lon = -179.690231775685
+			alt = 15720419888.5596
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.6465883,0.2332445,-0.6719509,0.2756857
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15232086676.6235
+				ECC = 0.117637057482599
+				INC = 1.05690295442692
+				LPE = 20.9516717849141
+				LAN = 49.6811226906668
+				MNA = 6.03438712819154
+				EPH = 42759082.9071142
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1042935170
+				mid = 1042935170
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 39899509.017954
+				lifetime = 388245.053100586
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = d40c1a1cad6f4c688e88f1d04c2f66e8
+			name = Ast. FXL-618
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 39998231.9671728
+			lct = 39998231.9671728
+			lastUT = -1
+			root = 0
+			lat = -0.399803691409326
+			lon = -269.582744978161
+			alt = 13656410973.4292
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.5169055,-0.235002,-0.4132708,0.7118919
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14535084522.3136
+				ECC = 0.070281641273746
+				INC = 0.400381913283456
+				LPE = 329.200662271679
+				LAN = 29.1975260858118
+				MNA = 0.354244635516753
+				EPH = 41973475.436411
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 368489624
+				mid = 368489624
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 39998231.9671728
+				lifetime = 1077090.21606445
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = eb5f733f9a7e40c0906089352a0fb210
+			name = Ast. DCP-118
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 40007789.6820165
+			lct = 40007789.6820165
+			lastUT = -1
+			root = 0
+			lat = 0.89834154056343
+			lon = -276.532782050534
+			alt = 14032494490.5364
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.4945411,-0.1558944,-0.5184032,0.6799884
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15365265706.0293
+				ECC = 0.115337800744048
+				INC = 0.955581097005908
+				LPE = 168.212393207255
+				LAN = 193.358562426654
+				MNA = 0.115952038398865
+				EPH = 41671544.2169286
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 726551267
+				mid = 726551267
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 40007789.6820165
+				lifetime = 978167.944335938
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+	}
+	ROSTER
+	{
+		KERBAL
+		{
+			name = Jebediah Kerman
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			tour = False
+			state = Missing
+			ToD = 40051691.4197125
+			idx = 0
+			CAREER_LOG
+			{
+				flight = 1
+				0 = Land,Kerbin
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Orbit,Kerbin
+				0 = Escape,Kerbin
+				0 = Flyby,Sun
+				0 = Orbit,Sun
+				0 = Flyby,Jool
+				0 = Escape,Jool
+				0 = Orbit,Jool
+				0 = Suborbit,Jool
+				0 = Flight,Jool
+				0 = Die
+			}
+			FLIGHT_LOG
+			{
+				flight = 1
+			}
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			tour = False
+			state = Missing
+			ToD = 40051691.4197125
+			idx = 1
+			CAREER_LOG
+			{
+				flight = 1
+				0 = Land,Kerbin
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Orbit,Kerbin
+				0 = Escape,Kerbin
+				0 = Flyby,Sun
+				0 = Orbit,Sun
+				0 = Flyby,Jool
+				0 = Escape,Jool
+				0 = Orbit,Jool
+				0 = Suborbit,Jool
+				0 = Flight,Jool
+				0 = Die
+			}
+			FLIGHT_LOG
+			{
+				flight = 1
+			}
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Valentina Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.55
+			dumb = 0.4
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Jadolin Kerman
+			gender = Female
+			type = Applicant
+			trait = Scientist
+			brave = 0.8990476
+			dumb = 0.06280996
+			badS = False
+			tour = False
+			state = Available
+			ToD = 130779.945510864
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Maggie Kerman
+			gender = Female
+			type = Applicant
+			trait = Pilot
+			brave = 0.4737958
+			dumb = 0.2419638
+			badS = False
+			tour = False
+			state = Available
+			ToD = 214877.358764648
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Lemburry Kerman
+			gender = Male
+			type = Applicant
+			trait = Pilot
+			brave = 0.05068601
+			dumb = 0.5591326
+			badS = False
+			tour = False
+			state = Available
+			ToD = 226767.477172852
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Hilphe Kerman
+			gender = Female
+			type = Applicant
+			trait = Scientist
+			brave = 0.6430203
+			dumb = 0.1984148
+			badS = False
+			tour = False
+			state = Available
+			ToD = 168463.703292847
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Arne Kerman
+			gender = Female
+			type = Applicant
+			trait = Pilot
+			brave = 0.2521209
+			dumb = 0.9949798
+			badS = False
+			tour = False
+			state = Available
+			ToD = 168466.62840271
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Staise Kerman
+			gender = Female
+			type = Applicant
+			trait = Engineer
+			brave = 0.7780573
+			dumb = 0.2136175
+			badS = False
+			tour = False
+			state = Available
+			ToD = 200645.030731201
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Lencas Kerman
+			gender = Male
+			type = Applicant
+			trait = Engineer
+			brave = 0.9608003
+			dumb = 0.4497174
+			badS = True
+			tour = False
+			state = Available
+			ToD = 220495.341247559
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Ratha Kerman
+			gender = Female
+			type = Applicant
+			trait = Pilot
+			brave = 0.09365889
+			dumb = 0.04391887
+			badS = False
+			tour = False
+			state = Available
+			ToD = 133449.087661743
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Cattha Kerman
+			gender = Female
+			type = Applicant
+			trait = Engineer
+			brave = 0.3224978
+			dumb = 0.1453354
+			badS = False
+			tour = False
+			state = Available
+			ToD = 154997.40385437
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Liznie Kerman
+			gender = Female
+			type = Applicant
+			trait = Pilot
+			brave = 0.5516785
+			dumb = 0.2536865
+			badS = False
+			tour = False
+			state = Available
+			ToD = 225418.548339844
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+	}
+	MESSAGESYSTEM
+	{
+		flash = False
+	}
+}
