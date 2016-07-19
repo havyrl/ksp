@@ -1,4 +1,4 @@
-SHA = F0-B0-32-79-0A-AE-B6-C2-FB-AD-A0-A1-2F-D7-91-67-67-C9-0A-D7-9C-C8-71-36-E5-E2-0A-D6-41-9C-A6-7F
+SHA = BB-0A-A4-C2-89-1D-E6-4B-F6-30-5F-73-4D-48-37-C8-B7-2C-D8-95-EB-2C-16-67-7E-4A-94-29-C7-1F-26-8A
 version = 2.6.25.0
 KSPVersion = 1.1.3.1289
 FilesSHA
@@ -312,6 +312,246 @@ FilesSHA
 	{
 		filename = ContractPacks/RemoteTech/Agencies/Agents
 		SHA = 55-CA-6B-9C-02-AB-BF-DA-00-C2-FE-36-06-82-6E-60-48-EA-1E-91-21-A0-85-0D-38-9C-35-64-0A-3F-7A-34
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/OversizeScience/LargeRecon
+		SHA = 48-A6-34-D5-E9-CE-A3-4E-95-4F-FD-74-71-9B-6B-FF-5B-32-C0-B9-EF-89-58-FB-0B-A6-86-1A-CF-02-C0-70
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/OversizeScience/SIGINT
+		SHA = 79-AE-27-0A-CB-D0-9C-F8-7A-D4-7F-98-8C-44-9B-B2-3F-E6-71-21-25-39-86-F4-72-A3-C2-05-24-94-15-91
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/OversizeScience/SIGINT_End
+		SHA = A2-43-28-F9-B7-72-27-E0-43-6D-F4-76-C9-07-E4-A5-0D-A9-CB-89-A0-0F-D4-6A-59-61-1C-AA-3A-FF-9D-60
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/OversizeScience/SIGINT_Small
+		SHA = F5-00-E0-39-1A-1D-26-30-9F-96-10-B0-23-DA-B6-4C-24-FB-B1-0B-8A-2B-C8-A7-0D-64-C0-37-EC-24-36-7E
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/OversizeScience/SmallRecon
+		SHA = 3A-7E-FF-D4-64-99-DA-0B-7A-1C-14-D4-FC-2E-9C-BC-30-37-29-92-E9-38-0E-9D-E9-57-F8-FE-76-2D-9D-2F
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/ASERT/ASERT
+		SHA = B5-4F-B9-85-41-DB-AD-90-9E-47-49-D2-F9-5D-F6-13-2B-9B-B0-45-C5-01-53-9F-6C-AD-26-11-DF-5B-E3-5C
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/GoreSat/GoreSat
+		SHA = ED-D1-42-95-E6-5C-AF-D9-61-12-4F-97-20-B7-D9-4A-98-8A-E1-B5-3E-DF-AD-98-77-B3-C0-1E-FB-C4-4F-83
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/ImagingPlatform/ImagingPlatform
+		SHA = 01-BE-1B-5C-0E-12-6A-A6-DA-A2-C4-AA-40-1F-3D-77-91-F5-5C-F2-26-27-15-DA-BF-A9-ED-86-57-2F-2A-54
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/MagBoom/MagBoom
+		SHA = 20-7A-5F-CE-39-60-F4-8C-FF-27-4E-A7-D7-AF-55-E9-EE-30-92-94-CF-53-44-8E-0D-F2-B2-9F-FF-6B-79-BC
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/RPWS/RPWS
+		SHA = 3E-9B-81-19-AE-6A-B9-46-1F-A8-37-D4-48-01-E8-D2-83-8F-48-79-31-9E-EC-09-93-F8-19-F9-97-37-CF-48
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/Scope/Scope
+		SHA = 53-89-48-28-DD-B1-86-83-BF-B4-4E-A9-D7-1B-42-8B-20-C5-48-CD-35-C7-90-EC-ED-83-CA-68-00-91-30-7F
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/SoilMoisture/SoilMoisture
+		SHA = 27-54-53-07-67-7B-9D-C9-05-9D-46-3C-B8-E5-65-8B-91-1A-C6-07-16-1E-B9-29-F2-76-D0-8E-1C-18-9D-4C
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/ProbeScience/SolarParticleCollector/SolarCollector
+		SHA = 95-6E-A5-ED-D6-65-08-B4-53-E7-F5-EB-25-12-0D-0E-CB-45-D6-EA-2D-4C-BA-B1-ED-51-C6-B6-A2-CE-F6-57
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/Agents_DM
+		SHA = 0E-61-04-1F-49-F4-B9-EE-17-54-EC-AD-4A-35-11-66-FC-37-68-5F-E1-1D-5E-FA-23-1C-B2-14-0C-54-0A-00
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMagicCommunityTechTree
+		SHA = 3D-0E-6C-52-E4-1F-3C-CF-26-5E-01-49-81-69-53-05-D7-C9-D4-D2-FC-A9-C1-6F-87-A1-8A-0E-0B-B1-54-40
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMagicFilterExtensions
+		SHA = 87-09-18-A8-86-FC-86-8D-B5-3A-76-3E-FB-DB-77-68-35-9B-9B-CE-02-4A-7C-49-0B-B7-C3-A4-03-8C-2E-C6
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMagicKIS
+		SHA = AB-8F-36-E0-8C-71-C3-D9-57-9C-45-3F-6B-EF-19-73-96-55-06-42-E5-18-8E-6B-9D-39-F0-9C-4B-23-39-A2
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMagicSatellitePartRequest
+		SHA = 04-B9-83-14-26-39-1F-9B-9C-EB-F6-11-45-6C-DD-65-43-18-54-65-61-8C-0F-35-93-D1-ED-59-90-C4-B6-40
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMagicSCANsatScanner
+		SHA = 99-C0-15-0F-9D-C9-69-6D-06-52-A4-83-81-8A-FE-1D-EC-6C-FD-6E-4B-29-C2-ED-E0-4B-EE-8E-F5-D3-2F-74
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMagicSurveyContracts
+		SHA = 88-3C-75-54-DE-BE-44-AA-F7-4B-C2-23-86-61-B3-19-3B-68-22-2E-EC-9D-5C-E5-CD-D9-22-EE-C5-82-A8-F7
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMagicTweakScale
+		SHA = 4A-67-1C-EE-BD-E8-9B-70-96-86-9C-EA-42-19-30-84-7E-6B-DA-53-52-2F-BE-46-E0-FF-FB-37-B6-C5-B3-7C
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMContracts
+		SHA = 26-0A-F8-3A-2A-82-99-A6-87-8B-BB-BA-04-DB-49-66-5C-D6-CB-10-73-1C-02-19-58-BF-D5-BC-F0-CB-F5-5D
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/DMSeismicSettings
+		SHA = 7E-6A-C7-8C-50-F7-5D-2F-55-20-AE-BE-D9-E1-8C-2A-C9-9F-B8-39-E1-E2-3B-0B-D2-33-33-B6-FB-B8-67-56
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/NewScienceDefs
+		SHA = 79-57-D6-D6-3E-32-6D-27-47-11-D8-03-2F-6A-A5-8D-4D-3D-6E-17-4B-54-5C-68-F0-46-9A-2B-D4-BA-75-41
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/Resources/ScienceDefs
+		SHA = BE-7F-CC-14-9F-49-96-DE-25-BB-A7-8B-B6-4C-4F-48-27-04-72-BE-95-00-B0-08-AA-10-E1-C0-C2-3D-A3-B0
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/AnomSensor/AnomScanner
+		SHA = 89-4C-9A-DA-DF-D2-DB-08-30-5C-D0-EC-62-4A-D9-52-F1-C3-1B-F3-39-1B-AB-1D-D1-E0-04-E4-1D-0F-9D-2E
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/Bathymetry/Bathymetry
+		SHA = 77-23-8E-44-61-8A-7A-E0-16-BC-BE-1A-22-E8-74-29-FE-D5-29-3F-3B-54-6A-B0-23-D0-E8-B8-CF-25-FE-27
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/BioDrill/BioDrill
+		SHA = 84-E2-A4-62-F8-8E-E0-80-FC-F4-9D-66-DB-5C-FA-05-61-F1-AE-4C-F5-BB-18-3B-3A-3B-D5-66-45-7F-4C-CB
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/DAN/DAN
+		SHA = 17-9D-CD-72-C3-1F-9D-8A-61-95-74-32-00-8F-21-D2-E3-49-6E-D1-D2-57-47-65-73-D8-14-4B-21-3F-EE-51
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/Laser/Laser
+		SHA = D3-81-F4-74-05-1E-43-AF-B3-0F-B5-A9-C7-82-C3-EE-E6-90-AB-88-05-F1-3E-18-52-0B-E8-22-17-CE-F5-37
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/RoverGoo/RoverGoo
+		SHA = DF-44-21-E5-96-2D-FC-BA-B8-37-4D-3B-B1-F1-CE-E5-E8-BB-47-9C-57-C9-24-73-9E-EA-B3-68-51-96-DA-52
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/RoverMat/RoverMat
+		SHA = DD-AD-0F-EB-98-0F-74-0C-84-71-49-53-FF-23-C0-52-40-A5-8C-15-80-98-A9-3D-42-DE-9F-EE-9C-7F-06-66
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/Seismic/seismic
+		SHA = D4-BE-78-4E-B1-74-8D-F2-7E-27-FD-71-96-E7-20-C5-F9-C5-20-18-74-56-3C-27-E1-E4-D0-D1-44-DB-8A-58
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/Seismic/thumper
+		SHA = F3-7A-DF-ED-1A-74-08-6F-A4-BD-EC-19-2A-35-7D-58-CA-A0-4F-C4-B0-81-76-F3-31-87-4B-0E-88-4A-BD-8E
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/RoverScience/XRay/XRay
+		SHA = BC-52-85-E6-45-8E-80-10-74-60-AA-DC-CE-C4-13-C7-4A-F3-41-4C-9A-40-3C-8A-D8-B2-7F-AA-50-77-2C-24
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USASERT/USASERT
+		SHA = 1A-A1-91-2F-84-C3-3B-F5-28-B6-08-DA-91-33-4A-D0-E2-40-79-8F-3D-57-7C-73-43-18-DA-33-35-0A-82-73
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USGooMat/USGoo
+		SHA = 00-7E-37-04-04-31-A4-16-AB-FF-E2-72-BC-15-F3-29-47-DD-DE-B3-2A-61-8E-97-A7-D3-17-A7-E9-F0-68-E7
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USGooMat/USMat
+		SHA = 4B-2B-2F-88-4F-F0-E7-84-63-43-26-FB-93-7B-65-11-BE-BD-42-F0-B5-2E-41-66-0F-A8-9F-05-B3-FA-22-CB
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USGoreSat/USGoreSat
+		SHA = F2-EC-D2-CF-C1-C0-19-7A-DF-A0-3C-F7-35-BD-05-B3-5B-BC-BD-58-AC-38-F6-08-46-47-1C-1E-49-D1-9E-49
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USImagingPlatform/USImagingPlatform
+		SHA = 54-A7-C3-B1-6F-D7-84-E6-30-45-C2-DB-DE-24-6A-96-27-D1-E2-24-67-C5-45-3B-E2-44-E3-BA-B1-2C-95-1C
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USProbeSci/MagBoom
+		SHA = 98-AD-7C-29-E5-C2-12-FB-B7-C4-50-5B-D8-40-62-9E-7E-2F-1F-EC-19-33-24-7C-43-1D-D3-08-CC-4E-A2-EA
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USProbeSci/RPWS
+		SHA = 76-13-7C-3C-7D-67-B6-5B-6E-B7-D8-55-86-A4-88-07-42-8A-3B-AA-CD-3F-B7-3A-22-B6-15-D8-61-C3-ED-2C
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USScope/USScope
+		SHA = 4D-B0-C5-1F-E5-D1-A0-E6-4B-E3-BA-88-32-C9-C0-91-99-C0-8F-3E-29-23-8C-30-3A-3F-F0-57-41-82-65-BB
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USSoilMoisture/USSoilMoisture
+		SHA = C3-2C-C2-A4-31-5F-D1-AC-4F-5D-5B-B1-F4-FB-C3-24-8F-1A-33-97-39-A1-1C-69-33-A9-21-1C-EE-A1-34-F6
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USSolarParticles/USSolarParticles
+		SHA = 0C-AF-2D-C2-1B-70-8E-83-C5-4E-FB-F7-45-43-BE-4F-84-C7-95-0C-F3-03-B9-AE-AE-3F-E7-9E-CC-CB-04-CE
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USStock/ACCGRAV
+		SHA = 4E-A0-BE-B4-8B-F5-1B-6B-D8-82-8F-94-20-8C-0C-33-01-03-EA-5A-CF-80-4E-A3-E2-98-7E-C1-38-10-65-83
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USStock/ATMOSSENSE
+		SHA = FB-ED-34-9F-6A-84-62-CD-23-7C-4C-33-C9-53-FA-D5-8E-BE-82-FA-79-AB-18-BB-6F-1E-04-A2-D3-E3-E2-73
+	}
+	FILE
+	{
+		filename = DMagicOrbitalScience/UniversalStorage/USStock/PRESTEMP
+		SHA = D8-C2-36-01-DE-30-43-AF-DC-18-70-1E-40-BF-C5-23-4A-57-FA-CC-B8-E3-EB-10-82-49-0F-19-61-D6-07-BC
 	}
 	FILE
 	{

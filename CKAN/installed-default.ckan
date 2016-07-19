@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.07.19.08.56.31",
+	"version": "2016.07.19.12.36.15",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -94,6 +94,22 @@
 		{
 			"name": "KerBalloons",
 			"version": "v0.3.4"
+		},
+		{
+			"name": "DMagicOrbitalScience",
+			"version": "1.3.2"
+		},
+		{
+			"name": "ContractsWindowPlus",
+			"version": "6.4"
+		},
+		{
+			"name": "ProgressParser",
+			"version": "5.0"
+		},
+		{
+			"name": "ContractParser",
+			"version": "4.0"
 		}
 	]
 }
