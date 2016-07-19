@@ -1,4 +1,4 @@
-SHA = D1-80-A1-53-CA-58-26-4C-55-47-F0-93-B1-B7-36-4D-21-24-BF-15-CC-8D-A1-3B-29-96-AB-F8-BD-19-79-1B
+SHA = AA-6C-25-6C-92-13-3D-9C-BA-53-6E-7A-87-16-46-BB-5D-CF-DA-94-99-10-02-2D-D8-AD-AE-5F-8F-9F-AC-0A
 version = 2.6.25.0
 KSPVersion = 1.1.3.1289
 FilesSHA
@@ -900,6 +900,21 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = FerramAerospaceResearch/CustomFARAeroData
+		SHA = C5-B6-1E-95-44-AE-33-52-A2-8B-00-B3-A3-30-D0-D1-72-BA-04-D1-8A-EF-A3-9F-56-60-E2-07-68-71-C3-FB
+	}
+	FILE
+	{
+		filename = FerramAerospaceResearch/CustomFARAeroStress
+		SHA = 55-25-BB-77-58-ED-D7-C5-C4-26-1D-94-44-09-50-07-15-2C-73-EA-3F-E7-AF-E3-6B-02-07-5A-74-CD-8A-1E
+	}
+	FILE
+	{
+		filename = FerramAerospaceResearch/CustomFARGUIColors
+		SHA = 04-8D-39-E5-12-5E-3A-38-04-05-96-E7-74-E4-A7-CA-AA-D4-66-B4-B2-1C-F8-62-05-F4-49-14-71-C9-45-C2
+	}
+	FILE
+	{
 		filename = FerramAerospaceResearch/FARAeroData
 		SHA = 04-F8-76-51-B2-D1-2A-F6-4E-B6-51-07-64-51-E3-03-18-A6-77-FB-A7-A5-64-43-7E-0A-C9-40-7F-DF-D1-AD
 	}
@@ -912,11 +927,6 @@ FilesSHA
 	{
 		filename = FerramAerospaceResearch/FARAnimOverrides
 		SHA = C2-B3-DA-5E-8B-10-F8-45-46-33-18-1C-86-34-6C-0B-9E-AA-D4-65-F0-E8-F0-72-56-4B-46-71-68-A5-34-FE
-	}
-	FILE
-	{
-		filename = FerramAerospaceResearch/FARForceDataUpdate
-		SHA = B4-2D-5E-EB-8F-8E-F3-40-B5-5A-B0-84-8D-6A-4D-D2-3B-A1-83-24-34-FF-1A-27-72-A4-F9-DB-88-8C-17-37
 	}
 	FILE
 	{

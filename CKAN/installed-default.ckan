@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.07.19.10.02.51",
+	"version": "2016.07.19.10.49.02",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -162,6 +162,14 @@
 		{
 			"name": "FirespitterCore",
 			"version": "v7.3.0"
+		},
+		{
+			"name": "KerbalEngineerRedux",
+			"version": "1.1.1.0"
+		},
+		{
+			"name": "KIS",
+			"version": "1.2.12.0"
 		}
 	]
 }
