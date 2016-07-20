@@ -1,4 +1,4 @@
-patchedNodeCount = 1068
+patchedNodeCount = 1045
 catEatenCount = 0
 UrlConfig
 {
@@ -16027,7 +16027,7 @@ UrlConfig
 		module = Part
 		author = DMagic
 		scale = 1
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = actuators
@@ -16129,7 +16129,7 @@ UrlConfig
 		name = dmUSGoo
 		module = Part
 		author = DMagic
-		rescaleFactor = .95
+		rescaleFactor = 1.0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = basicRocketry
@@ -16236,7 +16236,7 @@ UrlConfig
 		name = dmUSMat
 		module = Part
 		author = DMagic
-		rescaleFactor = .95
+		rescaleFactor = 1.0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = stability
@@ -16343,7 +16343,7 @@ UrlConfig
 		module = Part
 		author = DMagic
 		scale = 1
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = precisionEngineering
@@ -16449,7 +16449,7 @@ UrlConfig
 		module = Part
 		author = DMagic
 		scale = 1
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = advExploration
@@ -16607,7 +16607,7 @@ UrlConfig
 		name = dmUSMagBoom
 		module = Part
 		author = DMagic
-		rescaleFactor = .95
+		rescaleFactor = 1.0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = miniaturization
@@ -16850,7 +16850,7 @@ UrlConfig
 		module = Part
 		author = DMagic
 		scale = 1
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = basicScience
@@ -16954,7 +16954,7 @@ UrlConfig
 		module = Part
 		author = DMagic
 		scale = 1
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = largeElectrics
@@ -17105,7 +17105,7 @@ UrlConfig
 		module = Part
 		author = DMagic
 		scale = 1
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = advConstruction
@@ -17217,7 +17217,7 @@ UrlConfig
 		name = dmUSAccGrav
 		module = Part
 		author = DMagic
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = advScienceTech
@@ -17373,7 +17373,7 @@ UrlConfig
 		name = dmUSAtmosSense
 		module = Part
 		author = DMagic
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = fieldScience
@@ -17479,7 +17479,7 @@ UrlConfig
 		name = dmUSPresTemp
 		module = Part
 		author = DMagic
-		rescaleFactor = .95
+		rescaleFactor = 1
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		attachRules = 1,0,1,1,0
 		TechRequired = spaceExploration
@@ -43239,6 +43239,64 @@ UrlConfig
 			name = LiquidFuel
 			amount = 0
 			maxAmount = 300
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = elevonMk3
+	type = PART
+	parentUrl = Squad/Parts/Aero/shuttleWings/elevon
+	url = Squad/Parts/Aero/shuttleWings/elevon/elevonMk3
+	PART
+	{
+		name = elevonMk3
+		module = Part
+		author = Porkjet
+		rescaleFactor = 1
+		node_attach = 0.0, 0.0, 0.0, 1.0, 0.0, 0.0
+		TechRequired = unresearchable
+		entryCost = 16400
+		cost = 7200
+		category = none
+		subcategory = 0
+		title = Mk3 Elevon
+		manufacturer = C7 Aerospace Division
+		description = (OBSOLETE)
+		attachRules = 0,1,0,1,1
+		mass = 0.15
+		thermalMassModifier = 8.0
+		heatConductivity = 0.06
+		emissiveConstant = 0.95
+		dragModelType = none
+		maximum_drag = 0.02
+		minimum_drag = 0.02
+		angularDrag = 2
+		crashTolerance = 15
+		maxTemp = 2400
+		explosionPotential = 0.1
+		fuelCrossFeed = True
+		bulkheadProfiles = srf
+		MODEL
+		{
+			model = Squad/Parts/Aero/shuttleWings/elevon
+		}
+		MODULE
+		{
+			name = ModuleControlSurface
+			useInternalDragModel = True
+			dragCoeff = 0.5
+			deflectionLiftCoeff = 0.5
+			ctrlSurfaceRange = 15
+			ctrlSurfaceArea = 1
+			transformName = Elevon
 		}
 		MODULE
 		{
@@ -72462,6 +72520,90 @@ UrlConfig
 				targetName = susp1-1
 				rotatorsName = susp1-2
 			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+	}
+}
+UrlConfig
+{
+	name = SmallGearBay
+	type = PART
+	parentUrl = Squad/Parts/Wheel/SmallGearBay/smallGearBay
+	url = Squad/Parts/Wheel/SmallGearBay/smallGearBay/SmallGearBay
+	PART
+	{
+		name = SmallGearBay
+		module = Part
+		author = C. Jenkins
+		mesh = model.mu
+		scale = 1.0
+		node_attach = 0.00, 0.147, 0.00, 0.0, 1.0, 0.0, 1
+		TechRequired = landing
+		entryCost = 3200
+		cost = 450
+		category = Utility
+		subcategory = 0
+		title = LY-10 Small Landing Gear
+		manufacturer = LightYear Tire Company
+		description = High performance retractable landing gear. Comes with shock absorber, steering and a built-in spotlight.
+		attachRules = 1,1,1,1,1
+		mass = 0.04
+		thermalMassModifier = 4.0
+		emissiveConstant = 0.95
+		dragModelType = default
+		maximum_drag = 0.3
+		minimum_drag = 0.2
+		angularDrag = 1
+		crashTolerance = 7
+		maxTemp = 2500
+		crashTolerance = 50
+		breakingForce = 50
+		breakingTorque = 50
+		PhysicsSignificance = 1
+		bulkheadProfiles = srf
+		MODULE
+		{
+			name = ModuleLandingGear
+			BrakeTorque = 12
+			BrakeSpeed = 3
+		}
+		MODULE
+		{
+			name = ModuleSteering
+			controlAxisType = Forward
+			steeringAxis = 0, 0, 1
+			steeringTransformName = Steering
+			steeringLocked = true
+			steeringCurve
+			{
+				key = 0 16
+				key = 10 9
+				key = 30 2
+				key = 100 1
+			}
+		}
+		MODULE
+		{
+			name = FXModuleConstrainPosition
+			matchRotation = true
+			matchPosition = false
+			CONSTRAINFX
+			{
+				targetName = Steering
+				moversName = wheelCollider
+			}
+		}
+		MODULE
+		{
+			name = ModuleLight
+			lightName = LandingLight
+			useAutoDim = true
 		}
 		MODULE
 		{
@@ -108464,7 +108606,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1C10_Wedge_Quadcore
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,0,0
 		node_stack_back = 0, 0, 0.175, 0, 0, 1, 0
 		node_stack_bottom = 0, -0.204, 0, 0, -1, 0, 1
@@ -108710,7 +108853,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1C15_Wedge_Hexacore
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.500, 0, 0., 1, 0, 0, 0
 		node_stack_backleft = 0.250, 0, -0.430, 1, 0, -1.75, 0
@@ -108987,7 +109131,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1C20_Wedge_Octocore
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,1,0
 		node_stack_back = -0, 0, 0.793, 0, 0, 1, 0
 		node_stack_backleft = 0.5607, 0, 0.5607, 1, 0, 1, 0
@@ -109320,6 +109465,124 @@ UrlConfig
 }
 UrlConfig
 {
+	name = US_f_Dec_SafetyDecoupler125
+	type = PART
+	parentUrl = UniversalStorage/Parts/US_1D10_Wedge_Adapter_125/part
+	url = UniversalStorage/Parts/US_1D10_Wedge_Adapter_125/part/US_f_Dec_SafetyDecoupler125
+	PART
+	{
+		name = US_f_Dec_SafetyDecoupler125
+		module = Part
+		author = Paul Kingtiger & Daishi
+		mesh = model.mu
+		rescaleFactor = .5
+		node_stack_top = 0, -0.180, 0, 0, 1, 0, 1
+		node_stack_bottom = 0, -0.212, 0, 0, -1, 0, 1
+		fx_gasBurst_white = 0.0, 0.0650517, 0.0, 0.0, 1.0, 0.0, decouple
+		sound_vent_large = decouple
+		attachRules = 1,0,1,1,0
+		TechRequired = basicRocketry
+		entryCost = 750
+		cost = 150
+		category = Utility
+		subcategory = 0
+		title = Universal Storage Decoupler: Small
+		manufacturer = New Horizons & Nox Industrial
+		description = A specialized stack separator designed with crew safety in mind. Replacing explosive bolts with eight fail-safe pneumatic cylinders; this decoupler cannot be staged by overeager ground staff and must be activated by direct command of the crew. Decoupling function currently disabled.
+		mass = 0.05
+		dragModelType = default
+		maximum_drag = 0.2
+		minimum_drag = 0.2
+		angularDrag = 1
+		crashTolerance = 20
+		breakingForce = 50
+		breakingTorque = 50
+		maxTemp = 650
+		fuelCrossFeed = true
+		stageOffset = 0
+		childStageOffset = -1
+		MODULE
+		{
+			name = TweakScale
+			type = stack
+			scaleFactors = 1, 2, 3
+			scaleNames = 1.25m, 2.5m, 3.75m
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+		MODULE
+		{
+			name = TweakScale
+			type = UniversalStorage
+		}
+	}
+}
+UrlConfig
+{
+	name = US_e_Dec_SafetyDecoupler250
+	type = PART
+	parentUrl = UniversalStorage/Parts/US_1D20_Wedge_Adapter_250/part
+	url = UniversalStorage/Parts/US_1D20_Wedge_Adapter_250/part/US_e_Dec_SafetyDecoupler250
+	PART
+	{
+		name = US_e_Dec_SafetyDecoupler250
+		module = Part
+		author = Paul Kingtiger & Daishi
+		mesh = model.mu
+		rescaleFactor = 1
+		node_stack_top = 0, -0.180, 0, 0, 1, 0, 2
+		node_stack_bottom = 0, -0.212, 0, 0, -1, 0, 2
+		fx_gasBurst_white = 0.0, 0.0650517, 0.0, 0.0, 1.0, 0.0, decouple
+		sound_vent_large = decouple
+		attachRules = 1,0,1,1,0
+		TechRequired = advConstruction
+		entryCost = 1000
+		cost = 200
+		category = Utility
+		subcategory = 0
+		title = Universal Storage Decoupler: Large
+		manufacturer = New Horizons & Nox Industrial
+		description = A specialized stack separator designed with crew safety in mind. Replacing explosive bolts with eight fail-safe pneumatic cylinders; this decoupler cannot be staged by overeager ground staff and must be activated by direct command of the crew.  Decoupling function currently disabled.
+		mass = 0.05
+		dragModelType = default
+		maximum_drag = 0.2
+		minimum_drag = 0.2
+		angularDrag = 1
+		crashTolerance = 40
+		breakingForce = 100
+		breakingTorque = 100
+		maxTemp = 650
+		fuelCrossFeed = true
+		stageOffset = 0
+		childStageOffset = -1
+		MODULE
+		{
+			name = TweakScale
+			type = stack
+			scaleFactors = 1, 1.5, 2
+			scaleNames = 2.5m, 3.75m, 5m
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+		MODULE
+		{
+			name = TweakScale
+			type = UniversalStorage
+		}
+	}
+}
+UrlConfig
+{
 	name = US_1M110_Wedge_ScienceBay
 	type = PART
 	parentUrl = UniversalStorage/Parts/US_1M110_Wedge_ScienceBay/US_1M110_Wedge_ScienceBay
@@ -109330,7 +109593,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1M110_Wedge_ScienceBay
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -109412,7 +109676,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1P110_Wedge_Fuelcell
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -109554,7 +109819,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1P120_Wedge_Elektron
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -109670,6 +109936,137 @@ UrlConfig
 {
 	name = US_1P130_Wedge_Sabatier
 	type = PART
+	parentUrl = UniversalStorage/Parts/US_1P120_Wedge_Elektron/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier
+	url = UniversalStorage/Parts/US_1P120_Wedge_Elektron/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier
+	PART
+	{
+		author = Paul Kingtiger & Daishi
+		mesh = model.mu
+		module = Part
+		name = US_1P130_Wedge_Sabatier
+		rescaleFactor = 1
+		tags = Universal
+		attachRules = 1,0,1,1,0
+		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
+		category = Utility
+		description = The Sabatier unit uses immense amounts of electricity to convert Carbon Dioxide and Hydrogen into Liquid Fuel and Water, at a rate of 1L an hour. Guaranteed to cause rolling blackouts or your money back! Water bottle and drip tray not included.
+		manufacturer = New Horizons & Nox Industrial
+		subcategory = 0
+		title = Universal Storage: Sabatier Reactor
+		cost = 5500
+		entryCost = 27500
+		TechRequired = specializedElectrics
+		bulkheadProfiles = wedge
+		crashTolerance = 5
+		mass = 0.155
+		maxTemp = 1200
+		emissiveConstant = 0.95
+		thermalMassModifier = 4.0
+		angularDrag = 1
+		dragModelType = default
+		maximum_drag = 0.2
+		minimum_drag = 0.2
+		MODULE
+		{
+			name = ModuleAnimator
+			animationName = Take 001
+			guiEnableName = Open Hatch
+			guiDisableName = Close Hatch
+			actionEnableName = Open Hatch
+			actionDisableName = Close Hatch
+			animationSpeed = 0.5
+			oneShot = false
+			activeEditor = true
+			activeFlight = true
+			activeUnfocused = true
+			unfocusedRange = 2
+		}
+		MODULE
+		{
+			name = ModuleAnimator
+			animationName = Take 002
+			guiEnableName = Structure Off
+			guiDisableName = Structure On
+			animationSpeed = 1000
+			oneShot = false
+			activeEditor = true
+			activeFlight = false
+			activeUnfocused = false
+			unfocusedRange = 5
+		}
+		MODULE
+		{
+			name = ModuleKISItemEvaTweaker
+			editorItemsCategory = false
+			carriable = true
+			equipSlot = jetpack
+			equipMeshName = jetpack_base01
+			equipBoneName = bn_jetpack01
+			equipPos = (0,-0.05,-0.3)
+			equipDir = (0,270,0)
+			runSpeed = 1
+		}
+		MODULE
+		{
+			name = ModuleResourceConverter
+			ConverterName = Sabatier reactor
+			StartActionName = Start Sabatier reactor
+			StopActionName = Stop Sabatier reactor
+			FillAmount = 0.95
+			AutoShutdown = true
+			GeneratesHeat = true
+			TemperatureModifier = 150
+			UseSpecializationBonus = false
+			DefaultShutoffTemp = 0.5
+			INPUT_RESOURCE
+			{
+				ResourceName = ElectricCharge
+				Ratio = 30
+				FlowMode = STAGE_PRIORITY_FLOW
+			}
+			INPUT_RESOURCE
+			{
+				ResourceName = CarbonDioxide
+				Ratio = 0.0636363636
+				FlowMode = STAGE_PRIORITY_FLOW
+			}
+			INPUT_RESOURCE
+			{
+				ResourceName = Hydrogen
+				Ratio = 0.2545454545
+				FlowMode = STAGE_PRIORITY_FLOW
+			}
+			OUTPUT_RESOURCE
+			{
+				ResourceName = LiquidFuel
+				Ratio = 0.0000034632
+				DumpExcess = true
+			}
+			OUTPUT_RESOURCE
+			{
+				ResourceName = Water
+				Ratio = 0.0001022645
+				DumpExcess = False
+			}
+		}
+		MODULE
+		{
+			name = USI_ModuleRecycleablePart
+			Menu = Disassemble Part
+			ResourceName = MaterialKits
+			Efficiency = .5
+		}
+		MODULE
+		{
+			name = TweakScale
+			type = UniversalStorage
+		}
+	}
+}
+UrlConfig
+{
+	name = US_1P130_Wedge_Sabatier
+	type = PART
 	parentUrl = UniversalStorage/Parts/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier
 	url = UniversalStorage/Parts/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier
 	PART
@@ -109678,7 +110075,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1P130_Wedge_Sabatier
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -109808,7 +110206,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1P140_Wedge_WRS
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -109932,7 +110331,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R110_Wedge_KISContainer
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, KIS
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110034,7 +110434,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R210_Wedge_Liquidfuel
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, Fuel
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110133,7 +110534,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R220_Wedge_Monoprop
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, Fuel, Mono
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110226,7 +110628,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R310_Wedge_CarbonDioxide
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110319,7 +110722,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R320_Wedge_Food
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110412,7 +110816,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R330_Wedge_Hydrogen
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110505,7 +110910,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R340_Wedge_Oxygen
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110598,7 +111004,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R350_Wedge_Waste
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110691,7 +111098,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R360_Wedge_Water
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110784,7 +111192,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_1R370_Wedge_WasteWater
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 1,0,1,1,0
 		node_stack_back = 0.187, 0.0, 0.0, 1.0, 0.0, 0.0, 0
 		category = Utility
@@ -110878,7 +111287,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_Radial_R40_Food
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 0,1,0,0,0
 		node_attach = 0.0, 0.0, 0.12, 0.0, 0.0, -1.0
 		category = Utility
@@ -110922,6 +111332,11 @@ UrlConfig
 			ResourceName = MaterialKits
 			Efficiency = .5
 		}
+		MODULE
+		{
+			name = TweakScale
+			type = UniversalStorage
+		}
 	}
 }
 UrlConfig
@@ -110937,7 +111352,8 @@ UrlConfig
 		module = Part
 		name = US_2R340_Radial_Oxygen
 		mesh = model.mu
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 0,1,0,0,0
 		node_attach = 0.0, 0.0, 0.12, 0.0, 0.0, -1.0
 		category = Utility
@@ -110981,6 +111397,11 @@ UrlConfig
 			ResourceName = MaterialKits
 			Efficiency = .5
 		}
+		MODULE
+		{
+			name = TweakScale
+			type = UniversalStorage
+		}
 	}
 }
 UrlConfig
@@ -110995,7 +111416,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_Radial_R30_Water
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 0,1,0,0,0
 		node_attach = 0.0, 0.0, 0.12, 0.0, 0.0, -1.0
 		category = Utility
@@ -111039,6 +111461,11 @@ UrlConfig
 			ResourceName = MaterialKits
 			Efficiency = .5
 		}
+		MODULE
+		{
+			name = TweakScale
+			type = UniversalStorage
+		}
 	}
 }
 UrlConfig
@@ -111053,7 +111480,8 @@ UrlConfig
 		mesh = model.mu
 		module = Part
 		name = US_3R310_EVA_EVAX
-		rescaleFactor = .95
+		rescaleFactor = 1
+		tags = Universal, life
 		attachRules = 0,1,0,0,1
 		node_attach = 0.0, 0.0, 0.0, 0.0, 0.0, -1.0
 		category = Utility
@@ -111103,11 +111531,10 @@ UrlConfig
 			ResourceName = MaterialKits
 			Efficiency = .5
 		}
-		RESOURCE
+		MODULE
 		{
-			name = LifeSupport
-			amount = 1
-			maxAmount = 1
+			name = TweakScale
+			type = UniversalStorage
 		}
 		RESOURCE
 		{
