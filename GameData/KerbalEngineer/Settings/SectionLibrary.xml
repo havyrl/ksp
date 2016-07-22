@@ -180,7 +180,7 @@
         <IsDeleted>false</IsDeleted>
         <IsHudBackground>false</IsHudBackground>
         <IsVisible>true</IsVisible>
-        <LineCount>6</LineCount>
+        <LineCount>5</LineCount>
         <Name>HUD 1</Name>
         <ReadoutModuleNames>
           <string>Orbital.ApoapsisHeight</string>
@@ -204,7 +204,7 @@
         <IsDeleted>false</IsDeleted>
         <IsHudBackground>false</IsHudBackground>
         <IsVisible>true</IsVisible>
-        <LineCount>4</LineCount>
+        <LineCount>7</LineCount>
         <Name>HUD 2</Name>
         <ReadoutModuleNames>
           <string>Surface.AltitudeTerrain</string>
