@@ -25,8 +25,8 @@ SM_Windows
 	{
 		x = 0
 		y = 0
-		width = 0
-		height = 0
+		width = 400
+		height = 378
 	}
 	ControlPosition
 	{
@@ -39,7 +39,7 @@ SM_Windows
 	{
 		x = 0
 		y = 0
-		width = 0
+		width = 700
 		height = 330
 	}
 }
@@ -55,7 +55,7 @@ SM_Settings
 	EnableCLS = True
 	OverrideStockCrewTransfer = True
 	FlowRate = 100
-	FlowCost = 0.0015
+	FlowCost = 0.00150000001303852
 	MinFlowRate = 0
 	MaxFlowRate = 1000
 	MaxFlowTimeSec = 180

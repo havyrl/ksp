@@ -8,11 +8,11 @@ GAME
 	Mode = CAREER
 	Status = 1
 	scene = 5
-	editor = None
+	editor = VAB
 	flag = Squad/Flags/esa_dark_blue
-	launchID = 1
+	launchID = 3
 	modded = True
-	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
+	envInfo =  - Environment Info - Win32NT FFFFFFFFFFFFFFFF  Args: KSP.exe  - 
 	PARAMETERS
 	{
 		preset = Hard
@@ -102,7 +102,7 @@ GAME
 		scene = 7, 8, 5, 6
 		RESOURCE_SETTINGS
 		{
-			GameSeed = 1437645721
+			GameSeed = 1467003466
 			MaxDeltaTime = 21600
 		}
 	}
@@ -110,37 +110,1664 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 8541824.32970268
+		update = -1000
 		version = 1.1.3
 		WEIGHTS
 		{
-			DMReconContract = 30
 			ConfiguredContract = 30
 			SatelliteContract = 30
 			CollectScience = 30
 		}
 		CONTRACTS
 		{
+			CONTRACT
+			{
+				guid = bdd72296-57a9-46ff-825f-199383ad6780
+				type = ConfiguredContract
+				prestige = 0
+				seed = 463957795
+				state = Active
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 3383460,0,0,30000,0,0,21,0,108039.4,39.4000000000006,0,0
+				subtype = recordCrewedCount
+				title = Crew Count Record of 1 Crew
+				description = We want you to set a new crew count record! Have at least 1 crew on the same spacecraft/station at the same time and return them home safely.
+				synopsis = Set a crew count record of 1
+				completedMessage = Congratulations! You've set a new crew count record!
+				hash = 1045826118
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						RP0_CrewCountIndex = RP0_CrewCountIndex + 1
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = crewCountInSpace
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordCrewedCount
+					title = Have 1 on the same vessel while in space.
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedCount
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						targetBody = Earth
+						targetBody = Moon
+						targetBody = Venus
+						targetBody = Mars
+						targetBody = Sun
+						targetBody = Phobos
+						targetBody = Deimos
+						situation = ORBITING
+						situation = SUB_ORBITAL
+						situation = ESCAPING
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Earth, the Moon, Venus, Mars, the Sun, Phobos or Deimos
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.recordCrewedCount
+							title = Destination: Earth, the Moon, Venus, Mars, the Sun, Phobos or Deimos
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Orbit, Sub-orbital trajectory or Escape trajectory
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.recordCrewedCount
+							title = Situation: Orbit, Sub-orbital trajectory or Escape trajectory
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasCrew
+						id = HasCrew
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedCount
+						title = 
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCrew = 1
+						maxCrew = 2147483647
+						minExperience = 0
+						maxExperience = 5
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.recordCrewedCount
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = d740d1b7-8fa3-4973-9230-aab68f66662c
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1239790921
+				state = Active
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 7429380,0,0,345,0,0,3,0,108039.2,39.2000000000005,0,0
+				subtype = recordCrewedAlt
+				title = Crewed Altitude Record of 5 km.
+				description = We want you to set a new crewed altitude record! Fly/rocket above 5000 km with crew aboard.
+				synopsis = Set a crewed altitude record of 5 km.
+				completedMessage = Congratulations! You've set a new crewed altitude record!
+				hash = 228507376
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						RP0_CrewedAltitudeIndex = RP0_CrewedAltitudeIndex + 1
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordCrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 5000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 5,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedAlt
+						title = Altitude: Above 5,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordCrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedAlt
+						title = Count: At least 1 
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = af7ebd4e-7a99-43b0-8195-4b5621f25109
+				type = ConfiguredContract
+				prestige = 0
+				seed = 699403172
+				state = Active
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 5374560,0,0,24000,0,0,19,0,108039.42,39.4200000000006,0,0
+				subtype = recordCrewedDuration
+				title = Crewed Duration Record of 1 day
+				description = We want you to set a new space duration record! Keep your crew in space for at least 1 day and return home safely.
+				synopsis = Set a crewed duration record of 1 day
+				completedMessage = Congratulations! You've set a new crewed duration record!
+				hash = 1526946560
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						RP0_CrewedDurationIndex = RP0_CrewedDurationIndex + 1
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = durationInSpace
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordCrewedDuration
+					title = Stay in space for 1 day
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedDuration
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						targetBody = Earth
+						targetBody = Moon
+						targetBody = Venus
+						targetBody = Mars
+						targetBody = Sun
+						targetBody = Phobos
+						targetBody = Deimos
+						situation = ORBITING
+						situation = SUB_ORBITAL
+						situation = ESCAPING
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Earth, the Moon, Venus, Mars, the Sun, Phobos or Deimos
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.recordCrewedDuration
+							title = Destination: Earth, the Moon, Venus, Mars, the Sun, Phobos or Deimos
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Orbit, Sub-orbital trajectory or Escape trajectory
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.recordCrewedDuration
+							title = Situation: Orbit, Sub-orbital trajectory or Escape trajectory
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasCrew
+						id = HasCrew
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedDuration
+						title = 
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCrew = 1
+						maxCrew = 2147483647
+						minExperience = 0
+						maxExperience = 5
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.recordCrewedDuration
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = Duration
+					id = Duration
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordCrewedDuration
+					title = 
+					notes = 
+					completedMessage = 
+					duration = 86400
+					endTime = 0
+					startCriteria = CONTRACT_ACCEPTANCE
+					triggered = True
+				}
+			}
+			CONTRACT
+			{
+				guid = 92e1bc75-f769-4f08-832c-293b323d9349
+				type = ConfiguredContract
+				prestige = 0
+				seed = 2037246265
+				state = Active
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 4007520,0,0,1020,0,0,6,0,108039.44,39.4400000000006,0,0
+				subtype = recordCrewedSpeed
+				title = Crewed Speed Record of 350 m/s.
+				description = We want you to set a new crewed speed record! Fly/rocket above 350 m/s with crew aboard.
+				synopsis = Set a crewed speed record of 350 m/s.
+				completedMessage = Congratulations! You've set a new crewed speed record!
+				hash = -369759823
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						RP0_CrewedSpeedIndex = RP0_CrewedSpeedIndex + 1
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordCrewedSpeed
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minSpeed = 350
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedSpeed
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 350 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedSpeed
+						title = Speed: Greater than 350 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordCrewedSpeed
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordCrewedSpeed
+						title = Count: At least 1 
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 768bdc89-cbd9-4659-97f1-fe158790d8bd
+				type = ConfiguredContract
+				prestige = 0
+				seed = 152283414
+				state = Active
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = None
+				ignoresWeight = True
+				values = 172800,0,1200,30000,4000,0,6,0,1120037.18,1019328.06000008,0,0
+				subtype = first_KarmanUncrewed
+				title = Pass the Karman Line (uncrewed)
+				description = The Karman line is the line at which the speed necessary to maintain altitude via lift is the same as the speed required for orbit. It's the traditional dividing line between the atmosphere and space (despite there being nonzero pressure well above it; Earth's atmosphere extends quite far indeed). We want you to send something above it!
+				synopsis = Pass the Karman line with an uncrewed craft.
+				completedMessage = Congratulations! You've reached space!
+				hash = 890413932
+				targetBody = Earth
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselGroup
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.first_KarmanUncrewed
+					title = Pass the Karman Line (uncrewed).
+					notes = 
+					completedMessage = 
+					define = karmanUncrewedSpacecraft
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = NewVessel
+						id = NewVessel
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_KarmanUncrewed
+						title = Launch a new vessel
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						launchID = 2
+						DOCKED_SUB_VESSEL
+						{
+							hash = 812366580
+							strength = STRONG
+							completionTime = 1786590.78000017
+						}
+						DOCKED_SUB_VESSEL
+						{
+							hash = 4156874896
+							strength = STRONG
+							completionTime = 1786590.78000017
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachStateKarman
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_KarmanUncrewed
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						targetBody = Earth
+						minAltitude = 100000
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Earth
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.first_KarmanUncrewed
+							title = Destination: Earth
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Altitude: Above 100,000 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.first_KarmanUncrewed
+							title = Altitude: Above 100,000 m
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasCrew
+						id = HasNoCrew
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_KarmanUncrewed
+						title = 
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCrew = 0
+						maxCrew = 0
+						minExperience = 0
+						maxExperience = 5
+						DOCKED_SUB_VESSEL
+						{
+							hash = 812366580
+							strength = STRONG
+							completionTime = 1786590.78000017
+						}
+						DOCKED_SUB_VESSEL
+						{
+							hash = 4156874896
+							strength = STRONG
+							completionTime = 1786590.78000017
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Unmanned
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = RP0.first_KarmanUncrewed
+							title = Unmanned
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = f098834f-efeb-4912-9bf3-9ea01e4115ab
+				type = ConfiguredContract
+				prestige = 0
+				seed = 54996420
+				state = Active
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 7386060,0,0,420,0,0,3,0,1894779.18000035,1786779.18000035,0,0
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 100 km.
+				description = We want you to set a new uncrewed altitude record! Reach 100 km.
+				synopsis = Set an uncrewed altitude record of 100 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						RP0_SoundingAltitudeIndex = RP0_SoundingAltitudeIndex + 1
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 100000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 100,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 100,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = e075ea41-0395-4f8c-a4f4-9dd3a11ee0d1
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1981609571
+				state = Active
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 4870380,0,0,660,0,0,10,0,1894743.52000031,1786743.52000031,0,0
+				subtype = recordUncrewedSpeed
+				title = Uncrewed Speed Record of 1200 m/s.
+				description = We want you to set a new uncrewed speed record! Reach 1200 m/s.
+				synopsis = Set an uncrewed speed record of 1200 m/s.
+				completedMessage = Congratulations! You've set a new uncrewed speed record!
+				hash = -776173468
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						RP0_SoundingSpeedIndex = RP0_SoundingSpeedIndex + 1
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedSpeed
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minSpeed = 1200
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 1,200 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Speed: Greater than 1,200 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 3727b0ea-c99c-47e9-b7fc-eb5f2ea25b40
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1706810980
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = None
+				ignoresWeight = True
+				values = 518400,0,600,300,2000,0,0,0,1084057.18,1019328.06000008,0,1786610.76000019
+				subtype = first_FirstFlight
+				title = First Flight
+				description = Congratulations on starting a new space program! For your first mission, you should launch your first vessel. Just design and build a vessel, roll it out to the pad (or runway if an airplane), and stage to take off! (And note all the records to break in the 'Active Contracts' tab. They update, so keep checking.)
+				synopsis = Launch a rocket or aircraft.
+				completedMessage = Congratulations! Your space program is off to a great start.
+				hash = 2071149578
+				targetBody = Earth
+				PARAM
+				{
+					name = NewVessel
+					id = NewVessel
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.first_FirstFlight
+					title = Launch a new vessel
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					launchID = 2
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachStateFlying
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.first_FirstFlight
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					situation = FLYING
+					minRateOfClimb = 1
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_FirstFlight
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Flying
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_FirstFlight
+						title = Situation: Flying
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Rate of Climb: Greater than 1 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_FirstFlight
+						title = Rate of Climb: Greater than 1 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = d4f81db8-eb9e-40b6-b56f-8ce5eee705e3
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1325536503
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 5815080,0,0,150,0,0,2,0,108039.16,39.1600000000005,0,1786666.84000024
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 10 km.
+				description = We want you to set a new uncrewed altitude record! Reach 10 km.
+				synopsis = Set an uncrewed altitude record of 10 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 10000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 10,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 10,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = a66d78a9-2b79-44fb-99e0-ff6ac92923a7
+				type = ConfiguredContract
+				prestige = 0
+				seed = 172322836
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 1472700,0,0,405,0,0,4,0,108039.38,39.3800000000006,0,1786680.26000025
+				subtype = recordUncrewedSpeed
+				title = Uncrewed Speed Record of 350 m/s.
+				description = We want you to set a new uncrewed speed record! Reach 350 m/s.
+				synopsis = Set an uncrewed speed record of 350 m/s.
+				completedMessage = Congratulations! You've set a new uncrewed speed record!
+				hash = -776173468
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedSpeed
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minSpeed = 350
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 350 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Speed: Greater than 350 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 67ba1c79-9211-4f6f-ad28-d45caa66ce6f
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1447399030
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 4888140,0,0,180,0,0,3,0,1894666.88000024,1786666.88000024,0,1786694.70000027
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 20 km.
+				description = We want you to set a new uncrewed altitude record! Reach 20 km.
+				synopsis = Set an uncrewed altitude record of 20 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 20000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 20,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 20,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = c0e1f1bb-0337-442b-b502-3ea068df0cad
+				type = ConfiguredContract
+				prestige = 0
+				seed = 718271298
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 1650240,0,0,480,0,0,6,0,1894680.30000025,1786680.30000025,0,1786707.62000028
+				subtype = recordUncrewedSpeed
+				title = Uncrewed Speed Record of 600 m/s.
+				description = We want you to set a new uncrewed speed record! Reach 600 m/s.
+				synopsis = Set an uncrewed speed record of 600 m/s.
+				completedMessage = Congratulations! You've set a new uncrewed speed record!
+				hash = -776173468
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedSpeed
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minSpeed = 600
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 600 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Speed: Greater than 600 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 542f2c07-cd53-41d2-b8f9-bc04c8d04b22
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1011747363
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 6752100,0,0,210,0,0,3,0,1894694.74000027,1786694.74000027,0,1786712.82000028
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 30 km.
+				description = We want you to set a new uncrewed altitude record! Reach 30 km.
+				synopsis = Set an uncrewed altitude record of 30 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 30000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 30,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 30,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = fad24076-e60f-472a-ba18-f706be145c76
+				type = ConfiguredContract
+				prestige = 0
+				seed = 40313549
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 5492220,0,0,240,0,0,3,0,1894712.86000028,1786712.86000028,0,1786727.9000003
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 40 km.
+				description = We want you to set a new uncrewed altitude record! Reach 40 km.
+				synopsis = Set an uncrewed altitude record of 40 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 40000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 40,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 40,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 3ca4f148-aefe-420c-9a95-586977558a62
+				type = ConfiguredContract
+				prestige = 0
+				seed = 447117270
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 3544200,0,0,270,0,0,3,0,1894727.9400003,1786727.9400003,0,1786740.62000031
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 50 km.
+				description = We want you to set a new uncrewed altitude record! Reach 50 km.
+				synopsis = Set an uncrewed altitude record of 50 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 50000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 50,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 50,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = abae3d90-aef1-44ba-b67c-a47e6f31ecbe
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1050668979
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 4480860,0,0,570,0,0,8,0,1894707.64000028,1786707.64000028,0,1786743.50000031
+				subtype = recordUncrewedSpeed
+				title = Uncrewed Speed Record of 900 m/s.
+				description = We want you to set a new uncrewed speed record! Reach 900 m/s.
+				synopsis = Set an uncrewed speed record of 900 m/s.
+				completedMessage = Congratulations! You've set a new uncrewed speed record!
+				hash = -776173468
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedSpeed
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minSpeed = 900
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 900 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedSpeed
+						title = Speed: Greater than 900 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 62eb5bae-b1f8-4a97-a2b6-f2803d3a01bf
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1942611378
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 8273220,0,0,300,0,0,3,0,1894740.64000031,1786740.64000031,0,1786751.78000032
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 60 km.
+				description = We want you to set a new uncrewed altitude record! Reach 60 km.
+				synopsis = Set an uncrewed altitude record of 60 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 60000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 60,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 60,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = b5403792-c771-4356-ba4e-222ef70210ab
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1896337053
+				state = Completed
+				agent = Federation Aeronautique Internationale
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 4415220,0,0,360,0,0,3,0,1894751.82000032,1786751.82000032,0,1786779.12000035
+				subtype = recordUncrewedAlt
+				title = Uncrewed Altitude Record of 80 km.
+				description = We want you to set a new uncrewed altitude record! Reach 80 km.
+				synopsis = Set an uncrewed altitude record of 80 km.
+				completedMessage = Congratulations! You've set a new uncrewed altitude record!
+				hash = -9191532
+				targetBody = Earth
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.recordUncrewedAlt
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 80000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 80,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.recordUncrewedAlt
+						title = Altitude: Above 80,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = ScenarioContractEvents
 		scene = 7, 8, 5
-		id = -1259955962
+		id = -698332876
 	}
 	SCENARIO
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 10000
+		funds = 15157.6410068869
 	}
 	SCENARIO
 	{
 		name = ScenarioNewGameIntro
 		scene = 5, 6, 8
 		kscComplete = True
-		editorComplete = False
+		editorComplete = True
 		tsComplete = False
 	}
 	SCENARIO
@@ -149,13 +1776,49 @@ GAME
 		scene = 7, 8, 5
 		Progress
 		{
+			FirstLaunch
+			{
+				completedUnmanned = 1786611.70000019
+			}
+			RecordsAltitude
+			{
+				reached = 1786841.65422892
+				record = 98625.2396891918
+			}
+			RecordsSpeed
+			{
+				completed = 1019294.58000005
+				record = 0
+			}
+			RecordsDistance
+			{
+				completed = 1019294.58000005
+				record = 0
+			}
+			Earth
+			{
+				reached = 1019318.74000007
+				Science
+				{
+					completed = 1019318.74000007
+					vessel
+					{
+						name = Untitled Space Craft
+						flag = Squad/Flags/esa_dark_blue
+					}
+					crew
+					{
+						crews = Bob Kerman, Valentina Kerman, Bill Kerman, Jebediah Kerman
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 0
+		sci = 7.425132
 		Tech
 		{
 			id = start
@@ -164,7 +1827,6 @@ GAME
 			part = RO-B9ProcWing-Early
 			part = RO-B9ProcCS-Early
 			part = RO-B9ProcAMWing-Early
-			part = dmUSGoo
 			part = Engineer7500
 			part = EngineerChip
 			part = KIS.bomb1
@@ -210,10 +1872,6 @@ GAME
 			part = RC.radial
 			part = RC.stack
 			part = TinyTim
-			part = RSBclamp01
-			part = RSBclamp02
-			part = RSBtowerDelta
-			part = RSBtowerDelta2
 			part = RTShortAntenna1
 			part = noseCone
 			part = airScoop
@@ -356,6 +2014,96 @@ GAME
 			part = Bumper.Fin
 			part = Bumper.Nose
 		}
+		Science
+		{
+			id = mysteryGoo@EarthSrfLandedLaunchPad
+			title = Biological Sample from LaunchPad
+			dsc = 3.5
+			scv = 0
+			sbv = 1E-05
+			sci = 0.0001
+			cap = 0.0001
+		}
+		Science
+		{
+			id = barometerScan@EarthSrfLandedLaunchPad
+			title = Atmospheric Pressure Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 1E-05
+			sci = 6E-05
+			cap = 6E-05
+		}
+		Science
+		{
+			id = temperatureScan@EarthSrfLandedLaunchPad
+			title = Temperature Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 1E-05
+			sci = 6E-05
+			cap = 6E-05
+		}
+		Science
+		{
+			id = barometerScan@EarthFlyingLowGrasslands
+			title = Atmospheric Pressure Scan while flying over Earth's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.25
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = temperatureScan@EarthFlyingLowGrasslands
+			title = Temperature Scan while flying over Earth's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.25
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = temperatureScan@EarthFlyingHighGrasslands
+			title = Temperature Scan from the upper atmosphere over Earth's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.5
+			sci = 3
+			cap = 3
+		}
+		Science
+		{
+			id = barometerScan@EarthFlyingHigh
+			title = Atmospheric Pressure Scan from Earth's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.5
+			sci = 3
+			cap = 3
+		}
+		Science
+		{
+			id = probeReport@EarthFlyingHighGrasslands
+			title = Telemetry Analysis from the upper atmosphere over Earth's Grasslands
+			dsc = 2
+			scv = 0
+			sbv = 0.5
+			sci = 2.25
+			cap = 2.25
+		}
+		Science
+		{
+			id = probeReport@EarthFlyingLowGrasslands
+			title = Telemetry Analysis while flying over Earth's Grasslands
+			dsc = 2
+			scv = 0
+			sbv = 0.25
+			sci = 1.125
+			cap = 1.125
+		}
 	}
 	SCENARIO
 	{
@@ -366,7 +2114,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 0
+		rep = 40.39818
 	}
 	SCENARIO
 	{
@@ -461,11 +2209,11 @@ GAME
 		{
 			intact = True
 		}
-		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB2
+		SpaceCenter/FlagPole/Facility
 		{
 			intact = True
 		}
-		SpaceCenter/FlagPole/Facility
+		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB2
 		{
 			intact = True
 		}
@@ -524,30 +2272,15 @@ GAME
 	{
 		name = ContractConfiguratorSettings
 		scene = 5, 7, 8
-		CONTRACT_STATE
+		CONTRACT_GROUP
 		{
-			type = DMAnomalyContract
-			enabled = False
-		}
-		CONTRACT_STATE
-		{
-			type = DMReconContract
+			group = RP0
 			enabled = True
 		}
-		CONTRACT_STATE
+		CONTRACT_GROUP
 		{
-			type = DMMagneticSurveyContract
-			enabled = False
-		}
-		CONTRACT_STATE
-		{
-			type = DMSurveyContract
-			enabled = False
-		}
-		CONTRACT_STATE
-		{
-			type = DMAsteroidSurveyContract
-			enabled = False
+			group = ScanSatOfficial
+			enabled = True
 		}
 		CONTRACT_STATE
 		{
@@ -624,8 +2357,446 @@ GAME
 	{
 		name = ContractPreLoader
 		scene = 7, 8, 5
+		CONTRACT
+		{
+			guid = fb69797b-2504-4e19-a31c-d0c13b515f67
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1764050797
+			state = Offered
+			agent = C7 Aerospace Division
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 100800,7776000,411,411,3425,0,0,1,1895046.4673248,0,0,0
+			subtype = CrewedFlightLow
+			title = X-Planes (Low)
+			description = Design, build and fly a crewed aircraft (not a rocket) to maintain 4350 meters altitude then return home safely.
+			synopsis = Fly to 4350 m.
+			completedMessage = Congratulations on a successful flight!
+			hash = 336647621
+			targetBody = Earth
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = RP0.CrewedFlightLow
+				title = Maintain between 4350 and 5350 m with a crewed aircraft.
+				notes = 
+				completedMessage = 
+				define = lowAirplane
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = NewVessel
+					id = NewVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.CrewedFlightLow
+					title = Launch a new vessel
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					launchID = 0
+				}
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.CrewedFlightLow
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.CrewedFlightLow
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachAlt
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.CrewedFlightLow
+					title = Hold between 4350 and 5350 meters.
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Earth
+					minAltitude = 4350
+					maxAltitude = 5350
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.CrewedFlightLow
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Between 4,350 m and 5,350 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.CrewedFlightLow
+						title = Altitude: Between 4,350 m and 5,350 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = Duration
+						id = Duration
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.CrewedFlightLow
+						title = 
+						notes = 
+						completedMessage = 
+						duration = 180
+						preWaitText = Reach specified altitude.
+						waitingText = Completing Flight
+						completionText = Flight completed, you are cleared to land.
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+				}
+				PARAM
+				{
+					name = ReturnHome
+					id = ReturnHome
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.CrewedFlightLow
+					title = Land or splashdown on Earth
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					allowStateReset = True
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 8c178866-c683-4b81-a20f-aa761e907305
+			type = ConfiguredContract
+			prestige = 0
+			seed = 112202908
+			state = Offered
+			agent = Zaltonic Electronics
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1950300,7776000,270,420,1800,0,0,0,1895046.5273248,0,0,0
+			subtype = SoundingRocketLow
+			title = Sounding Rocket (Low)
+			description = Design, build and launch a sounding rocket to attain 50 km.
+			synopsis = Launch a sounding rocket to 50 km.
+			completedMessage = Congratulations on a successful launch! The rocket has reached 50 km.
+			hash = 535708588
+			targetBody = Earth
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = RP0.SoundingRocketLow
+				title = Reach 50 km with a sounding rocket.
+				notes = 
+				completedMessage = 
+				define = soundingLowCraft
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = NewVessel
+					id = NewVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.SoundingRocketLow
+					title = Launch a new vessel
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					launchID = 0
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachAlt
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.SoundingRocketLow
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Earth
+					minAltitude = 50000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.SoundingRocketLow
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 50,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.SoundingRocketLow
+						title = Altitude: Above 50,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.SoundingRocketLow
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					minCrew = 0
+					maxCrew = 0
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Unmanned
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.SoundingRocketLow
+						title = Unmanned
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = eb992165-ec3b-4ce8-b89a-6cc9d08a4744
+			type = ConfiguredContract
+			prestige = 1
+			seed = 342665259
+			state = Offered
+			agent = Periapsis Rocket Supplies Co
+			deadlineType = Floating
+			expiryType = None
+			ignoresWeight = True
+			values = 172800,94608000,7500,26250,62500,0,30,100,1895046.5873248,0,0,0
+			subtype = first_CrewedSupersonic
+			title = Break the Sound Barrier (Crewed)
+			description = Design, build and fly a crewed aircraft or rocket to attain 350 meters per second.
+			synopsis = Fly a crewed craft to reach 350 m/s.
+			completedMessage = Boom! Congratulations, you have broken the sound barrier.
+			hash = 924009828
+			targetBody = Earth
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = RP0.first_CrewedSupersonic
+				title = Hold 350 m/s for 1 minute with a crewed craft.
+				notes = 
+				completedMessage = 
+				define = crewedSoundBarrierCraft
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = NewVessel
+					id = NewVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.first_CrewedSupersonic
+					title = Launch a new vessel
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					launchID = 0
+				}
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.first_CrewedSupersonic
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_CrewedSupersonic
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachSpeed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.first_CrewedSupersonic
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Earth
+					situation = FLYING
+					minSpeed = 350
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Earth
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_CrewedSupersonic
+						title = Destination: Earth
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Flying
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_CrewedSupersonic
+						title = Situation: Flying
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 350 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_CrewedSupersonic
+						title = Speed: Greater than 350 m/s
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = Duration
+						id = Duration
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = RP0.first_CrewedSupersonic
+						title = 
+						notes = 
+						completedMessage = 
+						duration = 60
+						preWaitText = Reach supersonic speed (>350m/s)
+						waitingText = Hold together...
+						completionText = You may slow down and land when ready.
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+				}
+				PARAM
+				{
+					name = ReturnHome
+					id = ReturnHome
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = RP0.first_CrewedSupersonic
+					title = Land or splashdown on Earth
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					allowStateReset = True
+				}
+			}
+		}
 		UNREAD_CONTRACTS
 		{
+			contract = bdd72296-57a9-46ff-825f-199383ad6780
+			contract = d740d1b7-8fa3-4973-9230-aab68f66662c
+			contract = af7ebd4e-7a99-43b0-8195-4b5621f25109
+			contract = 92e1bc75-f769-4f08-832c-293b323d9349
+			contract = f098834f-efeb-4912-9bf3-9ea01e4115ab
+			contract = e075ea41-0395-4f8c-a4f4-9dd3a11ee0d1
+			contract = fb69797b-2504-4e19-a31c-d0c13b515f67
+			contract = 8c178866-c683-4b81-a20f-aa761e907305
+			contract = eb992165-ec3b-4ce8-b89a-6cc9d08a4744
 		}
 	}
 	SCENARIO
@@ -639,6 +2810,8 @@ GAME
 		scene = 7, 8, 5
 		DATA
 		{
+			RP0_SoundingAltitudeIndex = Double:7
+			RP0_SoundingSpeedIndex = Double:3
 		}
 	}
 	SCENARIO
@@ -650,7 +2823,163 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 0
+		nextCheck = 957
+		CelestialBodyInfo
+		{
+			body = Sun
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Earth
+			coverage = 0
+			activeRange = 200000
+		}
+		CelestialBodyInfo
+		{
+			body = Mercury
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Venus
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Callisto
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Jupiter
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Titan
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Phobos
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Io
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Europa
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Moon
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Mars
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Deimos
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Ganymede
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Saturn
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Mimas
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Enceladus
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Tethys
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Dione
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Rhea
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Iapetus
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Uranus
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Neptune
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Triton
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Pluto
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Charon
+			coverage = 0
+			activeRange = 0
+		}
 	}
 	SCENARIO
 	{
@@ -658,17 +2987,6 @@ GAME
 		scene = 7, 5
 		difficultySetting = 1
 		displayCrewGForceWarning = True
-	}
-	SCENARIO
-	{
-		name = DMScienceScenario
-		scene = 7, 5, 8, 6
-		Asteroid_Science
-		{
-		}
-		Anomaly_Records
-		{
-		}
 	}
 	SCENARIO
 	{
@@ -690,6 +3008,77 @@ GAME
 		aeroFailureExplosions = True
 		FlightGUISettings
 		{
+			AirSpeedSettings
+			{
+				unitTypeIndex = 0
+				velTypeIndex = 0
+			}
+			StabilityAugmentationSettings
+			{
+				aoALowLim = -10
+				aoAHighLim = 20
+				scalingDynPres = 20
+				ControlSys0
+				{
+					active = False
+					zeroPoint = 0
+					kP = 0.5
+					kD = 1
+					kI = 0.5
+				}
+				ControlSys1
+				{
+					active = False
+					zeroPoint = 0
+					kP = 0
+					kD = 1
+					kI = 0
+				}
+				ControlSys2
+				{
+					active = False
+					zeroPoint = 0
+					kP = 0
+					kD = 1
+					kI = 0
+				}
+				ControlSys3
+				{
+					active = False
+					zeroPoint = 0
+					kP = 0.25
+					kD = 0
+					kI = 0
+				}
+				ControlSys4
+				{
+					active = False
+					zeroPoint = 0
+					kP = 0
+					kD = 0
+					kI = 0
+				}
+			}
+			FlightDataSettings
+			{
+				section0active = True
+				section1active = True
+				section2active = True
+				section3active = True
+				section4active = True
+				section5active = True
+				section6active = True
+				section7active = True
+				section8active = True
+			}
+			AeroVizSettings
+			{
+				fullySaturatedCl = 0.5
+				fullySaturatedCd = 0.1
+				fullySaturatedClBody = 0.05
+				fullySaturatedCdBody = 0.01
+				fullySaturatedStall = 10
+			}
 		}
 	}
 	SCENARIO
@@ -1583,176 +3972,6 @@ GAME
 		}
 		EngineConfigUpgrade
 		{
-			name = L-2-5
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PSOM-S12/Air
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PSOM-S12/Ground-TVC
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PSOM-S12/Ground
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PSOM-S9/Air
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PSOM-S9/Ground-TVC
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PSOM-S9/Ground
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PS3-S7
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = PS1-D
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = Vulcain
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = Vulcain-2
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = Vikas-2B
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = Vikas-2
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = Vikas-1+
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = Vikas-1
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = RSRM
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = RS-68A
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = RS-68
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = RD-180
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = J-2X
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = HM-7B
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = HM-7B_Early
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = HM-7
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = F-1A_ETS
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = Castor-30A
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = GEM-60/Fixed
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = GEM-60/TVC
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = GEM-46/TVC-Ground
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = GEM-46/Fixed-Air
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = GEM-46/Fixed-Ground
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = GEM-40/Air
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = GEM-40/Ground
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = AJ-60A
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = EAP-241
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
 			name = Normal
 			unlocked = False
 		}
@@ -2483,7 +4702,7 @@ GAME
 		overlayMapHeight = 256
 		overlayBiomeHeight = 512
 		overlayTransparency = 0
-		version14Patch = False
+		version14Patch = True
 		trueGreyScale = False
 		groundTracks = True
 		groundTrackActiveOnly = True
@@ -2683,18 +4902,6 @@ GAME
 	}
 	SCENARIO
 	{
-		name = TestFlightManagerScenario
-		scene = 7, 6, 5, 8
-		saveData = 
-	}
-	SCENARIO
-	{
-		name = TestFlightRnDScenario
-		scene = 7, 6, 5, 8
-		lastUpdateTime = 8507736.86063049
-	}
-	SCENARIO
-	{
 		name = TRScenario
 		scene = 5
 		reflectionType = REAL
@@ -2702,10 +4909,10 @@ GAME
 		isAtmSuitEnabled = True
 		Kerbals
 		{
-			Stephen Hall = M GENERIC GENERIC
-			Bobby Carter = M GENERIC GENERIC
-			Louis Martin = M GENERIC GENERIC
-			Ivan Tychkin = M GENERIC GENERIC
+			Jebediah Kerman = M GENERIC GENERIC
+			Bill Kerman = M GENERIC GENERIC
+			Bob Kerman = M GENERIC GENERIC
+			Valentina Kerman = F GENERIC GENERIC
 		}
 		ClassSuits
 		{
@@ -2732,10 +4939,10 @@ GAME
 			enabledForSave = True
 			fundsFromSimulation = 0
 			activeKSC = us_cape_canaveral
-			SimulationTime = 
+			SimulationTime = 5m
 			SalesFigures = 0
 			UpgradesResetCounter = 0
-			TechUpgrades = 0
+			TechUpgrades = 2
 			SavedUpgradePointsPreAPI = 0
 			VABUpgrades
 			{
@@ -2759,6 +4966,46 @@ GAME
 			{
 				Item = Earth
 			}
+			PartTracker
+			{
+				Item = 625mBonny
+				Item = 1
+				Item = launchClamp1
+				Item = 2
+				Item = SXTProbeGooo
+				Item = 1
+				Item = GooExperiment
+				Item = 1
+				Item = sensorBarometer
+				Item = 2
+				Item = sensorThermometer
+				Item = 2
+				Item = RP0probeSounding0-3m
+				Item = 1
+				Item = proceduralTankRealFuels
+				Item = 1
+				Item = ROAerobeeSustainer
+				Item = 1
+				Item = proceduralStackDecoupler
+				Item = 1
+				Item = TinyTim
+				Item = 1
+				Item = basicFin
+				Item = 1
+				Item = proceduralNoseCone
+				Item = 1
+			}
+			PartInventory
+			{
+				Item = 625mBonny
+				Item = 1
+				Item = SXTProbeGooo
+				Item = 1
+				Item = GooExperiment
+				Item = 1
+				Item = launchClamp1
+				Item = 2
+			}
 		}
 		KSC
 		{
@@ -2766,7 +5013,7 @@ GAME
 			ActiveLPID = 0
 			VABUpgrades
 			{
-				Upgrade = 16
+				Upgrade = 14
 			}
 			SPHUpgrades
 			{
@@ -2775,7 +5022,7 @@ GAME
 			RDUpgrades
 			{
 				Upgrade = 0
-				Upgrade = 0
+				Upgrade = 2
 			}
 			VABList
 			{
@@ -2794,6 +5041,15 @@ GAME
 			}
 			Recon_Rollout
 			{
+				Recon_Rollout_Item
+				{
+					name = LaunchPad Reconditioning
+					BP = 4853.91041029271
+					progress = 362.789859706035
+					cost = 0
+					associatedID = 4165c967-882c-4884-96c7-d821d9d439ce
+					launchPadID = LaunchPad
+				}
 			}
 			LaunchPads
 			{
@@ -2814,7 +5070,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 8541824.32970268
+		UT = 1787064.38732481
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
@@ -2833,7 +5089,6 @@ GAME
 		CC_RemoteTech v1.0.0.0 / v1.16.2 = True
 		CustomBarnKit v1.1.9.0 = True
 		DeadlyReentry v7.4.7.0 = True
-		DMagic v1.3.0.2 / vv1.3.2 = True
 		EngineGroupController v1.0.0.0 = True
 		UnityGUIFramework v1.0.0.0 = True
 		ModularFlightIntegrator v1.0.0.0 / v1.1.6.0 = True
@@ -2857,7 +5112,6 @@ GAME
 		KSCSwitcher v1.0.5956.23563 = True
 		KSP-AVC v1.1.6.1 = True
 		MagiCore v1.0.0.0 = True
-		PersistentRotation v1.0.0.0 = True
 		ProceduralFairings v0.0.0.0 = True
 		ProceduralParts v1.2.5.0 = True
 		RCSBuildAid v0.8.1.22534 = True
@@ -2868,18 +5122,12 @@ GAME
 		RealismOverhaul v0.11.2.0 = True
 		RealSolarSystem v0.11.4.0 = True
 		RP0 v0.51.0.0 = True
-		RSSTimeFormatter v1.0.5974.18293 = True
 		SCANsat v1.6.0.3 / vv16.3 = True
 		ShipManifest v5.1.2.1 = True
 		SmokeScreen v2.6.17.0 = True
-		TestFlightAPI v1.0.6032.39999 = True
-		TestFlight v0.4.0.0 = True
-		TestFlightContracts v1.0.6032.40000 = True
-		TestFlightCore v1.0.6032.40000 = True
-		TestFlightRF v1.0.6032.40000 = True
 		TextureReplacer v2.4.13.34255 = True
 		TacLifeSupport v0.0.1.0 = True
-		AdvancedAnimator v1.0.5205.2310 / v1.1.0.0 = True
+		[x] Science! v4.20.6017.29444 = True
 		000_Toolbar = True
 		AJE = True
 		B9_Aerospace_ProceduralWings = True
@@ -2889,7 +5137,6 @@ GAME
 		ContractConfigurator = True
 		CustomBarnKit = True
 		DeadlyReentry = True
-		DMagicOrbitalScience = True
 		EngineGroupController = True
 		FerramAerospaceResearch = True
 		Firespitter = True
@@ -2929,14 +5176,25 @@ GAME
 		TestFlight = True
 		TextureReplacer = True
 		ThunderAerospace = True
-		UniversalStorage = True
 		VenStockRevamp = True
+		[x] Science! = True
 		ModuleManager.2.6.25.dll = True
 		ModuleManager.ConfigCache = True
 		ModuleManager.ConfigSHA = True
 		ModuleManager.Physics = True
 		ModuleManager.TechTree = True
 		toolbar-settings.dat = True
+		DMagic v1.3.0.2 / vv1.3.2 = False
+		PersistentRotation v1.0.0.0 = False
+		RSSTimeFormatter v1.0.5974.18293 = False
+		TestFlightAPI v1.0.6032.39999 = False
+		TestFlight v0.4.0.0 = False
+		TestFlightContracts v1.0.6032.40000 = False
+		TestFlightCore v1.0.6032.40000 = False
+		TestFlightRF v1.0.6032.40000 = False
+		AdvancedAnimator v1.0.5205.2310 / v1.1.0.0 = False
+		DMagicOrbitalScience = False
+		UniversalStorage = False
 		ConnectedLivingSpace v1.2.2.0 = False
 		RCSBuildAid v0.8.5999.37630 = False
 		RCSBuildAidToolbar v0.8.5999.37631 = False
@@ -2946,58 +5204,81 @@ GAME
 	{
 		KERBAL
 		{
-			name = Stephen Hall
-			gender = Male
-			type = Crew
-			trait = Scientist
-			brave = 0.7369355
-			dumb = 0.4897177
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Nationality,American
-			}
-		}
-		KERBAL
-		{
-			name = Bobby Carter
-			gender = Male
-			type = Crew
-			trait = Engineer
-			brave = 0.5701823
-			dumb = 0.5717423
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Nationality,American
-			}
-		}
-		KERBAL
-		{
-			name = Louis Martin
+			name = Jebediah Kerman
 			gender = Male
 			type = Crew
 			trait = Pilot
-			brave = 0.6688358
-			dumb = 0.31512
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = 0
+			CAREER_LOG
+			{
+				flight = 1
+				0 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 1
+			}
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 1
+				0 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 1
+			}
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 1
+				0 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 1
+			}
+		}
+		KERBAL
+		{
+			name = Valentina Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.55
+			dumb = 0.4
 			badS = True
 			tour = False
 			state = Available
@@ -3005,35 +5286,12 @@ GAME
 			idx = -1
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 1
+				0 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
-				0 = Nationality,American
-			}
-		}
-		KERBAL
-		{
-			name = Ivan Tychkin
-			gender = Male
-			type = Crew
-			trait = Pilot
-			brave = 0.5996089
-			dumb = 0.4892222
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Nationality,Russian
+				flight = 1
 			}
 		}
 	}
