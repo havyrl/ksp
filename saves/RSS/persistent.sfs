@@ -102,7 +102,7 @@ GAME
 		scene = 7, 8, 5, 6
 		RESOURCE_SETTINGS
 		{
-			GameSeed = 623580081
+			GameSeed = 1437645721
 			MaxDeltaTime = 21600
 		}
 	}
@@ -110,7 +110,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 62.9800000000042
+		update = 8541824.32970268
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -127,7 +127,7 @@ GAME
 	{
 		name = ScenarioContractEvents
 		scene = 7, 8, 5
-		id = -1961139978
+		id = -1259955962
 	}
 	SCENARIO
 	{
@@ -2691,7 +2691,7 @@ GAME
 	{
 		name = TestFlightRnDScenario
 		scene = 7, 6, 5, 8
-		lastUpdateTime = 0
+		lastUpdateTime = 8507736.86063049
 	}
 	SCENARIO
 	{
@@ -2702,10 +2702,10 @@ GAME
 		isAtmSuitEnabled = True
 		Kerbals
 		{
-			Maria Hunter = F GENERIC GENERIC
-			Thomas Murray = M GENERIC GENERIC
-			Peter Cox = M GENERIC GENERIC
-			Eugene Rivera = M GENERIC GENERIC
+			Stephen Hall = M GENERIC GENERIC
+			Bobby Carter = M GENERIC GENERIC
+			Louis Martin = M GENERIC GENERIC
+			Ivan Tychkin = M GENERIC GENERIC
 		}
 		ClassSuits
 		{
@@ -2814,7 +2814,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 62.9800000000042
+		UT = 8541824.32970268
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
@@ -2946,81 +2946,12 @@ GAME
 	{
 		KERBAL
 		{
-			name = Maria Hunter
-			gender = Female
-			type = Crew
-			trait = Engineer
-			brave = 0.6983011
-			dumb = 0.4142127
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Nationality,American
-			}
-		}
-		KERBAL
-		{
-			name = Thomas Murray
-			gender = Male
-			type = Crew
-			trait = Engineer
-			brave = 0.690735
-			dumb = 0.5970697
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Nationality,American
-			}
-		}
-		KERBAL
-		{
-			name = Peter Cox
-			gender = Male
-			type = Crew
-			trait = Pilot
-			brave = 0.4889311
-			dumb = 0.3483457
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Nationality,American
-			}
-		}
-		KERBAL
-		{
-			name = Eugene Rivera
+			name = Stephen Hall
 			gender = Male
 			type = Crew
 			trait = Scientist
-			brave = 0.5646043
-			dumb = 0.3871447
+			brave = 0.7369355
+			dumb = 0.4897177
 			badS = False
 			tour = False
 			state = Available
@@ -3034,6 +2965,75 @@ GAME
 			{
 				flight = 0
 				0 = Nationality,American
+			}
+		}
+		KERBAL
+		{
+			name = Bobby Carter
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.5701823
+			dumb = 0.5717423
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+				0 = Nationality,American
+			}
+		}
+		KERBAL
+		{
+			name = Louis Martin
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.6688358
+			dumb = 0.31512
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+				0 = Nationality,American
+			}
+		}
+		KERBAL
+		{
+			name = Ivan Tychkin
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.5996089
+			dumb = 0.4892222
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+				0 = Nationality,Russian
 			}
 		}
 	}

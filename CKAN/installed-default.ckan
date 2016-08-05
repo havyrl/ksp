@@ -3,137 +3,105 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.08.05.09.33.37",
+	"version": "2016.08.05.10.11.26",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
-		{
-			"name": "RSSTextures2048",
-			"version": "v10.4"
-		},
-		{
-			"name": "TACLS-Config-RealismOverhaul",
-			"version": "v11.3.0"
-		},
-		{
-			"name": "RealSolarSystem",
-			"version": "v11.4.0"
-		},
-		{
-			"name": "B9-PWings-Fork",
-			"version": "1:0.40.7"
-		},
-		{
-			"name": "VenStockRevamp",
-			"version": "v1.9.5"
-		},
-		{
-			"name": "DeadlyReentry",
-			"version": "v7.4.7.1"
-		},
-		{
-			"name": "KSP-AVC",
-			"version": "1.1.6.1"
-		},
-		{
-			"name": "ProceduralFairings",
-			"version": "v3.17"
-		},
-		{
-			"name": "ProceduralFairings-ForEverything",
-			"version": "v0.2.0"
-		},
 		{
 			"name": "ProceduralParts",
 			"version": "v1.2.5"
 		},
 		{
-			"name": "PersistentRotation",
-			"version": "1.5"
-		},
-		{
-			"name": "UniversalStorage",
-			"version": "1.1.0.15"
-		},
-		{
-			"name": "KSCSwitcher",
+			"name": "KerbalRenamer",
 			"version": "0.6"
-		},
-		{
-			"name": "RemoteTech",
-			"version": "v1.7.1"
 		},
 		{
 			"name": "TACLS",
 			"version": "v0.12.2"
 		},
 		{
-			"name": "RealismOverhaul",
-			"version": "v11.3.0"
+			"name": "xScience",
+			"version": "v4.20"
 		},
 		{
-			"name": "TextureReplacer",
-			"version": "v2.4.13"
+			"name": "RealSolarSystem",
+			"version": "v11.4.0"
 		},
 		{
-			"name": "Toolbar",
-			"version": "1.7.12"
-		},
-		{
-			"name": "ConnectedLivingSpace",
-			"version": "1.2.2.1"
-		},
-		{
-			"name": "RSSDateTimeFormatter",
-			"version": "1.0.4.0"
-		},
-		{
-			"name": "DMagicOrbitalScience",
-			"version": "1.3.2"
-		},
-		{
-			"name": "KAS",
-			"version": "0.5.9.0"
-		},
-		{
-			"name": "SCANsat",
-			"version": "v16.3"
-		},
-		{
-			"name": "RealScaleBoosters",
-			"version": "0.14.5"
-		},
-		{
-			"name": "RCSBuildAid",
-			"version": "v0.8.1"
-		},
-		{
-			"name": "AdvancedJetEngine",
-			"version": "v2.7.2"
-		},
-		{
-			"name": "FerramAerospaceResearch",
-			"version": "3:0.15.7.2"
-		},
-		{
-			"name": "ModuleManager",
-			"version": "2.6.25"
-		},
-		{
-			"name": "ModularFlightIntegrator",
-			"version": "1.1.6.0"
-		},
-		{
-			"name": "SolverEngines",
-			"version": "v2.3"
+			"name": "RealPlume",
+			"version": "2:v10.5.1"
 		},
 		{
 			"name": "KerbalJointReinforcement",
 			"version": "v3.2"
 		},
 		{
+			"name": "SolverEngines",
+			"version": "v2.3"
+		},
+		{
+			"name": "ModularFlightIntegrator",
+			"version": "1.1.6.0"
+		},
+		{
 			"name": "RealChute",
 			"version": "v1.4.1.1"
+		},
+		{
+			"name": "RP-0",
+			"version": "v0.51"
+		},
+		{
+			"name": "SmokeScreen",
+			"version": "2.6.17.0"
+		},
+		{
+			"name": "RemoteTech",
+			"version": "v1.7.1"
+		},
+		{
+			"name": "ShipManifest",
+			"version": "5.1.2.1"
+		},
+		{
+			"name": "Toolbar",
+			"version": "1.7.12"
+		},
+		{
+			"name": "KerbalConstructionTime",
+			"version": "1.3.4"
+		},
+		{
+			"name": "RSSTextures2048",
+			"version": "v10.4"
+		},
+		{
+			"name": "KAS",
+			"version": "0.5.9.0"
+		},
+		{
+			"name": "RCSBuildAid",
+			"version": "v0.8.1"
+		},
+		{
+			"name": "CommunityTechTree",
+			"version": "1:2.4"
+		},
+		{
+			"name": "ProceduralFairings-ForEverything",
+			"version": "v0.2.0"
+		},
+		{
+			"name": "TACLS-Config-RealismOverhaul",
+			"version": "v11.3.0"
+		},
+		{
+			"name": "FerramAerospaceResearch",
+			"version": "3:0.15.7.2"
+		},
+		{
+			"name": "VenStockRevamp",
+			"version": "v1.9.5"
 		},
 		{
 			"name": "RealFuels",
@@ -144,24 +112,40 @@
 			"version": "0.5.4.0"
 		},
 		{
-			"name": "RealHeat",
-			"version": "v4.3"
+			"name": "KSP-AVC",
+			"version": "1.1.6.1"
 		},
 		{
-			"name": "RealPlume",
-			"version": "2:v10.5.1"
-		},
-		{
-			"name": "SmokeScreen",
-			"version": "2.6.17.0"
-		},
-		{
-			"name": "Kopernicus",
-			"version": "2:release-1.1.3-1"
-		},
-		{
-			"name": "FirespitterCore",
+			"name": "FirespitterResourcesConfig",
 			"version": "v7.3.0"
+		},
+		{
+			"name": "AdvancedJetEngine",
+			"version": "v2.7.2"
+		},
+		{
+			"name": "RealismOverhaul",
+			"version": "v11.3.0"
+		},
+		{
+			"name": "ModuleManager",
+			"version": "2.6.25"
+		},
+		{
+			"name": "TextureReplacer",
+			"version": "v2.4.13"
+		},
+		{
+			"name": "B9-PWings-Fork",
+			"version": "1:0.40.7"
+		},
+		{
+			"name": "SXT",
+			"version": "v25.2"
+		},
+		{
+			"name": "DeadlyReentry",
+			"version": "v7.4.7.1"
 		},
 		{
 			"name": "KerbalEngineerRedux",
@@ -172,52 +156,52 @@
 			"version": "1.2.12.0"
 		},
 		{
-			"name": "RP-0",
-			"version": "v0.51"
-		},
-		{
-			"name": "KerbalConstructionTime",
-			"version": "1.3.4"
-		},
-		{
-			"name": "Taerobee",
-			"version": "1:2.3"
-		},
-		{
-			"name": "KerbalRenamer",
+			"name": "KSCSwitcher",
 			"version": "0.6"
-		},
-		{
-			"name": "ShipManifest",
-			"version": "5.1.2.1"
-		},
-		{
-			"name": "TestFlight",
-			"version": "1.7.0.1"
-		},
-		{
-			"name": "SXT",
-			"version": "v25.2"
-		},
-		{
-			"name": "FirespitterResourcesConfig",
-			"version": "v7.3.0"
 		},
 		{
 			"name": "ContractConfigurator",
 			"version": "1.16.2"
 		},
 		{
+			"name": "SCANsat",
+			"version": "v16.3"
+		},
+		{
+			"name": "FirespitterCore",
+			"version": "v7.3.0"
+		},
+		{
+			"name": "ProceduralFairings",
+			"version": "v3.17"
+		},
+		{
+			"name": "Taerobee",
+			"version": "1:2.3"
+		},
+		{
+			"name": "ConnectedLivingSpace",
+			"version": "1.2.2.1"
+		},
+		{
 			"name": "CustomBarnKit",
 			"version": "1.1.9.0"
 		},
 		{
-			"name": "CommunityTechTree",
-			"version": "1:2.4"
-		},
-		{
 			"name": "MagiCore",
 			"version": "1.1.2"
+		},
+		{
+			"name": "Kopernicus",
+			"version": "2:release-1.1.3-1"
+		},
+		{
+			"name": "KerbalConstructionTime-RP-0-Config",
+			"version": "v0.36"
+		},
+		{
+			"name": "RealHeat",
+			"version": "v4.3"
 		}
 	]
 }

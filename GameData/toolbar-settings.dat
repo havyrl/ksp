@@ -4,8 +4,8 @@ toolbars
 	{
 		toolbar_615478549
 		{
-			x = 359
-			y = 961
+			x = 177
+			y = 971
 			width = 250
 			height = 38
 			autoHide = False
@@ -58,6 +58,18 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = 
 			visibleButtons = 
+		}
+		toolbar_615478549
+		{
+			x = 177
+			y = 971
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Tac.LS,SCANsat.KSCMap
 		}
 	}
 }
