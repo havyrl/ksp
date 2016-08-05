@@ -1,0 +1,29 @@
+{
+    "NAME":"MagiCore",
+    "URL":"https://raw.githubusercontent.com/magico13/MagiCore/master/GameData/MagiCore/MagiCore.version",
+    "VERSION":
+    {
+        "MAJOR":1,
+        "MINOR":1,
+        "PATCH":2,
+        "BUILD":0
+    },
+    "GITHUB":
+    {
+        "USERNAME":"magico13",
+        "REPOSITORY":"MagiCore",
+        "ALLOW_PRE_RELEASE":false,
+    },
+    "KSP_VERSION_MIN":
+	{
+        "MAJOR":1,
+        "MINOR":1,
+        "PATCH":2
+     },
+    "KSP_VERSION_MAX":
+	{
+        "MAJOR":1,
+        "MINOR":1,
+        "PATCH":3
+     }
+}

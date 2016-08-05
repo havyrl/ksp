@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.07.19.10.49.02",
+	"version": "2016.08.04.08.40.49",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -12,8 +12,8 @@
 			"version": "v10.4"
 		},
 		{
-			"name": "RealismOverhaul",
-			"version": "v11.2.0"
+			"name": "TACLS-Config-RealismOverhaul",
+			"version": "v11.3.0"
 		},
 		{
 			"name": "RealSolarSystem",
@@ -24,8 +24,8 @@
 			"version": "1:0.40.7"
 		},
 		{
-			"name": "ConnectedLivingSpace",
-			"version": "1.2.2.0"
+			"name": "VenStockRevamp",
+			"version": "v1.9.5"
 		},
 		{
 			"name": "DeadlyReentry",
@@ -52,8 +52,8 @@
 			"version": "1.5"
 		},
 		{
-			"name": "RCSBuildAid",
-			"version": "v0.8"
+			"name": "UniversalStorage",
+			"version": "1.1.0.15"
 		},
 		{
 			"name": "KSCSwitcher",
@@ -68,8 +68,8 @@
 			"version": "v0.12.2"
 		},
 		{
-			"name": "TACLS-Config-RealismOverhaul",
-			"version": "v11.2.0"
+			"name": "RealismOverhaul",
+			"version": "v11.3.0"
 		},
 		{
 			"name": "TextureReplacer",
@@ -80,8 +80,8 @@
 			"version": "1.7.12"
 		},
 		{
-			"name": "VenStockRevamp",
-			"version": "v1.9.2"
+			"name": "ConnectedLivingSpace",
+			"version": "1.2.2.1"
 		},
 		{
 			"name": "RSSDateTimeFormatter",
@@ -104,8 +104,8 @@
 			"version": "0.14.5"
 		},
 		{
-			"name": "UniversalStorage",
-			"version": "1.1.0.14"
+			"name": "RCSBuildAid",
+			"version": "v0.8.1"
 		},
 		{
 			"name": "AdvancedJetEngine",
@@ -153,7 +153,7 @@
 		},
 		{
 			"name": "SmokeScreen",
-			"version": "2.6.15.0"
+			"version": "2.6.17.0"
 		},
 		{
 			"name": "Kopernicus",
@@ -170,6 +170,54 @@
 		{
 			"name": "KIS",
 			"version": "1.2.12.0"
+		},
+		{
+			"name": "RP-0",
+			"version": "v0.51"
+		},
+		{
+			"name": "KerbalConstructionTime",
+			"version": "1.3.4"
+		},
+		{
+			"name": "Taerobee",
+			"version": "1:2.3"
+		},
+		{
+			"name": "KerbalRenamer",
+			"version": "0.6"
+		},
+		{
+			"name": "ShipManifest",
+			"version": "5.1.2.1"
+		},
+		{
+			"name": "TestFlight",
+			"version": "1.7.0.1"
+		},
+		{
+			"name": "SXT",
+			"version": "v25.2"
+		},
+		{
+			"name": "FirespitterResourcesConfig",
+			"version": "v7.3.0"
+		},
+		{
+			"name": "ContractConfigurator",
+			"version": "1.16.2"
+		},
+		{
+			"name": "CustomBarnKit",
+			"version": "1.1.9.0"
+		},
+		{
+			"name": "CommunityTechTree",
+			"version": "1:2.4"
+		},
+		{
+			"name": "MagiCore",
+			"version": "1.1.2"
 		}
 	]
 }

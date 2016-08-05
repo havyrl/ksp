@@ -1,0 +1,21 @@
+{
+   "URL" : "https://raw.githubusercontent.com/KSP-RO/RP-0/master/GameData/RP-0/RP-0.version",
+   "NAME" : "Realistic Progression Zero",
+   "GITHUB" : {
+      "REPOSITORY" : "RP-0",
+      "ALLOW_PRE_RELEASE" : false,
+      "USERNAME" : "KSP-RO"
+   },
+   "VERSION" : {
+      "BUILD" : "0",
+      "PATCH" : 0,
+      "MINOR" : "51",
+      "MAJOR" : "0"
+   },
+   "DOWNLOAD" : "https://github.com/KSP-RO/RP-0/releases",
+   "KSP_VERSION" : {
+      "PATCH" : "3",
+      "MINOR" : "1",
+      "MAJOR" : "1"
+   }
+}
