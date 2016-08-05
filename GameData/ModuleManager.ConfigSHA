@@ -1,4 +1,4 @@
-SHA = AA-6C-25-6C-92-13-3D-9C-BA-53-6E-7A-87-16-46-BB-5D-CF-DA-94-99-10-02-2D-D8-AD-AE-5F-8F-9F-AC-0A
+SHA = EA-20-C9-19-D7-62-AF-93-3D-F6-F0-C4-C6-93-63-4A-38-C0-FB-B1-FF-08-0E-A5-82-4F-CF-E9-E7-53-79-A1
 version = 2.6.25.0
 KSPVersion = 1.1.3.1289
 FilesSHA
@@ -380,6 +380,11 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = CommunityTechTree/Tree/CommunityTechTree
+		SHA = CF-8B-BB-0A-5B-29-95-5D-2A-8C-E1-0B-FA-31-01-AB-93-BE-AB-BE-A4-A1-2A-55-43-64-1A-95-DB-37-A9-A5
+	}
+	FILE
+	{
 		filename = ConnectedLivingSpace/Configs/ASETStackableInlineLights
 		SHA = 6A-A5-6C-B3-59-0F-59-D2-73-0F-6D-EB-F3-E8-7E-AD-15-AB-16-96-0C-7C-E2-26-2A-35-C7-71-17-E5-8D-F3
 	}
@@ -520,6 +525,161 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = ContractConfigurator/BiomeDataDefault
+		SHA = 1F-A3-67-7C-8B-AC-4C-EE-1C-F9-C9-9F-1E-E4-68-ED-8C-6C-94-1F-C6-C4-2E-4D-82-6E-9B-28-E2-B6-3C-9E
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Agents
+		SHA = 24-34-07-E6-46-1E-E7-C4-4F-F0-AB-A4-C5-9B-53-B9-46-0B-D7-0B-FB-12-FE-12-63-2E-F0-CA-3E-51-E1-04
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/ARM
+		SHA = DE-D7-6D-EE-40-FA-84-94-8D-7A-A7-85-FD-C3-F0-9A-0F-B6-6B-20-A7-5D-5A-0E-69-1E-32-C4-EC-1D-A6-D2
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Base
+		SHA = F9-FA-85-A3-76-B8-26-C0-92-42-48-09-04-03-47-CF-98-EF-5B-48-F0-FC-80-32-96-F4-11-A3-F3-28-D7-35
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/CollectScience
+		SHA = C7-3F-81-5D-BD-36-FA-7E-68-7E-22-E1-5A-00-11-73-DA-D3-A6-D4-C5-E3-DF-59-1F-64-56-E0-26-B7-21-60
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/ContractConfigurator
+		SHA = 75-D4-37-A6-5C-A0-3B-A1-E5-AD-C1-7C-0E-07-72-9F-AA-97-91-BA-B0-1E-04-53-D8-52-9F-75-65-52-52-A3
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/DMOS
+		SHA = 23-EC-8D-E5-12-6C-62-C8-7B-EB-A9-9A-70-40-E9-4F-DE-E5-5C-46-4F-6C-F7-C4-47-B0-29-39-88-62-7D-86
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Explore
+		SHA = 57-F7-02-E8-B9-E9-AB-AA-C1-37-FD-D0-DC-3A-C0-19-6A-75-A6-DF-CA-1D-BF-9B-C8-CC-20-03-1D-82-41-96
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/FlagPlanting
+		SHA = 29-CD-4F-EC-56-7A-A1-01-8A-8E-21-70-AE-A2-F9-14-7A-7D-71-AA-6F-6E-65-31-2D-BD-03-40-95-0A-7F-F8
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/GrandTour
+		SHA = C0-72-85-5E-65-40-BF-5E-74-F8-AE-D5-AF-FD-2B-1B-AB-93-47-41-64-BF-50-29-7F-43-6E-F8-6E-0D-E1-7F
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/ISRU
+		SHA = 5D-26-B1-54-0E-12-E0-22-B7-30-DA-61-95-18-DC-71-2E-57-31-38-2C-0F-5B-38-C7-03-5F-48-65-D9-E1-13
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/PartTest
+		SHA = 71-49-EF-FB-E4-7D-51-D3-D2-68-8C-09-76-0C-2A-00-0B-7A-97-9B-12-8C-54-0D-25-E8-D5-50-CB-B1-40-E8
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Rescue
+		SHA = 63-AD-13-C6-8B-29-AB-7C-25-F7-6A-0F-36-D2-D0-E5-F4-7D-4F-0D-21-C6-DB-27-5B-C4-F4-25-5D-4B-51-4C
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Satellite
+		SHA = 2D-8D-11-22-2C-9B-99-0E-BB-5A-32-B2-98-1A-7A-A1-8D-17-F4-AA-98-81-F4-38-A9-78-BD-82-95-8A-19-9A
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Stations
+		SHA = 87-F4-E2-9F-E4-D3-BD-39-A0-00-B9-28-95-C2-B2-F7-61-3C-44-68-B1-1D-EE-0B-79-37-6F-36-1D-0F-B3-2F
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Surveys
+		SHA = 1F-ED-D9-C8-F2-41-E1-49-19-A4-B3-8F-40-4A-B9-20-FA-C3-29-A0-E8-D0-69-87-83-EE-10-92-97-A6-3F-25
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/Tourism
+		SHA = 5F-15-A6-A6-DC-45-05-0E-D9-D3-DF-3A-4D-7E-2C-1E-58-2C-E8-F3-A2-06-F1-D1-A4-ED-2A-44-0A-F2-D1-39
+	}
+	FILE
+	{
+		filename = ContractConfigurator/Agencies/WorldFirsts
+		SHA = 58-83-E4-8E-0F-87-14-B2-42-83-A7-25-25-ED-F1-E9-E0-ED-C7-61-6C-F2-29-13-0C-22-2D-6A-5F-E3-37-42
+	}
+	FILE
+	{
+		filename = ContractConfigurator/patches/Contracts
+		SHA = E9-CF-33-9B-CA-C9-66-FC-04-1D-4B-CD-37-6A-7C-14-04-32-12-12-E5-59-9B-C0-F5-DE-88-F0-8B-41-E1-C0
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/DMagicOrbitalScience
+		SHA = B3-4E-87-D6-95-DD-75-81-22-EB-5A-88-AD-78-CF-25-6A-E9-CD-E8-0C-66-10-41-E8-81-4E-3E-BA-61-73-2D
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/Impact
+		SHA = 95-41-01-9F-CC-98-D0-15-CC-C7-C8-CB-17-AC-F4-48-E7-12-61-6B-CB-DE-5A-1C-7D-86-0C-87-1E-6F-5B-0D
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/Mkerb
+		SHA = 6B-C2-A1-FC-10-98-FD-5D-89-53-7C-AF-C2-2D-C6-CB-FD-35-A7-AF-A5-B7-6F-C4-C6-7C-15-5C-16-06-8E-7C
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/N3h3miah
+		SHA = D2-24-C9-1E-79-13-85-09-C6-3E-00-D6-97-38-BF-2D-82-27-C2-B3-4D-A0-CB-81-6C-85-9D-EF-D4-E4-ED-8A
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/SCANsat
+		SHA = B2-6B-7B-44-A9-ED-5C-6C-EC-D5-73-9F-B2-E0-2A-93-EF-78-9F-36-3B-45-65-1E-98-C3-A4-A8-BB-0F-2D-8A
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/SolarScience
+		SHA = 32-40-E6-7E-2D-E5-69-A7-F9-63-53-80-8B-FA-CF-76-62-2F-B8-1A-A3-0B-CD-9D-8F-2F-DE-1E-9F-1E-1B-98
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/StationScience
+		SHA = 7B-21-C0-8E-C2-5D-3F-4E-95-1E-6C-9C-D0-7D-37-38-54-62-79-1A-06-6B-C6-83-34-90-83-6A-18-B0-E5-AF
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/stock
+		SHA = DC-F1-67-9E-78-8E-B1-EC-E9-EB-C2-04-B1-1C-10-0B-25-E7-62-B8-DC-85-18-8D-54-20-34-16-16-09-05-AB
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/SurfaceExperimentPackage
+		SHA = AB-A9-EB-96-D9-B1-1C-C2-2E-85-68-C1-89-69-B1-7F-8A-2D-31-DA-42-66-9F-76-5C-F3-97-87-05-F1-B7-B9
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/TarsierSpaceTechnology
+		SHA = C2-99-81-99-A4-5E-D9-5F-4F-38-B8-2D-33-C2-95-85-FF-27-74-23-3E-DB-22-EA-1A-0C-03-CD-3C-5A-5C-D0
+	}
+	FILE
+	{
+		filename = ContractConfigurator/science/USI
+		SHA = C9-E6-8F-B1-13-7A-08-AA-7D-D6-A1-F0-AF-6E-C3-7D-0E-00-04-4D-A3-5C-02-95-C6-32-8B-A2-ED-2F-EB-7B
+	}
+	FILE
+	{
+		filename = CustomBarnKit/default
+		SHA = AE-AD-8F-08-25-4C-6D-5F-78-CF-AD-A8-AA-39-51-76-80-E8-0F-1E-8C-E4-02-1E-2F-A6-CA-9C-FF-E5-15-FE
+	}
+	FILE
+	{
 		filename = DeadlyReentry/DeadlyReentry-HOME
 		SHA = 08-3B-99-32-E8-B3-DF-F9-13-47-28-F0-72-41-9D-72-2D-30-99-EA-60-A0-72-15-68-61-2C-17-74-C6-CA-AE
 	}
@@ -576,17 +736,17 @@ FilesSHA
 	FILE
 	{
 		filename = DeadlyReentry/DeadyReentry-BahamutoDPorts
-		SHA = D8-55-40-46-87-A0-65-86-6F-81-33-D9-09-2B-8A-A4-65-25-E3-B8-E5-3D-5D-77-30-55-69-6F-38-C2-7B-87
+		SHA = 0D-41-DF-C5-57-D2-13-E5-A3-A7-D0-1D-6F-8A-06-74-82-C6-26-F2-39-42-29-B4-41-6F-80-FA-07-F5-3A-80
 	}
 	FILE
 	{
 		filename = DeadlyReentry/DefaultSettings
-		SHA = EE-90-8F-56-CB-46-D2-1A-F8-CA-04-02-7D-7A-42-90-EE-58-F8-7B-69-DA-36-C3-6E-52-85-82-3E-92-B6-DF
+		SHA = D2-E8-B1-CC-C8-BD-9B-F4-45-D4-BD-1C-EA-39-BE-4A-4C-08-E2-C2-E1-34-2D-71-20-67-9C-85-93-77-37-D8
 	}
 	FILE
 	{
 		filename = DeadlyReentry/EngineHeatAdjuster
-		SHA = D8-9F-19-49-CF-DA-BA-16-A6-7C-F4-58-55-19-D2-D0-11-21-1B-6B-AE-5F-B0-14-D2-82-B5-91-8B-14-F8-52
+		SHA = 7B-D7-70-59-F8-AF-EE-80-EB-F1-D8-12-16-A9-6A-75-74-D6-F5-27-EA-C2-45-4E-C4-52-72-11-C9-8B-37-CD
 	}
 	FILE
 	{
@@ -601,7 +761,7 @@ FilesSHA
 	FILE
 	{
 		filename = DeadlyReentry/OLDD.ADEPT
-		SHA = 8E-4A-60-B0-64-AD-04-F8-A1-1D-36-96-4F-21-2F-5C-27-2B-B7-8E-FC-C4-B7-1D-3B-16-1A-FD-9C-24-F8-B0
+		SHA = CC-7C-04-0A-F7-60-CF-B4-DC-03-65-16-7E-45-36-BF-16-C1-E2-56-B9-90-AD-56-E4-12-3B-04-27-1A-5C-B4
 	}
 	FILE
 	{
@@ -616,42 +776,42 @@ FilesSHA
 	FILE
 	{
 		filename = DeadlyReentry/Parts/DRE_0625HS
-		SHA = E3-05-0D-EC-C2-29-4A-CB-42-65-33-91-33-74-DD-D9-9D-59-FC-0D-73-D8-50-7E-3F-BE-9A-50-F3-FB-40-43
+		SHA = 15-E6-56-F2-29-76-1C-54-62-FB-19-DF-EF-F2-27-3E-4E-EE-4F-C2-97-4D-2A-E1-44-F3-D2-AB-46-0B-E6-7F
 	}
 	FILE
 	{
 		filename = DeadlyReentry/Parts/deadlyReentry_1.25Heatshield/part
-		SHA = 22-79-27-E8-CB-6B-20-4F-B9-30-1D-67-3C-61-11-55-FE-BE-28-0C-C0-11-28-51-23-4E-11-EA-06-AA-B8-9B
+		SHA = 75-B4-56-71-2B-A0-6D-33-0C-CB-6E-46-DC-A6-5D-67-38-28-E3-98-5D-DE-55-BA-C7-5B-A3-79-23-4E-92-1D
 	}
 	FILE
 	{
 		filename = DeadlyReentry/Parts/deadlyReentry_2.5Heatshield/part
-		SHA = 5A-41-01-3E-8C-53-AB-7E-A3-D5-BF-34-60-CE-AD-61-38-9C-3C-EA-84-18-EC-B2-8A-48-47-85-E5-F8-3D-2E
+		SHA = FA-38-95-42-5D-09-95-23-48-85-E1-17-CE-7F-D3-DA-BE-3D-C9-BC-40-0E-67-03-07-7A-DB-07-6D-1E-5C-25
 	}
 	FILE
 	{
 		filename = DeadlyReentry/Parts/deadlyReentry_3.75Heatshield/part
-		SHA = 11-4F-4A-FD-41-8A-B1-BF-29-93-99-13-AE-3E-27-A6-18-8E-FE-39-0B-F7-10-62-5C-7F-D2-30-EE-34-BA-FB
+		SHA = 07-C4-24-56-4A-1F-29-DA-A0-DA-16-7D-A0-2F-80-5A-5F-C0-F8-F0-2D-C8-9D-6B-CC-A8-60-62-01-5F-83-3D
 	}
 	FILE
 	{
 		filename = DeadlyReentry/Parts/UP_decoupler_2/part_0_625M
-		SHA = B7-FB-93-05-C4-F8-93-59-2F-6B-49-7A-B2-21-01-6C-BC-44-15-55-2E-B3-7B-1B-83-29-1C-2F-0D-35-66-66
+		SHA = 49-31-C9-74-98-C9-E7-E6-67-2F-09-70-D0-FE-93-85-E3-40-30-FE-58-40-96-C3-F6-9C-FF-69-3F-84-9F-C1
 	}
 	FILE
 	{
 		filename = DeadlyReentry/Parts/UP_decoupler_2/part_1_25M
-		SHA = 59-C0-22-C9-07-6F-E8-B9-F9-D2-4A-C7-A8-2A-7C-6E-5A-B4-73-BD-A8-57-83-CA-CF-EB-D4-38-3B-8B-83-40
+		SHA = 6E-2C-68-59-7C-D2-EC-4A-1A-22-A3-71-F5-A9-3B-70-38-5C-13-E6-4B-98-9A-86-1E-55-1E-57-4F-9B-D2-2C
 	}
 	FILE
 	{
 		filename = DeadlyReentry/Parts/UP_decoupler_2/part_2_5M
-		SHA = 8E-2F-5D-95-76-97-2B-C7-47-A0-AD-10-E5-B8-EB-9F-A0-17-B9-75-33-DD-F2-A8-07-D9-09-7F-F5-EC-B9-BD
+		SHA = EB-07-DE-96-2F-12-05-92-E3-64-60-AC-90-2F-B1-AA-7A-9C-C8-16-6B-84-98-4A-38-4D-5F-25-70-89-78-8F
 	}
 	FILE
 	{
 		filename = DeadlyReentry/Parts/UP_decoupler_2/part_4m
-		SHA = 0E-06-39-62-2E-EE-1E-59-08-5F-E0-97-B3-ED-94-C4-21-A3-DD-73-67-7D-30-E0-A7-9C-0F-F2-92-40-CD-5E
+		SHA = 36-FF-37-33-54-0E-3A-42-42-EC-91-36-E6-59-7D-D6-95-18-9C-01-70-D1-69-5C-9F-02-69-A4-A7-BB-E1-73
 	}
 	FILE
 	{
@@ -970,6 +1130,11 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = Firespitter/Resources/Firespitter
+		SHA = F7-E2-1A-16-9A-FF-88-95-0A-3D-D2-57-0F-B1-17-15-24-24-D6-69-6B-7C-E8-E5-72-95-1D-62-76-C2-2D-38
+	}
+	FILE
+	{
 		filename = KAS/settings
 		SHA = EE-66-6E-F5-CA-40-FE-92-A5-FD-CD-B0-90-6F-CA-F9-08-EA-DC-35-57-0B-52-09-86-B4-A4-CF-C7-82-96-84
 	}
@@ -1020,13 +1185,143 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = KerbalConstructionTime/KCT_Presets/7Days
+		SHA = 8B-0B-65-90-B4-88-C2-C3-AD-6C-A0-60-40-31-6E-59-7E-81-CB-AB-6E-76-3C-FC-80-31-C5-9C-FE-24-E2-B3
+	}
+	FILE
+	{
+		filename = KerbalConstructionTime/KCT_Presets/default
+		SHA = 4F-78-25-FF-2C-BA-7C-74-E8-53-8E-B5-DB-1F-41-2C-E5-03-84-55-C0-84-7F-4A-F1-90-49-78-74-04-C4-23
+	}
+	FILE
+	{
+		filename = KerbalConstructionTime/KCT_Presets/rlowtech
+		SHA = F8-7F-CD-72-8B-71-70-A3-64-2E-36-99-16-AD-43-E6-16-C3-2E-B2-93-78-C8-16-9A-2E-F7-88-75-D5-83-20
+	}
+	FILE
+	{
+		filename = KerbalConstructionTime/KCT_Presets/simOnly
+		SHA = 9C-97-0F-4F-BD-E0-FA-3B-EA-D7-E9-8F-E6-EF-18-99-56-A7-A9-B3-87-1A-E2-4C-FB-59-93-FF-C5-6E-AD-4A
+	}
+	FILE
+	{
+		filename = KerbalConstructionTime/KCT_Presets/UpFree
+		SHA = 6D-F8-13-60-93-28-E6-40-AA-45-AF-7C-B8-D9-6B-DA-DA-10-EE-7F-10-53-CE-2E-97-6A-EB-AE-01-E2-BA-36
+	}
+	FILE
+	{
+		filename = KerbalEngineer/Parts/Engineer7500/part
+		SHA = 91-2E-16-07-7C-12-88-17-4D-B5-FF-88-A9-9C-7A-6F-09-BA-B0-B7-D2-76-BB-ED-75-CD-95-AE-65-DE-67-09
+	}
+	FILE
+	{
+		filename = KerbalEngineer/Parts/EngineerChip/EngineerChip
+		SHA = A2-3B-CA-20-BF-04-E0-47-1D-60-66-55-01-6A-BF-79-E3-B0-1A-CE-50-E0-1B-7C-6B-D1-87-68-0E-1A-1C-56
+	}
+	FILE
+	{
+		filename = KerbalRenamer/KerbalRenamer
+		SHA = D3-CE-80-6C-61-72-D5-5B-F8-5A-C7-B2-E2-73-B7-79-94-75-AC-15-F6-B6-F6-E1-19-5F-5F-80-F9-5C-9E-24
+	}
+	FILE
+	{
+		filename = KIS/settings
+		SHA = CF-CB-D7-51-61-C6-20-C9-9F-71-10-93-DA-3C-E9-38-50-38-6A-24-07-AC-73-AB-8E-46-D7-65-AF-0D-56-13
+	}
+	FILE
+	{
+		filename = KIS/Parts/bomb1/part
+		SHA = CB-20-2C-0A-0C-46-F3-DC-D9-8C-43-F3-D8-C4-23-AE-61-D3-B2-7A-AE-11-44-3D-2D-65-1D-6A-B4-09-86-18
+	}
+	FILE
+	{
+		filename = KIS/Parts/concreteBase1/part
+		SHA = 4B-81-69-EF-00-C4-BB-A2-23-2E-51-42-88-CC-70-5C-7E-76-C3-F7-16-EE-A8-98-D8-9E-F9-44-73-37-44-6A
+	}
+	FILE
+	{
+		filename = KIS/Parts/container1/part
+		SHA = 8C-20-11-2E-E7-2B-31-CE-9C-BF-B8-34-2F-18-0D-43-F2-22-1C-E6-30-36-55-D8-EB-8F-0A-F4-A9-29-BA-94
+	}
+	FILE
+	{
+		filename = KIS/Parts/container2/part
+		SHA = EB-0B-C5-0E-00-07-33-37-8A-13-6F-10-E6-5F-66-C0-2F-CC-85-4B-A0-77-D8-62-61-F4-B2-58-F9-AE-13-A6
+	}
+	FILE
+	{
+		filename = KIS/Parts/container3/part
+		SHA = D4-2A-72-41-65-F2-F7-0C-51-93-3E-5E-D4-A8-96-82-A0-01-CA-25-7F-05-A0-81-8D-74-88-AB-4A-D7-8D-67
+	}
+	FILE
+	{
+		filename = KIS/Parts/containerMount1/containerMount1
+		SHA = A9-DD-2F-F4-8E-B3-F0-E5-C0-87-AD-B9-4C-75-A8-C2-9A-64-1A-0E-3A-B3-C7-AC-56-05-F9-5E-AE-80-26-5A
+	}
+	FILE
+	{
+		filename = KIS/Parts/electricScrewdriver/part
+		SHA = 21-91-48-F6-DD-28-BA-9C-74-4F-63-3B-FD-F1-A1-95-88-92-09-9C-4A-1A-D7-18-57-5C-64-0D-64-81-F4-FC
+	}
+	FILE
+	{
+		filename = KIS/Parts/evapropellant1/part
+		SHA = 41-39-B4-49-00-F0-5C-FB-49-6D-63-80-7D-62-77-A3-91-3D-40-53-C3-6C-CB-4F-3A-FF-81-95-BA-0D-DE-12
+	}
+	FILE
+	{
+		filename = KIS/Parts/fun_basketball/part
+		SHA = 07-93-44-68-A1-AD-28-59-3A-4A-3F-E7-AE-B8-E7-31-D4-B4-0B-16-AB-A0-96-79-01-29-2E-31-57-55-81-A5
+	}
+	FILE
+	{
+		filename = KIS/Parts/fun_beer/part
+		SHA = A2-BF-96-F3-E2-7C-37-5C-3B-90-DE-44-4A-D6-D7-78-49-D6-1B-C6-BF-E5-0A-9F-84-F3-D7-22-A4-72-F7-5A
+	}
+	FILE
+	{
+		filename = KIS/Parts/fun_ghettoblaster/part
+		SHA = 7A-D5-50-F1-EF-67-19-64-04-CD-51-5C-52-C7-67-EB-17-71-AE-9E-39-77-C1-E7-43-A1-D6-48-9F-22-B9-9C
+	}
+	FILE
+	{
+		filename = KIS/Parts/fun_golfclub/part
+		SHA = 1D-F6-F8-0B-B1-5F-82-88-CD-A8-A8-2A-D9-CD-10-0C-AD-DC-43-50-98-4A-9D-CD-18-12-E3-CC-A3-BB-9D-F4
+	}
+	FILE
+	{
+		filename = KIS/Parts/fun_guitar/part
+		SHA = BF-4A-4B-9D-5F-F0-DC-6A-81-D8-F4-CF-07-4A-D4-B7-C7-A8-5F-E0-6E-D9-AD-11-10-19-6C-FB-67-74-5F-4E
+	}
+	FILE
+	{
+		filename = KIS/Parts/fun_taco/part
+		SHA = AD-DA-7F-CA-C8-D9-50-E7-07-4F-5F-E8-ED-93-8C-00-0C-B7-1D-6F-D7-2C-71-3B-C4-C0-1B-9C-25-9C-EC-7B
+	}
+	FILE
+	{
+		filename = KIS/Parts/guide/part
+		SHA = 1C-6C-B0-74-99-FE-AB-34-DE-59-05-44-E5-B3-02-11-4B-E8-5F-CD-A9-A3-A6-55-A1-BF-8F-EF-21-A5-10-01
+	}
+	FILE
+	{
+		filename = KIS/Parts/wrench/part
+		SHA = 6B-D0-47-D9-C0-11-77-0F-B7-FA-06-2F-98-06-4A-81-1F-71-3A-8D-6D-89-D4-7F-66-60-F2-2C-E6-6C-78-2C
+	}
+	FILE
+	{
+		filename = KIS/Patches/MM-StockParts
+		SHA = 75-1B-03-80-BB-EA-AF-AA-D6-77-F1-D9-B1-E6-CB-84-DC-80-00-16-CA-C4-40-45-24-15-BD-22-27-B8-F6-3D
+	}
+	FILE
+	{
 		filename = Kopernicus/Config/System
 		SHA = F9-68-64-70-92-4A-3C-3B-2A-42-2A-7A-52-32-E7-72-B4-6F-11-2B-60-B5-F2-36-28-35-55-DA-3B-B5-FD-E4
 	}
 	FILE
 	{
 		filename = KSCSwitcher/LaunchSites
-		SHA = A5-9A-33-2C-01-D0-5B-ED-8F-EC-12-F4-42-22-0F-5F-3C-C8-AD-15-6C-89-FC-7C-80-19-17-90-C2-EF-DD-51
+		SHA = A9-CE-DC-86-D1-36-1B-73-58-50-76-EA-6B-51-4B-AA-1E-B1-DE-92-D1-0D-CE-70-6D-0F-C4-55-A6-0B-B0-B0
 	}
 	FILE
 	{
@@ -1665,11 +1960,6 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = RealismOverhaul/Docking_GenderDisable
-		SHA = C6-F4-3A-CA-B6-41-37-94-53-EA-EC-81-2A-B8-D0-3A-22-11-B9-8F-1D-C1-1A-E2-B6-47-F9-AC-40-58-39-45
-	}
-	FILE
-	{
 		filename = RealismOverhaul/DragCubeRescaler
 		SHA = AE-23-52-F4-5D-A6-FA-EE-10-DA-F2-8C-06-06-15-18-5E-84-7E-B0-AD-F8-44-80-A8-11-8D-BF-0A-FB-4F-B1
 	}
@@ -1705,13 +1995,18 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = RealismOverhaul/RO_RCS_Stage
+		SHA = C9-8C-DE-4B-93-78-95-1B-7C-33-0E-07-84-30-E5-EE-66-58-26-CD-9E-33-26-37-8C-28-1A-68-BD-7D-AE-0C
+	}
+	FILE
+	{
 		filename = RealismOverhaul/RO_RealFuels
 		SHA = 1C-4A-B3-3C-6C-99-9F-7A-6F-A4-66-50-C5-C5-8C-8A-B4-04-FE-A5-89-7E-F6-F0-12-C1-2E-AE-3A-71-19-98
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_Resources
-		SHA = DE-D4-CA-8B-A5-D2-30-19-4A-C2-8B-86-4F-2C-65-E7-DE-B6-09-FC-30-2F-63-B2-4C-22-CB-28-A4-88-A1-34
+		SHA = E1-0A-00-70-67-4F-F5-84-40-5D-01-18-2D-54-26-49-B7-9B-DD-CC-01-89-F1-7F-90-B7-6F-8F-C4-A6-F7-D4
 	}
 	FILE
 	{
@@ -1746,7 +2041,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/AgenaSPS_Config
-		SHA = 88-0C-B3-3D-05-DA-32-46-03-A6-96-02-0E-85-BA-8A-AB-AF-8F-E3-E4-A3-21-A7-EF-C9-FC-14-AB-1E-86-82
+		SHA = 73-05-B6-15-30-6E-D1-6D-9C-1A-F3-F1-5E-AB-1E-31-10-8F-DA-58-17-82-84-92-8F-77-AD-70-A7-BD-D4-91
 	}
 	FILE
 	{
@@ -1756,7 +2051,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/AJ10_138_Config
-		SHA = 85-48-7F-15-A4-39-EC-F3-F8-8F-C8-63-12-FA-12-78-11-A9-07-86-46-75-50-A9-1E-66-52-5D-CB-EF-F2-ED
+		SHA = F6-6D-FA-79-3C-C2-91-7A-82-24-9F-41-22-47-24-46-DC-BC-85-9F-1C-60-F0-7A-37-84-93-2E-58-53-8F-63
 	}
 	FILE
 	{
@@ -1766,17 +2061,17 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/AJ10_Adv_Config
-		SHA = 62-50-31-86-6C-3D-A3-A5-62-97-04-30-0C-FE-CD-4B-23-7D-30-31-52-8F-ED-4B-AF-D1-5C-11-6D-86-0C-6D
+		SHA = A2-03-AA-CE-0B-0C-28-65-74-9A-19-0A-0A-8A-8B-D4-BA-27-6E-59-EB-AA-EF-CC-60-DB-34-83-D9-09-E2-3A
 	}
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/AJ10_Early_Config
-		SHA = 9A-C4-08-62-27-13-A8-CB-F5-1B-2C-F1-93-DC-84-B2-B2-8A-35-53-EF-87-6E-B9-93-4D-09-41-63-1C-42-E6
+		SHA = 45-DE-19-43-B7-9F-31-56-77-61-7D-4C-88-D2-A8-68-02-9C-01-A6-CA-27-7D-EF-7D-8A-DE-40-83-C7-FE-C0
 	}
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/AJ10_Mid_Config
-		SHA = CE-F0-A1-F8-6F-7D-9E-A0-F5-29-26-E8-4D-94-01-66-F2-ED-1B-4F-0A-53-C9-D5-4D-F6-7E-D7-57-E1-EB-64
+		SHA = 1E-51-1D-39-71-32-8C-DE-91-60-5F-FC-5B-08-F6-CB-0F-00-1B-CF-CA-2D-1B-05-DD-BB-4A-4B-37-CF-53-30
 	}
 	FILE
 	{
@@ -1926,7 +2221,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/H1_Config
-		SHA = AA-63-B0-2D-ED-24-91-46-DB-5D-1F-DC-4D-23-F6-25-A0-1F-EC-E9-DD-C3-E9-63-F7-FA-24-F6-40-EE-B4-9A
+		SHA = 77-14-4E-D9-5E-1C-B3-ED-EE-AF-FC-D9-EB-B2-75-56-59-FE-2B-69-1E-DF-D8-DB-21-ED-52-80-7A-5E-B4-7E
 	}
 	FILE
 	{
@@ -1946,7 +2241,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/J2_Config
-		SHA = AD-41-25-C1-04-55-47-A5-5A-D3-0D-20-71-23-AA-72-BE-2D-24-25-DA-B9-72-90-33-1F-DC-75-49-32-77-40
+		SHA = 61-99-FF-90-B7-1A-47-3C-10-72-DD-B5-A0-E4-B2-70-6B-1A-1E-55-87-42-91-A2-BF-6B-D6-3D-53-15-80-07
 	}
 	FILE
 	{
@@ -1956,7 +2251,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/KVD1_Config
-		SHA = 51-F6-7F-8A-A4-1C-74-DB-F7-45-FF-B1-B1-39-8C-A4-4F-F5-64-83-B3-76-4E-48-25-62-B2-1A-FE-7E-63-C7
+		SHA = 0D-6A-F7-7F-06-7E-BC-B7-1A-90-59-FA-4C-1F-C2-9D-FF-D0-2C-F7-33-AA-A5-72-8D-3B-96-BF-6A-B2-84-7B
 	}
 	FILE
 	{
@@ -1986,12 +2281,17 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/LR79_Config
-		SHA = 48-F1-15-9B-A7-04-D2-AE-7B-01-4F-30-CA-F8-77-02-1C-43-BC-3E-88-7D-A0-7C-F8-E4-3E-1D-EA-24-C7-40
+		SHA = D7-10-5B-CA-0C-6B-B9-C5-35-CB-73-DD-81-0D-EE-D1-BE-69-0D-54-17-7F-48-7F-82-FB-B6-9B-35-6F-FB-F1
+	}
+	FILE
+	{
+		filename = RealismOverhaul/Engine_Configs/LR83_Config
+		SHA = 44-09-E8-C2-A6-71-71-59-9D-40-AB-87-06-33-5E-93-22-91-F6-B8-C0-82-DC-FB-37-84-FF-36-2F-33-74-23
 	}
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/LR87_X2_Config
-		SHA = 0C-9A-28-60-1F-46-48-6E-76-68-C3-F8-55-74-1D-A1-7A-1C-B6-F9-8C-B7-45-71-86-68-2C-9F-DF-55-96-68
+		SHA = C9-71-CF-4D-4F-14-C0-03-A0-A9-75-30-7A-22-89-40-5D-66-9A-0B-82-C6-FD-F0-FD-D0-5D-3B-29-5B-FA-D1
 	}
 	FILE
 	{
@@ -2001,7 +2301,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/LR91_Config
-		SHA = FD-B7-54-7A-23-99-7D-E2-E4-76-DE-D0-25-17-9D-FA-90-A2-1F-0C-DF-FF-EB-C0-B9-19-AA-0A-8A-59-94-A5
+		SHA = DE-22-29-BE-81-2C-7F-FA-E8-85-70-48-C1-57-5C-3D-75-76-FD-73-53-80-47-7A-15-A7-D4-93-D8-FF-E5-1E
 	}
 	FILE
 	{
@@ -2056,22 +2356,22 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/NK33_Config
-		SHA = 2C-EC-6A-DC-2F-C9-41-96-3B-1C-93-61-12-F4-4A-84-DF-BE-5E-83-F4-54-04-A1-74-C1-32-4E-A2-EA-55-7B
+		SHA = 2D-80-57-D1-7F-E8-EC-B1-99-1A-C2-57-A7-26-38-1A-F0-17-EE-90-D6-91-1B-AC-01-43-D4-07-F3-F2-8E-CD
 	}
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/NK43_Config
-		SHA = EA-E2-C3-5E-98-FE-16-A6-1D-59-F8-93-A8-20-4F-AF-E7-11-60-FB-4E-74-6C-33-C2-81-7D-96-51-E3-02-C8
+		SHA = 9E-4D-80-F2-EB-B7-D6-A0-8C-A6-E7-BF-15-D8-55-2F-3E-94-80-61-EC-91-66-4B-7B-5E-F6-F3-E2-9A-A8-A5
 	}
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/NK9
-		SHA = 14-39-DC-6C-4A-ED-2D-D1-02-C9-56-84-8B-D5-41-0C-55-32-78-01-92-0F-24-0B-04-C8-9C-F6-18-F0-38-29
+		SHA = BA-E1-2F-50-09-CA-37-BA-DE-47-F8-78-64-0C-17-64-F8-18-7D-6E-25-72-D8-62-A4-D0-6D-46-E0-8A-88-D9
 	}
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/NK9V
-		SHA = 9A-A4-29-FB-C9-D5-FF-43-FD-A1-11-41-08-CA-FD-13-86-35-8A-37-7E-F1-D5-42-BF-4D-62-24-45-44-1A-12
+		SHA = B4-4C-24-76-18-49-A8-62-AC-40-46-DC-D5-FC-C1-8A-23-14-AC-75-A8-7B-7B-CF-0B-61-07-30-06-F6-6A-59
 	}
 	FILE
 	{
@@ -2196,7 +2496,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/RL10_Config
-		SHA = 5B-64-5B-CE-64-FF-3F-D0-72-57-DA-18-54-E3-25-E9-85-EB-1A-DF-B0-63-DC-4E-8C-10-F6-B5-FA-D1-F8-9D
+		SHA = 76-5B-CA-1B-54-E0-62-8F-AC-EF-23-56-8A-60-2B-F7-AA-E3-64-90-86-9C-88-C9-FA-83-99-24-18-5D-57-28
 	}
 	FILE
 	{
@@ -2336,7 +2636,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/Vexin_Config
-		SHA = 42-95-2F-2D-46-EA-40-D1-44-D6-D8-4B-CB-4C-85-7A-E5-77-8C-49-29-DA-01-9B-42-7F-D3-A0-DE-20-70-23
+		SHA = 88-79-87-70-09-F9-20-4A-94-19-B6-15-F1-71-3F-04-98-D5-10-9D-E0-94-8A-94-2C-F8-B9-C9-E2-D4-C6-E9
 	}
 	FILE
 	{
@@ -2371,7 +2671,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/Engine_Configs/XLR81_Config
-		SHA = 89-1F-40-D6-6C-32-D1-C3-98-A3-20-81-FE-39-42-3E-A2-72-1B-5F-27-75-F7-EB-BB-21-B7-44-EC-6D-1D-6C
+		SHA = 2C-DC-C9-89-39-0D-61-FF-F0-6B-E3-02-46-EF-09-27-D1-0E-3D-FD-0F-DD-C9-D4-0B-17-E5-6D-FE-92-CA-53
 	}
 	FILE
 	{
@@ -2996,7 +3296,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/KK Launchers/kk_atk_engines
-		SHA = 50-0A-37-4D-50-4B-82-1D-9E-BC-99-FE-57-6C-A3-63-D1-DD-3B-BC-EA-09-18-5A-30-BF-54-30-0F-1A-56-12
+		SHA = 0C-A8-4A-D6-78-5E-58-09-2F-53-33-C2-50-41-AB-C0-FC-38-1D-B6-0F-11-AD-5D-D4-0D-3A-13-50-39-C4-5D
 	}
 	FILE
 	{
@@ -3021,12 +3321,12 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/KK Launchers/kk_deltaii_engines
-		SHA = AB-91-51-6E-68-80-D5-0D-7D-39-52-C3-DB-C2-73-D4-DB-0A-6D-67-22-EF-DC-6A-27-30-11-DC-77-7B-BC-E4
+		SHA = 56-A5-16-0F-A2-90-11-2F-5A-CE-84-32-51-42-AE-8B-F9-B1-C4-70-A7-93-DB-3B-D9-C3-D3-F7-26-C5-FC-A8
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/KK Launchers/kk_deltaii_fairings
-		SHA = 54-39-73-55-CC-F8-26-3D-14-1A-78-2C-41-2A-03-BD-B1-69-63-84-8C-EB-B3-3E-D7-95-32-F5-9E-7C-0A-5E
+		SHA = 6D-12-35-87-CB-BA-C7-A3-40-07-E2-8B-A5-F8-02-D0-29-05-08-E2-37-8B-2D-16-8B-1E-65-6E-B5-81-35-C4
 	}
 	FILE
 	{
@@ -3095,8 +3395,8 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = RealismOverhaul/RealPlume_Configs/KWRocketry/KW3mengineWildcarXR
-		SHA = 6A-0D-0C-8A-3E-39-BC-14-77-17-B6-3E-A1-EC-17-F1-89-B0-72-A8-79-61-25-AF-EF-8F-B3-7E-8B-DF-8B-3E
+		filename = RealismOverhaul/RealPlume_Configs/KWRocketry/KW3mengineWildcatXR
+		SHA = 96-AA-C4-0C-6A-79-9C-73-FB-F2-43-B5-2E-57-17-10-32-56-7E-57-71-6C-8B-28-09-BC-01-AD-89-85-77-60
 	}
 	FILE
 	{
@@ -3286,12 +3586,17 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/RaiderNick/rn_us_rockets
-		SHA = 08-80-41-3D-30-8F-7E-F6-62-6B-0A-F3-7A-BA-E4-61-F0-3F-8B-CB-25-E8-EE-E6-7E-20-76-0E-AF-02-A9-CC
+		SHA = FF-4E-3F-05-D9-31-1A-91-C5-FD-0B-36-24-64-6A-FC-B2-AC-07-5B-E6-99-93-2E-91-29-91-6E-58-E7-1B-0D
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/RaiderNick/rn_us_rockets_fairings
 		SHA = 31-65-30-0C-ED-66-17-F9-CA-10-1D-50-18-41-D3-87-BC-80-B9-14-2D-F9-77-01-4A-6D-EA-57-BA-E9-5F-56
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RealPlume_Configs/RaiderNick/rn_us_rockets_sepmotors
+		SHA = 93-B4-8D-D2-BF-52-E3-7C-58-23-1E-02-C7-98-BA-2D-95-44-AC-D4-36-D9-91-0D-EF-0D-13-C8-9D-9D-3E-4F
 	}
 	FILE
 	{
@@ -3366,7 +3671,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/RaiderNick/R7/r7_sepmotors
-		SHA = 8C-8E-D9-C6-AF-E9-7A-AD-B5-47-D6-4C-8A-42-9E-5A-94-08-96-B7-E6-34-4D-4B-D8-52-E7-7F-28-44-80-5C
+		SHA = 9A-BC-4E-43-2A-89-3E-61-18-C1-AA-86-8A-B8-C7-6E-53-E8-DA-AE-AA-FA-EC-B7-C7-F9-6D-3C-E9-84-49-17
 	}
 	FILE
 	{
@@ -3691,7 +3996,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/RO/RO-RD-0210
-		SHA = 92-CE-F8-EA-43-E4-51-49-30-62-96-DC-3A-43-81-02-69-7E-C6-71-DE-3C-02-81-0F-53-CF-98-58-9B-78-D3
+		SHA = DF-40-C7-FE-AF-FB-15-9C-2A-93-5A-06-AD-B7-18-7D-CF-A7-9F-A8-10-BE-96-E8-B8-D0-4A-CB-33-52-77-D6
 	}
 	FILE
 	{
@@ -3706,7 +4011,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/RO/ROAerobeeSustainer
-		SHA = 3C-9F-DF-47-DF-50-6C-27-0D-C2-2E-17-F7-F2-BA-9A-75-91-33-D2-3D-9E-AF-C4-99-A8-26-BE-0D-8A-9E-42
+		SHA = C0-A8-A2-13-66-25-2D-CC-C6-F5-DD-75-97-3B-84-BC-D0-3E-16-4D-D4-60-64-59-D5-FF-D5-BB-20-2E-8C-48
 	}
 	FILE
 	{
@@ -3716,7 +4021,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RealPlume_Configs/RO/ROAJ10137
-		SHA = 70-CF-6F-ED-21-AA-14-D8-23-B2-71-62-9F-AE-1A-3B-48-C6-08-8F-06-93-03-6C-99-5F-99-C4-D1-1F-BC-6E
+		SHA = EF-85-07-76-CE-BF-6C-DF-36-F4-14-E9-37-65-5B-96-4A-5C-1D-12-59-8D-D6-B0-E2-75-5E-04-89-A1-4E-E2
 	}
 	FILE
 	{
@@ -4466,7 +4771,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_DependentMods/RO_AJE
-		SHA = 5F-1B-41-CB-25-5B-36-A4-01-48-8E-F7-44-13-E7-6E-2A-8C-9C-BA-95-86-84-1E-B7-18-8D-56-7B-F8-D2-A8
+		SHA = CC-46-EA-DD-21-DC-74-BF-69-92-87-03-6C-63-D0-D1-9A-CF-93-63-0C-64-0B-C7-56-9E-60-E1-0C-30-7F-C5
 	}
 	FILE
 	{
@@ -4526,12 +4831,17 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_RecommendedMods/Procedurals/RO_pFairings
-		SHA = 31-5F-08-E1-8D-E9-CA-39-01-F7-7D-85-F4-54-79-61-CB-78-A2-9F-BE-28-63-B5-A2-54-D3-AA-A1-C1-75-CF
+		SHA = B5-D5-AD-E6-B9-0A-47-FC-CD-AA-EC-1D-AF-17-37-79-4D-10-B3-C8-B9-C4-A0-59-B0-0C-FA-7E-B5-24-5C-B8
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_RecommendedMods/Procedurals/RO_PF_MainSailor
 		SHA = 0D-3F-BB-F0-21-1D-10-C7-18-C9-0C-DD-AE-CB-73-B6-91-29-9B-02-F6-62-75-E0-73-2F-28-72-B5-60-85-E7
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_RecommendedMods/Procedurals/RO_PF_Remass
+		SHA = A2-22-4C-7B-46-86-30-A8-4A-73-21-97-A2-4A-9D-E0-1D-B7-8C-C1-35-B1-19-17-3B-BF-93-8F-30-84-A7-F0
 	}
 	FILE
 	{
@@ -4576,7 +4886,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/RO_ISS
-		SHA = 92-5C-13-54-BE-76-63-CB-98-F3-DF-12-AE-25-7D-5C-A7-85-DC-4D-0F-B6-C7-8E-AC-1C-2C-70-26-F7-98-F7
+		SHA = 7F-61-FF-E7-4F-D5-6E-3F-A7-97-3F-F7-BE-1A-7C-D9-F1-5C-D6-24-83-00-82-AF-74-5E-00-C2-7B-83-95-75
 	}
 	FILE
 	{
@@ -4601,7 +4911,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/AIES/RO_AIES_Antenna
-		SHA = 51-1D-C6-67-CA-9C-63-F7-C1-6E-48-FA-37-D6-49-2A-9E-68-7B-48-02-7B-CE-C4-A9-4C-1F-F9-9F-E5-BE-79
+		SHA = 3A-A8-AD-91-9E-02-5C-FB-6B-30-4A-3B-5E-C7-B6-C6-27-93-2F-AE-71-CE-D7-EA-93-EC-75-13-A4-AD-76-6D
 	}
 	FILE
 	{
@@ -4715,8 +5025,38 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Able_Ablestar
+		SHA = CA-5D-F2-4A-84-35-C5-03-4F-3D-E1-E9-8E-5C-7C-9A-58-83-26-AF-C9-B7-95-0A-A5-05-FE-18-3E-53-50-94
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Agena
+		SHA = 21-D6-CC-14-A0-8F-62-34-B5-D1-2D-18-71-2F-24-13-95-77-B4-AE-96-D1-50-99-73-A3-A3-E0-5C-1F-BE-0F
+	}
+	FILE
+	{
 		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Avionics
 		SHA = BD-40-63-5B-0C-19-23-47-D4-56-22-72-E0-1C-01-4A-A8-C2-8F-FE-C3-F2-4D-C5-96-67-5A-93-56-CC-A4-E2
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Centaur
+		SHA = 83-5C-07-E4-C4-5B-3F-50-F7-D3-F8-6C-A9-44-57-1F-B0-A4-9E-45-0D-A8-9A-01-37-C8-00-6B-EB-7E-B1-F4
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Delta_II
+		SHA = 40-94-3F-EE-35-48-E6-12-75-0E-72-DC-04-95-75-3F-31-DF-63-E3-0E-50-15-84-EF-64-03-8C-8B-44-76-FD
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Diamant
+		SHA = 2D-C1-B5-4E-E6-CD-FB-AB-8D-7C-75-9E-75-0B-2E-60-F9-60-56-09-5D-B7-5C-60-89-9C-03-36-22-E9-8C-8B
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Juno_II
+		SHA = 07-08-96-50-18-9D-67-5F-6D-1D-93-83-CD-69-73-93-66-E8-8B-45-4C-E2-62-69-D9-98-A4-8D-75-4E-48-E5
 	}
 	FILE
 	{
@@ -4725,8 +5065,28 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Redstone
+		SHA = EA-29-80-B1-7F-49-7C-42-6E-D6-7D-C3-DF-91-70-6E-F2-69-D1-D9-A8-2D-AF-EE-36-4D-F1-ED-13-88-B3-22
+	}
+	FILE
+	{
 		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Solids
 		SHA = 68-C9-EB-6F-B5-8E-2A-0D-FB-4C-F2-0C-C6-D4-0A-2B-B6-00-A6-BE-7D-60-1C-B9-BC-12-1E-16-83-47-BE-07
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Thor
+		SHA = 04-3B-4D-4A-16-59-1D-35-EA-3C-BA-5E-7C-B8-45-E1-02-32-CB-E7-93-6E-4E-0B-5F-81-6C-38-6C-B1-34-6E
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Titan
+		SHA = 4E-E8-B9-97-E1-A4-19-56-E1-5C-F6-4A-33-6B-AF-15-37-C3-32-A9-1D-95-62-15-02-4E-FC-A7-C8-D1-79-70
+	}
+	FILE
+	{
+		filename = RealismOverhaul/RO_SuggestedMods/Bluedog_DB/RO_BDB_Vanguard
+		SHA = 9E-32-93-72-0C-CE-CA-68-1F-2D-8F-E9-57-9D-66-23-57-23-59-1C-2B-0E-6B-71-D1-AB-CF-8D-EA-14-29-F7
 	}
 	FILE
 	{
@@ -4771,7 +5131,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/BobCat/RO_BobCat_Soyuz
-		SHA = FB-20-DD-86-2E-10-94-59-DF-68-2B-5A-D0-A1-44-B5-A2-C2-26-A6-38-77-71-FC-DF-7C-99-5B-A5-7A-51-76
+		SHA = BD-48-E0-AF-13-E2-F6-D7-F9-10-F7-7D-5A-21-6F-13-A3-C0-0D-66-F7-1D-3F-98-F2-E0-A2-9E-DB-33-6B-DD
 	}
 	FILE
 	{
@@ -4886,7 +5246,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/CST/RO_CST_Utility
-		SHA = 6D-FB-E1-38-88-26-07-C8-64-1A-F0-2A-02-DB-96-00-5A-E4-C9-FE-35-D1-4C-DF-DD-9F-E7-EF-49-D3-8C-13
+		SHA = AB-1E-3F-36-F6-23-EA-25-A6-54-20-10-2B-07-8B-1E-61-B7-AD-E9-D2-D1-11-EB-CF-5E-30-CB-9D-BB-E5-5C
 	}
 	FILE
 	{
@@ -4901,17 +5261,17 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/DMagic/RO_DMagic_US
-		SHA = 80-52-BE-CE-34-A1-7C-F9-E9-A0-8D-14-BD-87-75-60-F2-51-BA-5A-B8-B4-96-55-B1-B4-E8-22-41-47-47-79
+		SHA = 0B-33-AD-65-7A-A1-10-B3-55-AC-DF-BD-0B-80-DF-02-B4-3D-A2-19-2E-13-2B-AE-9F-C4-95-D5-2E-B0-60-13
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_Agena
-		SHA = 56-F4-14-1A-41-6B-40-A9-7E-E6-74-C8-33-D5-A5-BA-E3-49-6E-57-CF-67-BD-F8-84-98-94-BB-0A-24-4A-E2
+		SHA = 0F-95-40-2E-93-9F-9D-E0-E3-9F-75-1E-45-3E-AA-FA-A9-FF-6F-82-31-F2-47-D2-4A-A2-EE-77-94-7D-5F-AB
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_ApolloCSM
-		SHA = C4-6B-FD-32-F9-3F-8E-BF-30-14-D4-7A-86-F3-6E-DA-FF-BB-E2-3D-5C-AA-C7-11-41-3D-1C-7C-6D-BE-D6-39
+		SHA = 31-91-65-C8-28-90-0E-BF-80-43-5C-E5-0F-D2-2D-90-BB-D6-9F-2F-89-45-10-B2-18-71-51-74-3F-A7-09-3A
 	}
 	FILE
 	{
@@ -4921,7 +5281,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_BigG
-		SHA = CB-57-03-19-81-C5-45-E8-5D-2E-2F-92-7F-0A-7A-5B-8C-BE-8F-6B-EA-7B-17-A9-57-52-9A-12-DE-F4-13-51
+		SHA = D9-EE-7D-BD-6B-9F-AC-D7-EF-88-90-08-C9-14-1C-3B-3F-20-6A-99-33-CC-0D-B4-8B-0B-6D-FA-AE-56-81-45
 	}
 	FILE
 	{
@@ -4941,7 +5301,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_Gemini_Pod
-		SHA = 00-23-01-6E-61-24-4A-56-0F-9F-7D-8C-FF-67-55-85-29-3C-44-B5-5A-90-60-A1-6F-14-CD-3E-3A-7C-04-DE
+		SHA = 59-57-CD-56-FE-FC-D3-E2-9E-E6-76-23-C6-0D-E2-8B-72-8D-82-8E-21-83-E2-87-22-26-8D-31-57-73-FC-A8
 	}
 	FILE
 	{
@@ -4951,7 +5311,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_LEM
-		SHA = 80-BB-A2-A7-EE-0D-88-D9-BA-10-47-9C-FD-FE-2B-C5-2A-DB-2B-4C-9E-06-97-DD-20-C3-9C-E4-AB-34-3F-B0
+		SHA = 4B-F4-6D-DE-E1-22-A2-3F-84-46-24-0F-E7-E5-F2-C4-83-3E-92-3E-6D-15-C4-56-00-CA-71-0F-EF-8E-4E-D7
 	}
 	FILE
 	{
@@ -5021,7 +5381,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/KK Launchers/RO_KK_ATK
-		SHA = D2-70-EE-B0-7B-78-8D-79-2F-0C-4B-EB-77-D1-B9-6B-BB-6D-68-A7-EF-8F-40-D2-10-57-65-A1-71-AA-63-A8
+		SHA = 84-5B-49-9F-F3-73-50-6D-69-97-B2-18-37-77-AB-C3-44-1C-1D-41-92-5A-9D-E0-6F-E7-8E-10-9E-36-C2-79
 	}
 	FILE
 	{
@@ -5056,17 +5416,17 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/KK Launchers/RO_KK_DeltaII_Adapters
-		SHA = 1B-9A-34-AE-BF-B6-62-C7-AA-37-A0-F1-D0-42-30-A4-25-AC-81-F9-B0-77-48-44-83-3F-40-74-3D-1A-49-88
+		SHA = 22-5F-49-64-91-08-20-48-52-A6-20-88-64-C5-5C-0F-09-25-E9-7F-93-AD-55-46-99-FA-B0-52-C6-66-A6-9E
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/KK Launchers/RO_KK_DeltaII_Engines
-		SHA = 37-A5-C9-1E-02-FE-06-7E-9C-94-1C-C5-D3-3F-B8-11-1B-D8-9D-29-B0-41-CD-E9-F6-D5-78-7C-54-4D-8B-94
+		SHA = C0-01-2A-DE-8A-57-86-4B-2A-31-97-A6-EC-8B-B9-61-3F-16-4B-36-2B-11-56-3D-F5-31-B4-98-89-33-8A-40
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/KK Launchers/RO_KK_DeltaII_Tanks
-		SHA = 7B-26-97-23-50-F6-0B-EC-58-8D-61-26-B0-42-B3-B9-78-5D-8F-CB-60-2A-69-CB-9C-ED-4C-DC-F8-1D-FB-23
+		SHA = 54-22-46-10-B4-14-D2-44-B4-9F-33-72-1D-3F-2B-E9-94-5C-3A-12-61-A4-75-7E-61-FD-4F-CC-10-DD-BD-34
 	}
 	FILE
 	{
@@ -5181,7 +5541,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/LionHeadAerospace/RO_LH_ATV
-		SHA = 1A-25-A3-71-D6-87-33-48-CB-B0-E6-71-72-3F-11-56-0E-4D-02-29-0A-A2-48-DC-71-D5-DB-CC-E1-63-D0-2B
+		SHA = 21-73-1B-23-B8-3F-FD-1A-A5-02-A7-1E-E6-2E-0A-B4-03-4B-39-79-BF-CB-FD-90-D9-23-DD-76-B5-BD-AD-D5
 	}
 	FILE
 	{
@@ -5341,7 +5701,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/RaiderNick/RO_RN_IUS_PAM
-		SHA = C8-6C-94-F3-21-1B-50-0F-A3-09-DD-15-6B-E1-7A-A4-C6-55-1A-A5-D9-A3-83-73-67-E9-F7-7A-AA-52-4E-B6
+		SHA = EA-9D-DD-F7-73-85-AB-83-91-8A-BD-89-6F-41-0C-49-08-75-A3-00-C1-AB-B2-02-C5-CB-84-D0-04-75-73-BC
 	}
 	FILE
 	{
@@ -5421,7 +5781,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/RaiderNick/RO_RN_Surveyor
-		SHA = 5C-E5-06-DB-D8-78-15-97-A6-79-2E-60-93-25-09-20-BE-F1-41-06-B7-CC-8B-E4-A8-CD-5F-F0-C9-5A-71-A8
+		SHA = FD-F4-9B-AF-2F-88-9A-5D-3A-E6-A2-28-EB-56-F2-D6-2A-DE-C5-B7-0D-7C-B1-A7-75-D5-2A-BC-F7-0E-0B-6C
 	}
 	FILE
 	{
@@ -5431,12 +5791,12 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/RaiderNick/RO_RN_USProbes
-		SHA = 71-E9-F2-75-6A-3A-46-86-79-44-DB-75-09-D5-16-0A-06-C7-48-50-3F-19-8A-1B-3E-2D-CE-8C-3B-53-1E-03
+		SHA = BC-FC-7B-69-A5-96-69-98-F3-BB-37-90-F3-99-43-7B-C4-DD-8E-E6-38-05-B6-4C-63-8F-1F-9C-82-B4-51-9E
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/RaiderNick/RO_RN_USRockets
-		SHA = EC-0C-11-37-85-FF-E3-7F-53-4C-52-9E-2B-C0-F1-A1-CB-F3-E6-D0-EC-75-26-09-88-E5-F4-AD-72-1B-9B-60
+		SHA = 33-23-08-5E-9F-89-2F-07-16-F3-71-6A-2A-77-67-BE-54-BB-7C-7D-0D-9B-A1-C7-4F-B0-C5-14-79-FA-33-03
 	}
 	FILE
 	{
@@ -5591,7 +5951,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/SCANSat/RO_SCANsat
-		SHA = A6-65-EC-98-30-DC-AC-34-15-EC-16-71-DD-3C-C6-92-9E-57-9D-22-CC-05-DB-36-10-90-61-A4-47-AA-FC-E8
+		SHA = 06-64-1E-C2-11-B8-47-43-D9-59-6C-53-70-3A-C6-D6-73-3A-70-A4-8D-E0-0A-E6-A2-65-01-40-01-87-4B-CF
 	}
 	FILE
 	{
@@ -5606,7 +5966,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/Squad/RO_Squad_Command
-		SHA = 07-AF-87-A0-DD-12-C0-97-7F-EA-86-CD-DB-33-76-FB-DE-CC-08-07-FB-6F-C6-5D-ED-E0-C7-EB-C4-3C-28-A4
+		SHA = 4A-B1-7F-BA-00-BD-90-9B-F2-12-4A-E5-07-2C-A1-C8-9B-17-BE-95-C6-03-2D-13-DF-C8-42-27-AB-11-3C-36
 	}
 	FILE
 	{
@@ -5616,12 +5976,12 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/Squad/RO_Squad_Electrical
-		SHA = 6C-06-02-01-31-1C-14-6D-D5-D5-B2-E3-AC-42-AA-78-5A-DE-57-9B-15-E8-34-A0-CD-45-AF-B7-68-7C-50-DE
+		SHA = 1E-83-A6-38-B3-B3-B8-3E-0E-90-AA-C2-5F-33-C4-6A-EE-8C-DA-2C-77-FF-A3-C7-E9-32-6C-6B-F0-60-CD-5D
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/Squad/RO_Squad_Engines
-		SHA = 82-5F-EF-B8-E8-C0-39-B1-BA-33-F8-32-2D-8E-11-75-75-15-5C-40-7A-29-D2-BF-9D-CB-83-28-7C-5F-69-E5
+		SHA = 8C-D0-A9-EB-72-8B-6D-85-12-0B-BE-B2-57-17-AA-E4-91-23-E7-27-04-A1-86-E8-85-FC-C6-E8-12-40-FE-0A
 	}
 	FILE
 	{
@@ -5996,7 +6356,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/SXT/Solar
-		SHA = 06-95-64-16-85-98-2F-B5-C3-E1-7E-C9-6F-00-86-95-6F-BE-C5-AE-72-C2-40-F9-53-71-78-8B-9B-9A-20-A8
+		SHA = 0B-8F-DB-3E-6F-91-DB-D1-B4-8D-B5-3A-04-00-B5-E4-28-E9-63-0A-DD-28-E5-C8-60-C0-57-0A-67-C2-99-06
 	}
 	FILE
 	{
@@ -6081,7 +6441,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/Tantares/RO_Tantares_Gemini
-		SHA = 2A-D2-F2-96-5A-7B-55-66-C9-91-47-B2-A7-A7-56-B9-25-BC-D0-F5-5C-1F-E2-56-F4-EC-56-7A-64-4F-37-FB
+		SHA = 8C-C6-89-0C-09-56-55-58-65-0B-21-7A-24-BF-33-A7-BE-A0-99-4C-11-F3-66-10-6C-2E-FD-00-A6-E0-A8-1C
 	}
 	FILE
 	{
@@ -6106,12 +6466,12 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/Tantares/RO_Tantares_Salyut_Mir
-		SHA = 12-6F-CA-AB-B8-CC-C2-0D-C9-B7-04-BF-57-8C-8E-18-E1-F7-EB-A5-F8-11-D3-BB-91-85-CC-84-82-36-8E-B6
+		SHA = 04-B5-71-F6-CC-D6-89-DD-47-2A-49-61-9D-42-EE-77-EA-40-F8-33-36-75-F0-AC-57-53-F3-17-C0-4F-66-05
 	}
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/Tantares/RO_Tantares_Soyuz_LOK
-		SHA = 9A-37-FE-50-EB-53-4E-66-99-C4-3B-2C-2F-2C-C3-72-F9-49-87-8F-46-1D-F9-55-9B-E8-9B-D1-40-F9-55-34
+		SHA = AE-67-27-9C-5F-C4-A9-7F-BA-63-0A-85-C3-4E-B6-37-81-41-37-9D-76-E8-07-32-7F-FA-72-C1-BD-DF-9B-0E
 	}
 	FILE
 	{
@@ -6131,7 +6491,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/UniversalStorage/RO_UniversalStorage
-		SHA = 72-9E-83-C8-2B-2B-72-CF-EC-DC-D8-2F-C5-4E-15-4C-DC-F6-19-1B-E9-CA-71-48-50-50-79-AF-86-26-2F-9A
+		SHA = A6-85-31-D7-B0-D0-D4-6A-90-F3-D1-0B-23-DF-42-D3-14-64-18-71-C1-96-9E-31-96-75-A3-61-DB-1C-1C-07
 	}
 	FILE
 	{
@@ -6161,7 +6521,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/VSR/RO_VSR_Command
-		SHA = A0-23-70-63-BD-CD-86-03-12-89-5D-35-0C-B2-93-93-13-49-65-C1-25-3E-30-CD-34-CC-38-D1-98-F2-66-ED
+		SHA = 30-68-6C-67-7D-9B-E8-B3-BF-E7-D7-59-44-1B-1A-22-26-99-48-73-11-84-98-8F-2A-6A-F2-91-17-35-47-F3
 	}
 	FILE
 	{
@@ -6196,7 +6556,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealismOverhaul/RO_SuggestedMods/VSR/Solar
-		SHA = 78-D1-07-61-E5-B3-66-F7-DC-10-0C-34-6B-CE-4B-C2-6C-18-46-91-EF-FA-B8-47-2C-19-78-09-F4-7A-10-FF
+		SHA = 41-79-F0-A9-6D-85-32-0F-44-81-E3-4A-76-30-68-BF-2A-72-C6-79-64-77-5E-ED-76-1E-AD-91-34-C1-02-F3
 	}
 	FILE
 	{
@@ -7471,7 +7831,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealSolarSystem/RSSKopernicus/Jupiter/Jupiter
-		SHA = 96-5D-2A-8D-14-77-D5-E7-6A-57-38-05-BC-8F-07-4C-DC-28-22-4E-C6-2E-65-5D-DA-FF-D8-85-51-10-C6-8A
+		SHA = EA-F8-B4-C9-B4-16-5B-28-CA-C4-E8-22-F8-73-53-5D-E5-E5-DA-77-99-0C-FB-D7-13-D6-6A-AD-B4-B9-A1-C6
 	}
 	FILE
 	{
@@ -7501,7 +7861,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealSolarSystem/RSSKopernicus/Neptune/Neptune
-		SHA = 40-45-CE-3D-D2-87-6C-13-92-27-7A-91-2A-73-5E-26-E1-CB-95-84-FC-34-6B-6A-33-98-E9-CC-68-E6-07-72
+		SHA = FD-39-EC-75-B3-6C-47-61-53-7C-64-9C-BA-90-8F-BB-0D-E7-36-A6-AB-0D-E5-E6-75-C1-62-AF-91-43-0C-07
 	}
 	FILE
 	{
@@ -7526,7 +7886,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealSolarSystem/RSSKopernicus/Pluto/Pluto
-		SHA = 9B-A8-B2-54-FD-4D-A1-07-5A-90-1B-CB-52-E1-B6-D2-AF-12-34-F3-B2-78-E5-92-69-6A-D5-56-87-53-E5-C0
+		SHA = C8-05-83-C5-FE-34-C0-34-C3-78-38-B3-7E-4D-85-24-0A-5E-85-5F-BA-74-13-F6-45-CB-18-95-68-01-99-71
 	}
 	FILE
 	{
@@ -7561,7 +7921,7 @@ FilesSHA
 	FILE
 	{
 		filename = RealSolarSystem/RSSKopernicus/Saturn/Saturn
-		SHA = 3F-1A-79-9A-E7-BF-E8-34-38-23-D5-C2-39-74-29-C2-48-48-A1-7B-77-0A-31-21-E9-87-F8-1A-B3-5D-72-1B
+		SHA = 9E-1A-2F-88-39-A6-EF-3B-46-2B-AF-CA-6C-E3-54-51-28-4A-3B-86-64-14-E1-50-76-AA-35-8A-7D-52-88-92
 	}
 	FILE
 	{
@@ -7576,12 +7936,12 @@ FilesSHA
 	FILE
 	{
 		filename = RealSolarSystem/RSSKopernicus/Saturn/Titan
-		SHA = BA-10-DA-0F-73-5D-6A-FA-F4-A3-4A-46-09-25-BD-98-57-D4-75-0C-8D-70-23-44-ED-4B-1D-07-A7-26-FF-B6
+		SHA = F8-D8-68-0F-3B-A8-34-11-02-6A-BC-C4-F7-A0-3E-FE-16-31-6E-EF-17-43-78-DE-8C-BF-66-92-70-09-EF-15
 	}
 	FILE
 	{
 		filename = RealSolarSystem/RSSKopernicus/Uranus/Uranus
-		SHA = 71-92-64-B8-18-A8-71-B3-8F-55-28-58-D8-D2-A5-39-06-07-EF-A6-C0-C2-47-E9-0D-81-21-2F-FF-87-88-9E
+		SHA = 20-56-F4-04-95-DA-35-B2-AF-0D-1C-95-7C-E8-BD-B7-7D-42-A4-F7-35-8A-05-9B-76-E3-47-6C-B8-A4-3E-2F
 	}
 	FILE
 	{
@@ -7732,6 +8092,591 @@ FilesSHA
 	{
 		filename = RemoteTech/Parts/ShortDish2/part
 		SHA = 19-10-2C-B1-97-64-2C-16-81-B3-20-F4-6F-F7-38-6C-6B-30-0F-11-C2-01-8B-45-24-34-D4-CA-70-C4-8D-63
+	}
+	FILE
+	{
+		filename = RP-0/Avionics
+		SHA = 22-49-21-67-26-79-9A-D6-A5-D5-03-92-2D-E9-CF-D1-E5-51-71-55-CD-88-E0-7C-DD-C9-10-DD-3C-87-C6-B5
+	}
+	FILE
+	{
+		filename = RP-0/ChakaMonkey_Engines
+		SHA = 38-61-5D-D9-A7-FF-12-2C-E4-84-D6-02-FE-2E-E7-E1-91-55-9A-12-78-E0-28-6F-7A-65-E0-86-03-D2-89-53
+	}
+	FILE
+	{
+		filename = RP-0/CTTChanges
+		SHA = 94-21-AB-CE-A4-D7-5D-76-57-30-F0-7A-68-52-10-20-1E-83-B4-72-71-42-4E-A2-B2-DF-DC-C4-24-39-60-E2
+	}
+	FILE
+	{
+		filename = RP-0/CustomBarnKit
+		SHA = E9-F9-47-EF-E8-DC-61-30-00-07-44-12-38-61-EB-B1-3A-CD-B9-9C-E8-CF-F4-25-0B-5F-E1-D7-B4-EB-FB-59
+	}
+	FILE
+	{
+		filename = RP-0/EntryCostModifiers
+		SHA = 3F-AF-FF-EC-98-EA-8E-B9-39-9B-13-EC-89-86-79-A2-C7-43-51-0B-6A-9B-0B-F0-6E-60-E7-6D-87-4F-78-B4
+	}
+	FILE
+	{
+		filename = RP-0/NonRP0
+		SHA = EE-DB-0A-46-DE-70-FB-15-03-6E-55-C7-3E-AF-BB-79-5E-7E-8B-C0-39-F1-0B-FA-1D-1B-0E-83-17-55-C0-FF
+	}
+	FILE
+	{
+		filename = RP-0/PartHacks
+		SHA = 31-0C-39-49-E8-73-13-57-88-D4-77-83-13-CD-43-16-DE-C4-AB-77-E8-85-06-89-12-5E-5E-C1-C8-63-41-B4
+	}
+	FILE
+	{
+		filename = RP-0/ProcCosts
+		SHA = C7-11-57-B3-72-D5-34-BA-89-E6-0D-72-60-07-A7-01-B4-53-3A-B4-A2-7E-C4-7F-A3-59-69-6F-BB-25-58-FC
+	}
+	FILE
+	{
+		filename = RP-0/ProcSizes
+		SHA = 93-EF-99-7D-C8-6B-97-A0-87-C6-43-1F-51-7A-F4-AA-E5-3A-7E-45-4E-1A-92-73-59-2A-E9-14-52-09-64-01
+	}
+	FILE
+	{
+		filename = RP-0/ResourceTechs
+		SHA = 55-9D-D4-75-EF-B6-DE-40-45-9F-4E-C9-4C-D2-FA-86-FE-7E-95-0E-44-B9-AB-85-A8-1D-0C-EB-5B-F1-FC-02
+	}
+	FILE
+	{
+		filename = RP-0/RFTechLevels
+		SHA = CD-A9-50-64-38-FE-F4-51-E2-54-3B-0A-37-AB-37-AB-E8-EA-7B-DA-7B-2C-05-8F-75-4A-13-70-EE-BA-9E-47
+	}
+	FILE
+	{
+		filename = RP-0/SSTU_TechLimits
+		SHA = 2B-EC-2A-CC-37-DC-DA-79-6E-0C-A4-0A-3C-B5-A3-46-5F-A3-AC-82-0B-2F-56-43-9D-54-84-80-3A-E1-EB-78
+	}
+	FILE
+	{
+		filename = RP-0/Tantares_Engines
+		SHA = 5B-40-06-47-96-7E-69-3D-50-80-7B-85-3C-4F-2C-5E-F5-97-2D-23-09-4B-E7-56-C1-13-FF-FB-90-BA-64-47
+	}
+	FILE
+	{
+		filename = RP-0/TestFlightConfigs
+		SHA = 58-17-A6-AD-EC-B4-C8-E3-8E-D6-D9-63-7B-95-04-99-2B-01-34-EB-A5-13-B3-EE-58-CB-1B-EC-27-03-64-9D
+	}
+	FILE
+	{
+		filename = RP-0/TestFlightInterop
+		SHA = F2-67-3B-91-C2-A8-F0-E3-24-CB-5A-03-32-E9-0A-56-3D-DA-EF-8D-FB-BA-76-8F-4D-DE-CA-FB-09-AB-C1-91
+	}
+	FILE
+	{
+		filename = RP-0/Tree
+		SHA = DC-C8-1E-09-47-FA-49-D1-B2-CF-6A-27-45-C3-79-9B-BF-0D-34-DE-F0-4E-7A-41-0C-40-19-F9-B1-1C-45-E2
+	}
+	FILE
+	{
+		filename = RP-0/zFinal
+		SHA = 78-CC-64-1C-E9-83-EA-07-E9-C0-39-FE-74-08-AE-44-8D-25-F2-1A-85-8E-FA-D9-4E-B8-09-66-E6-6D-10-A2
+	}
+	FILE
+	{
+		filename = RP-0/zTweakScale
+		SHA = 48-B5-36-C4-D0-B3-C7-6D-75-50-22-83-10-4C-4D-A5-F8-25-6D-C3-CF-60-39-18-9F-31-41-AA-95-1E-DA-DC
+	}
+	FILE
+	{
+		filename = RP-0/Agencies/Agents
+		SHA = 48-26-F4-4C-9D-38-D0-EE-22-84-B4-2C-3E-5D-F5-28-04-C6-A2-2F-8E-BF-67-0B-C6-CF-F8-67-13-57-61-CE
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Field Research
+		SHA = FA-E7-02-25-C0-C0-98-85-32-D3-68-A8-56-EA-0D-20-2B-94-B2-C7-9E-78-25-A2-FD-DC-A4-C7-32-92-C4-16
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Groups
+		SHA = DD-E6-54-1B-EF-02-66-7D-46-3B-33-21-53-A2-78-B6-E7-96-D7-BE-F3-0B-26-30-DC-86-91-61-FB-EB-5F-82
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/SCANSat
+		SHA = 30-13-9C-39-5C-C7-91-96-34-AF-A4-85-C5-49-BB-0C-86-BE-51-C6-8C-8A-C5-23-68-05-B5-50-C5-14-46-2F
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/StockContracts
+		SHA = 0C-3E-AC-A1-07-0B-6C-75-40-8C-2E-2E-35-13-FF-BA-8F-92-7E-1C-00-1F-6F-5A-48-4A-20-7F-19-BA-E3-1C
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/DeimosFlyByContract
+		SHA = 4B-65-EE-55-FC-3E-F5-11-DB-62-30-32-9E-57-90-57-FB-F3-73-B4-7E-D1-2F-9F-60-E8-ED-A3-F0-C3-36-B0
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/JupiterFlyByContract
+		SHA = B7-EA-F2-89-3B-27-0C-08-CC-7E-4A-03-6D-00-B5-3D-4C-B1-EC-40-E9-ED-E4-C7-89-1A-51-48-9A-24-72-E0
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/MarsFlyByContract
+		SHA = 77-E5-A8-11-6B-CF-70-80-43-31-FD-3D-6F-7E-24-27-6A-08-87-F4-37-91-94-87-B8-89-A8-4E-3F-15-75-F7
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/MercuryFlyByContract
+		SHA = 9E-1A-2B-97-EA-F4-F0-93-A5-2D-FD-0F-A6-10-28-75-03-E9-9E-AD-31-E5-DE-B0-F9-77-8A-FA-D7-E3-F9-5C
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/NeptuneFlyByContract
+		SHA = F6-C5-5B-A8-F6-A0-05-8E-F7-F4-C7-B9-91-18-1B-BA-28-4B-F7-79-7C-15-4B-93-69-AB-70-BA-BD-57-B7-97
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/PhobosFlyByContract
+		SHA = F5-74-D8-90-D3-D0-30-6B-18-17-7B-66-8E-20-62-AD-84-9E-89-E1-04-FF-82-4D-96-DD-12-8F-07-16-60-95
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/PlutoFlyByContract
+		SHA = FF-0C-C2-2A-D5-DB-35-7A-C2-7C-A5-6F-7A-FF-14-02-EC-5A-C9-E3-2D-98-06-6C-E8-07-6A-6C-C7-73-8B-29
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/SaturnFlyByContract
+		SHA = B9-7B-EE-80-E5-E2-DB-F2-40-A4-96-1A-FD-B4-21-81-37-23-9E-F7-0D-3F-2B-8D-38-27-95-1A-72-81-79-5F
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/UranusFlyByContract
+		SHA = 8E-26-16-10-DF-29-3E-95-08-84-F3-A6-AB-20-C1-88-CA-83-EF-9E-86-C1-87-F8-2B-74-DD-86-6D-D1-72-53
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Fly-by Contracts/VenusFlyByContract
+		SHA = 57-58-76-F5-98-AF-54-85-D7-47-E4-8C-B4-44-8B-57-4B-C6-D2-36-BA-BD-9E-97-0D-A0-E0-6D-77-ED-75-BA
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Records/CrewedAltRecord
+		SHA = B9-95-DF-36-8A-ED-04-4F-37-53-53-97-A6-BB-85-58-54-05-01-2E-FD-8C-C9-D8-EB-8D-C2-FB-E0-9E-D4-BE
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Records/CrewedCountRecord
+		SHA = C6-F2-3E-76-A8-A4-9A-C6-40-DF-BC-F6-09-28-E1-AC-99-03-7D-F9-83-8B-E0-99-CC-18-84-A6-6F-18-1D-8A
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Records/CrewedDurationRecord
+		SHA = 59-56-08-0F-74-21-18-21-D6-BF-7D-35-4A-50-3C-0B-67-07-D3-4B-91-24-12-69-F8-93-DA-BC-4E-0F-EE-BA
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Records/CrewedSpeedRecord
+		SHA = 8C-8E-51-7F-EB-0B-DF-90-D0-9F-31-47-79-14-7E-89-F2-C1-C0-55-4D-58-7F-75-E9-C5-6D-5A-F2-DD-67-C2
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Lunar Landing 1 Repeat
+		SHA = 27-4A-DB-2B-63-8D-33-E1-4E-20-A3-19-B1-9D-35-6A-BF-3D-0B-5A-9F-AD-47-04-60-D5-53-07-13-EF-C1-49
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Lunar Orbital 1 Repeat
+		SHA = C4-39-BD-82-FE-9C-A5-0F-32-0C-DC-FE-64-18-56-AE-8B-3C-0F-7D-50-9B-1A-7E-33-13-E4-AD-3C-88-8D-27
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Lunar Orbital Gen Repeat
+		SHA = 1D-57-3B-FA-CF-44-8A-DC-6D-E4-60-8D-D0-70-EC-B1-32-5D-DD-0E-A2-6C-7B-31-CF-3F-38-53-D9-EC-41-3D
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/MarsLanding
+		SHA = F9-21-5F-F0-87-C3-A4-CA-97-B6-4E-5D-E8-90-7D-F4-D9-6B-37-D1-CA-FE-EA-D1-24-1D-26-EB-2E-98-8B-4B
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Orbital 1 Repeat
+		SHA = 68-40-56-7A-E3-50-0A-10-1C-21-AE-E6-57-6C-B5-2D-65-8B-CC-9C-82-9C-93-FC-00-27-CF-3A-CC-2E-54-C6
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Orbital 2 Repeat
+		SHA = 48-E8-A1-AE-26-A8-07-34-93-F7-3E-E1-CC-B3-D8-A2-39-2B-CC-8C-54-2D-33-38-FF-30-23-86-91-55-3C-31
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Orbital 3 Repeat
+		SHA = 3A-0C-5A-64-8A-0E-44-6B-3D-AC-8D-92-C8-88-E7-1B-B1-99-D4-9C-7E-B9-4C-84-32-54-32-87-5C-29-78-58
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Station Crew Rotation
+		SHA = 96-E9-B7-32-67-37-76-C6-DE-4C-85-43-0D-4C-C1-D3-21-BA-CC-22-E4-D2-22-9E-28-6E-89-15-F7-F6-B3-5A
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Station Repeat
+		SHA = 27-7B-13-BE-B0-8B-22-8E-A7-BA-40-3E-71-0E-6C-CC-8E-DF-DE-A6-E9-31-11-61-75-F5-41-02-0D-B4-5E-DF
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Human Spaceflight/Subortal Repeat
+		SHA = D6-45-0D-62-08-F3-AA-E9-0A-FD-AE-D7-2F-4B-6D-74-13-34-B3-C2-1B-EB-41-65-BC-1B-42-5D-3D-18-0B-4F
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/CallistoLandingContract
+		SHA = 23-E8-31-25-63-C6-78-CB-99-98-41-22-3B-47-B6-9A-31-58-99-23-25-66-1A-71-B7-B6-33-10-B7-CF-6A-57
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/DeimosLandingContract
+		SHA = 87-4B-B1-70-34-11-FC-71-1B-F2-DC-71-A0-A3-D3-42-DC-58-5F-57-AE-63-38-26-60-C8-A6-06-48-0F-66-3D
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/EnceladusLandingContract
+		SHA = BF-2C-CE-83-D6-71-C9-86-42-F3-88-FE-2E-AE-CC-0A-A0-6C-BE-5B-A2-12-B6-15-95-95-CE-1D-09-BF-7B-DA
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/EuropaLandingContract
+		SHA = EF-7F-74-58-B9-81-C7-35-59-AE-4C-FA-E7-AE-83-18-F4-F0-73-BD-7D-7C-7A-27-75-71-11-52-E5-9D-8A-2A
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/GanymedeLandingContract
+		SHA = 3F-5B-98-79-5C-E1-51-1C-38-5F-0C-EA-D0-49-73-18-56-BF-46-CE-05-23-2B-DC-7E-B8-0E-8D-F6-EB-61-97
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/IoLandingContract
+		SHA = 98-61-8F-E7-5A-74-D3-DE-DF-0D-0E-AB-C1-E8-78-2F-15-6F-7B-4C-32-46-A9-A6-A8-DA-3B-0D-87-10-6B-00
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/MarsLandingContract
+		SHA = 57-B0-92-6E-04-84-7F-83-DF-38-1A-D3-B5-A6-78-B6-1C-3C-AE-18-87-EF-71-CE-61-CC-7A-FD-A7-97-4B-42
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/MercuryLandingContract
+		SHA = BD-1C-5A-F9-BB-45-D6-C8-78-F5-A1-8E-74-71-D0-3A-6C-F2-9D-C5-F9-90-0F-48-FA-EA-EC-4F-47-BD-4B-52
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/MimasLandingContract
+		SHA = 26-0A-B6-C0-E0-58-16-85-E0-43-A1-FF-94-4A-EF-72-AE-E6-0E-BB-3B-70-95-62-B4-0C-DF-AD-3B-50-27-6C
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/MoonLandingContract
+		SHA = F9-91-07-C8-A5-DD-24-29-72-2B-06-C0-57-0F-EF-CD-B5-8C-6C-0C-58-3B-C0-62-98-20-A9-C9-35-5F-ED-4B
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/PhobosLandingContract
+		SHA = FE-7E-0F-45-2C-F5-B1-A6-89-07-D3-78-A7-6A-E7-48-A1-A8-E1-13-07-10-DC-62-0A-5C-22-BE-C7-84-46-B4
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/TitanLandingContract
+		SHA = 2D-47-20-56-DF-8E-08-36-C3-72-5A-38-90-EF-D1-F9-32-8C-27-B0-B1-04-D3-34-5A-82-5C-B2-69-90-37-13
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/TritonLandingContract
+		SHA = BF-C5-69-F8-C0-48-6B-39-44-BD-EC-63-08-58-0B-7B-61-05-41-B2-73-AA-BB-D6-CD-B8-B3-80-42-3F-65-B7
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Landing Contracts/VenusLandingContract
+		SHA = 60-A2-91-DD-04-32-C3-8F-72-8E-3C-CE-0D-6F-BC-D8-07-CD-82-CE-F4-AB-3A-24-64-D7-93-81-D0-D4-B4-A7
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/Docking
+		SHA = 0C-80-E9-7B-D9-69-16-6B-C5-6E-37-DF-68-0C-A1-0D-40-29-6F-CE-4A-84-66-21-64-51-46-24-3A-9A-50-D7
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/EVA
+		SHA = 91-6B-2D-F5-D7-2E-BD-67-23-5A-2F-B5-1F-24-30-A0-52-EF-68-5E-A7-1F-4E-13-2D-8B-5A-CC-A8-F2-96-77
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/FirstCrewedSupersonic
+		SHA = FA-92-8E-60-67-BB-C9-5D-0D-47-8F-CD-C0-43-E4-1D-F7-D1-35-F1-EF-24-D2-80-93-88-D5-B9-FD-74-7C-D2
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/FirstLaunch
+		SHA = 1B-56-FB-4F-34-96-61-67-19-71-A3-5C-A3-50-E0-98-44-38-54-7F-3A-C8-BD-67-6E-C4-BC-EF-42-90-3F-68
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/GEO
+		SHA = 15-3E-0F-69-AD-A5-41-3F-A8-92-20-0E-6A-4A-1D-36-3B-92-65-F1-A0-97-89-E5-8A-DA-DD-9A-07-56-18-71
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/HumanMarsFlyby
+		SHA = 38-85-18-CA-C3-3C-08-73-69-FA-F9-06-0C-AA-FC-E7-C4-A2-A0-6C-5D-CF-B3-D5-DB-9E-AE-CA-EF-B8-FD-A0
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/HumanMoonFlyby
+		SHA = B7-A4-42-1E-0F-D0-1C-3C-13-86-35-06-0B-22-65-FF-B6-E9-40-C3-19-F5-56-13-B5-B5-03-48-BD-CB-01-F4
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/HumanMoonLanding
+		SHA = 4F-14-CA-5F-3C-AE-B4-15-57-0E-CC-8A-61-AA-82-8E-47-77-8D-31-F5-91-AD-64-F0-91-EA-3F-C0-A7-20-8A
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/HumanOrbit
+		SHA = DB-22-F5-3D-60-D2-CE-B9-14-C9-87-AC-7A-33-73-F2-17-72-DC-08-2B-D6-27-A0-F9-07-A2-B0-EF-77-38-D4
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/HumanVenusFlyby
+		SHA = 37-08-2D-A9-84-16-75-D6-D9-C2-FB-FB-18-8F-D9-0A-25-26-CE-48-EC-52-04-69-5F-6B-38-44-71-6A-88-55
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/KarmanLineCrewed
+		SHA = 1C-20-47-85-53-E9-48-5E-0A-E6-51-BA-C1-FE-6E-EC-35-FC-BA-95-F9-D3-F6-C5-2A-B2-CB-F9-D0-88-67-F4
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/KarmanLineUncrewed
+		SHA = C6-62-98-A9-06-02-79-2A-F0-02-CF-C3-67-51-C7-5B-CC-28-99-D7-19-FB-1F-6F-F0-4E-BF-DA-F1-8F-54-7E
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/MoonFlyBy
+		SHA = EE-F3-A8-0B-EF-E1-B5-6E-BE-80-B6-DC-0E-29-14-AA-5B-CD-65-34-0A-6B-1B-F5-07-CB-5D-46-02-51-DB-C5
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/MoonImpact
+		SHA = F4-65-DC-9A-34-AE-D1-DA-F2-AA-73-01-BE-9F-3A-BC-28-A3-7F-A5-D3-97-90-55-AC-A9-C2-A9-94-8A-3D-72
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/MoonOrbit
+		SHA = 76-70-A5-F5-D0-D1-69-54-A7-0A-84-7F-94-94-D2-EF-EC-70-73-C0-49-EB-E7-07-D2-0A-7B-2E-90-4B-FB-37
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/Reentry
+		SHA = 39-5D-6B-A1-1E-95-C3-3E-41-C3-4E-F4-04-2C-94-77-C6-DE-E7-61-44-B5-6A-D0-78-08-65-8E-88-45-81-8B
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/Satellite
+		SHA = 83-E2-82-F2-BE-CE-95-F5-B6-8D-90-2F-D7-B1-1A-E4-A9-F4-C8-9B-61-E7-7E-8D-30-09-D5-38-7F-88-95-B1
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Milestones/Station
+		SHA = 28-04-AE-81-66-26-36-09-7D-76-AB-EA-93-97-53-49-7E-EB-08-52-B2-81-10-94-FF-2C-1A-AA-B4-BE-BB-C7
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Records/AltRecord
+		SHA = 10-31-86-8F-09-FE-B6-8B-D9-F9-3C-40-22-98-26-22-EE-EE-AE-4F-2B-FB-12-BA-80-5B-7D-0D-18-CB-E8-82
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Records/SpeedRecord
+		SHA = 81-EC-24-C3-BF-0B-67-F6-58-13-B4-C4-4B-A0-53-F3-2E-84-E3-91-4A-D0-4E-47-11-DE-38-18-6A-BF-DE-DF
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Satellite/WeatherContracts
+		SHA = B6-5E-FB-A5-73-F9-41-97-F4-EA-DF-00-40-B2-EE-12-BC-FA-56-8F-E5-47-67-24-9A-6C-D3-DC-99-C3-06-C3
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Sounding Rocket Contracts/SoundingHigh
+		SHA = D4-CF-1F-68-2A-0A-75-E4-60-19-BE-8E-3B-DA-C1-86-DE-9E-E1-2B-83-0D-9B-94-DD-E0-32-14-7A-A7-4D-24
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Sounding Rocket Contracts/SoundingLow
+		SHA = B9-77-53-57-DD-EA-9A-55-CB-6C-DE-7E-3F-A7-C3-0E-48-F6-EA-7F-6B-4D-C1-36-29-B9-F3-20-B7-43-58-04
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/Sounding Rocket Contracts/SoundingMed
+		SHA = 86-46-AB-38-8E-70-CA-5B-52-B5-F7-16-53-FA-17-1A-75-FF-E9-A7-B9-30-FD-84-BD-76-5A-14-C2-18-3E-B0
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/X-Planes/CrewedFlight
+		SHA = DA-42-0D-A0-71-51-2B-7F-9D-6B-DF-1E-78-A2-A5-23-79-34-8A-95-23-C5-03-73-33-AC-3D-BC-78-A6-EA-A5
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/X-Planes/CrewedHighAtmo
+		SHA = 15-D9-1E-04-F7-97-DF-DA-D9-51-0B-23-A4-FB-EB-4C-21-8D-08-FA-E0-4C-D1-8C-8D-43-4A-1F-F3-30-0D-A8
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/X-Planes/CrewedHighAtmoLate
+		SHA = E2-CA-EC-AB-5A-25-05-5F-F0-6C-C2-74-5D-4F-99-4B-58-CA-F0-4D-95-6C-74-FE-E0-FF-1C-A2-95-2C-75-40
+	}
+	FILE
+	{
+		filename = RP-0/Contracts/X-Planes/CrewedSupersonic
+		SHA = 18-EB-11-72-3D-F9-A2-75-D9-C9-B9-36-BC-66-8F-F0-1B-BB-2F-6C-70-B6-47-26-40-5F-87-E6-F1-06-DA-85
+	}
+	FILE
+	{
+		filename = RP-0/Filter_Extensions_Configs/non_wip_RP0
+		SHA = 6A-AD-1E-E1-CA-4A-C5-58-AC-9B-5A-27-AB-4D-31-E2-24-D4-73-BF-2E-B1-77-04-E2-9D-2D-45-A6-F1-93-7E
+	}
+	FILE
+	{
+		filename = RP-0/KCT_Presets/RP0_KCTPresets
+		SHA = FF-EE-FA-08-A1-DD-50-82-12-0D-CD-9D-01-0E-0A-33-56-92-AD-D0-08-11-94-60-01-49-97-7C-CC-38-C7-0F
+	}
+	FILE
+	{
+		filename = RP-0/Parts/Science/sensorGeiger
+		SHA = D2-1C-C3-81-69-3A-4C-FD-A8-6B-16-0A-0D-9A-D4-DC-D2-06-12-20-92-A4-50-E8-09-AF-46-8F-21-CC-DA-41
+	}
+	FILE
+	{
+		filename = RP-0/Parts/Science/sensorMicrometeorite
+		SHA = E5-0D-9E-23-4B-E4-EC-47-3B-04-9E-7B-B7-05-6A-72-CB-1B-1B-12-38-0B-C5-85-F4-0E-5A-A6-AE-85-07-CA
+	}
+	FILE
+	{
+		filename = RP-0/Science/BodyScienceParams
+		SHA = 53-B8-56-CA-25-E9-59-3C-70-C3-3B-0C-76-2D-D2-EE-C0-0A-28-F4-E4-42-66-F9-D0-2E-0E-54-97-7B-26-3A
+	}
+	FILE
+	{
+		filename = RP-0/Science/KSAEAVars
+		SHA = E1-7F-02-7A-E3-4E-CA-38-CF-19-76-86-22-BE-9E-95-A5-47-E0-B3-60-B2-AE-C8-26-49-02-B8-10-8C-1C-C4
+	}
+	FILE
+	{
+		filename = RP-0/Science/PartExperimentAdder
+		SHA = 88-BA-BD-1B-7B-6F-7F-EC-3B-58-C5-1B-EF-B0-36-49-0D-A1-24-46-66-D0-3C-4D-24-E2-EE-D2-6A-21-67-C8
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/AtmosphereAnalysis
+		SHA = 49-D8-1D-28-46-DC-46-0B-A8-89-93-7B-9B-82-EF-32-BF-7F-32-EB-48-3F-4F-88-ED-63-B9-0A-C0-FE-CD-B6
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/BioSample
+		SHA = 96-A2-03-F9-CB-BD-8A-A2-84-4E-C6-F4-E2-15-63-9B-7B-3B-3C-E9-44-D4-99-4E-64-8B-41-65-73-14-29-4D
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/CrewReport
+		SHA = 31-39-58-EE-AF-56-54-28-36-81-E9-DC-89-E0-97-D5-86-FF-74-B7-50-70-22-5C-CD-2F-DF-D1-05-EE-70-0A
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/EVAReport
+		SHA = E9-9D-86-1A-B4-E3-42-66-21-4F-3F-5B-C4-2A-81-B6-A1-8D-06-8C-84-56-5E-E9-CC-55-86-11-BB-8B-DB-E8
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/FilmReturn
+		SHA = AA-76-3F-1D-EC-D3-31-CF-80-E9-58-6C-16-2F-4D-39-EC-4C-4F-AC-54-33-1D-51-97-46-A6-03-0A-11-55-AD
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/Geiger
+		SHA = 19-AF-F9-19-FD-84-0D-22-FA-12-DA-34-CE-22-04-7B-9A-A6-64-FC-F7-66-32-F4-F1-E7-1C-E9-5A-31-C9-31
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/Micrometeorite
+		SHA = B3-31-9A-A7-3B-E3-C5-75-B3-71-45-E0-DB-9E-2F-9F-D0-D0-1A-5B-4F-E8-D8-43-77-4E-59-86-1C-02-06-88
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/OrbitalPerturb
+		SHA = 14-7F-9A-C3-D0-BE-92-48-06-B9-04-4A-6F-E4-78-74-BC-33-0A-D6-63-C1-1C-50-57-66-1C-82-5F-36-FC-AB
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/Pressure
+		SHA = 01-9F-7C-BD-C6-51-80-56-A1-FD-9F-0E-A1-F9-91-BF-D7-9B-F1-19-63-8C-D8-71-91-81-C3-43-EC-CD-95-54
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/SCANSat
+		SHA = AF-29-86-B7-72-B7-F4-26-04-D1-6E-35-16-F3-35-1C-92-AD-F9-F3-7B-59-9B-08-C0-9B-F2-9C-70-0B-23-79
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/StationScienceEarly
+		SHA = B0-BF-FB-ED-12-7E-7A-47-A5-87-CB-32-70-B5-6F-0E-9C-38-0A-C9-7B-2F-01-D7-50-F7-68-74-A9-B0-99-78
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/SurfaceSample
+		SHA = CE-39-4C-3F-8D-58-9C-34-A1-76-AA-AD-AE-41-9B-A3-B9-90-92-32-DD-90-FD-CB-AC-73-94-53-EA-EA-65-D4
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/TelemetryAnalysis
+		SHA = E3-D1-19-97-1B-A3-5B-75-BD-27-C2-4D-87-7F-BB-4F-2E-F9-16-B3-F9-1D-FF-FF-DA-B4-E7-AC-43-D7-73-0C
+	}
+	FILE
+	{
+		filename = RP-0/Science/Experiments/Temperature
+		SHA = 5C-32-A8-42-92-6F-71-AB-76-F2-C3-EF-56-66-39-95-54-C5-C5-40-07-F0-81-7A-A5-D2-90-01-71-40-D3-EB
+	}
+	FILE
+	{
+		filename = RP-0/Science/Results/BioSample
+		SHA = 4F-53-19-D9-44-3B-2D-39-7B-40-7B-4D-2D-6F-6E-06-DD-2D-F8-91-36-E8-8B-BD-7A-ED-58-B7-F2-F1-80-75
+	}
+	FILE
+	{
+		filename = RP-0/Science/Results/CrewReport
+		SHA = A6-1E-FF-5F-71-1F-A9-39-7F-5D-56-D2-5A-59-D8-EC-08-96-8E-9D-A0-18-2D-7C-DB-56-24-B2-B6-38-06-84
+	}
+	FILE
+	{
+		filename = RP-0/Science/Results/FilmReturn
+		SHA = BC-B7-6A-BE-1C-2B-3C-80-A8-DF-1D-C6-58-E1-44-E7-3A-30-D9-78-4D-8D-8F-80-6A-32-FD-1F-70-BB-E2-64
+	}
+	FILE
+	{
+		filename = RP-0/Science/Results/Pressure
+		SHA = CE-8C-48-71-1F-1E-E3-DD-58-DD-FA-87-77-31-4B-49-B0-6C-D9-02-D2-E7-6E-ED-D5-D5-7C-8C-E9-82-31-B7
+	}
+	FILE
+	{
+		filename = RP-0/Science/Results/ResultClearer
+		SHA = E3-B6-16-CF-7B-6D-88-F2-C7-C7-45-C9-FE-94-9D-D7-1A-84-89-B0-E6-76-04-1B-BC-C2-62-3F-F8-72-05-F1
+	}
+	FILE
+	{
+		filename = RP-0/Science/Results/SurfaceSample
+		SHA = 0F-8B-14-8F-17-38-26-50-9E-A9-AF-7B-6D-A8-B7-0E-A2-BF-73-BF-6C-3D-8E-19-F8-E2-80-47-7B-87-50-4B
+	}
+	FILE
+	{
+		filename = RP-0/Science/Results/TemperatureScan
+		SHA = C6-D3-B7-E5-85-34-1D-50-2E-A0-89-22-1C-21-C6-74-32-65-89-0A-B3-7E-AA-89-D5-D1-AF-78-28-2B-C2-13
 	}
 	FILE
 	{
@@ -8012,6 +8957,11 @@ FilesSHA
 	{
 		filename = Squad/Parts/Aero/shuttleWings/delta
 		SHA = CD-17-91-89-B9-7C-D7-95-DD-27-B4-4E-03-3F-91-4F-22-19-1D-E8-9B-21-47-E8-45-8B-D0-E3-2A-67-98-A1
+	}
+	FILE
+	{
+		filename = Squad/Parts/Aero/shuttleWings/elevon
+		SHA = EE-2D-8A-06-47-A1-55-33-3E-B9-3D-17-69-31-91-9D-AB-0F-B7-EE-87-AC-F2-97-25-82-A4-9D-68-64-CA-4C
 	}
 	FILE
 	{
@@ -9310,6 +10260,11 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = Squad/Parts/Wheel/SmallGearBay/smallGearBay
+		SHA = 11-59-21-42-DE-AE-61-59-F6-79-84-EE-06-8A-80-05-45-67-9F-4A-0B-F8-47-82-A8-70-34-05-4D-E0-5B-93
+	}
+	FILE
+	{
 		filename = Squad/Props/AltimeterThreeHands/prop
 		SHA = CF-73-BF-75-96-9F-06-E9-76-18-6F-1F-01-C1-09-3B-BA-77-14-ED-33-C1-E8-4B-F4-F7-AD-CF-BA-1F-67-FC
 	}
@@ -9635,6 +10590,1216 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = SXT/Partdisabler
+		SHA = 10-9F-BB-93-B7-8C-77-C2-B9-5C-9F-42-5C-ED-8C-A8-9D-D0-05-05-DB-41-44-0C-7A-36-63-C1-F6-B7-1E-2D
+	}
+	FILE
+	{
+		filename = SXT/PropEnabler
+		SHA = 6F-46-B7-DD-A2-57-4D-66-F8-F8-E6-B4-19-BD-81-FF-A0-C7-95-7A-C0-4D-B0-B0-F4-B8-0C-5E-54-67-A2-8E
+	}
+	FILE
+	{
+		filename = SXT/Agencies/Agents
+		SHA = EC-7A-38-5F-36-78-7C-6D-12-D3-98-84-03-A3-F6-EB-86-57-4E-A2-2D-FB-38-04-92-B0-B2-5A-2E-BC-D4-8F
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/BDArmoury
+		SHA = 6B-19-95-55-83-6E-28-CD-C6-B7-96-C4-3E-45-09-7A-77-F8-9A-BA-8B-45-CE-DC-8F-7B-0F-F6-10-AC-01-3B
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/FerramAeroSpaceTweaks
+		SHA = B2-06-E4-5F-18-E0-E7-85-74-EE-8B-9A-68-D4-45-5C-8C-A6-88-A2-7F-EB-8F-E0-A2-53-64-4E-60-C1-A6-2C
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/FirespitterCompatibility
+		SHA = 9E-DE-6A-E0-55-27-6D-F2-03-DD-FE-94-23-15-EA-01-96-2C-7C-CB-41-B4-01-62-E1-99-33-7D-AB-EE-A3-A1
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/KSPI_Compat
+		SHA = AB-17-43-70-28-2C-FD-BE-32-DA-D4-33-8E-1E-FF-BD-3F-27-C5-3D-10-A1-80-92-73-89-88-18-8A-52-D1-82
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/RT2MM
+		SHA = 76-BE-AC-A3-B0-89-C4-98-7F-BE-C6-3E-E0-05-EF-6E-C5-3A-08-A4-A1-E6-E3-4C-A8-5D-46-A3-C3-18-05-11
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_CLS
+		SHA = 1A-D8-79-D4-30-ED-A2-04-85-26-A2-84-B9-0C-3E-65-3B-75-68-AB-A5-3B-CA-C3-3F-35-12-0B-CB-BC-4A-4B
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_GenericTweaks
+		SHA = 57-E8-41-9B-53-D5-8D-DE-0A-F5-12-E1-23-EB-01-7E-2E-5D-D3-A4-B5-58-A3-BF-83-A1-03-DD-B7-6E-6A-A9
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_KAS
+		SHA = F0-43-6D-C7-44-35-F4-51-6A-8B-FF-CE-3B-DF-28-B2-55-A3-A2-AF-2C-AF-4A-AB-F5-2D-20-35-D2-EC-F2-FA
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_modularFuelTanks
+		SHA = E4-44-D1-B8-89-B4-E6-6C-4E-A9-80-98-19-B1-AD-C1-E9-BB-E7-6D-B2-48-03-FC-58-D6-7E-8B-FE-A8-BD-49
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_RPMivaswitcher
+		SHA = 4B-BC-AB-D7-16-CE-E3-32-35-E5-03-3E-2F-EF-23-A1-B4-2D-F6-97-C6-AA-1F-28-E4-4F-11-29-74-86-AC-10
+	}
+	FILE
+	{
+		filename = SXT/ModCompatibility/SXT_TweakScale
+		SHA = E2-CE-5E-BA-D2-C6-DE-46-B2-78-3D-DB-F1-9B-29-19-D2-8F-5A-84-8B-F6-9B-AF-8C-14-05-E7-7B-63-61-7A
+	}
+	FILE
+	{
+		filename = SXT/OldParts/LargeJet
+		SHA = 0B-34-C8-15-78-79-EC-60-8B-58-17-77-B7-51-8D-34-36-6B-C4-2E-6E-FF-06-16-84-41-B8-2E-2E-DF-14-64
+	}
+	FILE
+	{
+		filename = SXT/OldParts/mk3Ramp
+		SHA = A2-19-34-E6-24-69-D7-8E-F1-77-16-A7-38-08-B2-67-C0-23-1F-E4-56-12-2A-78-58-16-31-05-EE-7D-CC-1E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part1
+		SHA = 55-E8-DB-DD-CD-C4-91-FA-DA-A6-D3-7F-4E-EB-5B-50-0A-8C-3D-EF-06-80-B2-F3-6C-0F-B9-7C-C1-94-A3-4E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part1b
+		SHA = C7-6B-56-A0-17-87-A2-6B-33-16-53-8B-8B-D4-1C-D5-7A-58-B8-B7-5E-9A-B5-84-82-7A-67-6B-24-FE-B5-97
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part2
+		SHA = B1-C4-AC-0C-94-4B-F8-FF-AF-FD-61-FC-4B-47-60-D8-24-A6-AB-1A-1F-44-CF-B6-29-85-CE-A7-FC-79-8F-67
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part3
+		SHA = 32-AD-E8-36-65-26-4C-C8-51-7C-D2-C9-89-71-DC-76-F7-00-C4-05-06-49-7B-10-13-A1-3B-5C-7A-BD-45-BA
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/airIntake/part4Large
+		SHA = F4-87-35-E3-F5-80-FD-37-71-13-99-8D-90-50-2F-F7-0E-81-7D-AC-F8-77-03-53-42-83-61-99-60-37-4C-E4
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon0a
+		SHA = 18-58-DC-4D-B1-88-34-90-5F-FF-A9-6C-09-8B-E3-E1-41-29-4A-A2-2E-98-9A-74-53-9F-32-E3-9E-DB-F5-30
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon0b
+		SHA = 30-8B-E1-F5-2B-9E-B8-CD-67-5F-5B-E6-F3-2D-B7-7F-54-83-C9-7C-B4-D7-8C-F9-65-0C-D0-7D-4A-78-FA-37
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon1
+		SHA = E7-30-96-F8-40-EF-2B-5E-88-40-56-9C-FA-67-B0-EF-08-F0-E9-10-6C-3C-9F-7B-A0-EB-38-6F-24-59-EF-BD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/elevon2
+		SHA = CF-3A-3C-3B-32-E9-61-94-F7-A4-46-6E-6B-E6-86-90-8E-FC-85-FF-F4-00-93-CD-0B-9C-1F-93-14-23-58-98
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/part
+		SHA = 67-02-6A-9B-6B-21-BD-F1-81-33-24-C7-ED-EA-5A-2A-6A-A7-8A-E0-2A-64-E7-D9-28-25-C4-64-50-98-E5-41
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partFolding
+		SHA = EE-EF-6B-F4-43-05-CC-C8-F1-A2-66-53-8C-EB-09-86-AE-7A-28-47-F8-62-DA-BD-F6-15-3E-1C-8B-BE-FB-22
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partHalf
+		SHA = 85-48-CF-AB-E4-06-B3-56-7C-E5-FF-A4-C7-59-4D-E7-6E-80-C7-C3-D4-2F-20-BB-AD-B9-AE-8A-3D-02-1E-49
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partLarge
+		SHA = 52-D2-33-F0-00-9F-29-19-C7-49-7D-3D-EC-65-E6-CC-2F-55-4C-BF-98-76-FD-00-68-98-D9-CE-65-C7-3C-7B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partLarger
+		SHA = 13-31-2B-AC-39-7A-56-36-2D-94-39-81-25-27-7A-51-C2-10-AD-16-00-BF-56-B7-4C-4F-ED-F4-3F-1A-0B-2E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Aero/Wing/partWingTipRound
+		SHA = 30-94-70-75-02-E9-70-38-F2-A7-AE-BB-0D-4C-A3-68-DE-06-10-88-7C-48-62-D4-71-C6-7D-B1-89-11-4E-10
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Bonny/part
+		SHA = 4B-DF-A1-84-93-6D-5A-A2-21-DC-95-50-BD-96-EC-28-2C-F2-56-30-9C-13-8C-91-52-35-06-AE-F6-CE-B5-31
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Bonny/partClyde
+		SHA = E1-C1-97-41-4A-98-F3-FF-D1-BA-17-83-92-4B-5E-F6-DF-79-B7-53-EA-B7-02-C9-92-E7-02-D6-4A-AC-B7-33
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Bonny/partTail
+		SHA = 6B-78-86-1E-02-DF-8A-77-0A-8F-EA-3A-D0-27-12-B6-73-78-A6-1A-DE-74-DE-9C-08-7F-DC-F6-F6-74-A1-06
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Buzzard/part
+		SHA = E9-F3-5C-42-CE-C1-20-48-DC-18-B6-BC-C5-95-48-C7-F8-A0-5A-91-74-49-36-59-2C-38-95-09-B0-ED-2F-AD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Ke111/part
+		SHA = C5-08-30-2F-A0-6F-4D-EB-15-25-74-F9-44-DF-EA-04-D2-2F-F1-E4-25-1A-CA-BE-18-92-6C-4B-B0-70-A9-CD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Kossak/Adaptor2
+		SHA = 56-73-C2-4A-0F-43-E8-1D-65-31-42-2C-B5-67-24-4A-35-86-D0-82-EC-30-4F-04-04-FF-BF-34-34-2C-80-B9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Kossak/part
+		SHA = 4C-81-0D-A2-4B-7F-01-1F-EE-B0-2B-4F-AC-5B-88-90-1F-FD-68-68-86-90-4D-41-98-74-B4-F0-F5-71-01-5C
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Lark/part
+		SHA = 1F-D3-3C-5D-E1-0A-4F-AB-AE-CD-D1-09-0F-94-22-EE-00-C7-5D-9F-60-7E-01-1A-81-13-8F-14-57-08-A9-74
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Mk2Apapt
+		SHA = C7-96-5D-55-E2-1E-2B-DD-4E-BD-E5-3C-9B-1B-D1-FF-7A-F6-2C-65-C9-C9-AC-04-62-26-8D-85-14-92-1B-6D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Mk2ApaptShort
+		SHA = 29-85-EC-34-01-15-30-0A-A9-AC-08-1F-3C-71-D8-01-AE-5B-BA-B9-84-0B-D8-6D-56-E3-1D-66-55-DF-2C-AF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/part
+		SHA = 6A-98-10-83-04-AD-9A-4F-E2-ED-5B-22-71-35-68-F0-E9-9E-C3-2A-46-BA-20-04-4A-A4-5B-3F-AF-DF-61-E8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Size2LFfuselageLong
+		SHA = CA-4F-D2-17-03-C1-0B-3A-2F-A6-E2-72-C9-B9-E5-21-AB-D2-64-03-6D-DB-D5-6D-07-74-20-5D-38-B0-0E-F6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk1BEntente/Size2LFfuselageShort
+		SHA = 0C-35-18-E9-6B-01-6C-6A-E4-EA-8A-1B-C8-76-54-9E-0D-3A-4E-2A-4C-84-8E-8B-5B-AE-C6-D2-65-E3-34-7B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk3Cockpit/Goose
+		SHA = E4-50-AB-21-6D-AB-67-3D-AE-95-EB-84-92-BD-2B-7A-D5-04-95-33-B6-A9-59-DC-1C-72-8C-AC-B3-1B-DE-46
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Command/Mk3Cockpit/Mk3Cockpit_Shuttle
+		SHA = E9-6B-19-46-4E-16-1A-46-1A-7D-8E-BF-07-38-8B-1F-81-F7-DF-22-62-97-5E-65-19-2E-AC-AB-B7-32-D8-E0
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Control/airBrake/Airbrake1
+		SHA = A8-34-33-5C-01-AB-B1-53-FE-94-C0-8E-ED-C7-98-99-D9-7A-B3-11-BB-8D-93-4A-9F-BA-00-BD-DA-89-81-2F
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Control/airBrake/Airbrake2
+		SHA = 40-F3-53-16-71-35-64-A0-59-7F-8E-21-65-44-0E-E3-EE-17-71-FD-FA-5C-25-80-B5-C6-33-DA-1C-D8-3D-DD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Control/airBrake/Airbrake3
+		SHA = EF-3D-93-79-A6-48-41-F5-E5-A9-14-86-56-9F-2A-E1-6D-51-B3-3B-7A-77-13-2B-93-99-A7-24-A0-B5-4F-D7
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/0Mk2LinearAerospike/part
+		SHA = 11-E7-D4-F5-E0-05-1A-9F-D9-40-9C-53-FD-6A-BB-30-A0-96-30-EA-26-E2-55-14-1A-8E-2B-4C-96-33-C3-CD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/211D
+		SHA = 6C-9C-6E-FC-D7-67-2D-39-5F-17-EA-18-1A-F0-4C-BD-C8-5C-5E-51-57-96-3F-6A-75-52-C3-8A-AA-C6-F3-E5
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/211F
+		SHA = A1-BF-78-D3-5A-AC-D4-D0-BB-22-A0-8E-EE-13-F2-A3-4B-48-93-DF-BA-1A-0C-7D-F0-24-6F-C6-17-8B-2D-17
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/550
+		SHA = 42-C2-96-81-1A-2D-F7-DE-60-5A-14-5D-43-58-BE-1A-7A-5E-4A-E3-EF-5F-54-C8-7E-AF-D4-6E-11-1E-3D-2D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/eFan
+		SHA = F4-52-4D-62-13-BC-8B-C9-4C-1F-13-4E-49-47-5F-D7-50-18-79-AB-F1-E2-9A-74-03-10-B6-4C-12-20-AF-47
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/J213
+		SHA = D5-4A-6B-38-50-A3-90-8F-B7-75-20-CC-9E-E2-B8-C1-0F-83-51-88-56-65-31-D5-D8-08-6C-56-23-8A-39-84
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/LancerEngine
+		SHA = 76-04-6E-C1-63-52-EC-51-16-47-AF-97-74-F6-9F-2C-A6-30-4B-FD-8F-C3-05-C1-CA-FF-34-B5-8C-BE-B5-01
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/LancerShockCone
+		SHA = B0-7B-04-D7-5D-22-7E-87-0B-6A-97-5D-5F-71-1D-66-8A-80-F5-CF-A6-BB-2E-25-0D-EB-2E-CD-40-3D-22-EF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/Merlin66
+		SHA = 40-F7-AD-6E-FA-58-94-1D-8A-97-FC-1B-04-CB-2F-B3-C7-55-F2-06-A7-DF-4D-44-94-D5-C5-F4-34-1E-92-72
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/mk2CargoBay
+		SHA = 04-5B-0D-DE-D5-C4-84-AB-33-B6-1A-2B-88-D0-B6-A3-37-13-1B-CD-87-45-90-B8-D3-20-DB-01-88-52-BA-08
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/NK12M
+		SHA = F3-90-CA-29-57-63-D7-09-CF-6B-B6-C7-63-12-B4-98-E3-5B-CB-6D-38-45-CE-75-3A-7E-FC-5A-D3-0A-BE-AB
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/PT6
+		SHA = E4-2D-03-F5-DE-BB-5E-55-A0-B4-C9-A9-F5-CC-AF-70-25-3D-9A-E7-CE-E7-4E-8D-DF-E2-A0-00-98-2C-74-39
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/R2800
+		SHA = DE-41-D3-39-F6-55-5A-59-9F-0C-2D-C8-85-FA-96-5D-62-CA-CB-C1-95-2B-D3-A5-DA-DE-BF-D8-42-F9-7A-A1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/radialAttach
+		SHA = 1F-0E-44-99-16-F2-1B-69-65-CC-D2-38-B3-5A-A0-83-A8-E4-0E-59-26-54-A0-61-58-A4-DF-12-D7-2F-4F-96
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/propEngines/vtol
+		SHA = E9-AC-DC-B0-1A-56-7F-9F-52-09-88-5D-19-17-C4-E9-59-51-E6-90-B6-95-3F-10-73-6C-EE-56-8F-44-F4-E6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Engine/TinyJet/part
+		SHA = 92-C5-35-25-65-39-7A-75-46-C3-FD-5C-06-88-A0-0C-92-70-99-E4-3A-55-60-74-47-E3-D0-C7-1D-84-56-08
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/part
+		SHA = 24-22-9C-38-83-6F-45-FF-59-A7-AE-97-29-1B-68-28-01-23-1D-67-9B-04-4B-F9-93-3B-49-BF-B0-9D-CC-C1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/part25mTailConnector
+		SHA = BE-DC-30-F5-B0-E8-AF-DE-5B-30-6F-84-A8-48-D5-97-16-ED-E5-41-4C-51-33-7D-52-5D-7C-C5-29-43-A0-85
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/partPassenger Cabin1Long
+		SHA = 6F-BE-C4-42-F4-7B-07-F5-62-04-4B-8D-1A-CF-28-A6-DA-6F-10-2B-D0-E5-D8-50-E5-95-67-28-A5-CB-04-87
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/partPassengerCabin0Short
+		SHA = 9F-44-A2-35-FF-B4-71-0D-DA-5A-A6-85-97-29-D4-5E-F1-36-30-13-18-40-3A-48-CF-3B-A4-81-12-A1-1A-AF
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/partSmall
+		SHA = 1D-E7-7C-85-05-24-25-4C-CE-F3-B7-D9-0C-4D-3C-68-B7-66-9E-B1-CE-F3-C2-C2-AF-FB-A7-AB-34-CD-04-47
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/radialWindow
+		SHA = 42-10-DA-41-E7-80-DF-5A-B3-8E-AF-D4-EA-8E-B7-BA-48-04-99-B7-CA-48-89-22-19-34-16-91-A9-3C-70-34
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/smalladaptor
+		SHA = 33-10-30-11-EF-69-66-E2-6A-2A-8E-82-12-B9-A4-81-82-A4-AC-C4-D4-73-DC-15-F8-9E-88-39-A9-2B-B1-ED
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/Old/partLarge
+		SHA = 18-53-EA-D7-EA-05-75-D1-8F-9D-72-85-FE-58-C8-72-88-5A-21-F2-C9-1C-32-95-96-69-AB-51-F8-E5-8A-9F
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/fuselage/Old/partLargeLong
+		SHA = CE-79-CD-A8-90-6D-C7-73-85-BD-5D-30-F1-5E-3A-B8-AB-24-A1-A8-FE-69-D4-F8-30-25-35-54-2D-83-2F-A1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/Hull
+		SHA = 29-3C-E1-54-FB-17-41-03-46-FA-66-1A-0A-F1-13-1A-E3-94-7B-37-D0-4F-3E-46-88-15-52-E6-6A-4A-03-34
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/NoseCockpit
+		SHA = 8F-25-41-76-22-AE-09-59-9B-D3-F6-07-E0-CC-7D-33-EE-1B-15-56-90-4E-9B-A9-3A-BA-EF-6C-35-AA-98-05
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/part375mTailConnector
+		SHA = D7-EB-01-3E-BA-CE-6E-8F-35-60-05-A3-C3-47-85-77-34-D1-4E-6F-E0-D2-AD-CF-3B-E8-37-59-FF-02-91-2E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/RadialCockpit
+		SHA = CC-00-85-73-47-B1-84-01-62-DB-01-6D-25-92-79-A8-8A-74-C3-89-99-94-B1-99-97-20-FD-AA-98-C0-15-C2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/RadialHull
+		SHA = 47-A0-30-D3-7A-E8-A6-6B-EA-6D-19-CC-3F-8F-64-8F-D9-D2-A5-C1-FE-28-8C-69-20-51-77-51-97-8E-02-79
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/RadialHullEnd
+		SHA = A1-E1-36-B3-D4-5C-F9-DE-8F-A9-3C-91-37-AF-A2-1F-6A-AA-EE-64-E8-00-17-F7-E7-2D-8B-5E-38-EE-93-D8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/ramp
+		SHA = D8-76-1F-9C-0B-66-C6-B5-3D-8B-3A-9B-A8-F3-DF-3C-B5-01-13-BC-0C-C4-D2-AC-A6-61-BF-5E-D9-EB-61-15
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Hull/Osaul/Size3-Mk3
+		SHA = 7C-5A-4D-6C-72-C4-98-27-C5-AD-43-98-6D-1E-82-97-29-3B-D0-0B-A2-0B-0F-9C-FC-4A-21-35-A7-16-31-E5
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/Mk2SAS/part
+		SHA = 6B-58-45-65-B2-92-7D-DC-F9-50-7B-44-A4-5C-7F-A9-1C-DA-45-4A-72-A1-7C-A6-76-2F-ED-76-13-4F-90-CE
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/Mk2SAS/part10degree
+		SHA = F9-D9-EC-A2-AC-09-E3-12-AC-56-B1-A7-1B-00-8C-E6-69-F6-2A-0C-48-6C-F8-D5-5F-FF-10-9A-B5-9F-B0-A8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/Mk2SAS/part225degree
+		SHA = 5F-97-28-12-39-E4-08-3E-3D-CE-3C-86-AF-10-0B-4C-EE-E9-53-0D-9D-80-21-21-B6-DE-36-C1-B7-8D-34-51
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Mk2/SU27adaptor/long
+		SHA = 98-4E-BC-B8-EA-C0-C7-BD-B9-B6-32-77-3C-D8-00-46-96-50-51-BB-5D-69-E8-83-DA-1E-BA-4A-94-EF-92-28
+	}
+	FILE
+	{
+		filename = SXT/Parts/Aviation/Science/AvionicsNoseCone/avionics
+		SHA = 5E-3E-D4-A9-24-41-8B-96-CA-D4-86-C1-0D-94-8A-C5-64-A5-2A-A9-06-44-CC-D5-92-3B-B0-58-08-8F-B2-8A
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Science/MiniGoo/part
+		SHA = 19-2A-F8-1A-8F-87-3F-B3-EF-B7-BC-54-5F-AF-DA-D2-13-94-7C-B7-EE-FB-01-E3-EC-18-C6-5A-D5-31-3E-FE
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/crashPad/part
+		SHA = 0C-D4-AF-36-FF-C6-2E-DF-B0-AF-AE-D6-86-FC-A7-E5-58-39-87-1B-D9-B0-30-65-6B-84-53-BA-7D-4C-D9-69
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/crashPad/partSmall
+		SHA = 71-0D-CF-8D-F8-9D-6F-1A-92-0D-47-4C-A0-FF-2C-CD-3F-06-3F-BD-84-7A-5D-7F-1B-EA-E2-ED-54-F6-35-56
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/floats/part
+		SHA = 41-A7-E9-C0-D1-EB-07-F6-FE-BD-35-D3-98-35-2A-E2-66-6F-FF-75-3C-39-B3-CA-E1-CD-2E-2C-EA-34-5E-C5
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/floats/partMid
+		SHA = 20-44-8E-10-C6-FC-38-84-55-D9-C0-4C-2D-FE-43-DF-EF-2F-85-CE-BE-E3-CE-5A-6B-C6-5D-AE-F5-1B-53-55
+	}
+	FILE
+	{
+		filename = SXT/Parts/CoreTech/Utility/floats/partOutboard
+		SHA = 94-78-F8-CC-78-F5-35-C3-13-E0-BA-38-7D-91-B0-E4-AD-07-6B-A2-F0-32-E8-40-B7-CB-D4-30-56-EC-4A-0D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/375mProbe/part
+		SHA = 4C-33-99-3F-1A-75-71-5E-CE-12-49-CF-5B-71-9C-79-B5-8A-E2-B9-B0-3B-78-3B-A1-FD-B0-08-26-CF-B3-A4
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/Dontstay/partAntenna
+		SHA = BE-54-D8-52-2B-D3-B7-DC-BC-20-CC-8F-E9-44-54-61-7F-3F-1A-1C-B7-43-D1-36-11-8F-CB-04-A4-AF-E4-8B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/Dontstay/partProbe
+		SHA = 67-3C-5E-21-8C-69-68-54-E0-56-DE-A1-EB-AE-FF-CA-6C-69-42-2A-FB-38-2D-71-85-20-09-DF-A3-23-11-0D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/HECS-Ranger/partProbe
+		SHA = B2-01-DA-7C-6E-21-48-A6-23-3C-52-11-8A-29-F2-F8-3E-D0-66-B4-8F-5C-76-3A-4D-21-BB-F6-70-54-82-A4
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/probe/Alouette
+		SHA = D9-14-0F-1C-2F-90-3B-55-55-8B-91-CB-52-65-5F-3F-8D-F6-D0-F0-90-B7-1C-09-05-7B-61-29-EA-35-F6-BE
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/probe/AntennaTube
+		SHA = BC-51-1E-F3-7A-D8-31-97-2A-96-5C-9E-19-19-4D-B0-C3-9C-66-FB-E4-B8-4C-93-75-98-88-6E-2E-52-A2-DB
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/probe/part
+		SHA = EB-8D-44-B1-44-33-FC-B7-31-81-66-CF-06-F2-55-1B-FD-8F-9E-51-38-30-73-A1-9A-F6-4E-87-C5-74-0D-06
+	}
+	FILE
+	{
+		filename = SXT/Parts/Probes/Command/Space2001/Monolith/part
+		SHA = 9C-DB-54-71-11-A2-4B-8F-9C-E6-8C-79-C8-4A-0E-D8-7F-0D-22-E1-40-4E-A4-0B-F8-41-F2-45-3A-65-20-04
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Aero/noseCone/part
+		SHA = C8-25-0D-7A-F7-7A-7B-BA-68-48-B3-8F-E4-04-24-2D-B4-F0-A3-EE-4D-0E-1F-EA-87-41-9E-5F-B4-82-F9-08
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Command/MEM/part
+		SHA = 6C-EC-57-73-61-C9-90-06-CC-33-7C-AF-7E-6E-5E-A1-AD-11-2A-32-87-DC-00-E9-D1-5E-9B-24-92-9B-57-26
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Command/MEM/partDescentModule
+		SHA = 90-FB-6B-5C-CF-F2-7B-EE-24-45-CF-36-9E-9B-E5-83-56-00-97-E8-F6-2A-09-03-18-3C-9B-9E-4A-51-5C-E2
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/OMS/part
+		SHA = 9D-CA-59-B0-6A-D0-95-AF-77-78-02-CA-88-2C-B2-25-E2-8A-B5-1D-BB-DD-F9-B5-12-80-19-AB-E4-E9-FA-FD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/RCSBoon/part
+		SHA = A0-BF-2D-45-AA-10-33-3C-F0-85-D6-98-9C-1D-EE-C3-2C-75-41-4A-4E-CB-D4-9A-5B-AB-12-33-55-23-A3-DA
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/RCSRack/part
+		SHA = B9-88-AD-9F-CB-65-45-B5-6F-F9-74-F0-52-23-9E-3D-F8-28-5A-AE-F2-CF-B6-96-CB-74-D7-1D-22-1D-89-81
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Control/Vernier/part
+		SHA = 03-C5-F9-2E-BA-90-4D-49-8A-13-97-CA-10-B1-0F-FA-62-78-17-BF-BA-53-1E-F1-04-AB-71-46-B6-CE-68-3A
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/BlackAdder/BlackAdder
+		SHA = 20-EC-D8-ED-19-6C-15-81-47-AB-B8-C8-AC-28-99-A7-20-6F-92-DE-D8-32-FB-62-0F-C5-7D-C3-49-CD-BC-C1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/BlackAdder/BlackAdderGoesForth
+		SHA = DB-4B-EA-72-B2-7F-DA-F4-5B-3B-1C-A4-DB-23-8A-AE-F1-86-9F-AE-F9-5D-73-24-1C-8C-58-18-DF-52-9F-94
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/BlackAdder/Waxwig
+		SHA = 92-18-CB-DC-CB-9D-EE-A0-96-E3-41-30-A9-EE-23-E9-34-5B-D5-FD-2F-7A-9F-99-64-1A-58-F2-90-CA-90-0B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/J2Engine/part
+		SHA = 7B-67-6D-CD-2E-99-A1-4C-3B-45-88-3A-7B-3C-2E-AC-45-FF-37-FB-2E-3F-8A-76-0A-3D-D0-94-3C-84-C3-0E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/K170/25mEngineMidrange
+		SHA = 53-2D-0A-C6-31-22-0F-12-49-F4-C1-57-1A-29-75-57-24-CC-BC-3F-3A-4D-51-F1-5E-70-10-6B-E0-B9-0E-0D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/K170/part
+		SHA = 83-46-44-ED-FD-67-B7-8E-3F-B0-93-72-65-40-D8-20-2A-9E-99-57-2B-6A-15-15-9E-53-62-32-8C-C1-5F-D3
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/KickMotor/PALMX30
+		SHA = 34-92-26-A5-24-3C-8C-73-95-14-45-56-94-B1-4D-FF-BC-4E-E1-36-98-B8-59-55-FD-85-C9-F8-DA-1E-67-EB
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Kopo4e/KOPO4E
+		SHA = 45-0F-04-C4-A9-34-AB-49-DF-E3-E4-B4-44-25-99-29-19-5F-BB-EA-33-AB-CA-A8-C1-4D-9C-CF-45-30-89-4E
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/NERVA/part
+		SHA = DC-C6-95-6A-98-30-70-6B-30-21-52-9E-1C-38-03-34-61-ED-F5-BE-D3-48-80-F1-8C-C0-69-8A-FB-08-42-8F
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/NERVA/partFatmun
+		SHA = F5-8C-1F-D0-15-A6-23-F4-C4-C5-2F-27-53-CF-51-29-1D-83-3E-B2-BA-DD-F0-70-65-79-27-81-72-F2-D2-B1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/size2SRB/part
+		SHA = BD-23-C4-78-92-C4-6A-EF-9E-7C-4E-88-0F-E3-62-E2-28-FB-73-68-21-CC-EF-68-E9-12-A7-B7-9C-74-B4-A0
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/AJ10
+		SHA = 40-C1-2B-4A-6C-44-A5-0D-80-83-27-31-D6-68-B5-40-55-B5-20-E4-86-50-A1-5E-24-FD-E2-DE-B3-16-FB-49
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/AJ10LongNozzle
+		SHA = D3-B0-06-E2-9F-01-A4-C3-6D-21-46-15-85-22-FD-4D-08-8E-C9-F4-57-6E-E1-7D-97-A2-0A-A2-82-6C-BC-B7
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/launchClamp1
+		SHA = 20-41-7C-A0-78-D3-DB-E8-34-4F-F9-3A-D4-B5-84-54-82-8A-72-76-26-D4-3E-B0-EA-46-B8-CB-19-DB-82-9D
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Engine/Vanguard/X405
+		SHA = 84-66-4C-8E-6E-BC-CD-9A-C9-EE-B2-A7-1C-4C-9F-F3-D4-03-4A-F1-50-4F-C3-AB-B5-D5-08-93-56-17-35-08
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/Barrel/fuelTank
+		SHA = E6-68-C9-43-52-D4-3C-E4-5E-6B-3C-DE-CF-EF-13-AC-7A-5A-2D-EC-7F-63-D1-0B-15-6E-CD-57-48-85-EF-37
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/CargoBay1/part
+		SHA = 77-5A-60-6F-FA-50-EB-21-FE-27-23-52-8E-B3-D0-D2-C2-05-41-8D-B3-EF-D2-91-3A-BA-54-83-21-D7-35-18
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/part
+		SHA = 47-FC-7E-D6-E8-17-6B-22-A7-DC-B4-72-89-82-02-6A-40-1D-32-BF-9C-95-69-2F-67-49-B9-3D-A5-C6-16-77
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partGold
+		SHA = 1F-C7-AC-53-2D-D7-5D-2C-94-BD-6B-F3-4B-8F-0E-0A-1B-F3-EE-0D-37-9D-6F-10-DD-59-9A-CA-B9-01-3A-BD
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStandalone
+		SHA = 0F-12-23-08-93-ED-8F-DB-F0-F6-CB-BD-43-9E-14-AD-68-FE-C6-2C-07-C9-AF-1C-6F-CA-F9-74-DA-07-28-FB
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructural
+		SHA = 23-9E-9E-B4-49-25-F1-12-5E-72-07-4C-A7-B9-6E-7E-7C-43-24-6A-AB-04-A9-DE-A1-21-18-41-E8-37-91-18
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructuralBasic
+		SHA = 06-CA-DF-7A-3D-39-62-80-8A-2B-A6-3F-FE-84-A6-29-60-F2-D6-1D-78-A6-2D-A5-55-C4-AB-0D-67-50-30-1C
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructuralOpen
+		SHA = 2E-85-11-2E-B8-DB-DA-A3-BD-70-B7-07-D9-6A-08-19-67-4D-00-EF-E7-F7-97-39-DA-EE-E4-6A-9C-E5-70-B1
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/2-5m/partStructuralOpenSmall
+		SHA = 55-5A-B1-B9-CB-65-C2-95-8E-56-17-DC-6B-6D-8D-77-A8-EC-1A-1D-68-55-96-C5-92-1A-60-43-B2-DF-FF-DE
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/part
+		SHA = A9-65-32-82-54-94-EF-B4-D4-9A-34-88-45-3F-94-ED-3C-13-65-0E-6F-23-74-9D-A6-E5-29-B6-8A-83-03-7B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partGold
+		SHA = 39-21-E2-05-40-74-2A-CA-CB-66-89-5E-06-90-27-20-3C-3C-2C-71-95-A5-9E-16-AA-10-31-08-72-F9-93-AB
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStandalone
+		SHA = 8A-D7-F5-A1-0A-CC-F6-39-86-9F-59-81-3B-5F-94-9C-C0-61-89-7A-A6-9A-90-D2-53-97-AD-30-E6-1A-D0-53
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructural
+		SHA = 6E-6B-82-DB-C5-84-D0-BB-01-9E-56-B9-F3-38-AC-77-79-4B-B8-DD-29-EC-C0-E2-62-F0-FA-E1-DA-1E-1F-60
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructuralBasic
+		SHA = 9A-E3-83-69-8E-B7-BC-19-11-5A-52-88-EF-1B-C0-BC-83-6C-FF-63-01-98-69-A7-D8-48-03-1D-79-07-A1-16
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructuralOpen
+		SHA = 79-FC-10-96-19-36-FC-95-88-AE-10-71-25-8C-91-6A-E2-BC-57-5D-25-EB-25-5B-5B-FD-31-9D-15-95-EA-1B
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/inflatableTank/3-75m/partStructuralOpenSmall
+		SHA = 83-D5-56-B3-FF-EE-90-61-C3-AD-4B-81-E1-C7-F0-C0-4E-29-F1-70-5F-ED-9D-8A-6B-0E-B3-32-3D-E1-20-E9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/NASA25m/16
+		SHA = E5-6D-0F-C4-3C-DA-66-51-8A-8D-24-66-01-A7-21-A3-04-61-EC-B3-14-3D-68-81-8D-AC-A1-27-18-71-D9-D9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/NASA25m/32
+		SHA = AC-E5-A5-B7-D8-CA-44-C1-2A-E1-D5-A1-3E-08-74-45-AE-8B-87-8A-64-AD-72-82-23-AD-0F-F2-54-AC-6F-A8
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/NASA25m/64
+		SHA = 69-AE-90-05-C1-04-E9-D3-63-15-FA-A0-85-02-AA-7E-F9-E2-2D-15-69-6B-D3-2B-48-6D-4D-69-49-C7-6B-34
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/RadialFuel/part
+		SHA = CC-FA-DC-31-C7-CD-D6-9F-92-D9-1A-53-9F-B1-75-18-EB-87-A2-65-8A-8A-65-F1-B8-C0-35-40-55-1C-3A-D0
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Hull/Vanguard/fuelTank
+		SHA = 5B-68-5D-9D-DE-F0-A4-BE-62-C3-57-1E-DC-EA-E6-2C-EA-7B-1E-ED-1F-56-66-D1-86-59-8E-AF-80-7B-1F-91
+	}
+	FILE
+	{
+		filename = SXT/Parts/Rocketry/Utility/RadialAttachShroud/part
+		SHA = A5-CE-A3-D8-81-FC-21-CE-39-35-BC-57-01-84-BA-68-71-53-21-CE-31-C8-24-E4-65-7C-4F-AF-61-3F-16-B6
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/RTG/part
+		SHA = AD-4E-48-02-E2-BE-22-B9-0C-BE-51-F5-33-73-5A-5C-48-7E-6C-B4-3F-A9-4C-F6-D0-A7-75-75-F9-C5-55-1E
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/RTG/partBasic
+		SHA = 06-D5-A0-5E-15-04-AD-19-C3-E5-B2-58-BE-E8-15-54-AA-E1-6A-F0-30-65-18-4E-DA-7D-53-A1-08-EF-E8-4E
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/solarHex/part
+		SHA = DB-B5-2F-9B-6C-DB-4E-A8-87-BE-3A-9F-4A-BB-91-BA-60-12-CC-86-17-B7-4F-E2-1D-1F-5D-D6-68-EE-2C-C8
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Electrical/solarHex/partLarge
+		SHA = E1-00-57-8E-33-4D-EA-B9-0F-11-D0-C6-75-93-BC-44-4E-71-8A-8C-0F-81-31-AA-31-3E-8F-91-D6-9F-37-A6
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/CANIOT/part
+		SHA = 79-63-4F-D1-98-94-F8-D3-B7-81-A3-F6-5B-03-EC-6C-7F-80-DA-3E-37-35-E9-1D-55-C8-3E-5C-11-5D-F7-6A
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/DLK-S3EHabitat
+		SHA = 4F-5C-39-BD-DC-69-73-BA-D3-5A-2C-BE-E7-75-C6-B0-23-53-07-68-6D-B8-C6-9D-56-0D-40-96-78-8E-11-FA
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/fuelTank
+		SHA = C8-90-96-58-12-1C-79-4C-52-23-1F-65-1D-CE-BA-0B-04-09-B6-4C-04-8B-BE-0F-36-64-CC-71-03-9F-7E-8F
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/ISK-30CrewCabin
+		SHA = 32-21-80-E4-9B-90-DB-66-41-7A-E1-7E-60-67-1B-43-4B-7D-55-13-D0-88-7C-D9-8C-84-7D-A3-08-B3-CE-5B
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/LanderModule
+		SHA = 99-0B-CF-80-32-C3-71-6C-23-40-5E-F0-6B-96-7D-92-C2-A8-1E-5A-5F-52-0C-AA-71-67-AA-39-4F-5E-8A-C3
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/serviceModule
+		SHA = BD-A3-37-57-29-43-51-13-D0-D1-97-CC-E1-1D-E4-0F-A0-01-4A-B2-C3-FA-25-26-58-19-C6-6F-6E-E5-E8-EC
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/smallFuelTank
+		SHA = C5-53-D3-77-2A-CC-0A-87-4B-0D-B3-E2-8C-EA-E5-F8-51-E3-86-7B-35-86-34-B9-6B-B1-BF-33-A9-C4-84-41
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/smallScience
+		SHA = E1-A5-B4-10-5F-C0-0D-68-AB-61-32-31-72-D5-65-EB-94-3D-72-F8-D3-37-13-A9-69-A1-B8-BF-FB-C6-79-D1
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/smallServiceModule
+		SHA = E8-A4-C3-94-AD-EE-BC-F1-9B-69-7D-64-DE-BA-48-4C-EC-55-D4-01-DB-9E-95-11-F5-57-91-AD-F9-59-7B-68
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/SSP-10CrewCabin
+		SHA = AE-98-D5-3F-7E-D9-D2-EE-11-91-25-1C-D4-EB-9A-0C-DE-C5-F9-D1-FC-59-9F-8A-24-6E-5B-D8-BA-BA-E6-B4
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/ServiceMod1/SSP-20CrewCabin
+		SHA = 74-EF-2B-EB-30-3E-74-3C-B1-17-C2-B1-88-EA-73-80-79-B5-E8-B5-E3-D7-77-4F-4C-9A-CA-FE-47-62-18-0F
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Hull/SPKTR/part
+		SHA = 96-1E-C2-A8-C7-7E-87-42-9D-D9-11-23-C6-AA-31-A7-28-30-6D-E6-AF-DD-96-C1-00-3E-C3-1E-64-FC-CA-F9
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/Airlock/internal
+		SHA = 56-17-27-0B-2E-E7-93-AA-AD-DB-CE-99-6E-FB-98-CC-82-0A-35-7C-93-5F-AE-EB-63-19-5F-AE-93-73-1D-5F
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/Airlock/part
+		SHA = 40-89-CF-CE-76-AB-EC-0B-2E-73-3D-85-7F-5C-63-A1-13-62-EF-05-17-76-A3-C1-9A-FD-01-07-B0-25-E0-87
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/capsuleHat/part
+		SHA = 9D-D3-89-5A-F9-F9-79-EB-FB-CE-5C-CF-A2-16-AF-E3-E9-32-C5-EE-F2-BA-E2-47-C2-58-85-45-22-BE-23-40
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/dockingPort375/dockingPortSr
+		SHA = 24-1E-9A-E2-8B-59-59-8A-68-5F-51-B7-9D-09-60-EA-B6-83-49-95-F4-22-88-CD-DE-6E-23-B6-BA-B3-C9-22
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/6way
+		SHA = EC-7D-07-F9-78-F6-A0-3F-70-ED-C1-09-31-11-F0-3F-C6-8B-39-3F-E3-1C-DD-5F-73-90-0F-58-9D-30-3A-9A
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/long
+		SHA = 3A-69-6D-70-2A-30-A8-92-77-DD-EB-89-E0-E5-24-29-43-8B-AC-3F-26-4F-C3-7E-BC-4A-EF-9F-F2-F0-60-7F
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/short
+		SHA = FF-0E-91-C9-E6-23-66-A1-6B-53-93-C8-45-CB-B1-A4-4F-43-AB-C4-FB-CC-87-EB-C2-0E-18-EF-97-0D-5E-0B
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/turn
+		SHA = 26-51-E3-6A-8E-42-7B-8C-92-43-47-A6-79-42-51-6C-DD-CD-D6-6F-99-CD-CA-4B-52-85-D0-D5-22-41-82-88
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/smallPipes/GirderSet/long
+		SHA = 6A-52-93-5D-92-97-A9-8E-5D-F8-63-D1-19-E2-DC-67-2E-6C-70-7C-EF-D9-9B-0C-41-1D-CE-95-6D-9A-0A-B6
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/structuralPanel/part
+		SHA = ED-B2-0E-6F-97-BC-66-82-F3-0A-D7-72-C4-EB-45-70-1A-3A-D3-3B-75-53-BA-B4-EE-81-1C-3B-27-12-5A-45
+	}
+	FILE
+	{
+		filename = SXT/Parts/StationsBases/Utility/structuralPanel/partHexagon
+		SHA = 9F-2E-8E-B3-E6-27-CE-06-3F-04-1C-A3-20-37-89-77-6C-1A-06-75-7E-18-CC-EE-7C-4D-21-B9-3C-6E-85-FA
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/partLarge
+		SHA = 5F-CF-61-45-B1-1A-2B-5F-E1-E4-F1-41-1F-53-38-36-6F-0D-9E-A7-00-55-29-F8-C9-F5-3C-43-50-9F-E9-9C
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/partMedium
+		SHA = 52-3D-F6-31-EA-60-28-04-BC-FE-49-8D-5F-88-41-70-23-FB-6B-2D-60-21-21-FF-E0-E9-D4-F3-FD-7F-12-B7
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/partzNK21
+		SHA = 96-7A-62-92-A5-1E-E6-65-86-65-B2-44-00-F2-CD-E9-A9-5D-44-DA-7E-FF-E4-08-C5-40-83-8B-E9-3B-AB-53
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/stackSeperator
+		SHA = 9E-58-87-57-16-AE-50-C1-80-AF-45-EE-63-DE-05-10-02-ED-1B-9F-96-54-6F-1C-0E-B5-4D-CD-8F-08-E5-0A
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Engine/K15/stackSeperator2
+		SHA = 26-6E-B0-18-59-60-B0-D3-E1-2E-E0-DE-B3-C5-DD-29-BA-39-86-97-0C-FD-DB-F3-28-A7-B7-39-9F-AE-29-44
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Hull/5mQuadAdaptor/part
+		SHA = F2-2F-E7-79-2A-94-C3-FE-BA-9A-0A-C0-C2-CF-ED-02-61-7D-53-7C-49-28-F7-AF-44-4A-4A-D9-92-9C-23-29
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Hull/5mQuadAdaptor/size23adapt
+		SHA = E5-F5-8A-AD-59-6B-2B-DB-E0-B0-61-5A-6D-40-50-96-28-1C-65-43-89-4C-51-3A-3A-D7-DA-7F-A9-63-D8-5B
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank0
+		SHA = 1F-45-20-1E-36-C1-99-8A-44-FE-EA-0D-4D-03-C0-3B-27-BC-E4-73-EA-9F-1E-D9-BF-A4-1C-01-53-22-D8-8B
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank0NoseCap
+		SHA = 04-29-91-85-64-4E-00-A7-00-94-C3-40-32-69-49-71-8D-42-6F-3F-05-C3-7D-9D-34-CE-A9-3E-30-6F-8E-AF
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank1
+		SHA = 34-90-1C-2A-39-3C-C6-AD-20-DE-7D-3C-E1-0A-5F-69-F6-8A-34-57-7B-3F-33-10-23-29-B0-10-4D-65-C3-FE
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank2
+		SHA = 3F-1A-E3-BE-7A-7F-DF-15-FB-E4-17-9A-F3-AB-3E-62-51-2B-66-F6-07-80-DF-F6-1F-6A-30-36-C6-F8-85-9B
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/5mTank3
+		SHA = C5-9E-4C-45-6C-7E-9E-12-15-AE-57-63-A1-60-9F-6C-38-D5-A6-38-AA-7B-2C-BF-26-B9-06-1D-FF-14-68-84
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/size5multiengine
+		SHA = AA-D1-4F-BD-5F-1F-72-48-20-23-A6-A3-CF-D5-98-CB-4C-71-C0-ED-5B-3F-58-14-12-81-99-85-A9-2C-C3-13
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage1-2
+		SHA = 76-6B-AB-5F-D6-D1-B8-13-41-2C-2B-F9-3C-F3-C2-7C-D6-9B-7C-68-0B-0E-39-1A-EA-47-15-CE-51-26-14-F7
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage1-2Small
+		SHA = 3B-0A-FB-CC-78-73-78-E2-72-22-E4-61-C2-A5-68-ED-94-BF-EB-DD-B1-A6-89-B8-1D-EC-B6-46-6B-EA-C6-46
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage1Base
+		SHA = B3-82-7C-64-88-D6-93-B0-A0-37-03-0A-A6-8D-7F-F1-38-91-5A-E4-CD-99-50-E9-D5-32-C4-EF-01-BB-86-C7
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage2Adapt
+		SHA = 2C-F9-D4-E6-0E-47-B8-4C-EE-D2-85-7B-08-FE-D9-E6-F3-39-E9-FD-39-37-D8-97-E2-0F-CD-C6-48-07-DB-27
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage2Engine
+		SHA = 96-7F-F9-B7-1A-A0-D2-80-ED-43-EF-F7-ED-32-EA-AB-3C-64-21-2B-A5-44-F8-ED-7A-2E-BD-7D-E9-EA-4F-1E
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage3
+		SHA = 03-DA-AA-86-84-22-62-3C-8C-A8-37-AD-DA-62-21-7D-BD-F7-9B-24-A5-86-F4-1D-00-A1-4C-E8-7D-94-70-12
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage3Engine
+		SHA = A8-CF-82-9C-E7-78-8A-08-2F-47-1E-40-90-6B-38-15-DE-60-03-EA-AA-15-D8-67-C5-1C-99-E1-F8-64-10-51
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/SaturnV/Stage3Upper
+		SHA = EA-21-70-E3-F1-02-5D-F0-19-17-81-A3-1F-DA-01-14-CE-38-65-69-5E-C6-D5-07-8B-9A-35-E3-BB-3C-32-59
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/2-5-3-75
+		SHA = 04-D1-8D-04-77-62-60-27-C3-04-A0-75-5F-C7-8F-2B-D3-EE-80-C3-7E-37-59-F8-05-4A-42-AF-7D-EE-30-1F
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/3-75-0
+		SHA = 9C-C7-92-89-45-A5-68-CD-E7-78-69-00-78-D6-4D-7D-35-70-4A-31-96-0D-D4-EA-3C-82-2E-F3-74-94-98-BE
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/3-75-5
+		SHA = 90-4A-A0-E0-D6-42-85-56-F8-67-77-76-A6-15-7B-B1-12-90-4F-B0-92-48-31-DE-A2-E4-94-55-73-DC-AC-D3
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/5-to-7-25
+		SHA = 8C-3B-C0-34-73-6B-31-65-2A-3A-5E-9B-5F-D0-E2-8B-A3-0F-3E-CA-3D-37-55-DB-EC-7C-71-16-94-6C-B5-F0
+	}
+	FILE
+	{
+		filename = SXT/Parts/SuperLaunchers/Tsar/gridfin
+		SHA = 9F-35-A3-36-D4-E8-D2-5E-E8-17-D6-7A-8A-60-D5-2F-89-7F-23-39-5A-BD-22-95-F0-CE-77-EB-18-FC-36-23
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/box
+		SHA = 07-48-3A-E9-A8-5D-F2-F9-A4-49-4E-F4-84-2E-B4-FC-C7-2D-AF-DC-67-15-3E-E0-39-22-87-A4-F2-29-50-37
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/fuel
+		SHA = 75-07-A1-63-44-06-E0-74-85-98-0F-7A-AE-01-5A-CD-55-E1-13-00-83-75-0E-94-C3-F4-94-13-66-DA-09-C6
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow0wheels
+		SHA = 10-92-27-67-4E-98-43-61-59-E0-B3-12-E2-85-7E-A8-DC-D1-D5-97-67-5E-5B-9F-E3-BA-64-24-5A-59-93-FA
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow1cabin
+		SHA = 2D-C0-51-9B-C5-06-74-13-B9-29-F5-30-BD-AE-E8-EF-A3-7C-FC-80-8B-8A-1F-A9-0A-60-E4-C4-77-E6-58-B5
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow2middle
+		SHA = 22-C3-F0-D5-F4-FF-80-D1-F2-BC-48-78-25-D4-F3-5C-59-86-C7-C2-1E-6F-F4-6B-9E-E8-9C-3C-12-01-8C-D9
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Narrow3rear
+		SHA = E2-DE-5C-0A-FB-06-F6-FB-1A-8B-C3-18-80-90-41-3F-FE-5D-B2-93-BC-94-BF-4D-9D-BA-0E-F0-1A-AC-D3-1A
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide0wheels
+		SHA = 8F-93-C6-73-21-CE-34-00-F8-5F-CD-8F-A6-3B-ED-54-1D-F0-2F-69-62-DF-BB-D3-10-88-FA-9E-28-E6-E5-F7
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide1cabin
+		SHA = FE-AF-B5-97-8F-A4-BE-A5-A3-BD-30-06-48-51-9A-E0-9D-47-97-26-55-04-A1-B5-1E-1D-73-4C-24-8F-E8-20
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide2middle
+		SHA = 6B-4E-28-29-5C-F3-62-63-E4-5E-24-2A-8B-6B-76-E5-16-6C-E5-E4-08-C8-D9-D1-DF-9D-4A-06-B7-79-9A-2A
+	}
+	FILE
+	{
+		filename = SXT/Parts/Trucks/Utility/truck/Wide3rear
+		SHA = 2E-5E-C3-5D-F6-C1-A5-30-4F-67-F0-7B-55-C7-12-C3-4D-B0-D3-AC-4D-17-30-FC-D7-E5-C3-25-A9-19-00-33
+	}
+	FILE
+	{
+		filename = SXT/Spaces/BonnyInternals/internal
+		SHA = C7-68-E0-A5-5C-6E-7D-AF-CE-69-F4-78-7D-32-9C-3C-15-FE-E9-56-94-23-0E-E6-69-AB-18-62-18-E6-BF-FA
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Clyde/internal
+		SHA = 60-35-5D-D4-68-22-16-D8-CE-01-19-C4-FB-37-AE-27-8D-91-E8-0D-5F-BA-67-E6-06-5A-A2-E2-8F-41-E9-F0
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Duna/internal
+		SHA = CA-F7-26-09-9A-57-3D-16-5B-1A-D0-CA-E7-3C-D2-AD-A5-A3-54-F0-28-65-57-79-F8-E5-58-D9-ED-EA-9F-30
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Entente/internal
+		SHA = 64-BD-B8-9E-21-D8-D4-FF-12-75-99-AA-67-46-92-98-F0-56-A1-BF-7F-EE-DC-93-7A-00-51-D7-E7-64-DB-6C
+	}
+	FILE
+	{
+		filename = SXT/Spaces/Entente/internalRPM
+		SHA = C8-40-6B-1B-AF-B9-D4-3C-A7-29-FF-24-F4-33-9F-E1-5C-6F-23-F9-18-4F-1C-D0-21-CF-C7-62-FE-63-52-6C
+	}
+	FILE
+	{
+		filename = SXT/Spaces/FuesInternals/internal
+		SHA = 87-42-B1-61-28-ED-8D-9B-DB-19-1D-5E-23-21-10-05-1C-FF-44-4B-A0-5D-7F-BF-AC-25-E2-5E-51-A5-DE-3B
+	}
+	FILE
+	{
+		filename = SXT/Spaces/ke111/internal
+		SHA = C1-96-2D-34-45-BC-08-75-15-5D-D8-BB-1A-3B-6A-97-38-57-26-91-F9-2E-66-46-BD-EB-BA-1E-10-DF-20-43
+	}
+	FILE
+	{
+		filename = SXT/Spaces/kondor/internal
+		SHA = 71-76-2B-69-B0-07-30-E7-E2-20-17-41-E8-AB-38-DF-0C-0D-FA-4F-35-45-30-AA-0F-E2-63-DF-59-50-BC-C3
+	}
+	FILE
+	{
+		filename = SXT/Spaces/kossak/internal
+		SHA = B8-BE-CE-B0-5C-62-DD-BD-BA-AF-B4-4A-91-00-17-AC-ED-C0-FD-32-5F-69-78-8F-35-5F-0C-4A-86-BC-9E-40
+	}
+	FILE
+	{
+		filename = SXT/Spaces/kossak/internalRPM
+		SHA = F6-44-6C-AE-82-FE-29-47-B3-CB-E4-96-AE-10-1B-4C-D3-D8-3D-47-A0-8A-64-A6-16-41-B3-34-4B-A8-51-D4
+	}
+	FILE
+	{
+		filename = SXT/Spaces/MEMInternals/internal
+		SHA = 37-BB-75-B9-8D-6C-5D-9E-5F-CC-7C-A1-77-B8-18-A1-55-BC-34-EF-73-6B-6A-D1-74-66-36-3A-9C-91-CD-01
+	}
+	FILE
+	{
+		filename = SXT/Spaces/truckCabin/internal
+		SHA = 83-36-5F-62-4B-45-FF-06-5D-0C-D5-77-49-B1-E1-30-12-72-F1-4B-F5-64-22-1C-2D-C8-B5-E5-83-0F-B7-50
+	}
+	FILE
+	{
+		filename = SXT/Spaces/truckCabin/internalwide
+		SHA = 6F-61-E0-F0-E4-BC-8D-AA-6F-82-9E-90-16-17-88-9A-33-A5-2E-B1-97-88-03-66-48-A9-16-0C-8F-58-AF-6E
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/fairingSize0
+		SHA = 1E-38-8E-22-8F-40-4D-3F-DA-98-14-EB-A8-1C-C8-8E-A1-D7-D2-70-E1-F4-A1-33-3E-35-88-F9-C9-D7-57-B2
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/fairingSize5
+		SHA = E0-F1-79-A6-67-EC-B3-E4-05-F4-CF-02-B6-7A-F9-33-4B-BF-1C-58-54-A0-64-87-9F-A8-8E-94-EF-B3-AC-63
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/HeatShieldsize0
+		SHA = AC-0D-F5-A3-AE-3F-89-10-66-64-F0-E8-16-6C-78-49-F3-39-D7-42-9C-C0-46-4D-8D-9F-78-85-99-18-CE-09
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/HeatShieldsize5
+		SHA = 42-71-C7-CD-D9-76-85-F0-60-EE-7B-E8-61-93-80-B3-95-CB-6B-80-85-8B-E8-4E-04-CE-59-AE-15-A0-1D-88
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/minidecouplertech
+		SHA = 54-2E-25-90-AB-FB-E2-53-FE-9F-14-16-D1-2C-FC-E3-34-B8-A8-E5-2B-28-5A-A0-EF-1A-B5-83-E8-19-C6-A7
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/mk2Structural
+		SHA = 99-D1-BC-32-6C-12-B9-04-A7-CD-AE-4D-FD-AD-C0-E0-3F-0A-1D-F2-38-91-0D-E3-3C-96-B2-36-41-4B-73-EB
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/Satellite_Contract_Satisfaction
+		SHA = F1-85-24-90-B0-E8-51-62-CF-E0-FB-97-E4-65-D7-79-AB-9E-43-DE-A6-0E-EF-1D-23-7B-49-6B-BA-7C-F0-6A
+	}
+	FILE
+	{
+		filename = SXT/SquadPartTweaks/Engines/Ion/tweak
+		SHA = 2E-90-F8-A4-8D-D4-48-BD-55-E8-C3-88-81-50-E0-B0-EC-FC-65-F4-2A-5B-05-85-74-F1-A4-D7-A5-19-41-32
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/Bumper/_Bumper_Body
+		SHA = 43-20-BD-22-28-BC-8A-F7-7B-7C-35-23-4F-A4-1E-C0-96-F7-8F-65-74-C1-0B-AF-55-D9-C7-F0-2B-86-B2-52
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/Bumper/_Bumper_Control
+		SHA = FA-47-61-F8-AA-29-04-58-72-CF-4D-EB-4C-13-0A-08-B8-1A-60-2F-88-5E-1F-37-37-34-93-2A-B8-45-EB-04
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/Bumper/_Bumper_Engine
+		SHA = 76-82-FC-52-46-1A-3E-1B-8B-EA-90-2C-67-0B-96-10-B9-CF-44-B4-1D-AF-D4-F1-9A-10-4E-34-F1-56-A0-C8
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/Bumper/_Bumper_Engine_Unclad
+		SHA = 56-A0-B9-92-84-63-3F-6B-20-70-BB-8D-79-F9-E3-65-43-E0-2D-6D-41-D8-B5-E5-9B-96-BD-FC-04-A1-B5-4F
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/Bumper/_Bumper_Fin
+		SHA = 9F-D2-4B-9C-51-1C-F2-19-FC-F4-67-3B-96-42-0C-13-8C-50-E1-98-03-BA-80-37-64-63-38-29-91-A5-EA-61
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/Bumper/_Bumper_Nose
+		SHA = E8-0A-1C-95-E0-35-04-25-3C-6A-F0-E6-B0-FF-25-28-12-2C-19-BC-8B-08-9F-D1-73-70-2B-24-1C-50-46-D1
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/X1/_X1_Body
+		SHA = 61-F1-C1-4A-3B-EA-3E-18-1B-4A-E4-CA-ED-56-A3-98-D5-D8-A8-C1-03-48-42-06-6A-56-2E-28-37-39-BD-49
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/X1/_X1_Crew
+		SHA = BF-BD-8E-20-FB-A3-EA-08-B9-E7-6D-EC-89-DD-C6-95-EA-A9-E1-26-E4-FA-10-ED-23-79-F9-08-20-11-4F-BC
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/X1/_X1_Engine
+		SHA = F9-FD-17-9E-E5-FD-E1-DB-78-A0-D8-C9-A9-54-8D-58-D1-7B-23-97-B4-48-17-EB-7C-C2-A2-70-05-41-7A-19
+	}
+	FILE
+	{
+		filename = Taerobee/Parts/X1/_X1_Tail
+		SHA = 6D-C7-F8-69-FA-CF-99-9E-59-6A-45-80-C1-2C-20-1D-8A-E7-14-E1-4B-98-A4-55-01-ED-72-F8-B0-CB-F5-59
+	}
+	FILE
+	{
+		filename = Taerobee/Props/FlightSeat/Prop_Seat_Passenger
+		SHA = F5-49-37-99-81-0A-C9-5C-B1-3E-CF-0E-2E-B9-D8-7B-43-42-85-7F-39-62-73-BC-85-E7-C4-C3-89-0B-E2-05
+	}
+	FILE
+	{
+		filename = Taerobee/Props/FlightSeat/Prop_Seat_Piloted
+		SHA = FA-B8-0F-B2-18-EA-0D-10-AE-2B-4D-7B-7B-DD-B0-8B-D1-15-8E-D7-91-09-DF-44-36-A8-01-5B-BB-DA-E1-A8
+	}
+	FILE
+	{
+		filename = Taerobee/Spaces/X1_Crew_Interior/internal_basic
+		SHA = C7-B1-69-EE-ED-FC-AD-F1-90-F4-B1-A3-C7-00-DD-84-EA-1E-19-5F-B3-A0-A0-BA-B5-A4-A5-C9-33-CA-E0-6F
+	}
+	FILE
+	{
 		filename = TextureReplacer/@Default
 		SHA = 9C-DD-D4-F5-E3-99-CA-A5-E8-DB-30-CC-98-7E-8C-39-7E-7C-64-49-6D-7E-C8-01-9E-D5-BC-6F-28-FC-D6-69
 	}
@@ -9900,128 +12065,143 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = UniversalStorage/Compatability/CommunityTechTree
+		filename = UniversalStorage/Compatability/US CommunityTechTree
 		SHA = 66-59-0C-86-93-EE-9B-58-B7-66-F4-0D-AE-14-1F-83-5F-09-CE-5C-4E-88-9A-FE-FA-CC-3A-0F-E1-80-E1-2C
 	}
 	FILE
 	{
-		filename = UniversalStorage/Compatability/US Aero rescale
-		SHA = 23-6F-26-BD-9C-E1-F9-70-88-C7-E3-3A-94-46-C3-AE-B4-3D-CB-58-42-AB-E7-67-91-15-59-90-81-FA-84-07
+		filename = UniversalStorage/Compatability/US ModularFuelTanks
+		SHA = 78-6A-CB-08-C6-98-7A-FB-77-27-A4-FD-9D-1C-50-0D-2A-1E-A3-33-5B-60-EE-D5-63-9A-87-88-40-A0-24-09
 	}
 	FILE
 	{
 		filename = UniversalStorage/Compatability/US Tweakscale
-		SHA = 17-97-97-F1-6D-E7-A5-FB-77-36-84-8A-9D-3C-9D-29-9F-FE-D7-6C-0E-57-1C-86-77-0E-4D-08-1E-D3-B3-18
+		SHA = 6C-C0-1A-BE-FB-13-16-C1-34-D7-4C-29-0B-61-C2-FA-4F-0C-50-80-14-38-DC-A8-46-8C-84-B7-04-5A-0E-23
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1C10_Wedge_Quadcore/US_1C10_Wedge_Quadcore
-		SHA = F2-B0-D4-70-12-58-9B-34-2B-D8-F3-79-9B-38-D3-E9-14-86-EC-F5-9D-2C-AA-3C-7A-46-58-C1-8C-FA-73-3B
+		SHA = 8E-8D-30-1A-3C-57-05-BC-C6-B5-9A-0B-6B-06-EA-78-D9-39-6D-A9-83-FF-A0-82-C1-95-09-19-76-57-14-13
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1C15_Wedge_Hexacore/US_1C15_Wedge_Hexacore
-		SHA = FB-A4-7C-D5-BE-1A-59-D6-D4-A5-80-44-13-83-BA-61-21-DD-27-92-79-3B-D0-D9-76-B3-9E-AE-3F-8B-4D-E9
+		SHA = 66-AC-50-32-8E-00-7F-72-47-3C-8F-6F-6E-3E-5A-90-2D-0C-CA-68-A3-99-ED-4D-C6-D9-63-95-1E-62-72-E1
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1C20_Wedge_Octocore/US_1C20_Wedge_Octocore
-		SHA = 8D-54-C4-A3-ED-98-34-98-CE-73-9B-C7-E6-D7-B8-85-D0-C5-9B-B0-59-C7-41-F9-5B-C9-59-7C-15-13-17-7B
+		SHA = D8-E5-BA-F0-8C-FA-30-31-4F-E5-BF-BC-0A-2A-08-F9-26-0D-B3-F3-9F-09-00-74-D1-52-57-2B-25-1B-23-FD
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1D10_Wedge_Adapter_125/part
+		SHA = B3-9E-D3-E9-EC-1B-0F-75-C7-6D-55-14-73-BD-B8-46-E7-21-B7-1B-B4-F8-FC-F0-38-54-C9-E6-B8-49-DB-50
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1D20_Wedge_Adapter_250/part
+		SHA = C0-49-9A-91-94-28-7E-DD-C7-29-E4-FF-6E-03-CE-93-C5-CB-F9-00-D3-4C-AF-6A-46-FB-87-AF-7E-E6-EC-A1
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1M110_Wedge_ScienceBay/US_1M110_Wedge_ScienceBay
-		SHA = 49-C8-29-43-6B-5C-17-E0-20-22-DD-30-7D-2D-F2-2C-4C-59-C6-4C-0D-DB-B1-54-AE-A4-33-D9-20-04-6E-CC
+		SHA = E2-2B-91-60-4D-C6-0E-DF-1C-85-82-F1-A0-B2-F5-B9-58-46-0A-5D-A7-1B-19-54-FB-C3-05-4E-2C-09-51-71
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1P110_Wedge_Fuelcell/US_1P110_Wedge_Fuelcell
-		SHA = F4-21-66-0B-AB-87-3A-22-48-D5-3D-4D-6E-31-B8-2E-5C-37-4A-86-A0-C6-79-B1-33-41-BA-D2-B1-39-46-F2
+		SHA = C8-44-B5-B0-50-3D-35-AD-3B-74-36-46-BB-B7-7D-47-89-34-9B-5F-BE-47-B5-2A-13-06-C8-71-9C-C7-61-B3
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1P120_Wedge_Elektron/US_1P120_Wedge_Elektron
-		SHA = 43-B7-AB-E8-3C-C9-30-E4-04-31-91-73-37-B9-E9-B2-FF-01-39-63-84-B0-83-E6-10-07-F0-7F-3B-61-33-D6
+		SHA = 5F-91-69-0B-EC-D1-04-8D-BA-48-CA-7D-8D-6C-61-9B-B3-53-6B-0B-7C-5D-26-CA-F0-D4-97-F2-E0-0E-C5-C1
+	}
+	FILE
+	{
+		filename = UniversalStorage/Parts/US_1P120_Wedge_Elektron/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier
+		SHA = D6-8C-94-4B-7F-BC-98-40-43-EC-2E-52-C6-23-00-86-04-34-D2-A9-99-D9-2F-B1-F7-EF-A8-49-87-71-52-10
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1P130_Wedge_Sabatier/US_1P130_Wedge_Sabatier
-		SHA = 6D-01-6C-8A-D7-F0-12-F9-61-B6-BC-8D-E2-A3-16-86-8A-2B-98-EF-EB-A2-DD-73-CD-7F-59-3C-23-75-4F-1C
+		SHA = D6-8C-94-4B-7F-BC-98-40-43-EC-2E-52-C6-23-00-86-04-34-D2-A9-99-D9-2F-B1-F7-EF-A8-49-87-71-52-10
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1P140_Wedge_WRS/US_1P140_Wedge_WRS
-		SHA = 5A-E0-38-D7-AA-97-BF-74-80-D9-40-8E-A5-33-9E-A7-7F-E3-86-68-B2-72-BF-C2-92-B9-53-ED-15-0D-00-F3
+		SHA = 89-D7-86-29-A0-D0-7E-1C-28-74-FB-E1-ED-0B-0D-D3-21-EF-5C-51-20-09-A1-90-A1-C3-6B-37-99-03-18-FD
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R110_Wedge_KISContainer/US_1R110_Wedge_KISContainer
-		SHA = D6-9B-F1-B9-88-4F-55-DD-6A-27-6A-58-67-AE-AC-2C-27-1D-09-CD-84-61-55-7B-59-27-F3-22-76-29-FE-85
+		SHA = 80-AE-0D-9B-06-80-DF-3B-D3-10-EA-FA-1B-AE-07-2D-C0-52-A6-BD-03-AC-85-A4-67-A0-4B-0B-3E-8D-93-4C
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R210_Wedge_Liquidfuel/US_1R210_Wedge_Liquidfuel
-		SHA = DB-33-E5-8D-55-CE-4F-AE-B0-1C-1B-BF-95-AF-A1-A8-EF-8C-35-E1-3A-10-E3-7C-BF-67-A0-6E-04-4A-74-64
+		SHA = 22-81-4B-24-E7-A5-84-06-C7-EC-42-81-E8-11-1B-64-46-A3-4F-6A-90-5E-57-63-A8-45-A5-46-AE-42-C4-38
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R220_Wedge_Monoprop/US_1R220_Wedge_Monoprop
-		SHA = BD-EF-B9-04-D4-79-EE-CB-DC-17-D6-96-59-3A-2C-08-AF-E6-62-F9-AB-6D-21-B9-10-DC-E3-F8-2B-82-41-07
+		SHA = 9B-81-CC-C9-3D-D4-1A-1C-87-ED-51-86-6E-BE-E1-A2-63-BB-0D-67-44-7F-D4-30-9F-38-23-2C-67-1B-45-E0
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R310_Wedge_CarbonDioxide/US_1R310_Wedge_CarbonDioxide
-		SHA = 57-A8-24-8D-BE-85-A5-38-5D-ED-71-12-7F-2D-7B-AD-87-94-CD-1A-C9-E1-48-8D-7B-37-A8-61-24-F0-81-C0
+		SHA = C6-6C-53-4B-96-4E-54-DD-E3-8F-DF-84-37-D6-9C-03-B3-A5-A2-87-F8-35-FE-56-C5-06-2B-2D-C3-10-D1-91
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R320_Wedge_Food/US_1R320_Wedge_Food
-		SHA = 4A-58-79-16-E4-CE-68-59-8B-B6-83-78-BD-5E-1E-0A-88-7F-68-FB-E7-1D-A3-AE-10-50-14-5A-85-BD-ED-55
+		SHA = 01-CD-A1-1A-29-56-AB-A0-84-E5-BE-C6-D3-10-34-47-E7-6F-30-C9-E7-37-BD-C8-F2-A2-92-DE-8B-D2-34-C6
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R330_Wedge_Hydrogen/US_1R330_Wedge_Hydrogen
-		SHA = A6-5C-99-D4-01-5B-12-8C-79-CF-4F-24-A0-BD-A7-F0-8B-62-16-BF-E1-4C-18-50-56-EB-EA-6D-8E-E2-1C-34
+		SHA = D6-E7-FC-06-FF-A5-ED-36-95-3A-8D-C8-1C-01-E3-57-C1-89-45-67-85-9B-74-85-D4-5E-88-8A-FE-84-14-21
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R340_Wedge_Oxygen/US_1R340_Wedge_Oxygen
-		SHA = 71-02-84-68-EF-18-50-58-C2-16-E4-89-AD-F9-71-21-A6-B1-10-27-E4-DA-67-80-5E-41-2E-51-40-53-28-2D
+		SHA = E2-4E-D6-E9-34-1B-F8-47-83-74-CD-E1-7D-AC-3D-BD-DA-35-51-FE-12-A1-59-D0-FD-F2-A1-DC-4C-E9-EB-34
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R350_Wedge_Waste/US_1R350_Wedge_Waste
-		SHA = 01-DD-14-E6-24-5D-47-31-06-B0-A2-6C-B0-8F-AE-A3-9B-B6-96-FF-04-98-6F-FA-A8-B0-51-3B-00-0A-B3-70
+		SHA = 09-CC-D3-A7-A5-3A-D2-A0-D7-49-F2-9B-C7-86-87-2C-7E-EF-56-5D-DC-4B-94-8B-F0-AA-9F-50-C3-18-7C-07
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R360_Wedge_Water/US_1R360_Wedge_Water
-		SHA = 3D-9D-40-89-3A-36-25-16-4B-F7-B8-52-D0-82-9A-5C-E0-32-EE-08-29-23-4E-31-1F-95-30-74-8A-06-A8-6B
+		SHA = 83-90-7A-5C-61-1E-F2-5D-C1-2F-F9-0E-6D-73-64-98-57-18-97-30-2A-D8-36-7D-DD-94-BE-B2-F9-8F-E1-2C
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_1R370_Wedge_WasteWater/US_1R370_Wedge_WasteWater
-		SHA = 3A-58-72-41-08-BD-70-F8-11-B3-2B-31-54-8E-1B-7A-21-1A-D7-92-1C-AD-3C-1B-23-04-7C-98-7D-09-2A-70
+		SHA = 31-D5-2E-F3-34-B1-14-83-54-6D-F1-A2-25-AE-BA-7A-A5-B4-69-91-C5-C9-1E-25-55-67-74-B8-46-6D-D9-8D
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_2R320_Radial_Food/US_2R320_Radial_Food
-		SHA = 1D-C3-50-9F-20-76-14-FB-72-2E-8E-71-C8-66-F5-09-EF-7B-35-20-52-8C-59-2F-62-60-86-9E-68-9D-D1-64
+		SHA = 34-56-0A-B8-D5-E5-5C-D7-3A-FC-58-10-74-69-32-0C-DB-09-05-32-B7-D8-0C-5F-63-46-ED-75-7D-66-DD-66
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_2R340_Radial_Oxygen/US_2R340_Radial_Oxygen
-		SHA = 5B-BB-EC-3D-41-24-29-AF-AC-CA-9B-7E-4B-7A-7F-29-B5-5E-0E-7C-7C-9A-56-AA-74-31-61-E4-0E-D0-C7-5A
+		SHA = CB-7F-7B-DE-02-B2-5F-AD-43-44-E6-6E-DE-EF-DD-AE-82-46-ED-81-A4-B8-D9-25-02-AE-DB-4B-16-E9-A9-18
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_2R360_Radial_Water/US_2R360_Radial_Water
-		SHA = 5A-86-C4-11-F5-E9-40-82-94-67-AB-E1-44-24-02-C5-AF-FE-A8-35-05-86-BE-00-D6-5B-C5-45-F4-84-C0-AF
+		SHA = ED-D6-4C-D2-DE-13-96-90-26-A1-2B-52-C2-F9-4D-0A-78-B2-D6-A9-6D-D1-36-EE-43-CD-9E-4A-CE-39-36-9E
 	}
 	FILE
 	{
 		filename = UniversalStorage/Parts/US_3R310_EVA_EVAX/US_3R310_EVA_EVAX
-		SHA = 8A-21-50-FC-25-0D-BE-94-F2-C0-C0-08-1A-98-2A-8E-C1-CC-30-16-7D-21-F3-32-D9-D3-3C-19-EF-01-2B-13
+		SHA = 3B-DA-4B-50-05-36-10-08-5F-30-CD-20-DD-96-EA-02-D4-07-2F-41-4B-0C-82-AC-EC-3F-58-38-E6-DF-B3-40
 	}
 	FILE
 	{
@@ -10035,11 +12215,6 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = VenStockRevamp/PartRevamp_TextureReplacer
-		SHA = 62-8A-E5-63-D2-42-86-91-3B-CE-1F-DE-FD-7F-48-6C-A7-4B-7B-83-D2-18-5D-2D-FB-20-05-DB-F2-A5-B6-4F
-	}
-	FILE
-	{
 		filename = VenStockRevamp/RealChute-Patches
 		SHA = 50-23-C0-4E-F6-85-0C-F7-72-28-D1-EB-46-EB-BF-D1-E9-7A-A6-2F-9A-53-32-DB-0A-A2-E3-BE-2C-61-FC-DC
 	}
@@ -10050,47 +12225,42 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = VenStockRevamp/VSR_tempGimbalfix
-		SHA = D9-79-32-78-44-B3-D8-A0-C2-B7-DC-FA-26-70-C2-E1-81-5A-B8-52-08-EB-70-BF-DD-BA-49-20-29-66-6D-A8
-	}
-	FILE
-	{
 		filename = VenStockRevamp/Part Bin/105-7P
 		SHA = 49-8B-A7-50-7F-BC-F1-39-73-2E-A4-72-26-70-2F-F3-AC-0B-72-17-89-2D-45-50-C4-1D-B7-A8-13-58-13-02
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/Extra Structural Parts
-		SHA = 34-22-18-78-AB-1E-12-83-7F-09-B5-9E-37-F8-43-3E-D3-FD-6B-38-FB-0C-98-3F-A2-B7-17-35-3F-14-85-01
-	}
-	FILE
-	{
-		filename = VenStockRevamp/Part Bin/ExtraAero
+		filename = VenStockRevamp/Part Bin/Extra_Aero
 		SHA = 38-E0-4C-D7-6C-CB-62-58-75-DD-80-DE-45-72-05-51-04-CB-A0-DB-73-77-DD-A5-2B-76-C1-3A-9F-88-22-E9
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/ExtraDecouplers
+		filename = VenStockRevamp/Part Bin/Extra_Decouplers
 		SHA = BE-3D-26-84-81-76-A3-B9-72-B3-75-29-F7-75-D3-7F-3D-E3-A2-44-FF-DA-52-5B-CF-2F-34-7B-AA-F8-EF-82
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/ExtraElectrical
-		SHA = 5A-C2-FE-35-90-B3-01-48-95-17-0F-9C-CA-9D-E8-0E-4F-F2-26-0E-93-FB-C6-66-D2-6D-73-FB-EA-5B-DB-61
+		filename = VenStockRevamp/Part Bin/Extra_Electrical
+		SHA = 00-67-A0-0A-BD-92-90-A9-22-08-1E-7C-B4-84-E1-51-CB-19-E7-69-95-BC-ED-EB-CB-7B-7C-48-29-2B-2B-3B
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/ExtraEngines
+		filename = VenStockRevamp/Part Bin/Extra_Engines
 		SHA = FF-3A-61-E9-60-9A-C3-18-25-BC-CE-CA-D7-12-54-57-76-4F-10-BD-C6-D4-BC-79-04-F8-FE-10-7E-F5-78-07
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/ExtraParachutes
+		filename = VenStockRevamp/Part Bin/Extra_Parachutes
 		SHA = 7A-AD-90-CF-8E-E9-92-CF-3B-45-21-7D-DD-F1-2F-EB-4C-5F-64-08-BD-B5-1D-C0-38-1D-F9-E3-12-B1-BE-43
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/ExtraTanks
+		filename = VenStockRevamp/Part Bin/Extra_Structural_Parts
+		SHA = 34-22-18-78-AB-1E-12-83-7F-09-B5-9E-37-F8-43-3E-D3-FD-6B-38-FB-0C-98-3F-A2-B7-17-35-3F-14-85-01
+	}
+	FILE
+	{
+		filename = VenStockRevamp/Part Bin/Extra_Tanks
 		SHA = AD-E4-0B-04-5F-90-CC-F3-A1-C5-53-1D-87-21-E8-53-B5-CC-7B-61-2F-0A-0B-0F-39-90-7F-22-20-69-2C-21
 	}
 	FILE
@@ -10100,18 +12270,13 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/InflatableHab
-		SHA = 76-14-12-0D-26-88-37-4C-0F-5E-77-40-ED-4B-7D-92-24-2D-71-EE-30-54-35-17-55-F6-CA-20-53-D1-89-1B
-	}
-	FILE
-	{
 		filename = VenStockRevamp/Part Bin/InlineRCS
 		SHA = 0F-9A-A4-63-60-14-D9-F1-94-36-CA-7C-9D-6A-81-A3-03-58-04-FE-3B-28-99-06-26-DC-51-C3-DB-2E-6E-9B
 	}
 	FILE
 	{
 		filename = VenStockRevamp/Part Bin/KerbCan
-		SHA = A8-A0-8C-D3-B7-42-07-FE-90-1E-E4-1F-1D-AB-5B-9A-D9-7C-08-7F-2E-1E-DB-F3-FB-D4-3D-4E-2B-4F-45-8B
+		SHA = 6A-90-79-F6-BE-A2-3E-B1-BD-CD-F7-5C-49-3D-20-7B-99-7A-8B-A1-2E-13-0E-38-29-17-BB-75-18-62-6C-2C
 	}
 	FILE
 	{
@@ -10120,8 +12285,13 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = VenStockRevamp/Part Bin/Large_Hard_Hab
+		SHA = 35-D2-7D-59-AB-67-7A-37-D5-1E-81-14-E8-45-31-2E-7D-F5-D8-59-BB-58-F8-4F-72-39-2A-08-9E-EE-F0-08
+	}
+	FILE
+	{
 		filename = VenStockRevamp/Part Bin/liquidEngineLV-900
-		SHA = 9A-25-E3-BA-D7-38-69-59-9B-6F-93-B5-D3-39-24-E5-48-5E-00-8C-C3-F8-A9-D8-79-75-DD-A1-5E-C2-F2-3F
+		SHA = 98-84-6C-4E-E8-93-35-68-38-1F-07-E3-62-07-AB-3A-98-67-04-74-88-E6-65-66-20-00-EE-46-BA-DD-5E-AD
 	}
 	FILE
 	{
@@ -10130,8 +12300,8 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/ParaDockingPort
-		SHA = C2-9A-07-50-C2-4E-1E-85-70-8D-4A-A4-8F-74-9E-6A-88-C1-DE-D7-10-B0-C7-1E-B1-91-AB-72-53-C8-EF-77
+		filename = VenStockRevamp/Part Bin/Para_Docking_Port
+		SHA = F2-CB-B7-67-39-87-72-FB-39-FC-F2-02-39-80-16-54-F7-0F-0F-E5-01-60-4A-40-61-A7-84-79-10-C7-DA-99
 	}
 	FILE
 	{
@@ -10145,7 +12315,7 @@ FilesSHA
 	}
 	FILE
 	{
-		filename = VenStockRevamp/Part Bin/stationHubLarge
+		filename = VenStockRevamp/Part Bin/station_Hub_Large
 		SHA = 94-97-07-2A-FD-3B-AE-5D-B4-E4-DC-03-4D-FE-76-E2-01-77-84-91-98-DF-19-D5-6B-31-21-E9-8B-84-F8-94
 	}
 	FILE
@@ -10255,6 +12425,21 @@ FilesSHA
 	}
 	FILE
 	{
+		filename = VenStockRevamp/Part Bin/NewParts/SoftHabs/LargeInflatableHab
+		SHA = 04-1F-B6-43-01-F4-EE-B1-7A-52-C3-08-49-AE-C6-9C-A3-61-F2-DD-EE-A5-40-97-C7-58-A3-53-0D-61-ED-CC
+	}
+	FILE
+	{
+		filename = VenStockRevamp/Part Bin/NewParts/SoftHabs/MicroInflatableHab
+		SHA = 9F-5B-D1-F4-33-DC-FA-40-67-A1-3A-BF-C7-54-D5-B6-26-5C-2A-27-7A-72-4B-6E-99-72-FF-D0-3C-38-4E-28
+	}
+	FILE
+	{
+		filename = VenStockRevamp/Part Bin/NewParts/SoftHabs/SmallInflatableHab
+		SHA = 9F-91-04-59-29-F4-13-1D-FF-8D-36-AD-47-1F-E5-DA-31-90-CA-6B-CE-2A-58-E1-30-44-35-86-F5-B3-EC-92
+	}
+	FILE
+	{
 		filename = VenStockRevamp/Part Bin/NewParts/SoftTanks/liquidEngineRE-N4
 		SHA = 35-AD-A5-79-9D-97-F9-57-CD-0F-2C-D4-29-B0-C2-B0-79-D1-54-20-61-59-90-46-4D-1D-8E-66-32-EB-96-AF
 	}
@@ -10296,12 +12481,12 @@ FilesSHA
 	FILE
 	{
 		filename = VenStockRevamp/PathPatches/Electrical-PathPatches
-		SHA = 6A-26-F8-11-A1-1B-EA-1D-1F-51-50-1B-C6-69-E2-EB-F5-AE-E5-4B-F8-7F-C7-F2-48-F5-14-E5-81-49-1F-E8
+		SHA = 0B-F1-0A-85-DB-DF-7F-BA-38-9F-A8-1D-F5-AF-8D-1D-FB-5F-DB-C3-61-02-9D-70-9C-FE-CF-AD-35-98-0B-D3
 	}
 	FILE
 	{
 		filename = VenStockRevamp/PathPatches/Engines-PathPatches
-		SHA = 8F-95-11-70-72-19-FA-72-D4-E6-41-38-8F-50-84-D4-20-BB-C7-5E-D3-9C-4B-D1-2D-73-96-E0-0A-05-6A-EF
+		SHA = 60-AA-E8-B3-42-ED-F6-F7-9F-FF-C7-9B-27-FA-F3-7C-6D-6E-33-89-69-9A-EF-C3-DB-A8-4B-BF-F9-7D-F4-E3
 	}
 	FILE
 	{
@@ -10326,17 +12511,17 @@ FilesSHA
 	FILE
 	{
 		filename = VenStockRevamp/Squad/Parts/Command
-		SHA = 93-87-B5-86-90-4D-C8-EA-B7-48-B7-58-21-B2-9E-CC-B8-9B-1C-CB-2D-5A-83-3C-97-6C-AE-AE-DE-1A-93-D1
+		SHA = 6E-8C-ED-74-F4-48-09-F8-86-C1-D8-EB-CD-BB-F9-3E-71-4D-4B-6D-06-9C-55-28-65-1E-75-1C-1F-B7-93-EC
 	}
 	FILE
 	{
 		filename = VenStockRevamp/Squad/Parts/Electrical
-		SHA = DD-A2-9A-1B-F0-0C-FC-76-3F-8E-6C-DE-7A-63-42-47-33-A3-7B-92-07-7F-8A-FE-49-31-92-32-F1-29-64-0F
+		SHA = F0-8B-B0-B7-D2-6C-68-8E-B6-A5-C7-97-D1-69-B4-BE-1E-E1-5A-9E-66-0C-90-62-82-BE-5B-1E-C8-EA-97-30
 	}
 	FILE
 	{
 		filename = VenStockRevamp/Squad/Parts/Engines
-		SHA = E5-34-C6-5E-4D-2C-12-EA-F1-88-45-22-3F-A0-88-DA-E7-75-D3-63-BE-73-81-56-AB-EC-CC-55-BF-BF-E4-55
+		SHA = DB-F4-9B-65-66-6F-42-71-1B-DD-C4-B4-92-A1-E6-28-15-0D-5B-B9-A6-A6-F1-1F-7E-7D-84-8B-9F-E6-DB-AC
 	}
 	FILE
 	{
@@ -10356,7 +12541,7 @@ FilesSHA
 	FILE
 	{
 		filename = VenStockRevamp/Squad/Parts/Utility
-		SHA = 9B-B5-17-1D-52-85-9C-21-0A-78-E8-CC-EA-55-9C-6B-63-5E-D4-B7-7F-65-8F-B3-30-47-42-28-E0-1F-6D-E7
+		SHA = 5B-AA-CE-A3-5E-4A-93-8C-E4-AB-37-77-14-72-DA-8A-A0-0B-EF-24-BA-25-06-82-D3-58-DF-D1-49-0D-54-A7
 	}
 	FILE
 	{

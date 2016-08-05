@@ -1,10 +1,11 @@
 TechTree
 {
+	 = =============
 	RDNode
 	{
 		id = start
 		title = Start
-		description = The technology we started out with.
+		description = Propeller and early jet aircraft; early sounding rockets; small solid and liquid rocket engines. 1945-1950 or so.
 		cost = 0
 		hideEmpty = False
 		nodeName = node0_start
@@ -16,14 +17,14 @@ TechTree
 	RDNode
 	{
 		id = basicRocketry
-		title = Basic Rocketry
-		description = How hard can Rocket Science be anyway?
-		cost = 5
+		title = Early Orbital Rocketry
+		description = Early rocket engines, small solid kick motors. You should be able to get to orbit...just. 1950-1957.
+		cost = 10
 		hideEmpty = False
 		nodeName = node1_basicRocketry
 		anyToUnlock = False
 		icon = RDicon_rocketry-basic
-		pos = -2385,1257,-1
+		pos = -2360,1355,-1
 		scale = 0.6
 		Parent
 		{
@@ -35,14 +36,14 @@ TechTree
 	RDNode
 	{
 		id = engineering101
-		title = Engineering 101
-		description = How hard can Aerospace Engineering be anyway?
+		title = Early Construction
+		description = Lightweight construction techniques for rockets, attitude jet feed lines and pressurization, and other early stage construction techniques. 1953-1957.
 		cost = 5
 		hideEmpty = False
 		nodeName = node1_engineering101
 		anyToUnlock = False
 		icon = RDicon_emgineering101
-		pos = -2385,1142.3,-1
+		pos = -2385,1272,-1
 		scale = 0.6
 		Parent
 		{
@@ -55,13 +56,13 @@ TechTree
 	{
 		id = survivability
 		title = Survivability
-		description = The art and science of landing and walking away from it.
-		cost = 15
+		description = Short of a nuclear explosion, reentry is one of the most trying environments for a material. This allows the first orbit-recoverable probes. 1959.
+		cost = 20
 		hideEmpty = False
 		nodeName = node2_survivability
 		anyToUnlock = False
-		icon = RDicon_survivability
-		pos = -2209,975,-1
+		icon = RDicon_aerodynamics-advanced
+		pos = -2209,930,-1
 		scale = 0.6
 		Parent
 		{
@@ -73,18 +74,18 @@ TechTree
 	RDNode
 	{
 		id = stability
-		title = Stability
-		description = Reaching for the stars starts with keeping our spacecraft pointed generally in the right direction.
-		cost = 18
+		title = Stability/Early Probes
+		description = While the first probes were spin-stabilized, 3-axis stabilization is necessary for a true spacecraft, whether crewed or uncrewed. This allows for RCS-stabilized flight in orbit, and for the first controllable, long-duration probes. 1959.
+		cost = 20
 		hideEmpty = False
 		nodeName = node2_stability
-		anyToUnlock = True
-		icon = RDicon_stability
-		pos = -2170,1201,-1
+		anyToUnlock = False
+		icon = RDicon_control-flight-advanced
+		pos = -2128,1020,-1
 		scale = 0.6
 		Parent
 		{
-			parentID = engineering101
+			parentID = basicAvionics
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -98,9 +99,9 @@ TechTree
 	RDNode
 	{
 		id = generalRocketry
-		title = General Rocketry
-		description = More engines, more fuel, more ambitious ideas.
-		cost = 20
+		title = Basic Orbital Rocketry
+		description = The first ICBMs and ton-class LVs. The first high-performance upper stages. With this you can place a capsule in orbit, or send a probe to the moon. 1958-1962
+		cost = 10
 		hideEmpty = False
 		nodeName = node2_generalRocketry
 		anyToUnlock = False
@@ -117,18 +118,18 @@ TechTree
 	RDNode
 	{
 		id = aviation
-		title = Aviation
-		description = The art and science of keeping heavier-than-air objects aloft for extended periods of time.
-		cost = 45
+		title = Mature Supersonic Flight
+		description = The discovery of the area rule and the introduction of afterburning turbojets allows practical supersonic flight. 1953-1958.
+		cost = 10
 		hideEmpty = False
 		nodeName = node3_aviation
 		anyToUnlock = True
-		icon = RDicon_aerospaceTech
-		pos = -1946,1201,-1
+		icon = RDicon_aerodynamicSystems
+		pos = -2385,1180,-1
 		scale = 0.6
 		Parent
 		{
-			parentID = stability
+			parentID = subsonicFlight
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -136,18 +137,18 @@ TechTree
 	RDNode
 	{
 		id = basicScience
-		title = Basic Science
-		description = We are going to ask all the big questions of the Universe... eventually. For now, we're starting with these.
-		cost = 45
+		title = Improved Instrumentation
+		description = Later-generation science satellites were much more advanced than the early lash-ups, and maturing launch capabilities meant more (and more specialized) scientific satellites could be launched. 1962.
+		cost = 40
 		hideEmpty = False
 		nodeName = node3_basicScience
 		anyToUnlock = False
 		icon = RDicon_scienceTech
-		pos = -1946,846.9,-1
+		pos = -2047,620,-1
 		scale = 0.6
 		Parent
 		{
-			parentID = survivability
+			parentID = stability
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -156,23 +157,23 @@ TechTree
 	{
 		id = flightControl
 		title = Flight Control
-		description = Tumbling out of control may be fun, but our engineers insist there's more to rocket science than that.
-		cost = 45
+		description = Mature 3-axis control for uncrewed and crewed spacecraft, and early digital avionics for launch vehicles. 1964.
+		cost = 40
 		hideEmpty = False
 		nodeName = node3_flightControl
-		anyToUnlock = True
+		anyToUnlock = False
 		icon = RDicon_control-flight-advanced
-		pos = -1946,1051.4,-1
+		pos = -1946,1020,-1
 		scale = 0.6
 		Parent
 		{
-			parentID = survivability
+			parentID = stability
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
 		Parent
 		{
-			parentID = stability
+			parentID = generalRocketry
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -180,9 +181,9 @@ TechTree
 	RDNode
 	{
 		id = advRocketry
-		title = Advanced Rocketry
-		description = A new step ahead in rocket technology.
-		cost = 45
+		title = Mature Orbital Rocketry
+		description = Mature, reasonably reliable orbital launch vehicles with higher performance lifters and upper stages. 1963.
+		cost = 60
 		hideEmpty = False
 		nodeName = node3_advRocketry
 		anyToUnlock = False
@@ -195,28 +196,34 @@ TechTree
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
+		Parent
+		{
+			parentID = basicConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
 	}
 	RDNode
 	{
 		id = generalConstruction
 		title = General Construction
-		description = New equipment to help out in keeping things stable, especially useful when the size of the spacecraft defies the current bounds of sanity.
-		cost = 45
+		description = Advances in metallurgy necessary for improved fuel tanks, engines, and heat shielding, as well as directly leading to larger size propellant tanks.
+		cost = 30
 		hideEmpty = False
 		nodeName = node3_generalConstruction
-		anyToUnlock = True
 		icon = RDicon_construction-general
-		pos = -1946,1355,-1
+		pos = -1946,1272,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
-			parentID = stability
+			parentID = basicConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
 		Parent
 		{
-			parentID = generalRocketry
+			parentID = survivability
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -224,18 +231,31 @@ TechTree
 	RDNode
 	{
 		id = propulsionSystems
-		title = Propulsion Systems
-		description = A positively different approach to existing trends in rocketry. These small, lightweight propulsion systems may not seem as exciting, but they might prove just as useful.
+		title = Improved Staged Combustion
+		description = Improvements in metallurgy and the understanding of propellant decomposition at high temperatures and pressures allow improved staged combustion engines.
 		cost = 90
 		hideEmpty = False
 		nodeName = node4_propulsionSystems
 		anyToUnlock = False
-		icon = RDicon_propulsionSystems
+		icon = RDicon_fuelSystems
 		pos = -1723,1551,-1
 		scale = 0.6
+		cost = 120
 		Parent
 		{
 			parentID = advRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = fuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = generalConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -244,17 +264,29 @@ TechTree
 	{
 		id = spaceExploration
 		title = Space Exploration
-		description = To boldly go where no green man has gone before.
-		cost = 90
+		description = Developments in EVA suits and crewed landers allow reasonably safe human exploration of other bodies.
+		cost = 250
 		hideEmpty = False
 		nodeName = node4_spaceExploration
-		anyToUnlock = False
 		icon = RDicon_evaTech
-		pos = -1723,963.9,-1
+		pos = -1723,870,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
-			parentID = basicScience
+			parentID = simpleCommandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = electrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = landing
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -269,7 +301,7 @@ TechTree
 		nodeName = node4_advFlightControl
 		anyToUnlock = False
 		icon = RDicon_control-flight
-		pos = -1723,1051.4,-1
+		pos = -1723,990,-1
 		scale = 0.6
 		Parent
 		{
@@ -282,23 +314,23 @@ TechTree
 	{
 		id = landing
 		title = Landing
-		description = Our Engineers are nothing if not optimistic.
-		cost = 90
+		description = Guidance and engine development that allows soft landing on other bodies. 1964-67.
+		cost = 120
 		hideEmpty = False
 		nodeName = node4_landing
-		anyToUnlock = True
 		icon = RDicon_landing
-		pos = -1723,1142.4,-1
+		pos = -1820,870,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
-			parentID = flightControl
+			parentID = miniaturization
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
 		Parent
 		{
-			parentID = aviation
+			parentID = flightControl
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -306,14 +338,14 @@ TechTree
 	RDNode
 	{
 		id = aerodynamicSystems
-		title = Aerodynamics
-		description = New breakthroughs from C7 Aerospace allow for new types of craft to be built. We're looking into hiring some of their engineers as well.
-		cost = 90
+		title = High Speed Flight
+		description = The increased performance of jet engines and the use of various heat-resistant alloys allow flight above Mach 2, while rocket planes shoot past Mach 5 and kiss the edge of space.
+		cost = 25
 		hideEmpty = False
 		nodeName = node4_aerodynamicSystems
-		anyToUnlock = True
-		icon = RDicon_aerodynamicSystems
-		pos = -1723,1243,-1
+		anyToUnlock = False
+		icon = RDicon_flight-supersonic
+		pos = -2080,1180,-1
 		scale = 0.6
 		Parent
 		{
@@ -323,7 +355,13 @@ TechTree
 		}
 		Parent
 		{
-			parentID = generalConstruction
+			parentID = basicConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = survivability
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -332,13 +370,13 @@ TechTree
 	{
 		id = electrics
 		title = Electrics
-		description = We did know about electricity before inventing space flight. The big breakthrough here was combining the two.
-		cost = 90
+		description = Advanced electrical systems: longer-duration, foldable solar panels, fuel cells, and high-efficiency batteries. 1964.
+		cost = 75
 		hideEmpty = False
 		nodeName = node4_electrics
 		anyToUnlock = True
 		icon = RDicon_electrics
-		pos = -1723,711.1,-1
+		pos = -1946,560,-1
 		scale = 0.6
 		Parent
 		{
@@ -350,9 +388,9 @@ TechTree
 	RDNode
 	{
 		id = heavyRocketry
-		title = Heavy Rocketry
-		description = The next logical step for rocketry technology is to just go bigger.
-		cost = 90
+		title = Heavy Orbital Rocketry
+		description = Large rocket engines to power human exploration beyond Earth orbit, and send large probes to the outer and inner planets.
+		cost = 120
 		hideEmpty = False
 		nodeName = node4_heavyRocketry
 		anyToUnlock = False
@@ -365,25 +403,6 @@ TechTree
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
-	}
-	RDNode
-	{
-		id = fuelSystems
-		title = Fuel Systems
-		description = Advancements towards a better understanding of how fuel flows through a rocket.
-		cost = 90
-		hideEmpty = False
-		nodeName = node4_fuelSystems
-		anyToUnlock = True
-		icon = RDicon_fuelSystems
-		pos = -1723,1470.2,-1
-		scale = 0.6
-		Parent
-		{
-			parentID = advRocketry
-			lineFrom = RIGHT
-			lineTo = LEFT
-		}
 		Parent
 		{
 			parentID = generalConstruction
@@ -393,9 +412,34 @@ TechTree
 	}
 	RDNode
 	{
+		id = fuelSystems
+		title = Staged Combustion
+		description = The first engines using staged combustion for higher efficiency. In staged combustion, a preburner is used to drive the turbopumps, and the exhaust is fed into the combustion chamber rather than dumped (per gas-generator cycle), avoiding efficiency losses. 1961.
+		cost = 30
+		hideEmpty = False
+		nodeName = node4_fuelSystems
+		anyToUnlock = False
+		icon = RDicon_fuelSystems
+		pos = -1946,1470,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = generalRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = basicConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
 		id = advConstruction
 		title = Advanced Construction
-		description = New advances in construction make it possible to build larger than ever before.
+		description = Advances in metallurgy necessary for improved fuel tanks, engines, and heat shielding.
 		cost = 90
 		hideEmpty = False
 		nodeName = node4_advConstruction
@@ -414,13 +458,13 @@ TechTree
 	{
 		id = miniaturization
 		title = Miniaturization
-		description = These aren't your standard hobby miniature models. We've been assured they look good enough to actually fly.
+		description = Advances in electronics lead to improved probe avionics suitable for missions beyond Earth orbit. 1964.
 		cost = 90
 		hideEmpty = False
 		nodeName = node4_miniaturization
 		anyToUnlock = True
 		icon = RDicon_miniaturization
-		pos = -1723,846.9,-1
+		pos = -1946,680,-1
 		scale = 0.6
 		Parent
 		{
@@ -439,7 +483,7 @@ TechTree
 		nodeName = node5_actuators
 		anyToUnlock = True
 		icon = RDicon_construction-specialized
-		pos = -1519,1355,-1
+		pos = -1519, 1300,-1
 		scale = 0.6
 		Parent
 		{
@@ -451,24 +495,36 @@ TechTree
 	RDNode
 	{
 		id = commandModules
-		title = Command Modules
-		description = Flight control technology has evolved far enough that we feel we can honestly say pilots are in command now.
-		cost = 160
+		title = Mature Capsules
+		description = Advanced capsules that can sustain a crew for weeks at a time beyond low Earth orbit.
+		cost = 250
 		hideEmpty = False
 		nodeName = node5_commandModules
-		anyToUnlock = True
+		anyToUnlock = False
 		icon = RDicon_commandmodules
-		pos = -1520,1020.4,-1
+		pos = -1723, 930, -1
 		scale = 0.6
 		Parent
 		{
-			parentID = spaceExploration
+			parentID = simpleCommandModules
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
 		Parent
 		{
-			parentID = advFlightControl
+			parentID = electrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = generalConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = flightControl
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -476,18 +532,24 @@ TechTree
 	RDNode
 	{
 		id = heavierRocketry
-		title = Heavier Rocketry
-		description = There may be an upper limit to how large a rocket can be built, but we're not there yet.
-		cost = 160
+		title = Refined Rocketry
+		description = The gas-generator cycle achieves considerable refinement, and variants to it like tap-off provide increased performance without the complications of staged combustion.
+		cost = 240
 		hideEmpty = False
 		nodeName = node5_heavierRocketry
-		anyToUnlock = True
+		anyToUnlock = False
 		icon = RDicon_rocketry-heavier
 		pos = -1519,1635,-1
 		scale = 0.6
 		Parent
 		{
 			parentID = heavyRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -502,7 +564,7 @@ TechTree
 		nodeName = node5_precisionEngineering
 		anyToUnlock = True
 		icon = RDicon_engineering-precision
-		pos = -1519,846.9,-1
+		pos = -1520,680,-1
 		scale = 0.6
 		Parent
 		{
@@ -527,7 +589,7 @@ TechTree
 		nodeName = node5_advExploration
 		anyToUnlock = True
 		icon = RDicon_exploration-advanced
-		pos = -1519,963.9,-1
+		pos = -1520,870,-1
 		scale = 0.6
 		Parent
 		{
@@ -539,15 +601,21 @@ TechTree
 	RDNode
 	{
 		id = specializedControl
-		title = Specialized Control
-		description = A new state-of-the-art in control technology.
+		description = The integrated circuits designed for terrestrial use and used in small satellites come to replace older digital and even older analog avionics designs. 1970s.
 		cost = 160
-		hideEmpty = False
 		nodeName = node5_specializedControl
-		anyToUnlock = True
 		icon = RDicon_control-large
-		pos = -1521,1082.2,-1
+		pos = -1521,990,-1
 		scale = 0.6
+		title = Integrated Avionics
+		hideEmpty = False
+		anyToUnlock = False
+		Parent
+		{
+			parentID = advFlightControl
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
 		Parent
 		{
 			parentID = advFlightControl
@@ -557,38 +625,25 @@ TechTree
 	}
 	RDNode
 	{
-		id = advLanding
-		title = Advanced Landing
-		description = Further advances in landing devices, allowing for more controlled descents and a much higher number of parts still attached to the ship after touchdown.
-		cost = 160
-		hideEmpty = False
-		nodeName = node5_advLanding
-		anyToUnlock = False
-		icon = RDicon_landing-advanced
-		pos = -1519,1142.4,-1
-		scale = 0.6
-		Parent
-		{
-			parentID = landing
-			lineFrom = RIGHT
-			lineTo = LEFT
-		}
-	}
-	RDNode
-	{
 		id = supersonicFlight
-		title = Supersonic Flight
-		description = A new line of aircraft parts that allow for unprecedented maneuverability and speed.
-		cost = 160
-		hideEmpty = False
+		title = Advanced Jet Engines
+		description = Advances in metallurgy allow for very high speed flight on jet engines (Mach 3+) as well as high-efficiency turbofans. 1963-1965
+		cost = 60
 		nodeName = node5_supersonicFlight
-		anyToUnlock = True
-		icon = RDicon_flight-supersonic
-		pos = -1521,1278,-1
+		icon = RDicon_flight-highAltitude
+		pos = -1946,1180,-1
 		scale = 0.6
+		anyToUnlock = False
+		hideEmpty = False
 		Parent
 		{
 			parentID = aerodynamicSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = basicConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -596,24 +651,24 @@ TechTree
 	RDNode
 	{
 		id = advFuelSystems
-		title = Adv. Fuel Systems
-		description = Advanced Advancements towards a better understanding of how fuel flows through a rocket.
-		cost = 160
+		title = Improved Solids
+		description = Improved thrust vector control systems, nozzle design, and case material advances lead to more powerful, more controllable, and more efficient solids.
+		cost = 240
 		hideEmpty = False
 		nodeName = node5_advFuelSystems
-		anyToUnlock = True
-		icon = RDicon_fuelSystems-advanced
+		icon = RDicon_rocketry-advanced
 		pos = -1519,1470.2,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
-			parentID = propulsionSystems
+			parentID = largeSolids
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
 		Parent
 		{
-			parentID = fuelSystems
+			parentID = advConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -621,14 +676,14 @@ TechTree
 	RDNode
 	{
 		id = advElectrics
-		title = Advanced Electrics
-		description = We're fairly certain no one will ever need more than 64kw of power for anything.
+		title = Improved Electrics
+		description = Further improvements to electrical systems. Late 1960s.
 		cost = 160
 		hideEmpty = False
 		nodeName = node5_advElectrics
 		anyToUnlock = False
 		icon = RDicon_electrics-advanced
-		pos = -1519,711.1,-1
+		pos = -1723,560,-1
 		scale = 0.6
 		Parent
 		{
@@ -659,18 +714,25 @@ TechTree
 	RDNode
 	{
 		id = precisionPropulsion
-		title = Precision Propulsion
-		description = Any level of precision achieved in controlling the sustained explosion inside a rocket engine is nothing short of remarkable. It might be quite expensive, too.
+		title = Advanced Staged Combustion
+		description = Staged combustion first-stage engines now deliver vacuum specific impulse that at best prior gas generator upper stages would provide, and phenomenal sea level specific impulse.
 		cost = 160
 		hideEmpty = False
 		nodeName = node5_precisionPropulsion
 		anyToUnlock = False
-		icon = RDicon_propulsion-precision
+		icon = RDicon_fuelSystems
 		pos = -1520.1,1551,-1
 		scale = 0.6
+		cost = 240
 		Parent
 		{
 			parentID = propulsionSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -678,37 +740,25 @@ TechTree
 	RDNode
 	{
 		id = advAerodynamics
-		title = Advanced Aerodynamics
+		title = Effective Spaceplanes
 		description = Advances in fluid dynamics research technology have allowed development of a new set of streamlined aircraft components, And also these parts here.
-		cost = 160
+		cost = 300
 		hideEmpty = False
 		nodeName = node5_advAerodynamics
-		anyToUnlock = True
+		anyToUnlock = False
 		icon = RDicon_aerodynamics-advanced
-		pos = -1519,1207,-1
+		pos = -1519,1120,-1
 		scale = 0.6
+		description = Advances in heat-resistant materials, avionics, and life support allow the first spaceplanes capable of carrying significant passengers and cargo.
 		Parent
 		{
-			parentID = aerodynamicSystems
+			parentID = highAltitudeFlight
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
-	}
-	RDNode
-	{
-		id = heavyLanding
-		title = Heavy Landing
-		description = A good landing is one where you walk away from it. A great landing is one where you get to use the aircraft again.
-		cost = 300
-		hideEmpty = False
-		nodeName = node6_heavyLanding
-		anyToUnlock = False
-		icon = RDicon_motors-experimental
-		pos = -1309,1142.4,-1
-		scale = 0.6
 		Parent
 		{
-			parentID = advLanding
+			parentID = generalConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -723,7 +773,7 @@ TechTree
 		nodeName = node6_advScience
 		anyToUnlock = True
 		icon = RDicon_telescope
-		pos = -1309,963.9,-1
+		pos = -1309,870,-1
 		scale = 0.6
 		Parent
 		{
@@ -748,7 +798,7 @@ TechTree
 		nodeName = node6_unmannedTech
 		anyToUnlock = True
 		icon = RDicon_unmanned-advanced
-		pos = -1309,846.9,-1
+		pos = -1309,680,-1
 		scale = 0.6
 		Parent
 		{
@@ -765,19 +815,19 @@ TechTree
 		cost = 300
 		hideEmpty = False
 		nodeName = node6_nuclearPropulsion
-		anyToUnlock = False
 		icon = RDicon_propulsion-nuclear
-		pos = -1309,1551,-1
+		pos = -1309,1593,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
-			parentID = advFuelSystems
+			parentID = hydroloxTL3
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
 		Parent
 		{
-			parentID = heavierRocketry
+			parentID = specializedConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -811,14 +861,8 @@ TechTree
 		nodeName = node6_fieldScience
 		anyToUnlock = True
 		icon = RDicon_science-field
-		pos = -1309,1067,-1
+		pos = -1309,990,-1
 		scale = 0.6
-		Parent
-		{
-			parentID = advLanding
-			lineFrom = RIGHT
-			lineTo = LEFT
-		}
 		Parent
 		{
 			parentID = advExploration
@@ -829,18 +873,24 @@ TechTree
 	RDNode
 	{
 		id = highAltitudeFlight
-		title = High Altitude Flight
-		description = New breakthroughs in engine and intake development to enable flying through the upper reaches of the atmosphere.
-		cost = 300
-		hideEmpty = False
+		title = Prototype Spaceplanes
+		description = The thermal protection used on early capsules and rocket-planes, combined with avionics and three-axis control systems, allow the first early spaceplanes--no more capable than the first capsules, but offering their own perks and challenges.
+		cost = 150
 		nodeName = node6_highAltitudeFlight
-		anyToUnlock = True
-		icon = RDicon_flight-highAltitude
-		pos = -1310,1278,-1
+		icon = RDicon_flight-hypersonic
+		pos = -1946,1120,-1
 		scale = 0.6
+		anyToUnlock = False
+		hideEmpty = False
 		Parent
 		{
-			parentID = supersonicFlight
+			parentID = aerodynamicSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = stability
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -848,15 +898,15 @@ TechTree
 	RDNode
 	{
 		id = largeVolumeContainment
-		title = Large Volume Containment
-		description = Maximize the payload capacity of your spacecraft by maximizing the size of your spacecraft.
+		title = Larger Solids
+		description = Large segmented solids.
 		cost = 300
 		hideEmpty = False
 		nodeName = node6_largeVolumeContainment
-		anyToUnlock = True
-		icon = RDicon_largeVolumeContainment
+		icon = RDicon_rocketry-advanced
 		pos = -1309,1470.2,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
 			parentID = advFuelSystems
@@ -893,13 +943,13 @@ TechTree
 	{
 		id = electronics
 		title = Electronics
-		description = Hopefully these won't become obsolete in the next couple of months.
+		description = The increasing usage of the microchip leads to a revolution in electronics. Early 1970s.
 		cost = 300
 		hideEmpty = False
 		nodeName = node6_electronics
 		anyToUnlock = True
 		icon = RDicon_electronics
-		pos = -1309,777.6,-1
+		pos = -1309,620,-1
 		scale = 0.6
 		Parent
 		{
@@ -918,13 +968,13 @@ TechTree
 	{
 		id = largeElectrics
 		title = High-Power Electrics
-		description = Maximize your energy production and storage potential by maximizing the size of the electrical components on your vessels.
-		cost = 300
+		description = Larger solar panels and other electric devices for larger craft. Early 1970s.
+		cost = 240
 		hideEmpty = False
 		nodeName = node6_largeElectrics
 		anyToUnlock = False
 		icon = RDicon_electrics-large
-		pos = -1309,711.1,-1
+		pos = -1600,560,-1
 		scale = 0.6
 		Parent
 		{
@@ -936,18 +986,24 @@ TechTree
 	RDNode
 	{
 		id = heavyAerodynamics
-		title = Heavy Aerodynamics
-		description = Advances in construction technology enabled new breakthroughs in aerospace materials.
-		cost = 300
+		title = Mature Turbofans
+		description = Large high-bypass turbofans for civilian use and high-performance afterburning low-bypass turbofans for military use. 1970.
+		cost = 240
 		hideEmpty = False
 		nodeName = node6_heavyAerodynamics
-		anyToUnlock = True
 		icon = RDicon_aerospaceTech2
-		pos = -1310,1207,-1
+		pos = -1521,1180,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
-			parentID = advAerodynamics
+			parentID = advConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = supersonicFlight
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -962,7 +1018,7 @@ TechTree
 		nodeName = node7_ionPropulsion
 		anyToUnlock = False
 		icon = RDicon_propulsion-ion
-		pos = -1118,905.2,-1
+		pos = -1118,755,-1
 		scale = 0.6
 		Parent
 		{
@@ -980,15 +1036,15 @@ TechTree
 	RDNode
 	{
 		id = hypersonicFlight
-		title = Hypersonic Flight
-		description = Push your aircraft to the upper limits of airspeed and sanity.
-		cost = 550
+		title = Large Spaceplanes
+		description = Large, reusable spaceplanes that can serve as heavy lift launch vehicles launching 20+ tons to orbit.
+		cost = 800
 		hideEmpty = False
 		nodeName = node7_hypersonicFlight
-		anyToUnlock = True
-		icon = RDicon_flight-hypersonic
-		pos = -1118,1278,-1
+		icon = RDicon_aerospaceTech2
+		pos = -1118,1120,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
 			parentID = highAltitudeFlight
@@ -1002,11 +1058,11 @@ TechTree
 		title = Nanolathing
 		description = Despite the threatening appearance of the green metablobs shot out of the Nanolathing Injectors, none can argue the fact that Kerbals have indeed developed technologies at least just as dangerous as this one.
 		cost = 550
-		hideEmpty = True
+		hideEmpty = False
 		nodeName = node7_nanolathing
 		anyToUnlock = True
 		icon = RDicon_generic
-		pos = -1118,1406,-1
+		pos = -1118,1412,-1
 		scale = 0.6
 		Parent
 		{
@@ -1025,7 +1081,7 @@ TechTree
 		nodeName = node7_advUnmanned
 		anyToUnlock = True
 		icon = RDicon_unmannedTech
-		pos = -1118,846.9,-1
+		pos = -1118,680,-1
 		scale = 0.6
 		Parent
 		{
@@ -1056,14 +1112,14 @@ TechTree
 	RDNode
 	{
 		id = veryHeavyRocketry
-		title = Very Heavy Rocketry
-		description = While ever-larger rockets may not be the answer every time, for all other times, we've developed these.
+		title = Advanced Rocketry
+		description = Lighter, more powerful, and more efficient gas generator and pressure-fed engines.
 		cost = 550
 		hideEmpty = False
 		nodeName = node7_veryHeavyRocketry
 		anyToUnlock = True
 		icon = RDicon_rocketry-veryHeavy
-		pos = -1118,1635,-1
+		pos = -1118, 1559,-1
 		scale = 0.6
 		Parent
 		{
@@ -1074,6 +1130,12 @@ TechTree
 		Parent
 		{
 			parentID = heavierRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = specializedConstruction
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1088,7 +1150,7 @@ TechTree
 		nodeName = node7_advScienceTech
 		anyToUnlock = True
 		icon = RDicon_scienceTech-advanced
-		pos = -1118,963.9,-1
+		pos = -1118,870,-1
 		scale = 0.6
 		Parent
 		{
@@ -1113,7 +1175,7 @@ TechTree
 		nodeName = node7_advancedMotors
 		anyToUnlock = False
 		icon = RDicon_motors-advanced
-		pos = -1118,1067,-1
+		pos = -1118,990,-1
 		scale = 0.6
 		Parent
 		{
@@ -1132,7 +1194,7 @@ TechTree
 		nodeName = node7_specializedElectrics
 		anyToUnlock = True
 		icon = RDicon_electrics-specialized
-		pos = -1118,711.1,-1
+		pos = -1118,560,-1
 		scale = 0.6
 		Parent
 		{
@@ -1144,18 +1206,24 @@ TechTree
 	RDNode
 	{
 		id = highPerformanceFuelSystems
-		title = High-Performance Fuel Systems
-		description = Massive engines require massive fuel storage solutions.
-		cost = 550
+		title = High-Performance Solids
+		description = Advances in fuel chemistry lead to new, higher-performance solid propellants.
+		cost = 500
 		hideEmpty = False
 		nodeName = node7_highPerformanceFuelSystems
-		anyToUnlock = True
-		icon = RDicon_fuelSystems-highPerformance
+		icon = RDicon_rocketry-advanced
 		pos = -1118,1470.2,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
 			parentID = largeVolumeContainment
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advMetalworks
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1163,18 +1231,24 @@ TechTree
 	RDNode
 	{
 		id = experimentalAerodynamics
-		title = Experimental Aerodynamics
-		description = Winged flight technology is soaring to unprecedented heights. It could even be said that it's properly taking off now.
-		cost = 550
+		title = Refined Turbofans
+		description = Continued improvements to turbofan engines.
+		cost = 450
 		hideEmpty = False
 		nodeName = node7_experimentalAerodynamics
-		anyToUnlock = True
 		icon = RDicon_aerodynamics-heavy
-		pos = -1120,1207,-1
+		pos = -1118,1180,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
 			parentID = heavyAerodynamics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advMetalworks
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
@@ -1182,14 +1256,14 @@ TechTree
 	RDNode
 	{
 		id = automation
-		title = Automation
-		description = We can't think of anything that could go wrong with letting an experimental AI handle every aspect of a mission.
+		title = Advanced Electronics
+		description = The continued adoption of the microchip allows ever-smaller, lighter, and more powerful electronics. 1980s.
 		cost = 550
 		hideEmpty = False
 		nodeName = node7_automation
 		anyToUnlock = True
 		icon = RDicon_robotics
-		pos = -1118,777.6,-1
+		pos = -1118,620,-1
 		scale = 0.6
 		Parent
 		{
@@ -1214,7 +1288,7 @@ TechTree
 		nodeName = node8_aerospaceTech
 		anyToUnlock = True
 		icon = RDicon_aerodynamics-experimental
-		pos = -956,1278,-1
+		pos = -927,1180,-1
 		scale = 0.6
 		Parent
 		{
@@ -1233,7 +1307,7 @@ TechTree
 		nodeName = node8_largeUnmanned
 		anyToUnlock = True
 		icon = RDicon_probes-large
-		pos = -952,846.9,-1
+		pos = -927,680,-1
 		scale = 0.6
 		Parent
 		{
@@ -1258,7 +1332,7 @@ TechTree
 		nodeName = node8_experimentalScience
 		anyToUnlock = False
 		icon = RDicon_science-experimental
-		pos = -952,963.9,-1
+		pos = -927,870,-1
 		scale = 0.6
 		Parent
 		{
@@ -1273,11 +1347,11 @@ TechTree
 		title = Experimental Motors
 		description = The latest breakthroughs that are driving motor technology forwards, and in reverse, and steering too.
 		cost = 1000
-		hideEmpty = True
+		hideEmpty = False
 		nodeName = node8_experimentalMotors
 		anyToUnlock = False
 		icon = RDicon_generic
-		pos = -952,1067,-1
+		pos = -927,990,-1
 		scale = 0.6
 		Parent
 		{
@@ -1296,7 +1370,7 @@ TechTree
 		nodeName = node8_experimentalElectrics
 		anyToUnlock = False
 		icon = RDicon_electrics-experimental
-		pos = -952,711.1,-1
+		pos = -927,560,-1
 		scale = 0.6
 		Parent
 		{
@@ -1307,22 +1381,331 @@ TechTree
 	}
 	RDNode
 	{
-		id = experimentalRocketry
-		title = Experimental Rocketry
-		description = Don't take "experimental" lightly.
-		cost = 1000
+		id = nuclearPower
+		title = Nuclear Power
+		description = Nuclear reactors can make power too! Start your own with this handy kit.
+		cost = 300
 		hideEmpty = False
-		nodeName = ct_experimentalRocketry
-		anyToUnlock = False
-		icon = RDicon_rocketry-experimental
-		pos = -952,1592,-1
+		nodeName = ct_nuclearPower
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -1309,1791,-1
 		scale = 0.6
 		Parent
 		{
-			parentID = highPerformanceFuelSystems
+			parentID = nuclearPropulsion
+			lineFrom = TOP
+			lineTo = BOTTOM
+		}
+	}
+	RDNode
+	{
+		id = nuclearFuelSystems
+		title = Nuclear Fuel Systems
+		description = Because that nuclear fuel won't just recycle itself. Or move itself. Or do much of anything except stare at us angrily, really.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_nuclearFuelSystems
+		anyToUnlock = True
+		icon = RDicon_automation
+		pos = -1118,1871,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = nuclearPower
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}
+	}
+	RDNode
+	{
+		id = largeNuclearPower
+		title = Improved Nuclear Power
+		description = Remember, don't place your reactors too close to your habitats. You don't want your Kerbals glowing in the dark for Halloween!
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_largeNuclearPower
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -1118,1791,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = nuclearPower
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advNuclearPower
+		title = High Energy Nuclear Power
+		description = Fry an egg in seconds. In fact, fry anything in seconds.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_advNuclearPower
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -927,1791,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = largeNuclearPower
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = fusionPower
+		title = Fusion Power
+		description = The holy grrraiiiil of power generation. Cheap fuel and lots of power.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_fusionPower
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -736,1791,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = advNuclearPower
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advFusionReactions
+		title = Advanced Fusion Reactions
+		description = Turns out you can fuse nearly anything, including Jeb's cheese sandwich!
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_fusionPower
+		anyToUnlock = True
+		icon = RDicon_metamaterials
+		pos = -545,1751,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = fusionPower
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = fusionRockets
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = exoticReactions
+		title = Exotic Fusion Reactions
+		description = With enough research funding, we can buy newer materials to bombard with high energy particles.
+		cost = 4000
+		hideEmpty = False
+		nodeName = ct_exoticReactions
+		anyToUnlock = True
+		icon = RDicon_science-experimental
+		pos = -354,1791,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = advFusionReactions
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = antimatterPower
+		title = Antimatter Power
+		description = Harnessing the power of really small particles to create alarmingly large explosions.
+		cost = 4000
+		hideEmpty = False
+		nodeName = ct_antimatterPower
+		anyToUnlock = True
+		icon = RDicon_science-experimental
+		pos = -354,1631,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = advFusionReactions
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = unifiedFieldTheory
+		title = Unified Field Theory
+		description = Unifying all of the theories of physics into one long, ridiculous, blackboard-destroying equation has been quite profitable for us.
+		cost = 10000
+		hideEmpty = False
+		nodeName = ct_unifiedFieldTheory
+		anyToUnlock = True
+		icon = RDicon_science-experimental
+		pos = -163,1751,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = exoticReactions
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = antimatterPower
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = ultraHighEnergyPhysics
+		title = Ultra High Energy Physics
+		description = Turns out, it is science fiction!
+		cost = 10000
+		hideEmpty = False
+		nodeName = ct_ultraHighEnergyPhysics
+		anyToUnlock = True
+		icon = RDicon_science-experimental
+		pos = -163,1180,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = antimatterPower
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = highEnergyScience
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = improvedNuclearPropulsion
+		title = Improved Nuclear Propulsion
+		description = Hotter cores, and better engines.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_improvedNuclearPropulsion
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -1118,1711,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = nuclearPropulsion
+			lineFrom = TOP
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advNuclearPropulsion
+		title = High Efficiency Nuclear Propulsion
+		description = Research into increasing the power of our nuclear engines. It's unlikely to get any better than this, boss!
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_advNuclearPropulsion
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -927,1711,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = improvedNuclearPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = expNuclearPropulsion
+		title = Experimental Nuclear Propulsion
+		description = It's been said that nuclear power is basically a really expensive way of boiling water. We beg to disagree - we can boil almost* anything* now!
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_expNuclearPropulsion
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -736,1635,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = advNuclearPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = experimentalRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = exoticNuclearPropulsion
+		title = Exotic Nuclear Propulsion
+		description = Research into the strangest, weirdest, all all-out craziest forms of nuclear propulsion.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_exoticNuclearPropulsion
+		anyToUnlock = True
+		icon = RDicon_propulsion-nuclear
+		pos = -545,1635,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = expNuclearPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = giganticRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = fusionRockets
+		title = Fusion Rockets
+		description = These rockets are going to do their best to make everything else obsolete.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_fusionRockets
+		anyToUnlock = False
+		icon = RDicon_propulsion-nuclear
+		pos = -736,1711,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = advNuclearPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = experimentalRocketry
+		title = Refined Rocketry
+		description = Further advances to gas generator and pressure-fed engines.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_experimentalRocketry
+		anyToUnlock = True
+		icon = RDicon_rocketry-experimental
+		pos = -927,1559,-1
+		scale = 0.6
 		Parent
 		{
 			parentID = veryHeavyRocketry
@@ -1333,15 +1716,15 @@ TechTree
 	RDNode
 	{
 		id = giganticRocketry
-		title = Gigantic Rocketry
+		title = Modern Rocketry
 		description = Despite our detractors' repeated claims to the contrary, we CAN build it bigger.
 		cost = 1500
 		hideEmpty = False
 		nodeName = ct_giganticRocketry
-		anyToUnlock = True
 		icon = RDicon_rocketry-experimental
-		pos = -786,1592,-1
+		pos = -736,1559,-1
 		scale = 0.6
+		anyToUnlock = False
 		Parent
 		{
 			parentID = experimentalRocketry
@@ -1359,11 +1742,1432 @@ TechTree
 		nodeName = ct_colossalRocketry
 		anyToUnlock = True
 		icon = RDicon_rocketry-experimental
-		pos = -645,1592,-1
+		pos = -545,1559,-1
 		scale = 0.6
 		Parent
 		{
 			parentID = giganticRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = specializedFuelStorage
+		title = Refined Solids
+		description = Refinement on existing solid motor technology leads to ever higher specific impulse and lower case mass.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_specializedFuels
+		icon = RDicon_rocketry-advanced
+		pos = -927,1470.2,-1
+		scale = 0.6
+		anyToUnlock = False
+		Parent
+		{
+			parentID = highPerformanceFuelSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = nanolathing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = exoticFuelStorage
+		title = Modern Solids
+		description = Further refinements to casing, TVC, and propellants lead to further performance increases.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_exoticFuels
+		icon = RDicon_rocketry-advanced
+		pos = -736,1470.2,-1
+		scale = 0.6
+		anyToUnlock = False
+		Parent
+		{
+			parentID = specializedFuelStorage
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = exoticAlloys
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = exoticAlloys
+		title = Exotic Alloys
+		description = Only the toughest and lightest of alloys are allowed into this exclusive club.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_exoticAlloys
+		anyToUnlock = True
+		icon = RDicon_composites
+		pos = -927,1412,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = nanolathing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = offworldManufacturing
+		title = Off-World Robotics
+		description = Research into how to create complex robotic systems, including factory assembly lines... in space!
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_offworldManufacturing
+		anyToUnlock = True
+		icon = RDicon_construction-advanced
+		pos = -927,1355,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = metaMaterials
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = experimentalActuators
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = orbitalMegastructures
+		title = Orbital Megastructures
+		description = The biggest and heaviest Kerbal construction projects.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_orbitalMegastructures
+		anyToUnlock = True
+		icon = RDicon_generic
+		pos = -545,1385,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = orbitalAssembly
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = orbitalAssembly
+		title = Orbital Assembly
+		description = Building things on Kerbin is overrated. Building things in orbit is now merely overly expensive.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_orbitalAssembly
+		anyToUnlock = True
+		icon = RDicon_engineering-precision
+		pos = -736,1385,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = offworldManufacturing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = exoticAlloys
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advActuators
+		title = Advanced Actuators
+		description = Advanced techniques for making everything mobile with the help of motors.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_advActuators
+		anyToUnlock = False
+		icon = RDicon_generic
+		pos = -1309,1300,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = actuators
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = experimentalActuators
+		title = Experimental Actuators
+		description = You can never have too much mobility.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_experimentalActuators
+		anyToUnlock = False
+		icon = RDicon_generic
+		pos = -1118,1300,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = composites
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advActuators
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = subsonicFlight
+		title = Supersonic Flight
+		description = Breaking the sound barrier! Early jets and rocket-powered experimental aircraft. 1945-1950.
+		cost = 1
+		hideEmpty = False
+		nodeName = ct_subsonicFlight
+		anyToUnlock = False
+		icon = RDicon_flight-supersonic
+		pos = -2500,1120,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = start
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = expAircraftEngines
+		title = Experimental Aircraft Engines
+		description = Engines intended for planes, not rockets. I guess you could get creative, though.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_expAircraftEngines
+		anyToUnlock = False
+		icon = RDicon_flight-hypersonic
+		pos = -736, 1180, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = aerospaceTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = aerospaceComposites
+		title = Aerospace Composites
+		description = Light, heat resistant and tough.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_aerospaceComposites
+		anyToUnlock = False
+		icon = RDicon_composites
+		pos = -927,1120 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = experimentalAerodynamics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advAerospaceEngineering
+		title = Advanced Aerospace Engineering
+		description = Pointy shapes, blunt shapes and how they interact with airflow.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_advAerospaceEngineering
+		anyToUnlock = False
+		icon = RDicon_composites
+		pos = -736,1120 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = aerospaceComposites
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = enhancedSurvivability
+		title = Basic Capsules
+		description = The first capsules were little more than "spam in a can". These capsules were dangerous, capable of little more than controlling their attitude and time of reentry, but they achieved the dream of human spaceflight. 1960-63.
+		cost = 30
+		hideEmpty = False
+		nodeName = ct_enhancedSurvivability
+		icon = RDicon_commandmodules
+		pos = -2047,930,-1
+		scale = 0.6
+		anyToUnlock = False
+		Parent
+		{
+			parentID = survivability
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = stability
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = basicConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = simpleCommandModules
+		title = Second-Gen Capsules
+		description = The second generation of human spaceflight craft featured much enhanced reliability and allowed for longer-duration, safer, and more useful missions, including EVAs. 1964.
+		cost = 100
+		hideEmpty = False
+		nodeName = ct_simpleCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1946, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = enhancedSurvivability
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = basicScience
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = heavyCommandModules
+		title = Heavy Command Modules
+		description = Big spacecraft need bigger command modules.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_heavyCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1309, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = commandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = specializedCommandModules
+		title = Specialized Command Modules
+		description = Fancy, purpose-built spacecraft need fancy, purpose-built command modules.
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_specializedCommandModules
+		anyToUnlock = False
+		icon = RDicon_commandmodules
+		pos = -1118, 930, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = heavyCommandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advOffworldMining
+		title = Advanced Off-World Mining
+		description = Mining facilities with more than one drill have opened up huge possibilities. We're looking into hiring oil rig workers to help out.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_advOffworldMining
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-advanced
+		pos = -736, 870, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = experimentalScience
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = resourceExploitation
+		title = Resource Exploitation
+		description = There's money to be made here! Drill baby drill!
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_resourceExploitation
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-advanced
+		pos = -545,870 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advOffworldMining
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = specializedScienceTech
+		title = Specialized Science Tech
+		description = Science technology whose instruction manuals are thicker than the devices themselves.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_specializedScienceTech
+		anyToUnlock = False
+		icon = RDicon_scienceTech
+		pos = -1118, 810, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = scienceTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = longTermScienceTech
+		title = Long Term Science Tech
+		description = Some science experiments require ludicrously long durations.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_longTermScienceTech
+		anyToUnlock = False
+		icon = RDicon_telescope
+		pos = -927, 810, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = specializedScienceTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = scientificOutposts
+		title = Scientific Outposts
+		description = Entire bases dedicated to science sound like great ideas to us.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_scientificOutposts
+		anyToUnlock = False
+		icon = RDicon_science-experimental
+		pos = -736, 810, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = longTermScienceTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = highEnergyScience
+		title = High Energy Science
+		description = Doing science inside a particle accelerator since 2001.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_highEnergyScience
+		anyToUnlock = False
+		icon = RDicon_science-experimental
+		pos = -545, 810, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = scientificOutposts
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = mechatronics
+		title = Mechatronics
+		description = The rumours of robot-led world domination are greatly exaggerated.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_mechatronics
+		anyToUnlock = False
+		icon = 
+		pos = -927, 620, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = automation
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = artificialIntelligence
+		title = Artificial Intelligence
+		description = Smarter computers to help with the "good decisions" our pilots make.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_artificialIntelligence
+		anyToUnlock = False
+		icon = 
+		pos = -736, 680, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = largeUnmanned
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advIonPropulsion
+		title = Advanced Ion Propulsion
+		description = The R&D department has assured us that these technologies will make great publicity photos.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_advIonPropulsion
+		anyToUnlock = False
+		icon = RDicon_propulsion-ion
+		pos = -927,750 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = ionPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = plasmaPropulsion
+		title = Plasma Propulsion
+		description = We've discovered a fourth state of matter! It's only very slightly dangerous to handle.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_plasmaPropulsion
+		anyToUnlock = False
+		icon = RDicon_rocketry-experimental
+		pos = -736, 770, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advIonPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advEMSystems
+		title = Advanced Electromagnetic Systems
+		description = After studying how electricity behaves with magnets, we now can use these results to direct jets of burning gas.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_advEMSystems
+		anyToUnlock = False
+		icon = RDicon_electrics-specialized
+		pos = -545, 770 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = plasmaPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = specializedPlasmaGeneration
+		title = Specialized Plasma Generation
+		description = How do you confine a plasma that doesn't want to be confined, and would rather wander into the lab next door?
+		cost = 4000
+		hideEmpty = False
+		nodeName = ct_specializedPlasmaGeneration
+		anyToUnlock = False
+		icon = RDicon_electrics-specialized
+		pos = -354, 770, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advEMSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advGriddedThrusters
+		title = Advanced Gridded Thrusters
+		description = Some engineers wanted to call this covalent propulsion, but luckily we convinced them not to bond with that idea.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_advGriddedThrusters
+		anyToUnlock = False
+		icon = RDicon_propulsion-ion
+		pos = -736, 730, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advIonPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = expGriddedThrusters
+		title = Experimental Gridded Thrusters
+		description = In the dark future of the third millenium, there is only ion propulsion.
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_expGriddedThrusters
+		anyToUnlock = False
+		icon = RDicon_propulsion-ion
+		pos = -545, 730, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advGriddedThrusters
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advSolarTech
+		title = Advanced Solar Technology
+		description = The discovery of the lens has our electrical engineers all abuzz about the possibilities for solar energy generation.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_advSolarTech
+		anyToUnlock = False
+		icon = RDicon_electrics-large
+		pos = -1118, 470, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = largeElectrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advPVMaterials
+		title = Advanced Photovoltaic Materials
+		description = New, stronger, intentionally bendy photovoltaic cells!
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_advPVMaterials
+		anyToUnlock = False
+		icon = RDicon_electronics
+		pos = -927, 500, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advSolarTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = cuttingEdgeSolarTech
+		title = Cutting-Edge Solar Technology
+		description = These new exotic panels are well grounded in reality.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_cuttingEdgeSolarTech
+		anyToUnlock = False
+		icon = RDicon_electrics-large
+		pos = -927, 440, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advSolarTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = highTechElectricalSystems
+		title = High Tech Electrical Systems
+		description = Unifying electrical systems for distribution and power.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_highTechElectricalSystems
+		anyToUnlock = False
+		icon = RDicon_electrics
+		pos = -736, 590 , -1
+		scale = 0.6
+		Parent
+		{
+			parentID = experimentalElectrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = microwavePowerTransmission
+		title = Microwave Power Transmission
+		description = Using a really long cable, we plan to... nah, just kidding.
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_microwavePowerTransmission
+		anyToUnlock = True
+		icon = RDicon_probes-large
+		pos = -736, 530, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = experimentalElectrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advSolarTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = heatManagementSystems
+		title = Heat Management Systems
+		description = Research into heat radiators to keep the snacks from overheating.
+		cost = 160
+		hideEmpty = False
+		nodeName = ct_heatManagementSystems
+		anyToUnlock = False
+		icon = RDicon_aerodynamics-heavy
+		pos = -1520, 380, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = electrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advHeatManagement
+		title = Advanced Heat Management
+		description = More advanced heat management technologies to keep the A/C running.
+		cost = 550
+		hideEmpty = False
+		nodeName = ct_advHeatManagement
+		anyToUnlock = False
+		icon = RDicon_aerodynamics-heavy
+		pos = -1118, 380, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = heatManagementSystems
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = specializedRadiators
+		title = Specialized Radiators
+		description = Impressive, unwieldy radiators for immediate release!
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_specializedRadiators
+		anyToUnlock = False
+		icon = RDicon_aerodynamics-heavy
+		pos = -736, 380, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = advHeatManagement
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = recycling
+		title = Recycling
+		description = Reduceable, reuseable, recyclable technologies.
+		cost = 90
+		hideEmpty = False
+		nodeName = ct_recycling
+		icon = RDicon_automation
+		pos = -1724, 320, -1
+		scale = 0.6
+		anyToUnlock = False
+		Parent
+		{
+			parentID = advColonization
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = hydroponics
+		title = Hydroponics
+		description = Growing things without getting soiled!
+		cost = 160
+		hideEmpty = False
+		nodeName = ct_hydroponics
+		anyToUnlock = True
+		icon = RDicon_evaTech
+		pos = -1520, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = recycling
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = storageTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = shortTermHabitation
+		title = Short Term Habitation
+		description = The earliest space station designs. Generally planned for use during a single mission, with the reentry vehicle attached during launch.
+		cost = 90
+		hideEmpty = False
+		nodeName = ct_shortTermHabitation
+		icon = RDicon_evaTech
+		pos = -1820,1050,-1
+		scale = 0.6
+		anyToUnlock = False
+		Parent
+		{
+			parentID = simpleCommandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = electrics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = longTermHabitation
+		title = Long Term Habitation
+		description = Advanced psychological and material studies dedicated to the advancement of Kerbalkind.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_longTermHabitation
+		anyToUnlock = False
+		icon = RDicon_start
+		pos = -927, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = shortTermHabitation
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = colonization
+		title = Colonization
+		description = When spreading Kerbalkind through random explosions is just not enough.
+		cost = 1000
+		hideEmpty = False
+		nodeName = ct_colonization
+		anyToUnlock = False
+		icon = RDicon_start
+		pos = -545, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = longTermHabitation
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advLogistics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advColonization
+		title = Advanced Colonization
+		description = Everything you need for a fully automonous Kerbal colonization effort - just add water!
+		cost = 2250
+		hideEmpty = False
+		nodeName = ct_advColonization
+		anyToUnlock = False
+		icon = RDicon_start
+		pos = -354, 320, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = orbitalMegastructures
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = colonization
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = storageTech
+		title = Storage Technology
+		description = For those times when a cardboard box just won't do!
+		cost = 90
+		hideEmpty = False
+		nodeName = ct_storageTech
+		icon = RDicon_fuelSystems-highPerformance
+		pos = -1724, 260, -1
+		scale = 0.6
+		anyToUnlock = False
+		Parent
+		{
+			parentID = actuators
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = logistics
+		title = Logistics
+		description = Making bigger and better cardboard boxes!
+		cost = 300
+		hideEmpty = False
+		nodeName = ct_logistics
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-highPerformance
+		pos = -1309, 260, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = storageTech
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = advLogistics
+		title = Advanced Logistics
+		description = Moving boxes from place to place... in space!
+		cost = 1500
+		hideEmpty = False
+		nodeName = ct_advLogistics
+		anyToUnlock = False
+		icon = RDicon_fuelSystems-highPerformance
+		pos = -736, 260, -1
+		scale = 0.6
+		Parent
+		{
+			parentID = logistics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = earlyAvionics
+		title = Early Avionics
+		description = Early electromechanical avionics, compact and power-efficient enough to allow orbital rockets of reasonable mass. 1953-1957.
+		cost = 10
+		hideEmpty = False
+		nodeName = rp0_node1_earlyAvionics
+		anyToUnlock = False
+		icon = RDicon_control-flight-advanced
+		pos = -2385,1020,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = start
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = basicConstruction
+		title = Basic Construction
+		description = Advances in metallurgy and construction techniques required for larger, more advanced propellant tanks and other structural parts. 1958-1962.
+		cost = 10
+		hideEmpty = False
+		nodeName = rp0_node2_basicConstruction
+		anyToUnlock = False
+		icon = RDicon_construction-general
+		pos = -2200,1272,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = engineering101
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = basicRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = basicSolids
+		title = Basic Solids
+		description = Developing larger more advanced solids than mere "cans of boom" is a massive undertaking. Advanced propellant formulations including aluminum, composite casings, and techniques for thrust vector control need development. The first all-solid launch vehicles and IRBMs. 1956-1960.
+		cost = 20
+		hideEmpty = False
+		nodeName = rp0_node2_basicSolids
+		anyToUnlock = False
+		icon = RDicon_rocketry-basic
+		pos = -2128,1355,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = engineering101
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = basicRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = basicAvionics
+		title = Basic Avionics
+		description = Basic electromechanical avionics capable of controlling hundred-plus ton launch vehicles.
+		cost = 5
+		hideEmpty = False
+		nodeName = rp0_node2_basicAvionics
+		anyToUnlock = False
+		icon = RDicon_control-flight-advanced
+		pos = -2209,1020,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = earlyAvionics
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = matureSolids
+		title = Mature Solids
+		description = Advanced, larger-diameter, higher performance solids with thrust vector control. The first solid ICBMs. 1960-1963.
+		cost = 60
+		hideEmpty = False
+		nodeName = rp0_node3_matureSolids
+		anyToUnlock = False
+		icon = RDicon_rocketry-basic
+		pos = -1946,1355,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = basicSolids
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = basicConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node2_hydroloxTL2
+		id = hydroloxTL2
+		title = Early Hydrolox Engines
+		description = The first hydrolox engines. Much more efficient, especially for upper stages, but much more expensive (and much more difficult to research and build). 1962.
+		cost = 60
+		icon = RDicon_propulsionSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -1900,1593,-1
+		Parent
+		{
+			parentID = advRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = largeSolids
+		title = Large Segmented Solids
+		description = Large solid motors for use as strapons or first stages. Segmented for adaptability and ease of transport and assembly.
+		cost = 120
+		hideEmpty = False
+		nodeName = rp0_node4_largeSolids
+		anyToUnlock = False
+		icon = RDicon_rocketry-advanced
+		pos = -1723,1470.2,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = matureSolids
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = generalConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node4_hydroloxTL3
+		id = hydroloxTL3
+		title = Hydrolox Engines
+		description = Hydrolox engines suitable for mass employment; high thrust, high performance, and decent reliability. 1967.
+		cost = 150
+		icon = RDicon_propulsionSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -1677,1677,-1
+		Parent
+		{
+			parentID = heavyRocketry
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = hydroloxTL2
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node4_earlyStations
+		id = earlyStations
+		title = Early Space Stations
+		description = The first free-flying space stations, designed for docking with crew vehicles and multiple crew rotations and resupply flights. Early 1970s.
+		cost = 250
+		icon = RDicon_start
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -1600,1050,-1
+		Parent
+		{
+			parentID = shortTermHabitation
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = commandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node5_hydroloxTL4
+		id = hydroloxTL4
+		title = Mature Hydrolox Engines
+		description = With the maturation of hydrolox technology, performance enhances considerably and simplification allows the cost to lower (for a given performance level). 1970.
+		cost = 300
+		icon = RDicon_propulsionSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -1473,1677,-1
+		Parent
+		{
+			parentID = hydroloxTL3
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = advConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node7_stagedTL5
+		id = stagedTL5
+		title = Mature Staged Combustion
+		description = With the maturation of staged combustion technology, kerolox first stages offer higher sea level specific impulse than early vacuum engines. 1980.
+		cost = 600
+		icon = RDicon_fuelSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -1118,1551,-1
+		Parent
+		{
+			parentID = precisionPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = specializedConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = avionicsTL5
+		title = Routine Docking
+		description = The avionics and other hardware support necessary for routine docking of missions to stations.
+		cost = 300
+		hideEmpty = False
+		nodeName = rp0_node4_avionicsTL5
+		anyToUnlock = False
+		icon = RDicon_control-flight-advanced
+		pos = -1324,1250,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = specializedControl
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = commandModules
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node6_hydroloxTL5
+		id = hydroloxTL5
+		title = Closed-Cycle Hydrolox Engines
+		description = Maturation of staged combustion allows high-efficiency hydrolox engines that for the first time offer excellent thrust at sea level. 1980.
+		cost = 600
+		icon = RDicon_propulsionSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -1072,1677,-1
+		Parent
+		{
+			parentID = hydroloxTL4
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = precisionPropulsion
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = specializedConstruction
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node7_stagedTL6
+		id = stagedTL6
+		title = Refined Staged Combustion
+		description = Refinements of staged combustion engines offer slight performance increases and significant manufacturing savings.
+		cost = 900
+		icon = RDicon_fuelSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -927,1551,-1
+		Parent
+		{
+			parentID = stagedTL5
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = nanolathing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = avionicsTL6
+		title = Orbital Assembly Avionics
+		descriptions = The avionics necessary for on-orbit assembly of complex structures. 1990s.
+		cost = 900
+		hideEmpty = False
+		nodeName = rp0_node4_avionicsTL6
+		anyToUnlock = False
+		icon = RDicon_control-flight-advanced
+		pos = -934,1250,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = avionicsTL5
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node7_hydroloxTL6
+		id = hydroloxTL6
+		title = Advanced Hydrolox Engines
+		description = Continued investment in hydrolox technology yields continuing dividends in power and efficiency, while requiring higher and higher-quality materials.
+		cost = 1200
+		icon = RDicon_propulsionSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -881,1677,-1
+		Parent
+		{
+			parentID = hydroloxTL5
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = nanolathing
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		id = avionicsTL7
+		title = Modern Avionics
+		cost = 1500
+		hideEmpty = False
+		nodeName = rp0_node4_avionicsTL7
+		anyToUnlock = False
+		icon = RDicon_control-flight-advanced
+		pos = -736,1250,-1
+		scale = 0.6
+		Parent
+		{
+			parentID = avionicsTL6
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node8_stagedTL7
+		id = stagedTL7
+		title = Modern Staged Combustion
+		description = Modern staged combustion engines.
+		cost = 1500
+		icon = RDicon_fuelSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -736,1551,-1
+		Parent
+		{
+			parentID = stagedTL6
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = exoticAlloys
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+	}
+	RDNode
+	{
+		nodeName = rp0_node8_hydroloxTL7
+		id = hydroloxTL7
+		title = Modern Hydrolox Engines
+		description = Current high-performance hydrolox engines.
+		cost = 2000
+		icon = RDicon_propulsionSystems
+		anyToUnlock = False
+		hideEmpty = False
+		scale = 0.6
+		pos = -690,1677,-1
+		Parent
+		{
+			parentID = hydroloxTL6
+			lineFrom = RIGHT
+			lineTo = LEFT
+		}
+		Parent
+		{
+			parentID = exoticAlloys
 			lineFrom = RIGHT
 			lineTo = LEFT
 		}

@@ -9,17 +9,17 @@ GAME
 	Status = 1
 	scene = 5
 	editor = None
-	flag = Squad/Flags/default
-	launchID = 2
+	flag = Squad/Flags/esa_dark_blue
+	launchID = 1
 	modded = True
-	envInfo =  - Environment Info - Win32NT FFFFFFFFFFFFFFFF  Args: KSP.exe -single-instance - 
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
 	{
-		preset = Custom
+		preset = Hard
 		FLIGHT
 		{
 			CanQuickSave = True
-			CanQuickLoad = True
+			CanQuickLoad = False
 			CanAutoSave = True
 			CanUseMap = True
 			CanSwitchVesselsNear = True
@@ -29,8 +29,8 @@ GAME
 			CanEVA = True
 			CanIVA = True
 			CanBoard = True
-			CanRestart = True
-			CanLeaveToEditor = True
+			CanRestart = False
+			CanLeaveToEditor = False
 			CanLeaveToTrackingStation = True
 			CanLeaveToSpaceCenter = True
 			CanLeaveToMainMenu = False
@@ -70,25 +70,25 @@ GAME
 		DIFFICULTY
 		{
 			AutoHireCrews = False
-			MissingCrewsRespawn = True
+			MissingCrewsRespawn = False
 			BypassEntryPurchaseAfterResearch = False
 			AllowStockVessels = False
 			IndestructibleFacilities = False
-			ResourceAbundance = 1
+			ResourceAbundance = 0.5
 			ReentryHeatScale = 1
 		}
 		CAREER
 		{
 			TechTreeUrl = GameData\ModuleManager.TechTree
-			StartingFunds = 25000
+			StartingFunds = 10000
 			StartingScience = 0
 			StartingReputation = 0
-			FundsGainMultiplier = 1
-			RepGainMultiplier = 1
-			ScienceGainMultiplier = 1
-			FundsLossMultiplier = 1
-			RepLossMultiplier = 1
-			RepLossDeclined = 1
+			FundsGainMultiplier = 0.6
+			RepGainMultiplier = 0.6
+			ScienceGainMultiplier = 0.6
+			FundsLossMultiplier = 2
+			RepLossMultiplier = 2
+			RepLossDeclined = 3
 		}
 	}
 	SCENARIO
@@ -102,7 +102,7 @@ GAME
 		scene = 7, 8, 5, 6
 		RESOURCE_SETTINGS
 		{
-			GameSeed = 682538198
+			GameSeed = 623580081
 			MaxDeltaTime = 21600
 		}
 	}
@@ -110,144 +110,37 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 105.779999999996
+		update = 62.9800000000042
 		version = 1.1.3
 		WEIGHTS
 		{
-			DMAsteroidSurveyContract = 30
-			DMSurveyContract = 30
-			DMMagneticSurveyContract = 30
 			DMReconContract = 30
-			DMAnomalyContract = 30
-			WorldFirstContract = 30
-			TourismContract = 30
-			SurveyContract = 30
-			StationContract = 30
+			ConfiguredContract = 30
 			SatelliteContract = 30
-			ISRUContract = 30
-			BaseContract = 30
-			ARMContract = 30
-			RecoverAsset = 30
-			PlantFlag = 30
-			PartTest = 30
-			GrandTour = 30
-			ExploreBody = 30
 			CollectScience = 30
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = 151c1876-9013-4c58-887f-bcaf900a5246
-				type = WorldFirstContract
-				prestige = 0
-				seed = 1622471809
-				state = Offered
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 345600,0,2055.04583358765,3816.51369094849,2240,1,1.09,0,345600.06,0,0,0
-				targetBody = 1
-				targetType = FIRSTLAUNCH
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetType = FIRSTLAUNCH
-				}
-			}
-			CONTRACT
-			{
-				guid = a7debd00-e980-4e44-a9ec-2e5d75a91aa7
-				type = WorldFirstContract
-				prestige = 0
-				seed = 1622471819
-				state = Offered
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 172800,0,4110.09166717529,7633.02738189697,4480,1,3.27,0,172800.06,0,0,0
-				targetBody = 1
-				targetType = SCIENCE
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetType = SCIENCE
-				}
-			}
-			CONTRACT
-			{
-				guid = bf5b9172-1da6-4fb7-a836-3ee153c4e79b
-				type = WorldFirstContract
-				prestige = 1
-				seed = 1622471848
-				state = Offered
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 86400,0,18983.0499649048,35254.2356491089,22400,6,15.34,0,86400.06,0,0,0
-				targetBody = 1
-				targetType = REACHSPACE
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetType = REACHSPACE
-				}
-			}
-			CONTRACT
-			{
-				guid = 79c265e0-6709-42c5-b515-759f34bbdf32
-				type = WorldFirstContract
-				prestige = 2
-				seed = 1622471856
-				state = Offered
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 518400,0,26456.6923141479,49133.8571548462,33600,10,24.13,0,518400.06,0,0,0
-				targetBody = 1
-				targetType = ORBIT
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetType = ORBIT
-				}
-			}
 		}
 	}
 	SCENARIO
 	{
 		name = ScenarioContractEvents
 		scene = 7, 8, 5
-		id = 1306076808
+		id = -1961139978
 	}
 	SCENARIO
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 74651.4672851563
+		funds = 10000
 	}
 	SCENARIO
 	{
 		name = ScenarioNewGameIntro
 		scene = 5, 6, 8
 		kscComplete = True
-		editorComplete = True
+		editorComplete = False
 		tsComplete = False
 	}
 	SCENARIO
@@ -256,119 +149,212 @@ GAME
 		scene = 7, 8, 5
 		Progress
 		{
-			RecordsAltitude
-			{
-				reached = 76.2400000000019
-				record = 78.7982007944956
-			}
-			RecordsSpeed
-			{
-				reached = 87.4599999999997
-				record = 3.70665890239128
-			}
-			RecordsDistance
-			{
-				completed = 39.9400000000006
-				record = 100000
-			}
-			Earth
-			{
-				reached = 75.6000000000021
-				SurfaceEVA
-				{
-					completed = 75.6000000000021
-					crew
-					{
-						crews = Bob Kerman
-					}
-				}
-			}
 		}
 	}
 	SCENARIO
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 5
+		sci = 0
 		Tech
 		{
 			id = start
 			state = Available
 			cost = 0
-			part = 0625.Heatshield
-			part = 1.25.Heatshield
-			part = Heatshield-1M
-			part = Heatshield-15M
-			part = Heatshield-2M
-			part = Heatshield-25M
-			part = Heatshield-3M
-			part = Heatshield-375M
-			part = Heatshield-4M
-			part = Heatshield-5M
+			part = RO-B9ProcWing-Early
+			part = RO-B9ProcCS-Early
+			part = RO-B9ProcAMWing-Early
+			part = dmUSGoo
+			part = Engineer7500
+			part = EngineerChip
+			part = KIS.bomb1
+			part = KIS.electricScrewdriver
+			part = KIS.guide
+			part = KIS.wrench
+			part = KzInterstageAdapter2
+			part = squad.interstage.adapter
+			part = squad.interstageSize3
+			part = KzResizableFairingBase
+			part = fairingSize1
+			part = fairingSize2
+			part = fairingSize3
+			part = KzResizableFairingBaseRing
+			part = KzProcFairingFuselage1
+			part = KzProcFairingFuselage2
+			part = KzThrustPlate
+			part = KzProcFairingSide1
+			part = KzProcFairingAtlas
+			part = KzProcFairingConeEgg
+			part = KzProcFairingDelta
+			part = KzProcFairingJupiter
+			part = KzProcFairingLongMarch
+			part = KzProcFairingLongMarch2
+			part = KzProcFairingProton
+			part = KzProcFairingGryphonSoyuz
+			part = KzProcFairingTitan
+			part = KzProcFairingGryphonTsyklon
+			part = KzProcFairingSide1st
+			part = KzProcFairingSide1stock
+			part = KzProcFairingSide1us
+			part = KzProcFairingSide2
+			part = KzProcFairingSide2ger
 			part = proceduralBattery
-			part = proceduralHeatshield
 			part = proceduralNoseCone
 			part = proceduralStackDecoupler
 			part = proceduralStructural
+			part = proceduralCrewTube
 			part = proceduralTankOre
-			part = proceduralSRBRealFuels
 			part = proceduralTankRealFuels
-			part = RO-ProcTankSpaceplane
-			part = proceduralTankTAC
 			part = RC.cone
+			part = RC.cone.double
+			part = RC.radial
+			part = RC.stack
 			part = TinyTim
+			part = RSBclamp01
+			part = RSBclamp02
+			part = RSBtowerDelta
+			part = RSBtowerDelta2
+			part = RTShortAntenna1
+			part = noseCone
+			part = airScoop
+			part = AdvancedCanard
+			part = CanardController
+			part = sweptWing
+			part = tailfin
 			part = basicFin
+			part = CircularIntake
+			part = pointyNoseConeA
+			part = pointyNoseConeB
+			part = standardNoseCone
+			part = airplaneTail
+			part = airplaneTailB
+			part = miniIntake
+			part = rocketNoseCone
+			part = R8winglet
+			part = winglet
+			part = winglet3
+			part = wingConnector
+			part = wingConnector2
+			part = wingConnector3
+			part = wingConnector4
+			part = wingConnector5
+			part = deltaWing
+			part = delta.small
+			part = StandardCtrlSrf
+			part = elevon2
+			part = elevon3
+			part = smallCtrlSrf
+			part = elevon5
+			part = wingStrake
+			part = structuralWing
+			part = structuralWing2
+			part = structuralWing3
+			part = structuralWing4
+			part = sweptWing1
+			part = sweptWing2
 			part = RP0probeSounding0-3m
-			part = mk1pod
-			part = solidBooster1-1Small
-			part = M55
-			part = solidBoosterSmall
-			part = solidBooster.sm
-			part = RO-X-258
+			part = GuidanceStart1m
+			part = strutConnector
+			part = ROAerobeeSustainer
 			part = RO-STAR-37
+			part = sepMotor1
+			part = SnubOtron
+			part = miniFuelTank
+			part = OscarDtank
+			part = OscarEtank
+			part = rcsTankMini
 			part = GooExperiment
+			part = sensorBarometer
+			part = sensorThermometer
+			part = radialEngineBody
+			part = nacelleBody
+			part = MK1IntakeFuselage
+			part = structuralIBeam2
+			part = structuralIBeam3
+			part = structuralIBeam1
+			part = structuralMiniNode
+			part = structuralPanel1
+			part = Angledpanel
+			part = structuralPanel2
+			part = structuralPanel2
+			part = smallHardpoint
+			part = structuralPylon
+			part = strutCube
+			part = strutCubeSmall
+			part = strutCubeMedium
+			part = strutCubeLarge
+			part = strutOcto
+			part = trussAdapter
 			part = trussPiece1x
+			part = trussPiece3x
+			part = longAntenna
+			part = radialDecoupler1-2
+			part = radialDecoupler
+			part = smallRadialDecoupler
+			part = stackDecouplerMini
+			part = ladder1
+			part = MedLadder
+			part = LongLadder
+			part = MedLadderUtility
+			part = SMLadderUtility
+			part = LGLadderUtility
+			part = telescopicLadder
+			part = telescopicLadderBay
+			part = launchClamp1
+			part = RO.FASA.MercuryPodRCS
+			part = RO.FASA.ExplorerRCS
+			part = RO.linearRcs.tenth
 			part = parachuteSingle
-		}
-		Science
-		{
-			id = mysteryGoo@EarthSrfLandedLaunchPad
-			title = Mystery Goo™ Observation from LaunchPad
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 3.9
-		}
-		Science
-		{
-			id = evaReport@EarthFlyingLowGrasslands
-			title = EVA Report while flying over Earth's Grasslands
-			dsc = 1
-			scv = 1
-			sbv = 0.7
-			sci = 0
-			cap = 5.6
-		}
-		Science
-		{
-			id = evaReport@EarthSrfLandedLaunchPad
-			title = EVA Report from LaunchPad
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 2.4
-		}
-		Science
-		{
-			id = crewReport@EarthSrfLandedLaunchPad
-			title = Crew Report from LaunchPad
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 1.5
+			part = parachuteLarge
+			part = parachuteRadial
+			part = parachuteDrogue
+			part = spotLight1
+			part = spotLight2
+			part = SmallSpotLight
+			part = SmallPointLight
+			part = SmallStripLight
+			part = GearFixed
+			part = GearFree
+			part = GearSmall
+			part = SmallGearBay
+			part = SmallGearBay
+			part = LRadialAirIntake
+			part = SXTInlineAirIntake
+			part = SXTInlineAirIntakeTiny
+			part = SXTelevonSmall
+			part = SXTelevonSmallHalf
+			part = SXTelevonLarge
+			part = SXTelevonVeryLarge
+			part = SXTWingSmall
+			part = SXTWingSmallHalf
+			part = 625mBonny
+			part = SXTClyde
+			part = LMiniAircaftTail
+			part = SXTBuzzard
+			part = SXTke111
+			part = SXTKO211Dprop
+			part = SXTTinyprop
+			part = SXTJ213
+			part = SXT.Jumo213A
+			part = SXTMerlin66prop
+			part = SXTMerlin46Prop
+			part = SXTPWR2800
+			part = SXTR280018WProp
+			part = SXTR280021Prop
+			part = RO-DerwentV
+			part = SXTradialWindow
+			part = SXTProbeGooo
+			part = SXTAntenna
+			part = SXTProtonlikeNoseCone
+			part = SXTlaunchclamp1
+			part = SXTFuel625m
+			part = SXT625mFuel4
+			part = Bumper.Body
+			part = Bumper.Control
+			part = Bumper.Engine
+			part = Bumper.Engine.Unclad
+			part = Bumper.Fin
+			part = Bumper.Nose
 		}
 	}
 	SCENARIO
@@ -380,7 +366,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 10.99999
+		rep = 0
 	}
 	SCENARIO
 	{
@@ -399,19 +385,19 @@ GAME
 	{
 		name = ScenarioDestructibles
 		scene = 5, 7, 6, 8
-		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB2
+		SpaceCenter/Administration/Facility/Building
 		{
 			intact = True
 		}
-		SpaceCenter/TrackingStation/Facility/OuterDish
+		SpaceCenter/AstronautComplex/Facility/mainBuilding
 		{
 			intact = True
 		}
-		SpaceCenter/TrackingStation/Facility/building
+		SpaceCenter/LaunchPad/Facility/Flag
 		{
 			intact = True
 		}
-		SpaceCenter/SpaceplaneHangar/Facility/Building
+		SpaceCenter/MissionControl/Facility/mainBuilding
 		{
 			intact = True
 		}
@@ -423,23 +409,63 @@ GAME
 		{
 			intact = True
 		}
-		SpaceCenter/MissionControl/Facility/mainBuilding
+		SpaceCenter/Runway/Facility/Section4
 		{
 			intact = True
 		}
-		SpaceCenter/LaunchPad/Facility/Flag
+		SpaceCenter/Runway/Facility/Section3
 		{
 			intact = True
 		}
-		SpaceCenter/AstronautComplex/Facility/mainBuilding
+		SpaceCenter/Runway/Facility/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End27
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End09
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SE
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Building
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/OuterDish
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB2
 		{
 			intact = True
 		}
 		SpaceCenter/FlagPole/Facility
-		{
-			intact = True
-		}
-		SpaceCenter/Administration/Facility/Building
 		{
 			intact = True
 		}
@@ -491,6 +517,143 @@ GAME
 	}
 	SCENARIO
 	{
+		name = CutSceneConfigurator
+		scene = 7
+	}
+	SCENARIO
+	{
+		name = ContractConfiguratorSettings
+		scene = 5, 7, 8
+		CONTRACT_STATE
+		{
+			type = DMAnomalyContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = DMReconContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = DMMagneticSurveyContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = DMSurveyContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = DMAsteroidSurveyContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = CollectScience
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = ExploreBody
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = GrandTour
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = PartTest
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = PlantFlag
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = RecoverAsset
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = ARMContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = BaseContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = ISRUContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = SatelliteContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = StationContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = SurveyContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = TourismContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = WorldFirstContract
+			enabled = False
+		}
+	}
+	SCENARIO
+	{
+		name = ContractPreLoader
+		scene = 7, 8, 5
+		UNREAD_CONTRACTS
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = BiomeTracker
+		scene = 7, 8, 5
+	}
+	SCENARIO
+	{
+		name = PersistentDataStore
+		scene = 7, 8, 5
+		DATA
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = ContractVesselTracker
+		scene = 7, 8, 5
+	}
+	SCENARIO
+	{
+		name = RemoteTechProgressTracker
+		scene = 7, 8, 5
+		nextCheck = 0
+	}
+	SCENARIO
+	{
 		name = DeadlyReentryScenario
 		scene = 7, 5
 		difficultySetting = 1
@@ -527,77 +690,6 @@ GAME
 		aeroFailureExplosions = True
 		FlightGUISettings
 		{
-			AirSpeedSettings
-			{
-				unitTypeIndex = 0
-				velTypeIndex = 0
-			}
-			StabilityAugmentationSettings
-			{
-				aoALowLim = -10
-				aoAHighLim = 20
-				scalingDynPres = 20
-				ControlSys0
-				{
-					active = False
-					zeroPoint = 0
-					kP = 0.5
-					kD = 1
-					kI = 0.5
-				}
-				ControlSys1
-				{
-					active = False
-					zeroPoint = 0
-					kP = 0
-					kD = 1
-					kI = 0
-				}
-				ControlSys2
-				{
-					active = False
-					zeroPoint = 0
-					kP = 0
-					kD = 1
-					kI = 0
-				}
-				ControlSys3
-				{
-					active = False
-					zeroPoint = 0
-					kP = 0.25
-					kD = 0
-					kI = 0
-				}
-				ControlSys4
-				{
-					active = False
-					zeroPoint = 0
-					kP = 0
-					kD = 0
-					kI = 0
-				}
-			}
-			FlightDataSettings
-			{
-				section0active = True
-				section1active = True
-				section2active = True
-				section3active = True
-				section4active = True
-				section5active = True
-				section6active = True
-				section7active = True
-				section8active = True
-			}
-			AeroVizSettings
-			{
-				fullySaturatedCl = 0.5
-				fullySaturatedCd = 0.1
-				fullySaturatedClBody = 0.05
-				fullySaturatedCdBody = 0.01
-				fullySaturatedStall = 10
-			}
 		}
 	}
 	SCENARIO
@@ -752,6 +844,221 @@ GAME
 		EngineConfigUpgrade
 		{
 			name = BE-4
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = XLR11
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = A-4
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = 4x NK-39
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = 4x NK-21
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = 8x NK-43
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = 8x NK-15V
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = 30x NK-33
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = 30x NK-15
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = X-405
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = X-405-Exhaust
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-138
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-118K
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-118F
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-118E
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-104D
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-118D
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-118
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-142
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-101A
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-42
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = AJ10-37
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = NERVA-II
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = TRITON
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = Hydrogen-NTR
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = Star17
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-107A_14D22
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-117_11D511
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-107MM_8D728
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-107_8D74K
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-107_8D74PS
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-171M
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-171
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-170
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = RD-0120
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = J-2-200klbf
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = J-2S
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = J-2
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = Waxwing
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = Gamma-2
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = Gamma-8
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = LMDE-J
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = LMDE-H
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
+			name = LMAE
 			unlocked = False
 		}
 		EngineConfigUpgrade
@@ -1011,16 +1318,6 @@ GAME
 		}
 		EngineConfigUpgrade
 		{
-			name = LMDE-J
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = LMDE-H
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
 			name = RD-855
 			unlocked = False
 		}
@@ -1196,6 +1493,11 @@ GAME
 		}
 		EngineConfigUpgrade
 		{
+			name = RD-56
+			unlocked = False
+		}
+		EngineConfigUpgrade
+		{
 			name = KVD-1-Verniers
 			unlocked = False
 		}
@@ -1267,11 +1569,6 @@ GAME
 		EngineConfigUpgrade
 		{
 			name = AestusII
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = LMAE
 			unlocked = False
 		}
 		EngineConfigUpgrade
@@ -1386,21 +1683,6 @@ GAME
 		}
 		EngineConfigUpgrade
 		{
-			name = J-2-200klbf
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = J-2S
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = J-2
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
 			name = HM-7B
 			unlocked = False
 		}
@@ -1422,16 +1704,6 @@ GAME
 		EngineConfigUpgrade
 		{
 			name = Castor-30A
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = AJ10-118K
-			unlocked = False
-		}
-		EngineConfigUpgrade
-		{
-			name = AJ10-118F
 			unlocked = False
 		}
 		EngineConfigUpgrade
@@ -1617,6 +1889,96 @@ GAME
 		TLUpgrade
 		{
 			name = HeavyRcsHTP
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackCavea-B
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackAerozine50+NTO
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackUDMH+NTO
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackMMH+NTO
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackNitrogen
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackHelium
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackNitrousOxide
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackHydrazine
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = SXTRCSRackHTP
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtCavea-B
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtAerozine50+NTO
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtUDMH+NTO
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtMMH+NTO
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtNitrogen
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtHelium
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtNitrousOxide
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtHydrazine
+			currentTL = 0
+		}
+		TLUpgrade
+		{
+			name = RCSBoonExtHTP
 			currentTL = 0
 		}
 		TLUpgrade
@@ -2077,6 +2439,11 @@ GAME
 	}
 	SCENARIO
 	{
+		name = EntryCostModifier
+		scene = 6, 5
+	}
+	SCENARIO
+	{
 		name = SCANcontroller
 		scene = 7, 5, 8
 		colours = 0
@@ -2116,7 +2483,7 @@ GAME
 		overlayMapHeight = 256
 		overlayBiomeHeight = 512
 		overlayTransparency = 0
-		version14Patch = True
+		version14Patch = False
 		trueGreyScale = False
 		groundTracks = True
 		groundTrackActiveOnly = True
@@ -2316,6 +2683,18 @@ GAME
 	}
 	SCENARIO
 	{
+		name = TestFlightManagerScenario
+		scene = 7, 6, 5, 8
+		saveData = 
+	}
+	SCENARIO
+	{
+		name = TestFlightRnDScenario
+		scene = 7, 6, 5, 8
+		lastUpdateTime = 0
+	}
+	SCENARIO
+	{
 		name = TRScenario
 		scene = 5
 		reflectionType = REAL
@@ -2323,10 +2702,10 @@ GAME
 		isAtmSuitEnabled = True
 		Kerbals
 		{
-			Jebediah Kerman = M GENERIC GENERIC
-			Bill Kerman = M GENERIC GENERIC
-			Bob Kerman = M GENERIC GENERIC
-			Valentina Kerman = F GENERIC GENERIC
+			Maria Hunter = F GENERIC GENERIC
+			Thomas Murray = M GENERIC GENERIC
+			Peter Cox = M GENERIC GENERIC
+			Eugene Rivera = M GENERIC GENERIC
 		}
 		ClassSuits
 		{
@@ -2342,3247 +2721,102 @@ GAME
 			Enabled = True
 			HibernateInsteadOfKill = False
 			RespawnDelay = 9203545
-			CrewMemberInfo
+		}
+	}
+	SCENARIO
+	{
+		name = KerbalConstructionTimeData
+		scene = 7, 5, 6, 8
+		KCT_DataStorage
+		{
+			enabledForSave = True
+			fundsFromSimulation = 0
+			activeKSC = us_cape_canaveral
+			SimulationTime = 
+			SalesFigures = 0
+			UpgradesResetCounter = 0
+			TechUpgrades = 0
+			SavedUpgradePointsPreAPI = 0
+			VABUpgrades
 			{
-				name = Bob Kerman
-				lastUpdate = 107.819999999996
-				lastFood = 107.819999999996
-				lastWater = 107.819999999996
-				vesselName = Untitled Space Craft
-				vesselId = 86d7c516-abb1-4844-8155-44d996dd63a8
-				hibernating = False
+				Item = 0
 			}
-			VesselInfo
+			SPHUpgrades
 			{
-				vesselName = Untitled Space Craft
-				vesselType = Ship
-				numCrew = 1
-				numOccupiedParts = 1
-				lastUpdate = 107.819999999996
-				lastFood = 107.819999999996
-				lastWater = 107.819999999996
-				lastOxygen = 107.819999999996
-				lastElectricity = 107.819999999996
-				remainingFood = 11.6955141979996
-				remainingWater = 7.72703155199908
-				remainingOxygen = 1184.4
-				remainingElectricity = 48557.1203568103
-				remainingCO2 = 0
-				remainingWaste = 0.000408161599999976
-				remainingWasteWater = 0.00377681999999963
-				maxFood = 11.7
-				maxWater = 7.73
-				maxOxygen = 1184.4
-				maxElectricity = 48600
-				estimatedElectricityConsumptionRate = 0
-				hibernating = False
-				Guid = 86d7c516-abb1-4844-8155-44d996dd63a8
+				Item = 0
 			}
+			RDUpgrades
+			{
+				Item = 0
+				Item = 0
+			}
+			PurchasedUpgrades
+			{
+				Item = 0
+				Item = 0
+			}
+			BodiesVisited
+			{
+				Item = Earth
+			}
+		}
+		KSC
+		{
+			KSCName = us_cape_canaveral
+			ActiveLPID = 0
+			VABUpgrades
+			{
+				Upgrade = 16
+			}
+			SPHUpgrades
+			{
+				Upgrade = 0
+			}
+			RDUpgrades
+			{
+				Upgrade = 0
+				Upgrade = 0
+			}
+			VABList
+			{
+			}
+			SPHList
+			{
+			}
+			VABWarehouse
+			{
+			}
+			SPHWarehouse
+			{
+			}
+			KSCTech
+			{
+			}
+			Recon_Rollout
+			{
+			}
+			LaunchPads
+			{
+				KCT_LaunchPad
+				{
+					level = 0
+					name = LaunchPad
+					DestructionState
+					{
+					}
+				}
+			}
+		}
+		TechList
+		{
 		}
 	}
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 107.819999999996
+		UT = 62.9800000000042
 		activeVessel = 0
 		mapViewFiltering = -1026
-		VESSEL
-		{
-			pid = 86d7c516abb14844815544d996dd63a8
-			name = Untitled Space Craft
-			type = Ship
-			sit = LANDED
-			landed = True
-			landedAt = LaunchPad
-			splashed = False
-			met = 66.3199999999948
-			lct = 41.4800000000008
-			lastUT = 107.819999999996
-			root = 0
-			lat = 28.608390707878
-			lon = -80.5997483531265
-			alt = 78.2537603499368
-			hgt = 0.6382263
-			nrm = -2.253896E-06,1,-2.000133E-07
-			rot = 0.3296398,-0.5571154,0.3897798,-0.6550052
-			CoM = -0.006637778,0.146615,-2.031128E-08
-			stg = 1
-			prst = False
-			ref = 698713882
-			ctrl = True
-			cPch = 0.466
-			cHdg = 2.118
-			cMod = 0
-			ORBIT
-			{
-				SMA = 3189779.94025094
-				ECC = 0.997341045376033
-				INC = 28.6083904336305
-				LPE = 270.000075013981
-				LAN = 290.034029711788
-				MNA = 3.14159265358979
-				EPH = 107.819999999996
-				REF = 1
-			}
-			PART
-			{
-				name = mk1pod
-				cid = 4294220868
-				uid = 698713882
-				mid = 8897854
-				launchID = 1
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = bottom, -1
-				attN = top, 1
-				mass = 0.8
-				temp = 299.729064198111
-				tempExt = 296.430780913686
-				tempExtUnexp = 296.430896614569
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = mk1pod
-				modCost = 0.2326954
-				crew = Bob Kerman
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Operational
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = True
-					Inoperable = False
-					cooldownToGo = 0
-					stagingEnabled = True
-					EVENTS
-					{
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						CleanUpExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Restore
-							guiName = Restore
-							category = Restore
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Experiment: Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DeployExperimentExternal
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Report
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-					ScienceData
-					{
-						data = 5
-						subjectID = crewReport@EarthSrfLandedLaunchPad
-						xmit = 1
-						labBoost = 1
-						title = Crew Report from LaunchPad
-						triggered = False
-						container = 698713882
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						StoreDataExternalEvent
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Store Experiments (4)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data (3)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Stored Data (2)
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@EarthFlyingLowGrasslands
-						xmit = 1
-						labBoost = 1
-						title = EVA Report while flying over Earth's Grasslands
-						triggered = False
-						container = 698713882
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@EarthSrfLandedLaunchPad
-						xmit = 1
-						labBoost = 1
-						title = EVA Report from LaunchPad
-						triggered = False
-						container = 698713882
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleConductionMultiplier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleConnectedLivingSpace
-					isEnabled = True
-					passable = True
-					passableWhenSurfaceAttached = False
-					surfaceAttachmentsPassable = False
-					passablenodes = 
-					impassablenodes = top , bottom
-					spaceName = Mk1 Pod (2m)
-					stagingEnabled = True
-					EVENTS
-					{
-						DisablePassable
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = CLS Passable: Yes
-							guiName = CLS Passable: Yes
-							category = CLS Passable: Yes
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EnablePassable
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = CLS Passable: No
-							guiName = CLS Passable: No
-							category = CLS Passable: No
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DisableSurfaceAttachable
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = CLS Surface Attachable: Yes
-							guiName = CLS Surface Attachable: Yes
-							category = CLS Surface Attachable: Yes
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EnableSurfaceAttachable
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = CLS Surface Attachable: No
-							guiName = CLS Surface Attachable: No
-							category = CLS Surface Attachable: No
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DisableAttachableSurface
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = CLS Attachable Surface: Yes
-							guiName = CLS Attachable Surface: Yes
-							category = CLS Attachable Surface: Yes
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EnableAttachableSurface
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = CLS Attachable Surface: No
-							guiName = CLS Attachable Surface: No
-							category = CLS Attachable Surface: No
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateGeneric
-					isEnabled = True
-					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = 1
-					deployPercent = 100
-					animationIsDisabled = False
-					stagingEnabled = True
-					deployPercent_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Toggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle
-							guiName = Lights On
-							category = Toggle
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleFuelTanks
-					isEnabled = True
-					type = Fuselage
-					utilization = 86
-					partPrevTemperature = 299.729064198111
-					mass = 0.7
-					stagingEnabled = True
-					volume = 250
-					type_UIEditor
-					{
-						controlEnabled = True
-						options = Default
-					}
-					utilization_UIEditor
-					{
-						controlEnabled = True
-						minValue = 1
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						OnPartVolumeChanged
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = 
-							category = 
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						HideUI
-						{
-							active = False
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Hide UI
-							guiName = Hide UI
-							category = Hide UI
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ShowUI
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Show UI
-							guiName = Show UI
-							category = Show UI
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Empty
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Remove All Tanks
-							guiName = Remove All Tanks
-							category = Remove All Tanks
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					TANK
-					{
-						name = LqdOxygen
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 7.9E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 90.15
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Kerosene
-						note = (pressurized)
-						utilization = 1
-						mass = 7.7E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = LqdHydrogen
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 6.7E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 20.15
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = NTO
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = UDMH
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Hydrazine
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Aerozine50
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MMH
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = HTP
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 30
-						maxAmount = 30
-					}
-					TANK
-					{
-						name = AvGas
-						note = (pressurized)
-						utilization = 1
-						mass = 7.3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Nitrogen
-						note = (pressurized)
-						utilization = 200
-						mass = 9.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = IRFNA-III
-						note = (pressurized)
-						utilization = 1
-						mass = 8.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = NitrousOxide
-						note = (pressurized)
-						utilization = 100
-						mass = 9.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Aniline
-						note = (pressurized)
-						utilization = 1
-						mass = 8.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Ethanol75
-						note = (pressurized)
-						utilization = 1
-						mass = 7.8E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Ethanol90
-						note = (pressurized)
-						utilization = 1
-						mass = 7.8E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Ethanol
-						note = (pressurized)
-						utilization = 1
-						mass = 7.8E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = LqdAmmonia
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 7.7E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 237.65
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = LqdMethane
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 7.7E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 111.45
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Helium
-						note = (pressurized)
-						utilization = 200
-						mass = 0.000115
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = ClF3
-						note = (pressurized)
-						utilization = 1
-						mass = 0.000105
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = ClF5
-						note = (pressurized)
-						utilization = 1
-						mass = 0.000105
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Diborane
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 8.3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 180.65
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Pentaborane
-						note = (pressurized)
-						utilization = 1
-						mass = 8.3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Ethane
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 184.65
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Ethylene
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 169.45
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = OF2
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 8.3E-05
-						cost = 0
-						loss_rate = 1.6E-11
-						temperature = 128.4
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = LqdFluorine
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 0.000105
-						cost = 0
-						loss_rate = 8.8E-11
-						temperature = 85.04
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = N2F4
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 7.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 200.15
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Methanol
-						note = (pressurized)
-						utilization = 1
-						mass = 7.7E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Furfuryl
-						note = (pressurized)
-						utilization = 1
-						mass = 7.9E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = UH25
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Tonka250
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Tonka500
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = FLOX30
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 8.15E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 216.15
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = FLOX70
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 0.0001035
-						cost = 0
-						loss_rate = 0
-						temperature = 216.15
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = FLOX88
-						note = (has insulation, pressurized)
-						utilization = 1
-						mass = 0.0001134
-						cost = 0
-						loss_rate = 0
-						temperature = 216.15
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = IWFNA
-						note = (pressurized)
-						utilization = 1
-						mass = 8.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = IRFNA-IV
-						note = (pressurized)
-						utilization = 1
-						mass = 8.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = AK20
-						note = (pressurized)
-						utilization = 1
-						mass = 8.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = AK27
-						note = (pressurized)
-						utilization = 1
-						mass = 8.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = CaveaB
-						note = (pressurized)
-						utilization = 1
-						mass = 8.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MON1
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MON3
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MON10
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MON15
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MON20
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MON25
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = ArgonGas
-						note = (pressurized)
-						utilization = 100
-						mass = 3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = KryptonGas
-						note = (pressurized)
-						utilization = 100
-						mass = 3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Hydrogen
-						note = (pressurized)
-						utilization = 100
-						mass = 3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Oxygen
-						note = (pressurized)
-						utilization = 200
-						mass = 3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 1184.4000000000001
-						maxAmount = 1184.4000000000001
-					}
-					TANK
-					{
-						name = Food
-						note = (pressurized)
-						utilization = 1
-						mass = 1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 11.695512843999603
-						maxAmount = 11.699999999999999
-					}
-					TANK
-					{
-						name = Water
-						note = (pressurized)
-						utilization = 1
-						mass = 1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 7.72703065599908
-						maxAmount = 7.7300000000000004
-					}
-					TANK
-					{
-						name = CarbonDioxide
-						note = (pressurized)
-						utilization = 200
-						mass = 3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = False
-						techRequired = 
-						amount = 0
-						maxAmount = 1023.0700000000001
-					}
-					TANK
-					{
-						name = Waste
-						note = (pressurized)
-						utilization = 1
-						mass = 1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = False
-						techRequired = 
-						amount = 0.00040828479999997606
-						maxAmount = 1.0600000000000001
-					}
-					TANK
-					{
-						name = WasteWater
-						note = (pressurized)
-						utilization = 1
-						mass = 1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = False
-						techRequired = 
-						amount = 0.0037779599999996295
-						maxAmount = 9.8499999999999996
-					}
-					TANK
-					{
-						name = LithiumPeroxide
-						note = (pressurized)
-						utilization = 1
-						mass = 1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = LithiumHydroxide
-						note = (pressurized)
-						utilization = 1
-						mass = 1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 1.5
-						maxAmount = 1.5
-					}
-					TANK
-					{
-						name = PotassiumSuperoxide
-						note = (pressurized)
-						utilization = 1
-						mass = 1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Hydyne
-						note = (pressurized)
-						utilization = 1
-						mass = 7.8E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Syntin
-						note = (pressurized)
-						utilization = 1
-						mass = 7.7E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = LiquidFuel
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Oxidizer
-						note = (pressurized)
-						utilization = 1
-						mass = 8.1E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = MonoPropellant
-						note = (pressurized)
-						utilization = 1
-						mass = 7.7E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = XenonGas
-						note = (pressurized)
-						utilization = 100
-						mass = 3E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = ElectricCharge
-						note = (pressurized)
-						utilization = 1000
-						mass = 0.00289
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 48557.120356810301
-						maxAmount = 48600
-					}
-					TANK
-					{
-						name = LeadBallast
-						note = (pressurized)
-						utilization = 1
-						mass = 6.5E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Turpentine
-						note = (pressurized)
-						utilization = 1
-						mass = 7.8E-05
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-				}
-				MODULE
-				{
-					name = TacGenericConverter
-					isEnabled = True
-					converterEnabled = False
-					stagingEnabled = True
-					lastUpdateTime = 107.819999999996
-					EVENTS
-					{
-						DeactivateConverter
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Deactivate Converter
-							guiName = Deactivate CO2 Scrubber
-							category = Deactivate Converter
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ActivateConverter
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Activate Converter
-							guiName = Activate CO2 Scrubber
-							category = Activate Converter
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleConverter
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleHeatShield
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					currentShowToggles = False
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					useThrottle = False
-					fullThrust = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					enableYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					enablePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableX_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableY_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableZ_UIFlight
-					{
-						controlEnabled = True
-					}
-					useThrottle_UIFlight
-					{
-						controlEnabled = True
-					}
-					fullThrust_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = RCS: Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleToggles
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Actuation Toggles
-							guiName = Show Actuation Toggles
-							category = Actuation Toggles
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = CoMShifter
-					isEnabled = True
-					IsDescentMode = False
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleMode
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Turn Descent Mode On
-							guiName = Turn Descent Mode On
-							category = Turn Descent Mode On
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleSPU
-					isEnabled = True
-					IsRTPowered = True
-					IsRTSignalProcessor = True
-					IsRTCommandStation = False
-					RTCommandMinCrew = 6
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					FlightComputer
-					{
-						TotalDelay = 0
-						ActiveCommands
-						{
-							AttitudeCommand
-							{
-								Mode = Off
-								Attitude = Prograde
-								Frame = World
-								Orientation = 0,0,0,1
-								Altitude = NaN
-								TimeStamp = 107.819999999996
-								ExtraDelay = 0
-								CmdGuid = a0f157ce-1e2e-44b2-91b4-0d2717d3e4c1
-							}
-						}
-						Commands
-						{
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleRTAntennaPassive
-					isEnabled = True
-					IsRTAntenna = True
-					IsRTActive = True
-					IsRTPowered = True
-					IsRTBroken = False
-					RTDishCosAngle = 1
-					RTOmniRange = 1000000
-					RTDishRange = -1
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = LifeSupportModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = EditorCrewMass
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					dead = False
-					crashTolerance = 8
-					damage = 0
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetRecordedHeat
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset Heat Record
-							guiName = Reset Heat Record
-							category = Reset Heat Record
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = False
-						}
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = False
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Land,Earth
-					}
-				}
-				MODULE
-				{
-					name = TransferDialogSpawner
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						SpawnDialog
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Transfer Crew
-							guiName = Transfer Crew
-							category = Transfer Crew
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleRTDataTransmitter
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = Ablator
-					amount = 200
-					maxAmount = 200
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = CharredAblator
-					amount = 0
-					maxAmount = 200
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = HTP
-					amount = 30
-					maxAmount = 30
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxygen
-					amount = 1184.4
-					maxAmount = 1184.4
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Food
-					amount = 11.6955128439996
-					maxAmount = 11.7
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Water
-					amount = 7.72703065599908
-					maxAmount = 7.73
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = CarbonDioxide
-					amount = 0
-					maxAmount = 1023.07
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Waste
-					amount = 0.000408284799999976
-					maxAmount = 1.06
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = WasteWater
-					amount = 0.00377795999999963
-					maxAmount = 9.85
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = LithiumHydroxide
-					amount = 1.5
-					maxAmount = 1.5
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 48557.1203568103
-					maxAmount = 48600
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = RC.cone
-				cid = 4294196676
-				uid = 277944072
-				mid = 8897854
-				launchID = 1
-				parent = 0
-				position = 0,1.0738410949707,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = bottom, 0
-				mass = 0.1609375
-				temp = 273.740937271491
-				tempExt = 273.992288067333
-				tempExtUnexp = 273.992077579853
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = RC.cone
-				modCost = 148.3
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = RealChuteModule
-					isEnabled = True
-					caseMass = 0.05
-					cutSpeed = 0.5
-					timer = 0
-					mustGoDown = True
-					deployOnGround = False
-					spareChutes = 5
-					initiated = True
-					wait = True
-					armed = False
-					oneWasDeployed = False
-					staged = False
-					launched = False
-					chuteCount = 5
-					stagingEnabled = True
-					EVENTS
-					{
-						GUIDeploy
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy Chute
-							guiName = Deploy Chute
-							category = Deploy Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						GUICut
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Cut main chute
-							guiName = Cut chute
-							category = Cut main chute
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						GUIArm
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Arm parachute
-							guiName = Arm parachute
-							category = Arm parachute
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						GUIDisarm
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Disarm parachute
-							guiName = Disarm parachute
-							category = Disarm parachute
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						GUIRepack
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Repack chute
-							guiName = Repack chute
-							category = Repack chute
-							guiActiveUnfocused = False
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						GUIToggleWindow
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle info
-							guiName = Toggle info
-							category = Toggle info
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionDeploy
-						{
-							actionGroup = None
-						}
-						ActionCut
-						{
-							actionGroup = None
-						}
-						ActionArm
-						{
-							actionGroup = None
-						}
-						ActionDisarm
-						{
-							actionGroup = None
-						}
-					}
-					PARACHUTE
-					{
-						material = Nylon
-						preDeployedDiameter = 2.5
-						deployedDiameter = 50
-						minIsPressure = False
-						capOff = False
-						minDeployment = 30000
-						minPressure = 0.01
-						deploymentAlt = 700
-						cutAlt = -1
-						preDeploymentSpeed = 2
-						deploymentSpeed = 6
-						time = 0
-						parachuteName = RC_triple_canopy
-						baseParachuteName = RC_triple_canopy
-						capName = cone
-						preDeploymentAnimation = RC_triple_chute_semi_deploy
-						deploymentAnimation = RC_triple_chute_full_deploy
-						forcedOrientation = 0
-						depState = STOWED
-					}
-				}
-				MODULE
-				{
-					name = ProceduralChute
-					isEnabled = True
-					caseId = 0
-					lastCaseId = 0
-					size = 0
-					lastSize = 0
-					planets = 0
-					presetId = 0
-					originalSize = (1, 1, 1)
-					top = 0
-					bottom = -0.046045
-					debut = 1
-					initiated = True
-					mustGoDown = True
-					deployOnGround = False
-					secondaryChute = False
-					timer = 0s
-					cutSpeed = 0.5
-					spares = 5
-					landingAlt = 0
-					stagingEnabled = True
-					EVENTS
-					{
-						GUINextSize
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Next size
-							guiName = Next size
-							category = Next size
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						GUIPreviousSize
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Previous size
-							guiName = Previous size
-							category = Previous size
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					CHUTE
-					{
-						chuteID = 0
-						modelID = 1
-						typeID = 0
-						lastTypeID = 0
-						position = (1.5, 0.9, 0.3)
-						isPressure = False
-						calcSelect = True
-						getMass = True
-						useDry = True
-						preDepDiam = 2.5
-						depDiam = 50
-						predepClause = 30000
-						mass = 10
-						landingSpeed = 6
-						deceleration = 10
-						refDepAlt = 700
-						chuteCount = 1
-						deploymentAlt = 700
-						cutAlt = 
-						preDepSpeed = 2
-						depSpeed = 6
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					dead = False
-					crashTolerance = 8
-					damage = 0
-					stagingEnabled = True
-					EVENTS
-					{
-						ResetRecordedHeat
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset Heat Record
-							guiName = Reset Heat Record
-							category = Reset Heat Record
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = False
-						}
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = False
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = GooExperiment
-				cid = 4294187932
-				uid = 1913538600
-				mid = 8897854
-				launchID = 1
-				parent = 0
-				position = -0.545996844768524,0.537620544433594,-6.50878888563966E-08
-				rotation = -0.1086253,-0.6987138,0.1086254,-0.6987135
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 0
-				mass = 0.015
-				temp = 278.574286944621
-				tempExt = 279.110514215087
-				tempExtUnexp = 279.109185008397
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/default
-				rTrf = GooExperiment
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateGeneric
-					isEnabled = True
-					aniState = LOCKED
-					animSwitch = False
-					animTime = 0.9989837
-					animSpeed = 0
-					deployPercent = 100
-					animationIsDisabled = False
-					stagingEnabled = True
-					deployPercent_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						Toggle
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle
-							guiName = Close
-							category = Toggle
-							guiActiveUnfocused = False
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = True
-					Inoperable = False
-					cooldownToGo = 0
-					stagingEnabled = True
-					EVENTS
-					{
-						CollectDataExternalEvent
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Collect Data
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Data
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Reset Goo Canister
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DeployExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Observe Mystery Goo
-							category = Deploy
-							guiActiveUnfocused = True
-							unfocusedRange = 1.2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Reset Goo Canister
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 1.2
-							externalToEVAOnly = True
-						}
-						CleanUpExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Restore
-							guiName = Restore
-							category = Restore
-							guiActiveUnfocused = True
-							unfocusedRange = 1.2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Experiment: Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DeployExperiment
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Observe Mystery Goo
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-					ScienceData
-					{
-						data = 10
-						subjectID = mysteryGoo@EarthSrfLandedLaunchPad
-						xmit = 0.3
-						labBoost = 1
-						title = Mystery Goo™ Observation from LaunchPad
-						triggered = False
-						container = 1913538600
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAeroReentry
-					isEnabled = True
-					dead = False
-					crashTolerance = 8
-					damage = 0
-					stagingEnabled = True
-					EVENTS
-					{
-						ResetRecordedHeat
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset Heat Record
-							guiName = Reset Heat Record
-							category = Reset Heat Record
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = False
-						}
-						RepairDamage
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = No Damage
-							guiName = No Damage
-							category = No Damage
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = False
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 0
-				Gear = False, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = True, 65.4800000000041
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0.5
-			}
-			VESSELMODULES
-			{
-				ModularFlightIntegrator
-				{
-				}
-				FlightGUI
-				{
-				}
-				UllageModule
-				{
-				}
-				SolverFlightSys
-				{
-				}
-				FARVesselAero
-				{
-				}
-			}
-		}
 	}
 	LoaderInfo
 	{
@@ -5593,7 +2827,11 @@ GAME
 		AJE v2.7.2.0 = True
 		B9_Aerospace_WingStuff v1.0.0.0 = True
 		CLSInterfaces v1.0.0.0 = True
-		ConnectedLivingSpace v1.2.2.0 = True
+		ConnectedLivingSpace v1.2.2.1 = True
+		ContractConfigurator v1.0.0.0 / v1.16.2 = True
+		RemoteTech v1.7.0.0 / v1.7.1 = True
+		CC_RemoteTech v1.0.0.0 / v1.16.2 = True
+		CustomBarnKit v1.1.9.0 = True
 		DeadlyReentry v7.4.7.0 = True
 		DMagic v1.3.0.2 / vv1.3.2 = True
 		EngineGroupController v1.0.0.0 = True
@@ -5605,26 +2843,40 @@ GAME
 		Firespitter v7.1.6016.23694 = True
 		KAS v0.5.9.0 / v0.5.9 for KSP 1.1.3 = True
 		MiniAVC v1.0.3.1 = True
+		KerbalConstructionTime v1.3.4.0 = True
+		KerbalEngineer v1.1.1.0 = True
+		KerbalEngineer.Unity v1.0.0.0 = True
 		KerbalJointReinforcement v3.1.7.0 = True
+		Renamer v1.0.5956.24390 = True
+		KIS v1.2.12.0 / v1.2.12 for KSP 1.1 = True
+		KSPDev_Utils v0.13.0.0 / v0.13.0 for KSP v1.1 = True
+		MiniAVC v1.0.3.0 = True
 		Kopernicus.Components v1.0.0.0 = True
 		Kopernicus.OnDemand v1.0.0.0 = True
 		Kopernicus v1.0.0.0 = True
 		KSCSwitcher v1.0.5956.23563 = True
 		KSP-AVC v1.1.6.1 = True
+		MagiCore v1.0.0.0 = True
 		PersistentRotation v1.0.0.0 = True
 		ProceduralFairings v0.0.0.0 = True
 		ProceduralParts v1.2.5.0 = True
-		RCSBuildAid v0.8.5999.37630 = True
-		RCSBuildAidToolbar v0.8.5999.37631 = True
+		RCSBuildAid v0.8.1.22534 = True
+		RCSBuildAidToolbar v0.8.1.22534 = True
 		RealChute v1.4.5964.18052 / v1.4.1.1 = True
 		RealFuels v0.11.3.1929 / v0.11.3.1 = True
 		RealHeat v0.4.3.0 = True
 		RealismOverhaul v0.11.2.0 = True
 		RealSolarSystem v0.11.4.0 = True
-		RemoteTech v1.7.0.0 / v1.7.1 = True
+		RP0 v0.51.0.0 = True
 		RSSTimeFormatter v1.0.5974.18293 = True
 		SCANsat v1.6.0.3 / vv16.3 = True
-		SmokeScreen v2.6.15.0 = True
+		ShipManifest v5.1.2.1 = True
+		SmokeScreen v2.6.17.0 = True
+		TestFlightAPI v1.0.6032.39999 = True
+		TestFlight v0.4.0.0 = True
+		TestFlightContracts v1.0.6032.40000 = True
+		TestFlightCore v1.0.6032.40000 = True
+		TestFlightRF v1.0.6032.40000 = True
 		TextureReplacer v2.4.13.34255 = True
 		TacLifeSupport v0.0.1.0 = True
 		AdvancedAnimator v1.0.5205.2310 / v1.1.0.0 = True
@@ -5632,17 +2884,25 @@ GAME
 		AJE = True
 		B9_Aerospace_ProceduralWings = True
 		CommunityResourcePack = True
+		CommunityTechTree = True
 		ConnectedLivingSpace = True
+		ContractConfigurator = True
+		CustomBarnKit = True
 		DeadlyReentry = True
 		DMagicOrbitalScience = True
 		EngineGroupController = True
 		FerramAerospaceResearch = True
 		Firespitter = True
 		KAS = True
+		KerbalConstructionTime = True
+		KerbalEngineer = True
 		KerbalJointReinforcement = True
+		KerbalRenamer = True
+		KIS = True
 		Kopernicus = True
 		KSCSwitcher = True
 		KSP-AVC = True
+		MagiCore = True
 		ModularFlightIntegrator = True
 		PersistentRotation = True
 		ProceduralFairings = True
@@ -5657,28 +2917,42 @@ GAME
 		RealScaleBoosters = True
 		RealSolarSystem = True
 		RemoteTech = True
+		RP-0 = True
 		RSS-Textures = True
 		RSSDateTime = True
 		SCANsat = True
+		ShipManifest = True
 		SmokeScreen = True
 		SolverEngines = True
+		SXT = True
+		Taerobee = True
+		TestFlight = True
 		TextureReplacer = True
 		ThunderAerospace = True
 		UniversalStorage = True
 		VenStockRevamp = True
 		ModuleManager.2.6.25.dll = True
+		ModuleManager.ConfigCache = True
+		ModuleManager.ConfigSHA = True
+		ModuleManager.Physics = True
+		ModuleManager.TechTree = True
+		toolbar-settings.dat = True
+		ConnectedLivingSpace v1.2.2.0 = False
+		RCSBuildAid v0.8.5999.37630 = False
+		RCSBuildAidToolbar v0.8.5999.37631 = False
+		SmokeScreen v2.6.15.0 = False
 	}
 	ROSTER
 	{
 		KERBAL
 		{
-			name = Jebediah Kerman
-			gender = Male
+			name = Maria Hunter
+			gender = Female
 			type = Crew
-			trait = Pilot
-			brave = 0.5
-			dumb = 0.5
-			badS = True
+			trait = Engineer
+			brave = 0.6983011
+			dumb = 0.4142127
+			badS = False
 			tour = False
 			state = Available
 			ToD = 0
@@ -5690,16 +2964,17 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 0
+				0 = Nationality,American
 			}
 		}
 		KERBAL
 		{
-			name = Bill Kerman
+			name = Thomas Murray
 			gender = Male
 			type = Crew
 			trait = Engineer
-			brave = 0.5
-			dumb = 0.8
+			brave = 0.690735
+			dumb = 0.5970697
 			badS = False
 			tour = False
 			state = Available
@@ -5712,43 +2987,41 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 0
+				0 = Nationality,American
 			}
 		}
 		KERBAL
 		{
-			name = Bob Kerman
+			name = Peter Cox
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.4889311
+			dumb = 0.3483457
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+				0 = Nationality,American
+			}
+		}
+		KERBAL
+		{
+			name = Eugene Rivera
 			gender = Male
 			type = Crew
 			trait = Scientist
-			brave = 0.3
-			dumb = 0.1
+			brave = 0.5646043
+			dumb = 0.3871447
 			badS = False
-			tour = False
-			state = Assigned
-			ToD = 0
-			idx = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Land,Earth
-				0 = ExitVessel,Earth
-				0 = Flight,Earth
-				0 = BoardVessel,Earth
-			}
-		}
-		KERBAL
-		{
-			name = Valentina Kerman
-			gender = Female
-			type = Crew
-			trait = Pilot
-			brave = 0.55
-			dumb = 0.4
-			badS = True
 			tour = False
 			state = Available
 			ToD = 0
@@ -5760,19 +3033,12 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 0
+				0 = Nationality,American
 			}
 		}
 	}
 	MESSAGESYSTEM
 	{
 		flash = False
-		MESSAGE
-		{
-			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken a land distance record of 1,000m.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n~nWe have broken a land distance record of 3,000m.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n~nWe have broken a land distance record of 10km.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n~nWe have broken a land distance record of 32km.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n~nWe have broken a land distance record of 100km.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n~nWe have performed an EVA test at home.~n<color=#b4d455>£  3,200 </color><color=#e0d503>¡ 1 </color>~n
-			color = 3
-			icon = 6
-			read = False
-		}
 	}
 }

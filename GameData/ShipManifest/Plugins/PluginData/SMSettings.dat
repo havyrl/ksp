@@ -1,0 +1,115 @@
+SM_Windows
+{
+	ManifestPosition
+	{
+		x = 0
+		y = 0
+		width = 0
+		height = 0
+	}
+	TransferPosition
+	{
+		x = 0
+		y = 0
+		width = 0
+		height = 0
+	}
+	DebuggerPosition
+	{
+		x = 0
+		y = 0
+		width = 0
+		height = 0
+	}
+	SettingsPosition
+	{
+		x = 0
+		y = 0
+		width = 0
+		height = 0
+	}
+	ControlPosition
+	{
+		x = 0
+		y = 0
+		width = 0
+		height = 0
+	}
+	RosterPosition
+	{
+		x = 0
+		y = 0
+		width = 0
+		height = 330
+	}
+}
+SM_Settings
+{
+	RealismMode = True
+	EnableCrew = True
+	EnablePfCrews = False
+	EnableStockCrewTransfer = True
+	EnableScience = True
+	EnableResources = True
+	EnablePFResources = True
+	EnableCLS = True
+	OverrideStockCrewTransfer = True
+	FlowRate = 100
+	FlowCost = 0.0015
+	MinFlowRate = 0
+	MaxFlowRate = 1000
+	MaxFlowTimeSec = 180
+	EnableXferCost = True
+	LockSettings = False
+	EnableHighlighting = True
+	OnlySourceTarget = False
+	EnableCLSHighlighting = True
+	EnableEdgeHighlighting = True
+	ShowToolTips = True
+	DebuggerToolTips = True
+	ManifestToolTips = True
+	TransferToolTips = True
+	SettingsToolTips = True
+	RealismToolTips = True
+	HighlightingToolTips = True
+	ToolTipsToolTips = True
+	SoundsToolTips = True
+	ConfigToolTips = True
+	InstalledModsToolTips = True
+	RosterToolTips = True
+	ControlToolTips = True
+	HatchToolTips = True
+	PanelToolTips = True
+	AntennaToolTips = True
+	LightToolTips = True
+	PumpSoundStart = ShipManifest/Sounds/59328-1
+	PumpSoundRun = ShipManifest/Sounds/59328-2
+	PumpSoundStop = ShipManifest/Sounds/59328-3
+	CrewSoundStart = ShipManifest/Sounds/14214-1
+	CrewSoundRun = ShipManifest/Sounds/14214-2
+	CrewSoundStop = ShipManifest/Sounds/14214-3
+	PumpSoundVol = 1
+	CrewSoundVol = 1
+	ShowDebugger = False
+	EnableBlizzyToolbar = False
+	VerboseLogging = False
+	AutoSave = False
+	SaveIntervalSec = 60
+	AutoDebug = False
+	DebugLogPath = Plugins\PluginData\
+	ErrorLogLength = 1000
+	SaveLogOnExit = False
+	EnableKerbalRename = True
+	EnableChangeProfession = True
+	UseUnityStyle = True
+}
+SM_Hidden
+{
+	ResourcePartColor = yellow
+	SourcePartColor = red
+	TargetPartColor = green
+	TargetPartCrewColor = blue
+	MouseOverColor = green
+	CrewXferDelaySec = 7
+	IvaUpdateFrameDelay = 20
+}
