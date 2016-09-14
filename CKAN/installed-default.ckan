@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.07.25.09.19.40",
+	"version": "2016.09.14.07.24.01",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -24,16 +24,8 @@
 			"version": "1.4.4"
 		},
 		{
-			"name": "TriggerAu-Flags",
-			"version": "v2.8.1.0"
-		},
-		{
 			"name": "KerbalEngineerRedux",
 			"version": "1.1.1.0"
-		},
-		{
-			"name": "DiverseKerbalHeads",
-			"version": "1.0"
 		},
 		{
 			"name": "KerbalAlarmClock",
@@ -68,16 +60,8 @@
 			"version": "1.7.12"
 		},
 		{
-			"name": "ContractConfigurator-RemoteTech",
-			"version": "2.1.0"
-		},
-		{
 			"name": "CommunityResourcePack",
 			"version": "0.5.4.0"
-		},
-		{
-			"name": "ContractConfigurator-ContractPack-SCANsat",
-			"version": "v0.6.0.1"
 		},
 		{
 			"name": "ContractConfigurator",
