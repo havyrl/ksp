@@ -3,10 +3,12 @@
 
 # ignore all logs
 *.log
+*.locked
 
 # exept
 !settings.cfg
 !backup.ps1
+!backup.bat
 !ckan.exe
 !CKAN
 CKAN/downloads
